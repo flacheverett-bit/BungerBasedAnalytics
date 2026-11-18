@@ -2,6 +2,8 @@
 
 A static website that tracks hero shooter statistics: latest patch analysis, concurrent players, and per-hero win and pick rates with patch markers. **Deadlock** is supported today. The site is built so other games can be added later.
 
+**Live site:** https://flacheverett-bit.github.io/HeroTrackerDashboard/
+
 ## Pages
 
 | Page | What it shows |
@@ -69,19 +71,11 @@ Patches you haven't written up yet still show as grey markers, pulled from the o
 
 ## Put it on GitHub
 
-1. Install [Git](https://git-scm.com/download/win) and the [GitHub CLI](https://cli.github.com/). Then run `gh auth login`.
-2. From the `hero-meta-tracker` folder:
+The repo is [flacheverett-bit/HeroTrackerDashboard](https://github.com/flacheverett-bit/HeroTrackerDashboard), published with GitHub Desktop. Repo settings it depends on:
 
-```powershell
-git init -b main
-git add .
-git commit -m "Initial commit: Deadlock hero meta tracker"
-gh repo create hero-meta-tracker --public --source . --push
-```
-
-3. Turn on the site: **Settings → Pages → Deploy from a branch → `main` / root**. It goes live at `https://<you>.github.io/hero-meta-tracker/`.
-4. **Settings → Actions → General → Workflow permissions → Read and write.** The data workflows need this to commit updates.
-5. Under **Actions**, run *Update hero stats and patches* once by hand to confirm it works.
+1. **Settings → Pages → Deploy from a branch → `main` / root.**
+2. **Settings → Actions → General → Workflow permissions → Read and write.** The data workflows need this to commit updates.
+3. The Actions commit data every hour, so **click Fetch/Pull in GitHub Desktop before you edit anything locally** to avoid conflicts.
 
 Notes:
 - The hourly player workflow commits roughly once an hour, which is normal for scraped-data repos.
