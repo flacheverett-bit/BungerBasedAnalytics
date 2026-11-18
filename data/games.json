@@ -1,0 +1,12 @@
+[
+  {
+    "id": "deadlock",
+    "name": "Deadlock",
+    "developer": "Valve",
+    "genre": "Hero shooter / MOBA",
+    "tagline": "6v6 lane-pushing hero shooter",
+    "steam_appid": 1422450,
+    "character_label": "Heroes",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1422450/header.jpg"
+  }
+]

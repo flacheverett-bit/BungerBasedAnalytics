@@ -1,0 +1,35 @@
+name: Update hero stats and patches (daily)
+
+on:
+  schedule:
+    - cron: "30 6 * * *"     # daily at 06:30 UTC, after the previous UTC day is complete
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-commit
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch Deadlock hero stats
+        run: python pipeline/deadlock_heroes.py
+      - name: Rebuild patch markers
+        run: python pipeline/patches.py
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && exit 0
+          git commit -m "data: daily hero stats update"
+          git pull --rebase
+          git push

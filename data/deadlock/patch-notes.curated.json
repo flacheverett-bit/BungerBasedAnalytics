@@ -1,0 +1,1134 @@
+{
+  "game": "Deadlock",
+  "roster": [
+    {
+      "name": "Abrams",
+      "role": "Brawler",
+      "released": null
+    },
+    {
+      "name": "Apollo",
+      "role": "Assassin",
+      "released": "2026-02-12"
+    },
+    {
+      "name": "Bebop",
+      "role": "Brawler",
+      "released": null
+    },
+    {
+      "name": "Billy",
+      "role": "Brawler",
+      "released": "2025-08-20"
+    },
+    {
+      "name": "Calico",
+      "role": "Assassin",
+      "released": "2025-01-17"
+    },
+    {
+      "name": "Celeste",
+      "role": "Spirit",
+      "released": "2026-02-09"
+    },
+    {
+      "name": "Deadman Danny",
+      "role": "Gun Carry",
+      "released": "2026-10-13"
+    },
+    {
+      "name": "Drifter",
+      "role": "Assassin",
+      "released": "2025-08-27"
+    },
+    {
+      "name": "Dynamo",
+      "role": "Support/Utility",
+      "released": null
+    },
+    {
+      "name": "Graves",
+      "role": "Spirit",
+      "released": "2026-01-29"
+    },
+    {
+      "name": "Grey Talon",
+      "role": "Spirit",
+      "released": null
+    },
+    {
+      "name": "Haze",
+      "role": "Assassin",
+      "released": null
+    },
+    {
+      "name": "Holliday",
+      "role": "Gun Carry",
+      "released": "2025-01-17"
+    },
+    {
+      "name": "Infernus",
+      "role": "Spirit",
+      "released": null
+    },
+    {
+      "name": "Ivy",
+      "role": "Support/Utility",
+      "released": null
+    },
+    {
+      "name": "Kelvin",
+      "role": "Support/Utility",
+      "released": null
+    },
+    {
+      "name": "Lady Geist",
+      "role": "Spirit",
+      "released": null
+    },
+    {
+      "name": "Lash",
+      "role": "Assassin",
+      "released": null
+    },
+    {
+      "name": "McGinnis",
+      "role": "Spirit",
+      "released": null
+    },
+    {
+      "name": "Mina",
+      "role": "Spirit",
+      "released": "2025-08-18"
+    },
+    {
+      "name": "Mirage",
+      "role": "Assassin",
+      "released": "2024-09-26"
+    },
+    {
+      "name": "Mo & Krill",
+      "role": "Brawler",
+      "released": null
+    },
+    {
+      "name": "Nurse Harrow",
+      "role": "Support/Utility",
+      "released": "2026-10-20"
+    },
+    {
+      "name": "Paige",
+      "role": "Support/Utility",
+      "released": "2025-08-25"
+    },
+    {
+      "name": "Paradox",
+      "role": "Gun Carry",
+      "released": null
+    },
+    {
+      "name": "Pocket",
+      "role": "Assassin",
+      "released": null
+    },
+    {
+      "name": "Rat King",
+      "role": "Brawler",
+      "released": "2026-10-02"
+    },
+    {
+      "name": "Rem",
+      "role": "Support/Utility",
+      "released": "2026-01-26"
+    },
+    {
+      "name": "Seven",
+      "role": "Spirit",
+      "released": null
+    },
+    {
+      "name": "Shiv",
+      "role": "Brawler",
+      "released": "2024-08-15"
+    },
+    {
+      "name": "Silver",
+      "role": "Brawler",
+      "released": "2026-02-02"
+    },
+    {
+      "name": "Sinclair",
+      "role": "Spirit",
+      "released": "2025-01-17"
+    },
+    {
+      "name": "Solomon",
+      "role": "Spirit",
+      "released": "2026-10-09"
+    },
+    {
+      "name": "The Doorman",
+      "role": "Spirit",
+      "released": "2025-08-22"
+    },
+    {
+      "name": "Venator",
+      "role": "Gun Carry",
+      "released": "2026-02-05"
+    },
+    {
+      "name": "Victor",
+      "role": "Brawler",
+      "released": "2025-08-29"
+    },
+    {
+      "name": "Vindicta",
+      "role": "Gun Carry",
+      "released": null
+    },
+    {
+      "name": "Viscous",
+      "role": "Brawler",
+      "released": "2024-08-01"
+    },
+    {
+      "name": "Vyper",
+      "role": "Assassin",
+      "released": "2025-01-17"
+    },
+    {
+      "name": "Warden",
+      "role": "Brawler",
+      "released": null
+    },
+    {
+      "name": "Wraith",
+      "role": "Gun Carry",
+      "released": null
+    },
+    {
+      "name": "Yamato",
+      "role": "Assassin",
+      "released": null
+    },
+    {
+      "name": "Baba",
+      "role": "Spirit",
+      "released": "2026-10-06"
+    },
+    {
+      "name": "Violet",
+      "role": "Spirit",
+      "released": "2026-10-16"
+    }
+  ],
+  "latest_patch": {
+    "version": "11-04-2026",
+    "date": "2026-11-04",
+    "title": "Minor Update - 11-04-2026",
+    "url": "https://store.steampowered.com/news/app/1422450/view/680766308468391944",
+    "summary": "A short follow-up to the large Halloween 2026 gameplay update (Oct 30), focused almost entirely on the six 'Meet the Locals' heroes added in October. The only item change makes stacked Healbane fall off harder: two stacks now reach 54.7% instead of 57.8%, and four stacks reach 72% instead of 82.2%. On the hero side, the outliers come down (Celeste, Deadman Danny and Baba are nerfed). Heroes hit too hard on Oct 30 get some power back (Rat King, Nurse Harrow), and Apollo and Mo & Krill get targeted buffs. One day later (Nov 5), Ranked Beta Season 2 started with a soft rank reset, 4 hero bans per match (up from 3), 350 rank points per match (up from 300) and fewer rank-loss shields. No map or objective changes ship in this patch.",
+    "meta_impact": "The patch keeps going after the Oct 30 theme of reining in sustain and burst from the newest heroes. Celeste loses lockdown on two fronts: the T3 Dazzling Trick silence is cut from +1.25s to +0.75s, and Shining Wonder now slows less, deals less T2 damage and has a longer cooldown. Her ultimate is less of an automatic teamfight-winner, so wombo-combo spirit lineups built around her bounce ult lose some reliability. Deadman Danny's Close The Deal execute bonus drops from +75% to +55%, and his Chimera heal-on-hit and Strix Salvo scaling also fall. That pushes him away from the 'dive, jetpack-heal, execute' loop toward more patient poke. Healbane's sharper diminishing returns mean teams can no longer stack several copies for near-total heal shutdown. Stacking more than one copy is now worse value, which slightly favors sustain heroes such as Nurse Harrow, Rem and Mo & Krill.\n\nThe main winners are frontline and dive brawlers. Mo & Krill get more Scorn healing, a bigger Burrow radius, a stronger Sand Blast slow and more health per Combo kill. Rat King's ultimate partly recovers from the Oct 30 nerfs. Apollo's Riposte now disarms and strips existing parries, so melee duels and parry play swing his way. In ranked, the jump from 3 to 4 bans per match (Season 2, Nov 5) means the October heroes, which became bannable on Oct 30, will be banned often. Expect drafts to lean on older, well-understood carries and brawlers while the new kits settle. Baba, the strongest of the October releases, also takes a multi-part nerf that trims both her survivability and her melee snowball.",
+    "changes": [
+      {
+        "character": "Apollo",
+        "type": "buff",
+        "details": [
+          "Riposte: Pommel Hit now also disarms the target",
+          "Riposte: Pommel Hit now ends any parry the target already has active",
+          "Riposte: T2 duration bonus increased from +0.6s to +0.7s",
+          "Itani Lo Sahn: T3 bonus damage increased from +50% to +60%"
+        ],
+        "playstyle_impact": "Riposte now works as a hard answer to melee and parry-heavy opponents. A successful counter both disarms the target and cancels their parry, so Apollo can start a melee exchange knowing the enemy can't parry back right away. Players should bait out melee commits and then punish them, and keep levelling Itani Lo Sahn to T3, where the extra burst rewards finishing an engage.",
+        "meta_impact": "Apollo gets stronger in brawler-heavy lobbies and against opponents who rely on parrying his melee. He looks better as a backline-diving assassin than he did after his spring nerfs."
+      },
+      {
+        "character": "Celeste",
+        "type": "nerf",
+        "details": [
+          "Dazzling Trick: T3 silence duration reduced from +1.25s to +0.75s",
+          "Radiant Daggers: cast range reduced from 30m to 25m (moved to T2)",
+          "Radiant Daggers: Spirit Amp per stack reduced from +7% to +6% (moved to T3)",
+          "Shining Wonder: movement slow reduced from -32% to -28%",
+          "Shining Wonder: cooldown increased from 160s to 170s",
+          "Shining Wonder: bounce range reduced from 15.5m to 15m",
+          "Shining Wonder: T1 move-speed slow reduced from -16% to -14%",
+          "Shining Wonder: T2 bonus damage reduced from +90 to +80"
+        ],
+        "playstyle_impact": "Celeste has less lockdown, so she can't count on a long silence followed by a guaranteed bouncing ult. Radiant Daggers also has a shorter cast range and less spirit amp per stack. She has to set up kills with her team instead of chaining them herself. Shining Wonder comes up less often and is easier to walk out of, so save it for clumped fights rather than using it on cooldown.",
+        "meta_impact": "This is Celeste's latest in a long run of nerfs since August, which pushes her further from must-pick or must-ban status. She now fits as a combo piece next to other crowd control rather than as a standalone teamfight win condition."
+      },
+      {
+        "character": "Deadman Danny",
+        "type": "nerf",
+        "details": [
+          "Close The Deal: bonus damage against targets under half health reduced from +75% to +55%",
+          "Strix Salvo: spirit scaling reduced by 8%",
+          "Chimera Mk1: T2 heal on hit reduced from 150 to 125",
+          "Chimera Mk1: T2 heal spirit scaling reduced from 2.0 to 1.7"
+        ],
+        "playstyle_impact": "Danny's execute window is weaker, so diving low-health targets with the jetpack and finishing them with Close The Deal is less reliable. The smaller Chimera heal means he can't sustain through a commit as easily. He should poke from range with charged shots and Strix Salvo first and only go in once a target is already low.",
+        "meta_impact": "This partly reverses the large Oct 14 buff package (which raised Close The Deal from +50% to +75%) after he overperformed. He remains a viable gun carry with a high skill ceiling but is less of a snowball pick."
+      },
+      {
+        "character": "Mo & Krill",
+        "type": "buff",
+        "details": [
+          "Scorn: healing from heroes increased from 1.2x to 1.3x",
+          "Burrow: damage radius increased by 0.5m",
+          "Sand Blast: T2 now applies -28% movement slow and -28% dash-distance slow (was -24% / -26%)",
+          "Combo: health gained per kill increased from 40 to 50"
+        ],
+        "playstyle_impact": "Mo & Krill get better at sustained brawling. Scorn heals more off heroes, Burrow catches more targets on the way in, and a stronger Sand Blast slow keeps enemies inside Combo range. Engage with Burrow, follow with Sand Blast, then use Combo on a priority target, and keep Scorn running for sustain through the fight.",
+        "meta_impact": "This offsets part of the Oct 30 spirit-scaling cut and leaves them as a steady frontline initiator. They pair well with burst-damage carries who can follow up on a Combo pick."
+      },
+      {
+        "character": "Nurse Harrow",
+        "type": "buff",
+        "details": [
+          "Bullet damage increased by 8%",
+          "Lurking Terrors: vertical detection angle increased from 50% to 65%",
+          "Lurking Terrors: fear build-up time reduced from 2s to 1.75s"
+        ],
+        "playstyle_impact": "Part of Nurse's gun damage comes back after the Oct 30 nerf (-10% base), so she can trade in lane again instead of only healing with needles. Lurking Terrors applies fear faster and from steeper angles, so playing from high ground above enemies works again as a way to set up fear.",
+        "meta_impact": "This is a partial rollback after a heavy Oct 30 nerf. She remains a sustain-focused support whose healing is weak into Healbane and other anti-heal, but she is now viable again in coordinated lineups."
+      },
+      {
+        "character": "Rat King",
+        "type": "buff",
+        "details": [
+          "Bullet damage increased from 5.7 to 5.8",
+          "Ammo increased from 24 to 26",
+          "Scrap Grenade: minimum fuse extension when the grenade is meleed reduced from 0.4s to 0.25s",
+          "Rule, Ratannia!: bonus move speed increased from +3m to +4m",
+          "Rule, Ratannia!: T1 now also reduces cooldown by 25s"
+        ],
+        "playstyle_impact": "Rule, Ratannia! becomes a usable engage tool again. Taking T1 brings the cooldown down from 180s, and the extra move speed helps Rat King reach the backline. Meleed Scrap Grenades go off sooner, which makes the melee-redirect combo harder to escape.",
+        "meta_impact": "This is a modest recovery after Rat King was nerfed hard on Oct 5 and Oct 30. He is a mid-tier brawler for comps that want a flag-based area denial engage."
+      },
+      {
+        "character": "Baba",
+        "type": "nerf",
+        "details": [
+          "Spirit resist scaling reduced from 0.7 to 0.5",
+          "Melee damage per boon reduced by 10%",
+          "Baba's Brew cooldown increased",
+          "Granny Long Legs resist reduced from 30% to 25%"
+        ],
+        "playstyle_impact": "Baba can no longer face-tank spirit damage while stacking boons, so she has to pick her melee engages more carefully and lean on Baba's Brew timing rather than trading freely in lane.",
+        "meta_impact": "Still a strong pick, but the nerfs plus the new 4-ban format make her less of a must-ban; expect her win rate to drift toward the pack as players stop over-investing in melee boons."
+      }
+    ]
+  },
+  "patch_history": [
+    {
+      "version": "11-04-2026",
+      "date": "2026-11-04",
+      "title": "Minor Update - 11-04-2026",
+      "url": "https://store.steampowered.com/news/app/1422450/view/680766308468391944",
+      "changes": {
+        "Apollo": "buff",
+        "Celeste": "nerf",
+        "Deadman Danny": "nerf",
+        "Mo & Krill": "buff",
+        "Nurse Harrow": "buff",
+        "Rat King": "buff",
+        "Baba": "nerf"
+      }
+    },
+    {
+      "version": "10-30-2026",
+      "date": "2026-10-30",
+      "title": "Halloween 2026 + Gameplay Update",
+      "url": "https://store.steampowered.com/news/app/1422450/view/680765564125186045",
+      "changes": {
+        "Abrams": "buff",
+        "Apollo": "buff",
+        "Billy": "buff",
+        "Calico": "buff",
+        "Celeste": "nerf",
+        "Deadman Danny": "nerf",
+        "The Doorman": "buff",
+        "Drifter": "buff",
+        "Graves": "nerf",
+        "Grey Talon": "buff",
+        "Infernus": "buff",
+        "Kelvin": "buff",
+        "Lady Geist": "buff",
+        "Lash": "buff",
+        "McGinnis": "buff",
+        "Mirage": "rework",
+        "Mo & Krill": "nerf",
+        "Nurse Harrow": "nerf",
+        "Paige": "adjustment",
+        "Paradox": "buff",
+        "Rat King": "nerf",
+        "Seven": "buff",
+        "Shiv": "adjustment",
+        "Silver": "buff",
+        "Solomon": "adjustment",
+        "Venator": "adjustment",
+        "Victor": "buff",
+        "Viscous": "buff",
+        "Warden": "buff",
+        "Wraith": "nerf",
+        "Yamato": "nerf",
+        "Baba": "nerf",
+        "Violet": "nerf"
+      }
+    },
+    {
+      "version": "10-20-2026",
+      "date": "2026-10-20",
+      "title": "Shh... This Won't Hurt a Bit.",
+      "url": "https://store.steampowered.com/news/app/1422450/view/669505296465396778",
+      "changes": {
+        "Nurse Harrow": "new"
+      }
+    },
+    {
+      "version": "10-16-2026",
+      "date": "2026-10-16",
+      "title": "Paint the Town",
+      "url": null,
+      "changes": {
+        "Violet": "new"
+      }
+    },
+    {
+      "version": "10-14-2026",
+      "date": "2026-10-14",
+      "title": "Minor Update - 10-14-2026",
+      "url": "https://store.steampowered.com/news/app/1422450/view/669505296465396213",
+      "changes": {
+        "Deadman Danny": "buff",
+        "Baba": "nerf"
+      }
+    },
+    {
+      "version": "10-13-2026",
+      "date": "2026-10-13",
+      "title": "Fairfax Industries Employee Spotlight",
+      "url": "https://store.steampowered.com/news/app/1422450/view/703281660030880788",
+      "changes": {
+        "Deadman Danny": "new"
+      }
+    },
+    {
+      "version": "10-09-2026",
+      "date": "2026-10-09",
+      "title": "Make Your Move.",
+      "url": "https://store.steampowered.com/news/app/1422450/view/703281660030879519",
+      "changes": {
+        "Solomon": "new"
+      }
+    },
+    {
+      "version": "10-06-2026",
+      "date": "2026-10-06",
+      "title": "Mind the Birds!",
+      "url": null,
+      "changes": {
+        "Baba": "new"
+      }
+    },
+    {
+      "version": "10-05-2026",
+      "date": "2026-10-05",
+      "title": "Minor Update - 10-05-2026",
+      "url": "https://store.steampowered.com/news/app/1422450/view/703281025618282632",
+      "changes": {
+        "Rat King": "nerf",
+        "Sinclair": "nerf"
+      }
+    },
+    {
+      "version": "10-02-2026",
+      "date": "2026-10-02",
+      "title": "Listen up, Crumbums! Your King is here.",
+      "url": "https://store.steampowered.com/news/app/1422450/view/703281025618281704",
+      "changes": {
+        "Rat King": "new"
+      }
+    },
+    {
+      "version": "09-29-2026",
+      "date": "2026-09-29",
+      "title": "City Never Sleeps",
+      "url": "https://store.steampowered.com/news/app/1422450/view/694273194214819790",
+      "changes": {}
+    },
+    {
+      "version": "09-16-2026",
+      "date": "2026-09-16",
+      "title": "Minor Update - 09-16-2026",
+      "url": "https://store.steampowered.com/news/app/1422450/view/698776157349216434",
+      "changes": {
+        "Abrams": "adjustment",
+        "Celeste": "nerf",
+        "Graves": "buff",
+        "Haze": "buff",
+        "Holliday": "buff",
+        "Ivy": "nerf",
+        "Kelvin": "buff",
+        "Lady Geist": "buff",
+        "Lash": "adjustment",
+        "Paige": "buff",
+        "Paradox": "nerf",
+        "Shiv": "buff",
+        "Silver": "buff",
+        "Venator": "buff",
+        "Viscous": "nerf",
+        "Vyper": "nerf",
+        "Warden": "nerf",
+        "Wraith": "nerf",
+        "Yamato": "buff"
+      }
+    },
+    {
+      "version": "08-22-2026",
+      "date": "2026-08-22",
+      "title": "Minor Update - 08-22-2026",
+      "url": "https://store.steampowered.com/news/app/1422450/view/676255623445218601",
+      "changes": {
+        "Celeste": "nerf"
+      }
+    },
+    {
+      "version": "08-12-2026",
+      "date": "2026-08-12",
+      "title": "Minor Update - 08-12-2026",
+      "url": "https://store.steampowered.com/news/app/1422450/view/708906085669405228",
+      "changes": {
+        "Apollo": "buff",
+        "Billy": "nerf",
+        "The Doorman": "nerf",
+        "Drifter": "nerf",
+        "Holliday": "adjustment",
+        "Ivy": "nerf",
+        "Lash": "nerf",
+        "McGinnis": "nerf",
+        "Paige": "buff",
+        "Seven": "buff",
+        "Vindicta": "nerf",
+        "Vyper": "buff",
+        "Wraith": "nerf"
+      }
+    },
+    {
+      "version": "07-28-2026",
+      "date": "2026-07-28",
+      "title": "Minor Update - 07-28-2026",
+      "url": "https://store.steampowered.com/news/app/1422450/view/680756685198855508",
+      "changes": {
+        "Apollo": "buff",
+        "Billy": "nerf",
+        "Calico": "nerf",
+        "Celeste": "buff",
+        "The Doorman": "nerf",
+        "Drifter": "nerf",
+        "Dynamo": "buff",
+        "Haze": "nerf",
+        "Ivy": "nerf",
+        "Kelvin": "buff",
+        "Lady Geist": "adjustment",
+        "Mina": "buff",
+        "Mirage": "nerf",
+        "Mo & Krill": "buff",
+        "Paige": "buff",
+        "Pocket": "nerf",
+        "Shiv": "nerf",
+        "Silver": "nerf",
+        "Venator": "adjustment",
+        "Viscous": "adjustment",
+        "Yamato": "nerf"
+      }
+    },
+    {
+      "version": "07-09-2026",
+      "date": "2026-07-09",
+      "title": "Minor Update - 07-09-2026",
+      "url": "https://store.steampowered.com/news/app/1422450/view/688635449342696590",
+      "changes": {
+        "Billy": "nerf",
+        "The Doorman": "nerf",
+        "Drifter": "nerf",
+        "Graves": "buff",
+        "Haze": "adjustment",
+        "Holliday": "nerf",
+        "Mirage": "adjustment",
+        "Pocket": "nerf",
+        "Shiv": "nerf",
+        "Silver": "buff",
+        "Victor": "buff",
+        "Viscous": "nerf",
+        "Yamato": "nerf"
+      }
+    },
+    {
+      "version": "07-01-2026",
+      "date": "2026-07-01",
+      "title": "Minor Update - 07-01-2026",
+      "url": "https://store.steampowered.com/news/app/1422450/view/688635449342693095",
+      "changes": {
+        "Shiv": "buff"
+      }
+    },
+    {
+      "version": "06-30-2026",
+      "date": "2026-06-30",
+      "title": "Minor Update - 06-30-2026",
+      "url": "https://store.steampowered.com/news/app/1422450/view/688635449342692003",
+      "changes": {
+        "Abrams": "nerf",
+        "Apollo": "buff",
+        "Billy": "nerf",
+        "Celeste": "buff",
+        "The Doorman": "nerf",
+        "Drifter": "buff",
+        "Dynamo": "buff",
+        "Grey Talon": "nerf",
+        "Holliday": "nerf",
+        "Haze": "buff",
+        "Ivy": "buff",
+        "Lash": "buff",
+        "Mina": "buff",
+        "Mo & Krill": "buff",
+        "Paige": "buff",
+        "Paradox": "buff",
+        "Pocket": "nerf",
+        "Rem": "nerf",
+        "Seven": "buff",
+        "Shiv": "buff",
+        "Vindicta": "buff",
+        "Viscous": "buff",
+        "Vyper": "buff",
+        "Warden": "buff"
+      }
+    },
+    {
+      "version": "06-12-2026",
+      "date": "2026-06-12",
+      "title": "Balance update (06-12-2026)",
+      "url": null,
+      "changes": {
+        "Shiv": "buff"
+      }
+    },
+    {
+      "version": "06-11-2026",
+      "date": "2026-06-11",
+      "title": "Minor Update - 06-11-2026",
+      "url": "https://store.steampowered.com/news/app/1422450/view/667242081733838158",
+      "changes": {
+        "Apollo": "buff",
+        "Bebop": "buff",
+        "Calico": "buff",
+        "The Doorman": "nerf",
+        "Graves": "nerf",
+        "Grey Talon": "nerf",
+        "Holliday": "adjustment",
+        "Infernus": "buff",
+        "Ivy": "nerf",
+        "McGinnis": "nerf",
+        "Paige": "buff",
+        "Pocket": "nerf",
+        "Seven": "nerf",
+        "Shiv": "nerf",
+        "Silver": "nerf",
+        "Viscous": "buff",
+        "Victor": "adjustment",
+        "Vindicta": "buff",
+        "Warden": "adjustment"
+      }
+    },
+    {
+      "version": "05-31-2026",
+      "date": "2026-05-31",
+      "title": "Minor Update - 05-31-2026",
+      "url": "https://store.steampowered.com/news/app/1422450/view/668366713382766678",
+      "changes": {
+        "Apollo": "buff",
+        "Graves": "nerf",
+        "McGinnis": "nerf",
+        "Pocket": "nerf",
+        "Silver": "nerf",
+        "Victor": "nerf",
+        "Yamato": "nerf"
+      }
+    },
+    {
+      "version": "05-22-2026",
+      "date": "2026-05-22",
+      "title": "Gameplay Update - 05-22-2026",
+      "url": "https://store.steampowered.com/news/app/1422450/view/670617878982034052",
+      "changes": {
+        "Abrams": "buff",
+        "Apollo": "nerf",
+        "Bebop": "nerf",
+        "Billy": "adjustment",
+        "Calico": "adjustment",
+        "Celeste": "buff",
+        "The Doorman": "nerf",
+        "Drifter": "buff",
+        "Dynamo": "nerf",
+        "Graves": "buff",
+        "Grey Talon": "buff",
+        "Haze": "buff",
+        "Holliday": "buff",
+        "Infernus": "buff",
+        "Kelvin": "nerf",
+        "Lash": "buff",
+        "McGinnis": "buff",
+        "Mina": "adjustment",
+        "Mo & Krill": "buff",
+        "Paige": "buff",
+        "Paradox": "buff",
+        "Pocket": "nerf",
+        "Rem": "buff",
+        "Seven": "adjustment",
+        "Shiv": "adjustment",
+        "Silver": "adjustment",
+        "Venator": "buff",
+        "Victor": "nerf",
+        "Viscous": "buff",
+        "Vyper": "buff",
+        "Warden": "nerf",
+        "Yamato": "buff"
+      }
+    },
+    {
+      "version": "04-30-2026",
+      "date": "2026-04-30",
+      "title": "Gameplay Update - 04-30-2026",
+      "url": "https://store.steampowered.com/news/app/1422450/view/664986477286916766",
+      "changes": {
+        "Lady Geist": "nerf",
+        "Abrams": "nerf",
+        "Apollo": "nerf",
+        "Billy": "buff",
+        "Celeste": "buff",
+        "Drifter": "buff",
+        "Dynamo": "nerf",
+        "Haze": "buff",
+        "Holliday": "buff",
+        "Infernus": "nerf",
+        "McGinnis": "buff",
+        "Mina": "nerf",
+        "Mirage": "nerf",
+        "Mo & Krill": "buff",
+        "Paige": "buff",
+        "Paradox": "buff",
+        "Pocket": "buff",
+        "Rem": "buff",
+        "Shiv": "nerf",
+        "Silver": "nerf",
+        "Venator": "nerf",
+        "Victor": "buff",
+        "Vyper": "nerf"
+      }
+    },
+    {
+      "version": "04-10-2026",
+      "date": "2026-04-10",
+      "title": "04-10-2026 Update",
+      "url": "https://forums.playdeadlock.com/threads/04-10-2026-update.125825/",
+      "changes": {
+        "Bebop": "nerf",
+        "Billy": "adjustment",
+        "Celeste": "nerf",
+        "The Doorman": "nerf",
+        "Dynamo": "nerf",
+        "Grey Talon": "buff",
+        "Haze": "buff",
+        "Holliday": "buff",
+        "Kelvin": "nerf",
+        "Lady Geist": "nerf",
+        "McGinnis": "buff",
+        "Mirage": "nerf",
+        "Paradox": "buff",
+        "Rem": "buff",
+        "Venator": "adjustment",
+        "Victor": "buff",
+        "Vyper": "buff"
+      }
+    },
+    {
+      "version": "03-30-2026",
+      "date": "2026-03-30",
+      "title": "Balance update (03-30-2026)",
+      "url": "https://forums.playdeadlock.com/threads/03-25-2026-update.121766/post-232903",
+      "changes": {
+        "Graves": "nerf"
+      }
+    },
+    {
+      "version": "03-25-2026",
+      "date": "2026-03-25",
+      "title": "03-25-2026 Update",
+      "url": "https://forums.playdeadlock.com/threads/03-25-2026-update.121766/",
+      "changes": {
+        "Bebop": "buff",
+        "Calico": "buff",
+        "Celeste": "nerf",
+        "The Doorman": "buff",
+        "Graves": "nerf",
+        "Holliday": "buff",
+        "Infernus": "buff",
+        "Kelvin": "nerf",
+        "Lady Geist": "nerf",
+        "McGinnis": "buff",
+        "Mirage": "nerf",
+        "Rem": "buff",
+        "Silver": "nerf",
+        "Venator": "nerf",
+        "Victor": "nerf"
+      }
+    },
+    {
+      "version": "03-21-2026",
+      "date": "2026-03-21",
+      "title": "03-21-2026 Update",
+      "url": "https://forums.playdeadlock.com/threads/03-06-2026-update.114328/post-226950",
+      "changes": {
+        "Abrams": "buff",
+        "Apollo": "buff",
+        "Billy": "adjustment",
+        "Calico": "nerf",
+        "Celeste": "adjustment",
+        "The Doorman": "nerf",
+        "Dynamo": "buff",
+        "Graves": "buff",
+        "Infernus": "buff",
+        "Ivy": "nerf",
+        "Kelvin": "buff",
+        "McGinnis": "adjustment",
+        "Mina": "buff",
+        "Mirage": "adjustment",
+        "Mo & Krill": "nerf",
+        "Shiv": "nerf",
+        "Silver": "buff",
+        "Victor": "adjustment",
+        "Viscous": "nerf",
+        "Wraith": "nerf"
+      }
+    },
+    {
+      "version": "03-10-2026",
+      "date": "2026-03-10",
+      "title": "Balance update (03-10-2026)",
+      "url": "https://forums.playdeadlock.com/threads/03-06-2026-update.114328/post-220287",
+      "changes": {
+        "Apollo": "buff",
+        "Calico": "nerf",
+        "Celeste": "nerf",
+        "The Doorman": "buff",
+        "Ivy": "nerf",
+        "Lash": "buff",
+        "McGinnis": "nerf",
+        "Mirage": "buff",
+        "Mo & Krill": "nerf",
+        "Paradox": "adjustment",
+        "Pocket": "adjustment",
+        "Seven": "buff",
+        "Shiv": "buff",
+        "Silver": "buff",
+        "Victor": "nerf",
+        "Viscous": "nerf",
+        "Warden": "adjustment",
+        "Wraith": "nerf"
+      }
+    },
+    {
+      "version": "03-07-2026",
+      "date": "2026-03-07",
+      "title": "Balance update (03-07-2026)",
+      "url": "https://forums.playdeadlock.com/threads/03-06-2026-update.114328/post-217955",
+      "changes": {
+        "The Doorman": "nerf",
+        "Ivy": "nerf",
+        "Paradox": "buff",
+        "Silver": "buff",
+        "Viscous": "nerf",
+        "Wraith": "nerf"
+      }
+    },
+    {
+      "version": "03-06-2026",
+      "date": "2026-03-06",
+      "title": "Gameplay Update - 03-06-2026",
+      "url": "https://store.steampowered.com/news/app/1422450/view/519740319207522795",
+      "changes": {
+        "Abrams": "adjustment",
+        "Apollo": "nerf",
+        "Bebop": "buff",
+        "Billy": "nerf",
+        "Calico": "adjustment",
+        "Celeste": "nerf",
+        "The Doorman": "buff",
+        "Drifter": "nerf",
+        "Dynamo": "adjustment",
+        "Graves": "adjustment",
+        "Haze": "adjustment",
+        "Infernus": "adjustment",
+        "Ivy": "adjustment",
+        "Kelvin": "adjustment",
+        "Lady Geist": "buff",
+        "Lash": "adjustment",
+        "McGinnis": "adjustment",
+        "Mina": "nerf",
+        "Mirage": "adjustment",
+        "Mo & Krill": "adjustment",
+        "Paige": "adjustment",
+        "Paradox": "adjustment",
+        "Pocket": "buff",
+        "Rem": "adjustment",
+        "Seven": "adjustment",
+        "Shiv": "adjustment",
+        "Silver": "nerf",
+        "Victor": "adjustment",
+        "Vindicta": "adjustment",
+        "Viscous": "adjustment",
+        "Warden": "adjustment",
+        "Wraith": "adjustment",
+        "Yamato": "adjustment"
+      }
+    },
+    {
+      "version": "02-17-2026",
+      "date": "2026-02-17",
+      "title": "Balance update (02-17-2026)",
+      "url": "https://forums.playdeadlock.com/threads/01-30-2026-update.102822/post-207811",
+      "changes": {
+        "Apollo": "nerf"
+      }
+    },
+    {
+      "version": "02-13-2026",
+      "date": "2026-02-13",
+      "title": "Balance update (02-13-2026)",
+      "url": "https://forums.playdeadlock.com/threads/01-30-2026-update.102822/post-205106",
+      "changes": {
+        "Apollo": "buff",
+        "Celeste": "adjustment"
+      }
+    },
+    {
+      "version": "02-12-2026",
+      "date": "2026-02-12",
+      "title": "Apollo - A Cut Above",
+      "url": "https://store.steampowered.com/news/app/1422450/view/742666698308452499",
+      "changes": {
+        "Apollo": "new",
+        "Celeste": "nerf",
+        "Graves": "adjustment",
+        "Rem": "buff",
+        "Silver": "buff",
+        "Venator": "buff"
+      }
+    },
+    {
+      "version": "02-09-2026",
+      "date": "2026-02-09",
+      "title": "Introducing The Dazzling Celeste",
+      "url": "https://store.steampowered.com/news/app/1422450/view/530996781696156969",
+      "changes": {
+        "Celeste": "new"
+      }
+    },
+    {
+      "version": "02-05-2026",
+      "date": "2026-02-05",
+      "title": "Some Are Merciful, The Venator Is Not",
+      "url": "https://store.steampowered.com/news/app/1422450/view/530996781696156190",
+      "changes": {
+        "Venator": "new"
+      }
+    },
+    {
+      "version": "02-04-2026",
+      "date": "2026-02-04",
+      "title": "Balance update (02-04-2026)",
+      "url": "https://forums.playdeadlock.com/threads/01-30-2026-update.102822/post-198653",
+      "changes": {
+        "Bebop": "nerf",
+        "Graves": "adjustment",
+        "Silver": "rework"
+      }
+    },
+    {
+      "version": "02-02-2026",
+      "date": "2026-02-02",
+      "title": "The Curse Beckons for Silver",
+      "url": "https://store.steampowered.com/news/app/1422450/view/515233548718835346",
+      "changes": {
+        "Silver": "new",
+        "Graves": "nerf",
+        "Bebop": "buff",
+        "Shiv": "nerf",
+        "Rem": "buff"
+      }
+    },
+    {
+      "version": "01-30-2026",
+      "date": "2026-01-30",
+      "title": "01-30-2026 Update",
+      "url": "https://forums.playdeadlock.com/threads/01-30-2026-update.102822/",
+      "changes": {
+        "Abrams": "buff",
+        "Bebop": "adjustment",
+        "Billy": "adjustment",
+        "Drifter": "adjustment",
+        "Grey Talon": "buff",
+        "Ivy": "nerf",
+        "Kelvin": "buff",
+        "Lash": "nerf",
+        "Mina": "nerf",
+        "Paige": "nerf",
+        "Shiv": "nerf",
+        "Victor": "nerf",
+        "Viscous": "nerf",
+        "Vyper": "adjustment",
+        "Vindicta": "adjustment",
+        "Warden": "nerf",
+        "McGinnis": "nerf",
+        "Seven": "nerf",
+        "Dynamo": "nerf",
+        "Graves": "nerf",
+        "Holliday": "buff",
+        "Mirage": "buff",
+        "Calico": "buff"
+      }
+    },
+    {
+      "version": "01-29-2026",
+      "date": "2026-01-29",
+      "title": "Graves Prefers The Dead",
+      "url": "https://store.steampowered.com/news/app/1422450/view/515233548718834055",
+      "changes": {
+        "Graves": "new"
+      }
+    },
+    {
+      "version": "01-26-2026",
+      "date": "2026-01-26",
+      "title": "Rem Enters The City That Never Sleeps",
+      "url": "https://store.steampowered.com/news/app/1422450/view/519736513892715706",
+      "changes": {
+        "Rem": "new"
+      }
+    },
+    {
+      "version": "01-22-2026",
+      "date": "2026-01-22",
+      "title": "Old Gods, New Blood",
+      "url": "https://store.steampowered.com/news/app/1422450/view/519736513892714181",
+      "changes": {}
+    },
+    {
+      "version": "12-30-2025",
+      "date": "2025-12-30",
+      "title": "Balance update (12-30-2025)",
+      "url": "https://forums.playdeadlock.com/threads/12-29-2025-update.95233/post-180763",
+      "changes": {
+        "Billy": "nerf",
+        "Lady Geist": "nerf",
+        "McGinnis": "adjustment",
+        "Bebop": "buff"
+      }
+    },
+    {
+      "version": "12-29-2025",
+      "date": "2025-12-29",
+      "title": "12-29-2025 Update",
+      "url": "https://forums.playdeadlock.com/threads/12-29-2025-update.95233/",
+      "changes": {
+        "Bebop": "adjustment",
+        "Grey Talon": "buff",
+        "Holliday": "buff",
+        "Ivy": "buff",
+        "Kelvin": "buff",
+        "Mo & Krill": "buff",
+        "Paradox": "buff",
+        "Seven": "buff",
+        "Sinclair": "buff",
+        "Yamato": "buff"
+      }
+    },
+    {
+      "version": "12-16-2025",
+      "date": "2025-12-16",
+      "title": "12-16-2025 Update",
+      "url": "https://forums.playdeadlock.com/threads/12-16-2025-update.93983/",
+      "changes": {
+        "Wraith": "nerf",
+        "Billy": "nerf",
+        "Dynamo": "nerf",
+        "Lady Geist": "nerf",
+        "Mirage": "nerf",
+        "Shiv": "nerf",
+        "Vindicta": "nerf"
+      }
+    },
+    {
+      "version": "12-03-2025",
+      "date": "2025-12-03",
+      "title": "Balance update (12-03-2025)",
+      "url": "https://forums.playdeadlock.com/threads/11-21-2025-update.90383/post-174987",
+      "changes": {
+        "Billy": "nerf",
+        "Drifter": "nerf",
+        "Dynamo": "nerf",
+        "Infernus": "nerf",
+        "Shiv": "nerf",
+        "Wraith": "nerf"
+      }
+    },
+    {
+      "version": "11-22-2025",
+      "date": "2025-11-22",
+      "title": "Balance update (11-22-2025)",
+      "url": "https://forums.playdeadlock.com/threads/11-21-2025-update.90383/post-171913",
+      "changes": {
+        "Warden": "nerf",
+        "Drifter": "nerf"
+      }
+    },
+    {
+      "version": "11-21-2025",
+      "date": "2025-11-21",
+      "title": "11-21-2025 Update",
+      "url": "https://store.steampowered.com/news/app/1422450/view/608676906483582637",
+      "changes": {
+        "Abrams": "buff",
+        "Bebop": "adjustment",
+        "Billy": "buff",
+        "Calico": "adjustment",
+        "The Doorman": "nerf",
+        "Drifter": "buff",
+        "Dynamo": "buff",
+        "Holliday": "nerf",
+        "Infernus": "nerf",
+        "Ivy": "buff",
+        "Kelvin": "nerf",
+        "Lash": "buff",
+        "Lady Geist": "buff",
+        "Mina": "nerf",
+        "McGinnis": "buff",
+        "Mirage": "buff",
+        "Mo & Krill": "nerf",
+        "Paige": "nerf",
+        "Paradox": "nerf",
+        "Pocket": "nerf",
+        "Seven": "buff",
+        "Shiv": "nerf",
+        "Sinclair": "adjustment",
+        "Viscous": "adjustment",
+        "Vyper": "buff",
+        "Warden": "adjustment",
+        "Wraith": "buff",
+        "Yamato": "nerf"
+      }
+    }
+  ]
+}
