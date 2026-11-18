@@ -1,1 +1,1 @@
-{"game":"deadlock","steam_appid":1422450,"metric":"Concurrent players on Steam","sources":["Steam Web API (hourly live readings)"],"daily":[["2026-11-18",176401,180208,3]],"latest":{"time":"2026-11-18T20:06:50Z","players":180208,"steam_rank":5},"updated":"2026-11-18T20:06:50Z"}
+{"game":"deadlock","steam_appid":1422450,"metric":"Concurrent players on Steam","sources":["Steam Web API (hourly live readings)"],"daily":[["2026-11-18",177200,180208,4]],"latest":{"time":"2026-11-18T21:03:20Z","players":179595,"steam_rank":4},"updated":"2026-11-18T21:03:20Z"}
