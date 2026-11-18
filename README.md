@@ -1,8 +1,8 @@
-# Hero Meta Tracker
+# Bunger Based Analytics
 
 A static website that tracks hero shooter statistics: latest patch analysis, concurrent players, and per-hero win and pick rates with patch markers. **Deadlock** is supported today. The site is built so other games can be added later.
 
-**Live site:** https://flacheverett-bit.github.io/HeroTrackerDashboard/
+**Live site:** https://flacheverett-bit.github.io/BungerBasedAnalytics/
 
 ## Pages
 
@@ -10,13 +10,15 @@ A static website that tracks hero shooter statistics: latest patch analysis, con
 |---|---|
 | `index.html` | Game selector (driven by `data/games.json`) |
 | `game.html?game=deadlock` | Latest patch summary, meta impact, per-hero change cards (*how to play it now* and *meta effect*), concurrent-players chart (1 month / 3 months / YTD / 12 months / 3 years) with patch markers, full patch history |
-| `heroes.html?game=deadlock` | Every hero with 30-day win and pick rate. Select a hero to see daily win rate and pick rate charts, patch markers colored by buff, nerf or rework, and a **patch impact table** comparing the 7 days before and after each patch that changed the hero |
+| `heroes.html?game=deadlock` | Every hero with 30-day win and pick rate. Select a hero to see daily win rate and pick rate charts with markers for the patches that changed that hero (colored by buff, nerf or rework), a **patch impact table** (7 days before vs after each patch), **counters & matchups**, and **meta builds** (core items by game phase + the 3 most-played community builds) |
+| `tiers.html?game=deadlock` | **Tier list**: every hero placed in S–F by win rate (fixed bands: S ≥ 54%, A 52–54, B 50–52, C 48–50, D 46–48, F < 46) for the latest patch, last 30 days or last 3 months |
 
 ## Data sources
 
 | Data | Source | Refresh |
 |---|---|---|
 | Hero win and pick rates (daily, ~13 months) | [deadlock-api.com](https://deadlock-api.com) community match data | Daily (GitHub Action) |
+| Matchups, community builds, core items (last 30 days) | deadlock-api.com `hero-counter-stats`, `hero-build-stats`, `builds`, `item-stats` | Daily (GitHub Action) |
 | Concurrent players, live | Steam Web API `ISteamChartsService/GetGamesByConcurrentPlayers` | Hourly (GitHub Action) |
 | Concurrent players, history | SteamDB CSV export (one-time manual import, see below) | Once |
 | Patch summaries and meta analysis | Hand-written in `data/deadlock/patch-notes.curated.json` | When a new patch drops |
@@ -27,13 +29,15 @@ A static website that tracks hero shooter statistics: latest patch analysis, con
 - **Pick rate** = share of tracked matches the hero appeared in. 12 heroes play in each match, so pick rates add up to about 1,200% across all heroes.
 - The 7-day rolling average is **match-weighted**: it sums wins and matches over the window, so low-volume days don't swing the line.
 - Player counts are **Steam only**.
+- **Counters:** a hero's win rate in matches where the other hero is on the enemy team (any lane), compared with that hero's overall win rate. Only matchups with at least 1,000 games are shown.
+- **Core items:** buy % = share of the hero's matches the item was bought in. Items are grouped by average purchase time (early < 10 min, mid 10–25 min, late > 25 min).
 
 ## Run it locally
 
 Install Python 3.10 or newer. There are no packages to install because the pipeline uses only the standard library.
 
 ```powershell
-cd hero-meta-tracker
+cd BungerBasedAnalytics
 python -m http.server 8000
 ```
 
@@ -43,6 +47,7 @@ Then open http://localhost:8000. Opening the HTML files directly with `file://` 
 
 ```powershell
 python pipeline/deadlock_heroes.py     # hero stats (~40 s)
+python pipeline/deadlock_meta.py       # matchups, builds, core items (~1 min)
 python pipeline/patches.py             # rebuild patch markers after editing curated notes
 python pipeline/players.py record      # take one live Steam reading
 ```
@@ -71,7 +76,7 @@ Patches you haven't written up yet still show as grey markers, pulled from the o
 
 ## Put it on GitHub
 
-The repo is [flacheverett-bit/HeroTrackerDashboard](https://github.com/flacheverett-bit/HeroTrackerDashboard), published with GitHub Desktop. Repo settings it depends on:
+The repo is [flacheverett-bit/BungerBasedAnalytics](https://github.com/flacheverett-bit/BungerBasedAnalytics), published with GitHub Desktop. Repo settings it depends on:
 
 1. **Settings → Pages → Deploy from a branch → `main` / root.**
 2. **Settings → Actions → General → Workflow permissions → Read and write.** The data workflows need this to commit updates.

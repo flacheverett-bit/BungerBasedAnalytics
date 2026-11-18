@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 RAW = DATA / "raw"
-USER_AGENT = "hero-meta-tracker/1.0 (student data project)"
+USER_AGENT = "bunger-based-analytics/1.0 (student data project)"
 
 
 def get_json(url: str, retries: int = 3, timeout: int = 120):

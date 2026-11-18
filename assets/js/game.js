@@ -36,10 +36,7 @@
       el("h1", { text: game.name }),
       el("p", { class: "lede" },
         latest ? `Latest patch: ${latest.title || latest.version} (${fmt.date(toMs(latest.date))}). ` : "",
-        latest && latest.url ? el("a", { href: latest.url, target: "_blank", rel: "noopener", text: "Official notes ↗" }) : "")),
-    el("a", { class: "card", href: `heroes.html?game=${gameId}`, style: "text-decoration:none;padding:12px 16px" },
-      el("strong", { text: `${game.character_label} dashboard →` }),
-      el("div", { class: "muted small", text: "Win and pick rates per hero, with patch markers" }))));
+        latest && latest.url ? el("a", { href: latest.url, target: "_blank", rel: "noopener", text: "Official notes ↗" }) : ""))));
 
   /* ---------- latest patch ---------- */
   if (latest) {

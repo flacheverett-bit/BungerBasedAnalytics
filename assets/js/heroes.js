@@ -3,13 +3,14 @@
   const app = document.getElementById("app");
   const gameId = HMT.params.get("game") || "deadlock";
 
-  let game, data, patches;
+  let game, data, patches, meta;
   try {
     game = await HMT.getGame(gameId);
     if (!game) throw new Error(`Unknown game "${gameId}"`);
-    [data, patches] = await Promise.all([
+    [data, patches, meta] = await Promise.all([
       loadJSON(`data/${gameId}/heroes.json`),
       loadJSON(`data/${gameId}/patches.json`).catch(() => ({ markers: [] })),
+      loadJSON(`data/${gameId}/meta.json`).catch(() => null),
     ]);
   } catch (e) {
     HMT.renderTopbar();
@@ -50,13 +51,12 @@
   let hero = bySlug.get(HMT.params.get("hero")) || defaultHero;
   let range = HMT.store.get("heroRange", "3m");
   let smooth = HMT.store.get("heroSmooth", true);
-  let onlyHeroPatches = HMT.store.get("heroOnlyOwn", false);
 
   /* ---------- layout ---------- */
   app.replaceChildren(
     el("div", { class: "page-head" }, el("div", {},
       el("h1", { text: `${game.name} ${label.toLowerCase()}` }),
-      el("p", { class: "lede", text: `Pick a hero to chart daily win rate and pick rate. Dashed markers show patch releases, colored when that patch changed the selected hero.` }))));
+      el("p", { class: "lede", text: `Pick a hero to chart daily win rate and pick rate. Dashed markers show each patch that changed the selected hero.` }))));
 
   const detail = el("section", { class: "card", "aria-live": "polite", "aria-labelledby": "hero-name" });
   const titleBox = el("div", { class: "hero-title" });
@@ -71,15 +71,15 @@
     el("p", { class: "source" }, `Source: `, el("a", { href: data.source_url, target: "_blank", rel: "noopener", text: data.source }),
       `. ${data.pick_rate_definition} Updated ${fmt.date(toMs(data.updated))}.`),
     impactBox);
-  app.append(detail);
+  const matchupSec = el("section", { class: "card section", "aria-labelledby": "matchups-h" });
+  const buildSec = el("section", { class: "card section", "aria-labelledby": "builds-h" });
+  app.append(detail, matchupSec, buildSec);
 
   HMT.rangeControl(controls, { keys: ["1m", "3m", "ytd", "12m"], value: range,
     onChange: (k) => { range = k; HMT.store.set("heroRange", k); drawDetail(); } });
   controls.append(
     el("label", { class: "check" }, el("input", { type: "checkbox", checked: smooth ? true : null,
-      onchange: (e) => { smooth = e.target.checked; HMT.store.set("heroSmooth", smooth); drawDetail(); } }), "7-day rolling average"),
-    el("label", { class: "check" }, el("input", { type: "checkbox", checked: onlyHeroPatches ? true : null,
-      onchange: (e) => { onlyHeroPatches = e.target.checked; HMT.store.set("heroOnlyOwn", onlyHeroPatches); drawDetail(); } }), "Only patches that changed this hero"));
+      onchange: (e) => { smooth = e.target.checked; HMT.store.set("heroSmooth", smooth); drawDetail(); } }), "7-day rolling average"));
 
   /* ---------- hero grid ---------- */
   const gridSec = el("section", { class: "section", "aria-labelledby": "grid-h" });
@@ -139,7 +139,9 @@
     titleBox.replaceChildren(
       el("img", { src: h.card_image || h.image, alt: "" }),
       el("div", {},
-        el("h2", { id: "hero-name", text: h.name }),
+        el("h2", { id: "hero-name", style: "display:flex;gap:10px;align-items:center" }, h.name,
+          HMT.tierBadge(HMT.tierFor(h.wr30)),
+          el("a", { class: "small muted", href: `tiers.html?game=${gameId}`, style: "font-weight:400", text: "30-day tier" })),
         el("p", { class: "muted small", text: [h.role, h.tagline].filter(Boolean).join(" · ") }),
         h.playstyle ? el("p", { class: "small", style: "max-width:80ch;margin-top:4px", text: h.playstyle }) : null));
     canvas.setAttribute("aria-label", `${h.name} daily win rate and pick rate, with patch markers`);
@@ -169,18 +171,16 @@
       tile("Souls per match", fmt.compact(l30.souls), `hero damage ${fmt.compact(l30.hero_damage)}`));
 
     // markers
-    const vis = markers.filter((m) => m.x >= start && m.x <= end + DAY);
-    const markerData = vis
-      .filter((m) => !onlyHeroPatches || heroChange(m))
-      .map((m) => { const t = heroChange(m); return { x: m.x, color: t ? HMT.changeColor(t) : token("--neutral-mark"), emphasis: !!t, m, type: t }; });
+    // Only patches that changed this hero are drawn.
+    const vis = markers.filter((m) => m.x >= start && m.x <= end + DAY && heroChange(m));
+    const markerData = vis.map((m) => { const t = heroChange(m); return { x: m.x, color: HMT.changeColor(t), emphasis: true, m, type: t }; });
 
     legend.replaceChildren(
       el("span", {}, el("span", { class: "key-line", style: `background:${token("--series-1")}` }), "Win rate (top)"),
       el("span", {}, el("span", { class: "key-line", style: `background:${token("--series-2")}` }), "Pick rate (bottom)"),
       ...["buff", "nerf"].map((t) => el("span", {}, el("span", { class: "key-flag", style: `background:${HMT.changeColor(t)}` }), HMT.CHANGE_LABEL[t])),
       el("span", {}, el("span", { class: "key-flag", style: `background:${HMT.changeColor("rework")}` }), "◆ Rework / ★ Release"),
-      el("span", {}, el("span", { class: "key-flag", style: `background:${token("--neutral-mark")}` }), "● Adjusted (mixed)"),
-      onlyHeroPatches ? null : el("span", {}, el("span", { class: "key-flag", style: `background:${token("--neutral-mark")};opacity:.6` }), "Patch, no change to hero"));
+      el("span", {}, el("span", { class: "key-flag", style: `background:${token("--neutral-mark")}` }), "● Adjusted (mixed)"));
 
     const spanDays = (end - start) / DAY;
     const wrVals = wr.map((p) => p.y).filter((v) => v !== null);
@@ -221,6 +221,74 @@
     else chart = new Chart(canvas, { type: "line", data: chartData, options, plugins: [HMT.crosshairPlugin, HMT.patchMarkerPlugin, HMT.refLinePlugin] });
 
     drawImpact(h, vis);
+    drawMatchups(h);
+    drawBuilds(h);
+  }
+
+  /* ---------- matchups ---------- */
+  const heroByName = new Map(data.heroes.map((x) => [x.name, x]));
+  function matchRow(m) {
+    const e = heroByName.get(m.enemy);
+    return el("li", {},
+      e ? el("img", { src: e.image, alt: "", loading: "lazy" }) : el("span"),
+      e ? el("a", { href: `heroes.html?game=${gameId}&hero=${e.slug}`, text: m.enemy,
+        onclick: (ev) => { ev.preventDefault(); select(e); detail.scrollIntoView({ behavior: "smooth", block: "start" }); } })
+        : el("span", { text: m.enemy }),
+      el("span", { class: "num" }, el("b", { text: fmt.pct(m.wr) }), " ", delta(m.delta, ""), el("br"),
+        el("span", { class: "small", text: `${fmt.compact(m.matches)} games` })));
+  }
+  function drawMatchups(h) {
+    const list = meta && meta.matchups && meta.matchups[h.name];
+    matchupSec.replaceChildren(el("div", { class: "section-head" },
+      el("h2", { id: "matchups-h", text: "Counters & matchups" }),
+      el("span", { class: "muted small", text: `${h.name}'s win rate in matches against each hero, last ${meta ? meta.window_days : 30} days. ▲▼ = vs. ${h.name}'s average.` })));
+    if (!list || !list.length) { matchupSec.append(el("p", { class: "muted", text: "No matchup data yet." })); return; }
+    const n = 6;
+    matchupSec.append(el("div", { class: "grid-2" },
+      el("div", {}, el("h3", { text: `Counters to ${h.name}` }),
+        el("p", { class: "muted small", style: "margin:0 0 6px", text: `Heroes ${h.name} struggles against` }),
+        el("ul", { class: "match-list" }, list.slice(0, n).map(matchRow))),
+      el("div", {}, el("h3", { text: `${h.name} counters` }),
+        el("p", { class: "muted small", style: "margin:0 0 6px", text: `Heroes ${h.name} does best against` }),
+        el("ul", { class: "match-list" }, list.slice(-n).reverse().map(matchRow)))));
+  }
+
+  /* ---------- meta builds ---------- */
+  function itemIcon(id) {
+    const it = meta.items[String(id)];
+    if (!it) return null;
+    return el("img", { class: `item-icon slot-${it.slot}`, src: it.image, alt: it.name, title: `${it.name}${it.cost ? ` · ${fmt.int(it.cost)} souls` : ""}`, loading: "lazy" });
+  }
+  function drawBuilds(h) {
+    buildSec.replaceChildren(el("div", { class: "section-head" },
+      el("h2", { id: "builds-h", text: "Meta builds" }),
+      el("span", { class: "muted small", text: `From real matches, last ${meta ? meta.window_days : 30} days` })));
+    if (!meta) { buildSec.append(el("p", { class: "muted", text: "No build data yet." })); return; }
+
+    const phases = meta.core_items[h.name] || [];
+    if (phases.length) {
+      buildSec.append(el("h3", { text: "Core items by game phase" }),
+        el("p", { class: "muted small", style: "margin:0 0 10px", text: `Most-bought items on ${h.name}, grouped by average purchase time. Buy % = share of ${h.name} matches the item was bought in.` }),
+        el("div", { class: "phase-grid" }, phases.map((p) => el("div", { class: "phase" },
+          el("h4", { text: p.phase }),
+          p.items.length ? p.items.map((x) => el("div", { class: "item-row" },
+            itemIcon(x.item),
+            el("span", { text: meta.items[String(x.item)]?.name || "" }),
+            el("span", { class: "num", title: `${fmt.pct(x.wr)} win rate · bought at ${x.buy_min} min on average`, text: `${Math.round(x.buy_rate)}% · ${fmt.pct(x.wr)} WR` })))
+            : el("p", { class: "muted small", text: "No common items." })))),
+        el("p", { class: "source", text: "Late items show higher win rates partly because they're bought in games that are already going well, so compare win rates within a phase, not across phases." }));
+    }
+
+    const builds = meta.builds[h.name] || [];
+    buildSec.append(el("h3", { style: "margin-top:20px", text: "Most-played community builds" }),
+      el("p", { class: "muted small", style: "margin:0 0 10px", text: "In-game builds players actually queued with most, and their win rate. Hover an item for its name and cost." }));
+    if (!builds.length) { buildSec.append(el("p", { class: "muted", text: "No builds with enough games yet." })); return; }
+    builds.forEach((b, i) => buildSec.append(el("div", { class: "build" },
+      el("div", { class: "build-head" },
+        el("strong", { text: `${i + 1}. ${b.name}` }),
+        el("span", { class: "muted small" }, `${fmt.compact(b.matches)} games · `, el("b", { text: `${fmt.pct(b.wr)} WR` }), ` · in-game build ID ${b.id}`)),
+      el("div", { class: "build-cats" }, b.categories.map((c) => el("div", { class: "build-cat" },
+        el("span", { text: c.name }), el("div", { class: "icons" }, c.items.map(itemIcon))))))));
   }
 
   function heroTip(tt, markerData) {
@@ -233,7 +301,7 @@
     markerData.filter((d) => Math.abs(d.x - x) < DAY * 0.75).forEach((d) => {
       node.append(el("div", { class: "tt-patch" },
         el("strong", { text: d.m.title || d.m.version || "Patch" }),
-        el("div", {}, d.type ? HMT.badge(d.type) : el("span", { class: "muted", text: `No change to ${hero.name}` }))));
+        el("div", {}, HMT.badge(d.type))));
     });
     return node;
   }

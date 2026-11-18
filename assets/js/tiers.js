@@ -1,0 +1,95 @@
+(async () => {
+  const { el, loadJSON, fmt, toMs, DAY } = HMT;
+  const app = document.getElementById("app");
+  const gameId = HMT.params.get("game") || "deadlock";
+
+  let game, data, patches;
+  try {
+    game = await HMT.getGame(gameId);
+    if (!game) throw new Error(`Unknown game "${gameId}"`);
+    [data, patches] = await Promise.all([
+      loadJSON(`data/${gameId}/heroes.json`),
+      loadJSON(`data/${gameId}/patches.json`).catch(() => null),
+    ]);
+  } catch (e) {
+    HMT.renderTopbar();
+    return HMT.showError(app, e);
+  }
+  document.title = `${game.name} Tier List`;
+  HMT.renderTopbar({ game, page: "tiers" });
+  HMT.footer();
+
+  const dates = data.dates.map(toMs);
+  const N = dates.length;
+  const total = data.total_matches;
+  const latest = patches && patches.latest;
+  const LOW_SAMPLE = 5000;
+
+  const WINDOWS = [
+    latest ? { key: "patch", label: `Since latest patch (${fmt.dateShort(toMs(latest.date))})`, start: toMs(latest.date) + DAY } : null,
+    { key: "30d", label: "Last 30 days", start: dates[N - 1] - 29 * DAY },
+    { key: "90d", label: "Last 3 months", start: dates[N - 1] - 89 * DAY },
+  ].filter(Boolean);
+  let win = HMT.store.get("tierWindow", WINDOWS[0].key);
+  if (!WINDOWS.some((w) => w.key === win)) win = WINDOWS[0].key;
+  let role = "";
+
+  app.replaceChildren(el("div", { class: "page-head" }, el("div", {},
+    el("h1", { text: `${game.name} tier list` }),
+    el("p", { class: "lede" }, "Every hero ranked by win rate using fixed bands: ",
+      HMT.TIERS.map((t) => `${t.tier} ${HMT.tierRangeLabel(t.tier)}`).join(" · "),
+      ". Within a tier, heroes are sorted by win rate."))));
+
+  const controls = el("div", { class: "controls" });
+  const seg = el("div", { class: "seg", role: "group", "aria-label": "Time window" });
+  WINDOWS.forEach((w) => seg.append(el("button", { type: "button", "data-k": w.key, text: w.label,
+    onclick: () => { win = w.key; HMT.store.set("tierWindow", win); draw(); } })));
+  const roles = [...new Set(data.heroes.map((h) => h.role).filter(Boolean))].sort();
+  const roleSel = el("select", { "aria-label": "Filter by type", onchange: (e) => { role = e.target.value; draw(); } },
+    el("option", { value: "", text: "All types" }), roles.map((r) => el("option", { value: r, text: r })));
+  controls.append(seg, roleSel);
+  const board = el("div", { class: "card", style: "padding:0;overflow:hidden" });
+  const note = el("p", { class: "source" });
+  app.append(controls, board, note);
+
+  function windowRates(h, start) {
+    let i0 = dates.findIndex((d) => d >= start); if (i0 < 0) i0 = N;
+    let w = 0, m = 0, t = 0;
+    for (let i = i0; i < N; i++) { w += h.wins[i]; m += h.matches[i]; t += total[i]; }
+    return { wr: m ? (w / m) * 100 : null, pr: t ? (m / t) * 100 : null, matches: m };
+  }
+
+  function draw() {
+    [...seg.children].forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.k === win)));
+    const w = WINDOWS.find((x) => x.key === win);
+    const rows = data.heroes
+      .filter((h) => !role || h.role === role)
+      .map((h) => ({ h, ...windowRates(h, w.start) }))
+      .filter((r) => r.matches > 0)
+      .map((r) => ({ ...r, tier: HMT.tierFor(r.wr) }));
+
+    board.replaceChildren(...HMT.TIERS.map(({ tier }) => {
+      const inTier = rows.filter((r) => r.tier === tier).sort((a, b) => b.wr - a.wr);
+      return el("div", { class: "tier-row" },
+        el("div", { class: "tier-label" }, HMT.tierBadge(tier),
+          el("span", { class: "small muted", text: HMT.tierRangeLabel(tier) }),
+          el("span", { class: "small muted", text: `${inTier.length} hero${inTier.length === 1 ? "" : "es"}` })),
+        el("div", { class: "tier-heroes" }, inTier.length ? inTier.map(card) : el("span", { class: "empty", text: "No heroes in this tier" })));
+    }));
+    const days = Math.round((dates[N - 1] - w.start) / DAY) + 1;
+    note.textContent = `Window: ${days} day${days === 1 ? "" : "s"} (${fmt.date(Math.max(w.start, dates[0]))} – ${fmt.date(dates[N - 1])}). ` +
+      `Heroes marked * have fewer than ${fmt.int(LOW_SAMPLE)} games in the window. Source: ${data.source}.`;
+  }
+
+  function card(r) {
+    return el("a", { class: "hero-btn", href: `heroes.html?game=${gameId}&hero=${r.h.slug}`, style: "text-decoration:none" },
+      el("span", { class: "top" }, el("img", { src: r.h.image, alt: "", loading: "lazy" }),
+        el("span", {}, el("span", { class: "name", text: r.h.name + (r.matches < LOW_SAMPLE ? " *" : "") }), el("br"),
+          el("span", { class: "role", text: r.h.role || "" }))),
+      el("span", { class: "nums" },
+        el("span", {}, "WR ", el("b", { text: fmt.pct(r.wr) })),
+        el("span", {}, "PR ", el("b", { text: fmt.pct(r.pr) }))));
+  }
+
+  draw();
+})();

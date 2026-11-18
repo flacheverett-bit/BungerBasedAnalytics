@@ -1,4 +1,4 @@
-/* Hero Meta Tracker — shared styles.
+/* Bunger Based Analytics — shared styles.
    Colors are role tokens; dark values are selected separately (not auto-inverted). */
 :root {
   color-scheme: light;
@@ -219,6 +219,53 @@ th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--bor
 th { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: .04em; font-weight: 600; }
 td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 details summary { cursor: pointer; color: var(--text-secondary); font-size: 14px; }
+
+/* ---------- tiers (ordinal, diverging around 50% win rate: blue = strong, red = weak) ---------- */
+.tier-badge {
+  display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 7px;
+  font-weight: 800; font-size: 14px; flex: none; color: #ffffff;
+}
+.tier-S { background: #184f95; }
+.tier-A { background: #2a78d6; }
+.tier-B { background: #86b6ef; color: #0b0b0b; }
+.tier-C { background: #f2b0ae; color: #0b0b0b; }
+.tier-D { background: #e34948; }
+.tier-F { background: #9e2a2a; }
+.tier-row { display: grid; grid-template-columns: 92px 1fr; border-top: 1px solid var(--border); }
+.tier-row:first-child { border-top: 0; }
+.tier-label { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 14px 8px; text-align: center; }
+.tier-label .tier-badge { width: 48px; height: 48px; font-size: 26px; border-radius: 10px; }
+.tier-label .small { line-height: 1.2; }
+.tier-heroes { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; padding: 12px; align-content: start; }
+.tier-heroes .empty { color: var(--text-muted); font-size: 13px; align-self: center; }
+
+/* ---------- matchups & builds ---------- */
+.match-list { list-style: none; margin: 0; padding: 0; }
+.match-list li { display: grid; grid-template-columns: 32px 1fr auto; gap: 10px; align-items: center; padding: 7px 0; border-top: 1px solid var(--border); }
+.match-list li:first-child { border-top: 0; }
+.match-list img { width: 32px; height: 32px; border-radius: 7px; object-fit: cover; background: var(--surface-2); }
+.match-list a { font-weight: 600; text-decoration: none; }
+.match-list a:hover { text-decoration: underline; }
+.match-list .num { text-align: right; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--text-secondary); }
+.match-list .num b { color: var(--text-primary); font-size: 14px; }
+.phase-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 12px; }
+.phase { background: var(--surface-2); border-radius: 10px; padding: 12px; }
+.phase h4 { margin: 0 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--text-muted); }
+.item-row { display: grid; grid-template-columns: 30px 1fr auto; gap: 8px; align-items: center; padding: 4px 0; font-size: 13px; }
+.item-row .num { text-align: right; font-variant-numeric: tabular-nums; color: var(--text-secondary); white-space: nowrap; }
+.item-icon { width: 30px; height: 30px; border-radius: 6px; object-fit: contain; background: var(--surface-1); border: 1px solid var(--border); }
+.item-icon.slot-weapon { border-color: #c97a1e; }
+.item-icon.slot-vitality { border-color: #4f9a3a; }
+.item-icon.slot-spirit { border-color: #8a5fd1; }
+.build { border: 1px solid var(--border); border-radius: 10px; padding: 14px; }
+.build + .build { margin-top: 10px; }
+.build-head { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; margin-bottom: 8px; }
+.build-head strong { font-size: 15px; }
+.build-cats { display: grid; gap: 8px; }
+.build-cat { display: grid; grid-template-columns: 130px 1fr; gap: 10px; align-items: start; }
+.build-cat > span { font-size: 12px; color: var(--text-muted); padding-top: 6px; overflow-wrap: anywhere; }
+.build-cat .icons { display: flex; flex-wrap: wrap; gap: 4px; }
+@media (max-width: 640px) { .build-cat { grid-template-columns: 1fr; gap: 4px; } .tier-row { grid-template-columns: 64px 1fr; } }
 
 .notice { background: var(--accent-soft); border-radius: 10px; padding: 12px 14px; font-size: 14px; color: var(--text-secondary); }
 .notice code { font-size: 13px; }

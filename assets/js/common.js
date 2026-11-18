@@ -1,6 +1,30 @@
 /* Shared helpers: data loading, theme, formatting, date ranges, chart plumbing. */
 const HMT = (() => {
+  const SITE_NAME = "Bunger Based Analytics";
   const params = new URLSearchParams(location.search);
+
+  /* ---------- tiers (fixed win-rate bands) ---------- */
+  const TIERS = [
+    { tier: "S", min: 54 },
+    { tier: "A", min: 52 },
+    { tier: "B", min: 50 },
+    { tier: "C", min: 48 },
+    { tier: "D", min: 46 },
+    { tier: "F", min: -Infinity },
+  ];
+  function tierFor(wr) {
+    if (wr === null || wr === undefined || Number.isNaN(wr)) return null;
+    return TIERS.find((t) => wr >= t.min).tier;
+  }
+  function tierBadge(tier) {
+    return tier ? el("span", { class: `tier-badge tier-${tier}`, title: `${tier} tier`, text: tier }) : null;
+  }
+  function tierRangeLabel(tier) {
+    const i = TIERS.findIndex((t) => t.tier === tier);
+    const lo = TIERS[i].min, hi = i > 0 ? TIERS[i - 1].min : null;
+    if (lo === -Infinity) return `under ${hi}%`;
+    return hi === null ? `${lo}%+` : `${lo}–${hi}%`;
+  }
 
   /* ---------- data ---------- */
   const cache = {};
@@ -74,12 +98,13 @@ const HMT = (() => {
     const tabs = game
       ? el("nav", { class: "tabs", "aria-label": "Game sections" },
           el("a", { href: `game.html?game=${game.id}`, "aria-current": page === "game" ? "page" : null, text: "Patch & players" }),
-          el("a", { href: `heroes.html?game=${game.id}`, "aria-current": page === "heroes" ? "page" : null, text: game.character_label || "Characters" }))
+          el("a", { href: `heroes.html?game=${game.id}`, "aria-current": page === "heroes" ? "page" : null, text: game.character_label || "Characters" }),
+          el("a", { href: `tiers.html?game=${game.id}`, "aria-current": page === "tiers" ? "page" : null, text: "Tier list" }))
       : null;
     const themeBtn = el("button", { class: "icon-btn", type: "button", title: "Toggle light/dark", "aria-label": "Toggle light or dark theme", onclick: toggleTheme, text: "◐" });
     const bar = el("header", { class: "topbar" },
       el("div", { class: "wrap" },
-        el("a", { class: "brand", href: "index.html" }, el("span", { class: "brand-mark", "aria-hidden": "true", text: "H" }), "Hero Meta Tracker"),
+        el("a", { class: "brand", href: "index.html" }, el("span", { class: "brand-mark", "aria-hidden": "true", text: "B" }), SITE_NAME),
         crumbs, el("div", { class: "spacer" }), tabs, themeBtn));
     document.body.prepend(bar);
   }
@@ -257,11 +282,12 @@ const HMT = (() => {
   function footer(extra) {
     document.body.append(el("footer", {},
       el("div", { class: "wrap" },
-        "Hero Meta Tracker. A student data-analytics project. Not affiliated with Valve or any game publisher. ",
+        `${SITE_NAME}. A student data-analytics project. Not affiliated with Valve or any game publisher. `,
         extra || "")));
   }
 
   return {
+    SITE_NAME, TIERS, tierFor, tierBadge, tierRangeLabel,
     params, loadJSON, getGame, store, token, el, renderTopbar, showError, fmt, toMs, DAY,
     RANGES, rangeStart, rangeControl, applyChartDefaults, onThemeChange, isDark,
     crosshairPlugin, patchMarkerPlugin, refLinePlugin, htmlTooltip, ttRow, badge, changeColor, CHANGE_LABEL, footer,

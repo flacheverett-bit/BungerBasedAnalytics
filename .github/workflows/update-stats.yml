@@ -22,6 +22,8 @@ jobs:
           python-version: "3.12"
       - name: Fetch Deadlock hero stats
         run: python pipeline/deadlock_heroes.py
+      - name: Fetch matchups, builds and core items
+        run: python pipeline/deadlock_meta.py
       - name: Rebuild patch markers
         run: python pipeline/patches.py
       - name: Commit if changed
