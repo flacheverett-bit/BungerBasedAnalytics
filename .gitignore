@@ -4,3 +4,5 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .claude/
+# Raw third-party exports stay local; the processed data in data/<game>/ is what's published.
+*.csv
