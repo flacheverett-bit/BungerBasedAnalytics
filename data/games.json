@@ -46,7 +46,8 @@
       "perks"
     ],
     "big_patch_min_heroes": 10,
-    "role_queue": true
+    "role_queue": true,
+    "players_per_match_pct": 500
   },
   {
     "id": "marvel-rivals",
@@ -70,6 +71,7 @@
       "teamups"
     ],
     "big_patch_min_heroes": 10,
-    "role_queue": false
+    "role_queue": false,
+    "players_per_match_pct": 600
   }
 ]

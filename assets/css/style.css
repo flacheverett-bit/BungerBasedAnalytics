@@ -107,7 +107,7 @@ img { max-width: 100%; }
 .crumbs a { text-decoration: none; color: var(--text-secondary); }
 .crumbs a:hover { color: var(--text-primary); }
 .spacer { flex: 1; }
-.tabs { display: flex; gap: 4px; }
+.tabs { display: flex; gap: 4px; flex-wrap: wrap; }   /* wrap so 5+ tabs never force sideways scrolling on phones */
 .tabs a { text-decoration: none; padding: 6px 12px; border-radius: 8px; color: var(--text-secondary); font-size: 14px; font-weight: 500; }
 .tabs a:hover { background: var(--surface-2); color: var(--text-primary); }
 .tabs a[aria-current="page"] { background: var(--accent-soft); color: var(--text-primary); }
@@ -333,6 +333,15 @@ details summary { cursor: pointer; color: var(--text-secondary); font-size: 14px
 .empty-state { text-align: center; padding: 40px 20px; }
 .empty-state p { max-width: 60ch; margin: 8px auto 16px; }
 @media (max-width: 640px) { .head-actions { align-items: flex-start; } .hypo-head { flex-direction: column; } }
+
+.health-status { display: inline-block; margin-top: 6px; }
+.health-status.good { color: var(--buff); }
+.health-status.warn { color: var(--text-secondary); }
+.health-status.bad { color: var(--nerf); font-weight: 600; }
+.health-status a { color: inherit; }
+.error-box { padding: 20px; }
+.error-box h2 { margin-bottom: 6px; }
+.error-box p { margin: 6px 0; }
 
 /* meta health page */
 .site-links { display: inline-flex; gap: 6px; }

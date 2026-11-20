@@ -87,7 +87,8 @@
     el("p", { class: "source" }, `Source: `, el("a", { href: data.source_url, target: "_blank", rel: "noopener", text: data.source }),
       data.slice ? ` (${data.slice})` : "",
       `. ${data.pick_rate_definition} Updated ${fmt.date(toMs(data.updated))}.`,
-      isRates ? ` ${game.developer} publishes current numbers only, so this history started ${fmt.date(dates[0])} and grows by one point per day.` : ""),
+      isRates ? ` ${game.developer} publishes current numbers only, so this history started ${fmt.date(dates[0])} and grows by one point per day.`
+        : " The source keeps adding matches for about a week, so the last few days have fewer games than they'll end with. Rates shift by well under 0.5 points as they complete."),
     impactBox);
   const matchupSec = el("section", { class: "card section", "aria-labelledby": "matchups-h" });
   const buildSec = el("section", { class: "card section", "aria-labelledby": "builds-h" });

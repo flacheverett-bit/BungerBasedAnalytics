@@ -59,6 +59,9 @@ jobs:
           pip install --quiet pandas duckdb
           python pipeline/build_warehouse.py
           python pipeline/run_sql.py
+      - name: Validate all data (invariant checks -> data/data_health.json)
+        continue-on-error: true    # a failing check is reported on the site, not allowed to block the update
+        run: python pipeline/validate_data.py
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"

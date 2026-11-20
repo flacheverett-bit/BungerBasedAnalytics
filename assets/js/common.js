@@ -132,11 +132,34 @@ const HMT = (() => {
     document.body.prepend(bar);
   }
 
-  function showError(container, err) {
+  // Visitor-friendly errors: bad links get a plain explanation and a way back.
+  // The local-server hint only appears when the site is opened straight from disk (file://).
+  async function showError(container, err) {
     console.error(err);
-    container.replaceChildren(el("div", { class: "notice" },
-      "Couldn't load data. If you opened this file directly, run a local server instead (see README): ",
-      el("code", { text: "python -m http.server" }), ". ", el("span", { class: "muted", text: String(err.message || err) })));
+    const msg = String((err && err.message) || err);
+    const home = el("a", { href: "index.html", text: "Back to all games" });
+    let gameLinks = null;
+    try {
+      const games = await loadJSON("data/games.json");
+      gameLinks = el("p", {}, "Games on this site: ", ...games.flatMap((g, i) =>
+        [i ? " · " : "", el("a", { href: `game.html?game=${g.id}`, text: g.name })]));
+    } catch { /* ignore */ }
+    let body;
+    if (/^Unknown game/.test(msg)) {
+      body = [el("h2", { text: "That game isn't on this site" }),
+        el("p", { text: `The link points to "${params.get("game")}", which isn't one of the tracked games.` }), gameLinks, home];
+    } else if (/HTTP 404/.test(msg)) {
+      body = [el("h2", { text: "Not available for this game yet" }),
+        el("p", { text: "This page needs data that hasn't been collected for this game. It may appear once enough history builds up." }), gameLinks, home];
+    } else if (location.protocol === "file:") {
+      body = [el("h2", { text: "Couldn't load data" }),
+        el("p", {}, "Browsers block data files when a page is opened straight from disk. Run a local server instead (see README): ",
+          el("code", { text: "python -m http.server" })), el("p", { class: "muted small", text: msg })];
+    } else {
+      body = [el("h2", { text: "Couldn't load this page's data" }),
+        el("p", { text: "Please try again in a minute. The data may be updating." }), el("p", { class: "muted small", text: msg }), home];
+    }
+    container.replaceChildren(el("div", { class: "notice error-box" }, ...body.filter(Boolean)));
   }
 
   /* ---------- formatting ---------- */
@@ -303,10 +326,22 @@ const HMT = (() => {
   }
 
   function footer(extra) {
+    const health = el("span", { class: "health-status" });
     document.body.append(el("footer", {},
       el("div", { class: "wrap" },
         `${SITE_NAME}. A student data-analytics project. Not affiliated with Valve or any game publisher. `,
-        extra || "")));
+        extra || "", el("br"), health)));
+    // Daily data-validation result (pipeline/validate_data.py)
+    loadJSON("data/data_health.json").then((h) => {
+      const s = h.summary || {};
+      const total = (s.PASS || 0) + (s.WARN || 0) + (s.FAIL || 0);
+      const icon = s.FAIL ? "✗" : s.WARN ? "!" : "✓";
+      health.append(`Data checks: ${icon} ${s.PASS || 0} of ${total} passed`,
+        s.WARN ? `, ${s.WARN} warning${s.WARN > 1 ? "s" : ""}` : "", s.FAIL ? `, ${s.FAIL} failed` : "",
+        ` · ${fmt.date(toMs(h.generated))} · `,
+        el("a", { href: `${REPO}/blob/main/data/data_health.json`, target: "_blank", rel: "noopener", text: "details" }));
+      health.classList.add(s.FAIL ? "bad" : s.WARN ? "warn" : "good");
+    }).catch(() => {});
   }
 
   return {

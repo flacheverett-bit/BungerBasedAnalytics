@@ -20,6 +20,29 @@ A static website that tracks hero shooter statistics: latest patch analysis, con
 
 Tier bands are set per game in `data/games.json` (`tier_bands`).
 
+## Data quality
+
+Every day, after the data updates, `pipeline/validate_data.py` runs 100+ **invariant checks**. These are rules that must hold if the data is right, so a failure means a bug or a bad upstream feed. Results go to [`data/data_health.json`](data/data_health.json) and the status shows in every page footer ("Data checks: ✓ 102 of 102 passed").
+
+Examples:
+- **One winner and one loser per match:** pick-weighted win rate is ~50% every day, for every game.
+- **Pick rates add up to the players per match:** Deadlock about 12 heroes per match; Overwatch exactly 500% (5 per team); Marvel Rivals exactly 600% (6 per team).
+- **Matchups agree with each other:** A's win rate vs B plus B's vs A = 100% (946 pairs, max deviation 0.04 points).
+- **Choices sum to 100%:** each hero's two perks per level and two team-up loadouts.
+- **Basic integrity:** wins ≤ matches, peak ≥ average players, no duplicate or future dates, every patched hero and comp hero exists in the roster and plays its listed role, all scores within 0–100, every SQL query runs, and data is fresh.
+
+**Stress test (Nov 2026)**
+- **Cross-checks against fresh source pulls:**
+  - Overwatch: all 54 heroes match Blizzard's live page exactly.
+  - Marvel Rivals: parsed rates match the page's own structured data.
+  - Steam readings: within about 1% of SteamCharts' independent series.
+  - Deadlock: the source keeps adding matches for about a week, so the newest day is about 15% short when fetched. Rates shift by at most 0.3 points as days complete, and the full window is re-downloaded daily, so stored history self-corrects. Hero pages note this.
+- **Rendering:** a crawler loaded every page (16) and every hero page (155) and found no errors, "NaN" or "undefined" text, empty charts or broken images. It also clicked all 36 time-range and tier-window buttons.
+- **Fixes it led to:**
+  - visitor-friendly pages for broken links, instead of a developer hint
+  - Deadlock's five-tab header now wraps instead of overflowing on phones
+- **Idempotency:** running a scraper twice in one day updates that day instead of duplicating it.
+
 ## Meta health
 
 **Live page:** [meta.html](https://flacheverett-bit.github.io/BungerBasedAnalytics/meta.html) (the "Meta health" link in the header) · **Code:** `pipeline/meta_health.py` (recomputed daily)
