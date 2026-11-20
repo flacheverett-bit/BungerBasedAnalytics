@@ -1,11 +1,11 @@
 -- title: Do players ban the right heroes?
--- question: In Overwatch and Marvel Rivals, how strongly does ban rate track win rate and pick rate? Which heroes are banned the most despite a below-average win rate?
+-- question: In every game that publishes ban rates, how strongly does ban rate track win rate and pick rate? Which heroes are banned the most despite a below-average win rate?
 -- techniques: CORR(), arg_max, PERCENT_RANK window, latest-snapshot filter
 -- why: Bans are a player perception signal. Comparing them with results shows where perception and data disagree.
 WITH latest AS (
     SELECT *
     FROM hero_daily
-    WHERE game IN ('overwatch', 'marvel-rivals')
+    WHERE game IN (SELECT game FROM games WHERE has_ban_rates)   -- any game that publishes ban rates
       AND ban_rate IS NOT NULL
     QUALIFY date = MAX(date) OVER (PARTITION BY game)
 ),

@@ -39,6 +39,8 @@ Every day, `pipeline/build_warehouse.py` loads all collected data into a **DuckD
 | 9 | Data quality: do matchup numbers agree with each other? | self-join validation |
 | 10 | This week's biggest movers, and was it a patch? | date-bounded CTEs, `LEFT JOIN` + `string_agg` |
 
+**New games are picked up automatically.** The loader reads the game list from `data/games.json`, and the `games` table records what data each game has. It stores `stats_format` (`matches` or `rates`) plus `has_ban_rates`, `has_matchups`, `has_teamups` and `has_perks`, so queries select games **by capability, not by name**. For example, `WHERE game IN (SELECT game FROM games WHERE stats_format = 'matches')`. I tested this by adding two fake games: every query covered them correctly with no SQL edits.
+
 To add a query, drop a new `.sql` file into `analysis/sql/` with the `-- title:`, `-- question:`, `-- techniques:` and `-- why:` header lines. It appears on the site after the next run. Run it locally with:
 
 ```powershell

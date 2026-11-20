@@ -1,10 +1,14 @@
 {
- "generated": "2026-11-20T22:04:05Z",
+ "generated": "2026-11-20T22:18:46Z",
  "engine": "DuckDB 2.0.1",
  "tables": [
   {
    "name": "daily_totals",
    "rows": 400
+  },
+  {
+   "name": "games",
+   "rows": 3
   },
   {
    "name": "hero_daily",
@@ -231,18 +235,19 @@
      "2026-10-13"
     ]
    ],
-   "runtime_ms": 7.6,
+   "runtime_ms": 6.6,
    "takeaway": "Most-patched: deadlock: Shiv (18 changes, 10 nerfs / 5 buffs); marvel-rivals: Gambit (11 changes, 7 nerfs / 1 buffs); overwatch: Vendetta (15 changes, 6 nerfs / 6 buffs)."
   },
   {
    "id": "02_rolling_winrate_leaders",
    "file": "analysis/sql/02_rolling_winrate_leaders.sql",
-   "title": "Rolling 30-day win-rate leaders by role (Deadlock)",
-   "question": "Right now, which heroes have the best match-weighted win rate over the last 30 days in each role?",
-   "techniques": "window aggregates with a RANGE frame (rolling sums), JOIN, QUALIFY + ROW_NUMBER per partition",
+   "title": "Rolling 30-day win-rate leaders by role",
+   "question": "Right now, which heroes have the best match-weighted win rate over the last 30 days in each role? Covers every game with daily match counts.",
+   "techniques": "window aggregates with a RANGE frame (rolling sums), JOIN, two-stage QUALIFY (latest day per game, then top 3 per role)",
    "why": "A rolling window smooths daily noise, and weighting by matches stops a low-volume day from swinging the number.",
-   "sql": "WITH daily AS (\n    SELECT d.date, d.hero, h.role, d.wins, d.matches\n    FROM hero_daily d\n    JOIN heroes h USING (game, hero)\n    WHERE d.game = 'deadlock'\n),\nrolling AS (\n    SELECT *,\n        SUM(wins)    OVER w AS wins_30d,\n        SUM(matches) OVER w AS matches_30d\n    FROM daily\n    WINDOW w AS (PARTITION BY hero ORDER BY date\n                 RANGE BETWEEN INTERVAL 29 DAYS PRECEDING AND CURRENT ROW)\n)\nSELECT\n    role,\n    hero,\n    ROUND(100.0 * wins_30d / matches_30d, 2) AS win_rate_30d,\n    matches_30d\nFROM rolling\nWHERE date = (SELECT MAX(date) FROM daily)\nQUALIFY ROW_NUMBER() OVER (PARTITION BY role ORDER BY wins_30d / matches_30d DESC) <= 3\nORDER BY role, win_rate_30d DESC;",
+   "sql": "WITH daily AS (\n    SELECT d.game, d.date, d.hero, h.role, d.wins, d.matches\n    FROM hero_daily d\n    JOIN heroes h USING (game, hero)\n    WHERE d.game IN (SELECT game FROM games WHERE stats_format = 'matches')   -- any game with real win/match counts\n),\nrolling AS (\n    SELECT *,\n        SUM(wins)    OVER w AS wins_30d,\n        SUM(matches) OVER w AS matches_30d\n    FROM daily\n    WINDOW w AS (PARTITION BY game, hero ORDER BY date\n                 RANGE BETWEEN INTERVAL 29 DAYS PRECEDING AND CURRENT ROW)\n),\nlatest AS (\n    SELECT * FROM rolling\n    QUALIFY date = MAX(date) OVER (PARTITION BY game)\n)\nSELECT\n    game,\n    role,\n    hero,\n    ROUND(100.0 * wins_30d / matches_30d, 2) AS win_rate_30d,\n    matches_30d\nFROM latest\nQUALIFY ROW_NUMBER() OVER (PARTITION BY game, role ORDER BY wins_30d / matches_30d DESC) <= 3\nORDER BY game, role, win_rate_30d DESC;",
    "columns": [
+    "game",
     "role",
     "hero",
     "win_rate_30d",
@@ -251,98 +256,113 @@
    "row_count": 15,
    "rows": [
     [
+     "deadlock",
      "Assassin",
      "Haze",
      53.53,
      2970540.0
     ],
     [
+     "deadlock",
      "Assassin",
      "Lash",
      50.99,
      2113097.0
     ],
     [
+     "deadlock",
      "Assassin",
      "Drifter",
      50.41,
      2742972.0
     ],
     [
+     "deadlock",
      "Brawler",
      "Rat King",
      55.01,
      3126042.0
     ],
     [
+     "deadlock",
      "Brawler",
      "Victor",
      54.0,
      2153369.0
     ],
     [
+     "deadlock",
      "Brawler",
      "Abrams",
      52.06,
      2183231.0
     ],
     [
+     "deadlock",
      "Healer",
      "Paige",
      56.01,
      1944151.0
     ],
     [
+     "deadlock",
      "Healer",
      "Kelvin",
      55.04,
      1001768.0
     ],
     [
+     "deadlock",
      "Healer",
      "Ivy",
      52.38,
      1404479.0
     ],
     [
+     "deadlock",
      "Marksman",
      "Deadman Danny",
      52.79,
      2182068.0
     ],
     [
+     "deadlock",
      "Marksman",
      "Wraith",
      50.18,
      2371666.0
     ],
     [
+     "deadlock",
      "Marksman",
      "Vindicta",
      49.18,
      2020863.0
     ],
     [
+     "deadlock",
      "Mystic",
      "Graves",
      57.35,
      2940370.0
     ],
     [
+     "deadlock",
      "Mystic",
      "Seven",
      55.05,
      2299306.0
     ],
     [
+     "deadlock",
      "Mystic",
      "Baba",
      54.76,
      902561.0
     ]
    ],
-   "runtime_ms": 17.1,
-   "takeaway": "Best 30-day win rate overall: Graves (Mystic) at 57.4% over 2,940,370 games."
+   "runtime_ms": 22.8,
+   "takeaway": "Best 30-day win rate: deadlock: Graves (Mystic) at 57.4% over 2,940,370 games."
   },
   {
    "id": "03_patch_whiplash",
@@ -351,7 +371,7 @@
    "question": "How often does a hero get changed one way and then reversed within 30 days?",
    "techniques": "LAG() over an ordered partition, date arithmetic, filtering on window results",
    "why": "Quick reversals point to over-corrections, a balance process that's reacting instead of predicting.",
-   "sql": "WITH ordered AS (\n    SELECT\n        game, hero, patch_date, change_type,\n        LAG(change_type) OVER w AS previous_change,\n        LAG(patch_date)  OVER w AS previous_date\n    FROM patch_changes\n    WHERE change_type IN ('buff', 'nerf')\n    WINDOW w AS (PARTITION BY game, hero ORDER BY patch_date)\n)\nSELECT\n    game,\n    hero,\n    previous_date,\n    previous_change,\n    patch_date                    AS reversed_on,\n    change_type                   AS reversed_with,\n    patch_date - previous_date    AS days_between\nFROM ordered\nWHERE previous_change IS NOT NULL\n  AND previous_change <> change_type\n  AND patch_date - previous_date <= 30\nORDER BY reversed_on DESC;",
+   "sql": "WITH ordered AS (\n    SELECT\n        game, hero, patch_date, change_type,\n        LAG(change_type) OVER w AS previous_change,\n        LAG(patch_date)  OVER w AS previous_date\n    FROM patch_changes\n    WHERE change_type IN ('buff', 'nerf')\n    WINDOW w AS (PARTITION BY game, hero ORDER BY patch_date)\n)\nSELECT\n    game,\n    hero,\n    previous_date,\n    previous_change,\n    patch_date                    AS reversed_on,\n    change_type                   AS reversed_with,\n    patch_date - previous_date    AS days_between\nFROM ordered\nWHERE previous_change IS NOT NULL\n  AND previous_change <> change_type\n  AND patch_date - previous_date <= 30\nORDER BY reversed_on DESC, game, hero;   -- tie-breakers keep the output order stable between runs",
    "columns": [
     "game",
     "hero",
@@ -363,6 +383,15 @@
    ],
    "row_count": 91,
    "rows": [
+    [
+     "deadlock",
+     "Mo & Krill",
+     "2026-10-30",
+     "nerf",
+     "2026-11-04",
+     "buff",
+     5
+    ],
     [
      "deadlock",
      "Nurse Harrow",
@@ -383,30 +412,12 @@
     ],
     [
      "deadlock",
-     "Mo & Krill",
-     "2026-10-30",
-     "nerf",
-     "2026-11-04",
-     "buff",
-     5
-    ],
-    [
-     "deadlock",
      "Deadman Danny",
      "2026-10-14",
      "buff",
      "2026-10-30",
      "nerf",
      16
-    ],
-    [
-     "marvel-rivals",
-     "The Thing",
-     "2026-09-11",
-     "nerf",
-     "2026-10-09",
-     "buff",
-     28
     ],
     [
      "marvel-rivals",
@@ -420,6 +431,15 @@
     [
      "marvel-rivals",
      "Magneto",
+     "2026-09-11",
+     "nerf",
+     "2026-10-09",
+     "buff",
+     28
+    ],
+    [
+     "marvel-rivals",
+     "The Thing",
      "2026-09-11",
      "nerf",
      "2026-10-09",
@@ -491,12 +511,12 @@
     ],
     [
      "deadlock",
-     "Silver",
-     "2026-07-09",
+     "Haze",
+     "2026-06-30",
      "buff",
      "2026-07-28",
      "nerf",
-     19
+     28
     ],
     [
      "deadlock",
@@ -509,16 +529,16 @@
     ],
     [
      "deadlock",
-     "Haze",
-     "2026-06-30",
+     "Silver",
+     "2026-07-09",
      "buff",
      "2026-07-28",
      "nerf",
-     28
+     19
     ],
     [
      "overwatch",
-     "Reaper",
+     "Ana",
      "2026-06-16",
      "nerf",
      "2026-07-14",
@@ -527,7 +547,7 @@
     ],
     [
      "overwatch",
-     "Ana",
+     "Reaper",
      "2026-06-16",
      "nerf",
      "2026-07-14",
@@ -545,16 +565,16 @@
     ],
     [
      "marvel-rivals",
-     "Ultron",
-     "2026-07-10",
-     "buff",
-     "2026-07-11",
+     "Gambit",
+     "2026-06-12",
      "nerf",
-     1
+     "2026-07-11",
+     "buff",
+     29
     ],
     [
      "marvel-rivals",
-     "Gambit",
+     "Phoenix",
      "2026-06-12",
      "nerf",
      "2026-07-11",
@@ -572,34 +592,16 @@
     ],
     [
      "marvel-rivals",
-     "Phoenix",
-     "2026-06-12",
-     "nerf",
-     "2026-07-11",
+     "Ultron",
+     "2026-07-10",
      "buff",
-     29
+     "2026-07-11",
+     "nerf",
+     1
     ],
     [
      "marvel-rivals",
      "Deadpool (Strategist)",
-     "2026-06-12",
-     "buff",
-     "2026-07-10",
-     "nerf",
-     28
-    ],
-    [
-     "marvel-rivals",
-     "Ultron",
-     "2026-06-12",
-     "nerf",
-     "2026-07-10",
-     "buff",
-     28
-    ],
-    [
-     "marvel-rivals",
-     "Human Torch",
      "2026-06-12",
      "buff",
      "2026-07-10",
@@ -617,6 +619,15 @@
     ],
     [
      "marvel-rivals",
+     "Human Torch",
+     "2026-06-12",
+     "buff",
+     "2026-07-10",
+     "nerf",
+     28
+    ],
+    [
+     "marvel-rivals",
      "Rogue",
      "2026-06-12",
      "buff",
@@ -625,17 +636,17 @@
      28
     ],
     [
-     "deadlock",
-     "Shiv",
-     "2026-07-01",
-     "buff",
-     "2026-07-09",
+     "marvel-rivals",
+     "Ultron",
+     "2026-06-12",
      "nerf",
-     8
+     "2026-07-10",
+     "buff",
+     28
     ],
     [
      "deadlock",
-     "Viscous",
+     "Drifter",
      "2026-06-30",
      "buff",
      "2026-07-09",
@@ -653,6 +664,15 @@
     ],
     [
      "deadlock",
+     "Shiv",
+     "2026-07-01",
+     "buff",
+     "2026-07-09",
+     "nerf",
+     8
+    ],
+    [
+     "deadlock",
      "Silver",
      "2026-06-11",
      "nerf",
@@ -662,7 +682,7 @@
     ],
     [
      "deadlock",
-     "Drifter",
+     "Viscous",
      "2026-06-30",
      "buff",
      "2026-07-09",
@@ -716,6 +736,15 @@
     ],
     [
      "deadlock",
+     "Bebop",
+     "2026-05-22",
+     "nerf",
+     "2026-06-11",
+     "buff",
+     20
+    ],
+    [
+     "deadlock",
      "Grey Talon",
      "2026-05-22",
      "buff",
@@ -725,12 +754,21 @@
     ],
     [
      "deadlock",
-     "Bebop",
+     "Apollo",
      "2026-05-22",
      "nerf",
-     "2026-06-11",
+     "2026-05-31",
      "buff",
-     20
+     9
+    ],
+    [
+     "deadlock",
+     "Graves",
+     "2026-05-22",
+     "buff",
+     "2026-05-31",
+     "nerf",
+     9
     ],
     [
      "deadlock",
@@ -752,25 +790,16 @@
     ],
     [
      "deadlock",
-     "Graves",
+     "Abrams",
+     "2026-04-30",
+     "nerf",
      "2026-05-22",
      "buff",
-     "2026-05-31",
-     "nerf",
-     9
+     22
     ],
     [
      "deadlock",
-     "Apollo",
-     "2026-05-22",
-     "nerf",
-     "2026-05-31",
-     "buff",
-     9
-    ],
-    [
-     "deadlock",
-     "Venator",
+     "Infernus",
      "2026-04-30",
      "nerf",
      "2026-05-22",
@@ -788,29 +817,20 @@
     ],
     [
      "deadlock",
+     "Venator",
+     "2026-04-30",
+     "nerf",
+     "2026-05-22",
+     "buff",
+     22
+    ],
+    [
+     "deadlock",
      "Victor",
      "2026-04-30",
      "buff",
      "2026-05-22",
      "nerf",
-     22
-    ],
-    [
-     "deadlock",
-     "Infernus",
-     "2026-04-30",
-     "nerf",
-     "2026-05-22",
-     "buff",
-     22
-    ],
-    [
-     "deadlock",
-     "Abrams",
-     "2026-04-30",
-     "nerf",
-     "2026-05-22",
-     "buff",
      22
     ],
     [
@@ -833,20 +853,20 @@
     ],
     [
      "deadlock",
-     "Vyper",
-     "2026-04-10",
-     "buff",
-     "2026-04-30",
-     "nerf",
-     20
-    ],
-    [
-     "deadlock",
      "Celeste",
      "2026-04-10",
      "nerf",
      "2026-04-30",
      "buff",
+     20
+    ],
+    [
+     "deadlock",
+     "Vyper",
+     "2026-04-10",
+     "buff",
+     "2026-04-30",
+     "nerf",
      20
     ],
     [
@@ -869,7 +889,7 @@
     ],
     [
      "deadlock",
-     "The Doorman",
+     "Bebop",
      "2026-03-25",
      "buff",
      "2026-04-10",
@@ -878,7 +898,16 @@
     ],
     [
      "deadlock",
-     "Bebop",
+     "Dynamo",
+     "2026-03-21",
+     "buff",
+     "2026-04-10",
+     "nerf",
+     20
+    ],
+    [
+     "deadlock",
+     "The Doorman",
      "2026-03-25",
      "buff",
      "2026-04-10",
@@ -893,18 +922,9 @@
      "2026-04-10",
      "buff",
      16
-    ],
-    [
-     "deadlock",
-     "Dynamo",
-     "2026-03-21",
-     "buff",
-     "2026-04-10",
-     "nerf",
-     20
     ]
    ],
-   "runtime_ms": 8.1,
+   "runtime_ms": 7.3,
    "takeaway": "91 reversals within 30 days (deadlock: 59, marvel-rivals: 21, overwatch: 11); 21 were reversed within a week."
   },
   {
@@ -932,8 +952,8 @@
      "Season 11: Doomsday balance update",
      30,
      35503.0,
-     48244.0,
-     35.9
+     48337.0,
+     36.1
     ],
     [
      "overwatch",
@@ -1134,8 +1154,8 @@
      9.5
     ]
    ],
-   "runtime_ms": 6.5,
-   "takeaway": "Players rose in the week after 61% of big patches (median change +2.1%). Biggest jump: marvel-rivals, Season 11: Doomsday balance update (+35.9%)."
+   "runtime_ms": 8.0,
+   "takeaway": "Players rose in the week after 61% of big patches (median change +2.1%). Biggest jump: marvel-rivals, Season 11: Doomsday balance update (+36.1%)."
   },
   {
    "id": "05_weekday_pattern",
@@ -1302,18 +1322,19 @@
      12
     ]
    ],
-   "runtime_ms": 12.0,
+   "runtime_ms": 8.6,
    "takeaway": "deadlock: busiest Sunday (+14%), quietest Monday (-7%); marvel-rivals: busiest Saturday (+11%), quietest Thursday (-10%); overwatch: busiest Sunday (+12%), quietest Thursday (-10%)."
   },
   {
    "id": "06_meta_concentration",
    "file": "analysis/sql/06_meta_concentration.sql",
-   "title": "Is the Deadlock meta getting more or less diverse?",
-   "question": "Each month, how concentrated are hero picks? Measured as the effective number of heroes (1 / HHI) and the top-5 share of all picks.",
-   "techniques": "window SUM for shares, ROW_NUMBER ranking, sum of squares (Herfindahl-Hirschman Index), monthly roll-up",
+   "title": "Is the meta getting more or less diverse?",
+   "question": "Each month, how concentrated are hero picks? Measured as the effective number of heroes (1 / HHI), that number as a share of the roster, and the top-5 share of all picks. Covers every game with daily match counts.",
+   "techniques": "window SUM for shares, ROW_NUMBER ranking, sum of squares (Herfindahl-Hirschman Index), monthly roll-up per game",
    "why": "HHI is the economist's market-concentration measure. Here it turns \"is the game balanced?\" into a number you can track. Dividing by the roster size controls for new heroes being added.",
-   "sql": "WITH shares AS (\n    SELECT\n        date, hero,\n        matches * 1.0 / SUM(matches) OVER (PARTITION BY date) AS pick_share\n    FROM hero_daily\n    WHERE game = 'deadlock'\n),\nranked AS (\n    SELECT *, ROW_NUMBER() OVER (PARTITION BY date ORDER BY pick_share DESC) AS rk\n    FROM shares\n),\nper_day AS (\n    SELECT\n        date,\n        SUM(pick_share * pick_share)              AS hhi,\n        SUM(pick_share) FILTER (WHERE rk <= 5)    AS top5_share,\n        COUNT(*)                                  AS heroes_played\n    FROM ranked\n    GROUP BY date\n)\nSELECT\n    strftime(date_trunc('month', date), '%Y-%m') AS month,\n    ROUND(AVG(1 / hhi), 1)                       AS effective_heroes,\n    MAX(heroes_played)                           AS heroes_available,\n    ROUND(100 * AVG((1 / hhi) / heroes_played), 1) AS diversity_pct_of_roster,   -- 100% = every hero picked equally\n    ROUND(100 * AVG(top5_share), 1)              AS top5_pick_share_pct\nFROM per_day\nGROUP BY 1\nORDER BY 1;",
+   "sql": "WITH shares AS (\n    SELECT\n        game, date, hero,\n        matches * 1.0 / SUM(matches) OVER (PARTITION BY game, date) AS pick_share\n    FROM hero_daily\n    WHERE game IN (SELECT game FROM games WHERE stats_format = 'matches')\n),\nranked AS (\n    SELECT *, ROW_NUMBER() OVER (PARTITION BY game, date ORDER BY pick_share DESC) AS rk\n    FROM shares\n),\nper_day AS (\n    SELECT\n        game, date,\n        SUM(pick_share * pick_share)              AS hhi,\n        SUM(pick_share) FILTER (WHERE rk <= 5)    AS top5_share,\n        COUNT(*)                                  AS heroes_played\n    FROM ranked\n    GROUP BY game, date\n)\nSELECT\n    game,\n    strftime(date_trunc('month', date), '%Y-%m')   AS month,\n    ROUND(AVG(1 / hhi), 1)                         AS effective_heroes,\n    MAX(heroes_played)                             AS heroes_available,\n    ROUND(100 * AVG((1 / hhi) / heroes_played), 1) AS diversity_pct_of_roster,   -- 100% = every hero picked equally\n    ROUND(100 * AVG(top5_share), 1)                AS top5_pick_share_pct\nFROM per_day\nGROUP BY game, month\nORDER BY game, month;",
    "columns": [
+    "game",
     "month",
     "effective_heroes",
     "heroes_available",
@@ -1323,6 +1344,7 @@
    "row_count": 14,
    "rows": [
     [
+     "deadlock",
      "2025-10",
      28.2,
      32,
@@ -1330,6 +1352,7 @@
      26.5
     ],
     [
+     "deadlock",
      "2025-11",
      28.1,
      32,
@@ -1337,6 +1360,7 @@
      26.7
     ],
     [
+     "deadlock",
      "2025-12",
      28.9,
      32,
@@ -1344,6 +1368,7 @@
      23.9
     ],
     [
+     "deadlock",
      "2026-01",
      28.0,
      34,
@@ -1351,6 +1376,7 @@
      27.0
     ],
     [
+     "deadlock",
      "2026-02",
      28.1,
      38,
@@ -1358,6 +1384,7 @@
      29.5
     ],
     [
+     "deadlock",
      "2026-03",
      33.6,
      38,
@@ -1365,6 +1392,7 @@
      21.4
     ],
     [
+     "deadlock",
      "2026-04",
      34.1,
      38,
@@ -1372,6 +1400,7 @@
      21.0
     ],
     [
+     "deadlock",
      "2026-05",
      34.8,
      38,
@@ -1379,6 +1408,7 @@
      20.0
     ],
     [
+     "deadlock",
      "2026-06",
      34.7,
      38,
@@ -1386,6 +1416,7 @@
      19.8
     ],
     [
+     "deadlock",
      "2026-07",
      34.5,
      38,
@@ -1393,6 +1424,7 @@
      20.6
     ],
     [
+     "deadlock",
      "2026-08",
      35.1,
      38,
@@ -1400,6 +1432,7 @@
      19.3
     ],
     [
+     "deadlock",
      "2026-09",
      34.7,
      38,
@@ -1407,6 +1440,7 @@
      19.5
     ],
     [
+     "deadlock",
      "2026-10",
      34.4,
      44,
@@ -1414,6 +1448,7 @@
      22.5
     ],
     [
+     "deadlock",
      "2026-11",
      38.8,
      44,
@@ -1421,17 +1456,17 @@
      18.0
     ]
    ],
-   "runtime_ms": 9.4,
-   "takeaway": "Effective heroes went from 28.2 (2025-10) to 38.8 (2026-11), but relative to roster size diversity moved only from 88.1% to 88.3%: the rise comes from new heroes being added, not from a more balanced meta."
+   "runtime_ms": 16.9,
+   "takeaway": "deadlock: effective heroes went from 28.2 (2025-10) to 38.8 (2026-11), while diversity relative to roster size moved from 88.1% to 88.3%, so the rise comes from new heroes being added, not from a more balanced meta."
   },
   {
    "id": "07_ban_vs_winrate",
    "file": "analysis/sql/07_ban_vs_winrate.sql",
    "title": "Do players ban the right heroes?",
-   "question": "In Overwatch and Marvel Rivals, how strongly does ban rate track win rate and pick rate? Which heroes are banned the most despite a below-average win rate?",
+   "question": "In every game that publishes ban rates, how strongly does ban rate track win rate and pick rate? Which heroes are banned the most despite a below-average win rate?",
    "techniques": "CORR(), arg_max, PERCENT_RANK window, latest-snapshot filter",
    "why": "Bans are a player perception signal. Comparing them with results shows where perception and data disagree.",
-   "sql": "WITH latest AS (\n    SELECT *\n    FROM hero_daily\n    WHERE game IN ('overwatch', 'marvel-rivals')\n      AND ban_rate IS NOT NULL\n    QUALIFY date = MAX(date) OVER (PARTITION BY game)\n),\nranked AS (\n    SELECT *,\n        PERCENT_RANK() OVER (PARTITION BY game ORDER BY ban_rate) AS ban_pctile,\n        AVG(win_rate)  OVER (PARTITION BY game)                   AS game_avg_wr\n    FROM latest\n)\nSELECT\n    game,\n    COUNT(*)                                         AS heroes,\n    ROUND(CORR(ban_rate, win_rate), 2)               AS corr_ban_vs_win,\n    ROUND(CORR(ban_rate, pick_rate), 2)              AS corr_ban_vs_pick,\n    arg_max(hero, ban_rate)                          AS most_banned,\n    ROUND(MAX(ban_rate), 1)                          AS top_ban_rate,\n    string_agg(hero, ', ' ORDER BY ban_rate DESC)\n        FILTER (WHERE ban_pctile >= 0.8 AND win_rate < game_avg_wr) AS overbanned_below_avg_wr\nFROM ranked\nGROUP BY game\nORDER BY game;",
+   "sql": "WITH latest AS (\n    SELECT *\n    FROM hero_daily\n    WHERE game IN (SELECT game FROM games WHERE has_ban_rates)   -- any game that publishes ban rates\n      AND ban_rate IS NOT NULL\n    QUALIFY date = MAX(date) OVER (PARTITION BY game)\n),\nranked AS (\n    SELECT *,\n        PERCENT_RANK() OVER (PARTITION BY game ORDER BY ban_rate) AS ban_pctile,\n        AVG(win_rate)  OVER (PARTITION BY game)                   AS game_avg_wr\n    FROM latest\n)\nSELECT\n    game,\n    COUNT(*)                                         AS heroes,\n    ROUND(CORR(ban_rate, win_rate), 2)               AS corr_ban_vs_win,\n    ROUND(CORR(ban_rate, pick_rate), 2)              AS corr_ban_vs_pick,\n    arg_max(hero, ban_rate)                          AS most_banned,\n    ROUND(MAX(ban_rate), 1)                          AS top_ban_rate,\n    string_agg(hero, ', ' ORDER BY ban_rate DESC)\n        FILTER (WHERE ban_pctile >= 0.8 AND win_rate < game_avg_wr) AS overbanned_below_avg_wr\nFROM ranked\nGROUP BY game\nORDER BY game;",
    "columns": [
     "game",
     "heroes",
@@ -1462,18 +1497,19 @@
      "Zarya, Jetpack Cat, Roadhog, Orisa, Mauga, Ana"
     ]
    ],
-   "runtime_ms": 6.7,
+   "runtime_ms": 11.8,
    "takeaway": "marvel-rivals: ban vs. win-rate correlation +0.06, most banned Devil Dinosaur (36%). overwatch: ban vs. win-rate correlation -0.02, most banned Zarya (39%). Bans track perception more than results."
   },
   {
    "id": "08_teamup_underused",
    "file": "analysis/sql/08_teamup_underused.sql",
-   "title": "Underused team-up loadouts (Marvel Rivals)",
-   "question": "For which heroes does the less popular team-up loadout have a higher win rate with its partner than the popular one?",
+   "title": "Underused team-up loadouts",
+   "question": "For which heroes does the less popular team-up loadout have a higher win rate with its partner than the popular one? Covers every game with team-up data (currently Marvel Rivals).",
    "techniques": "ROW_NUMBER, pivot with conditional MAX(CASE ...), derived comparison column",
    "why": "A gap between popularity and performance is an \"insight you can act on\": a free win-rate edge most players are ignoring.",
-   "sql": "WITH ranked AS (\n    SELECT *, ROW_NUMBER() OVER (PARTITION BY hero ORDER BY usage_share DESC) AS rk\n    FROM teamups\n    WHERE usage_share IS NOT NULL\n),\npivoted AS (\n    SELECT\n        hero,\n        MAX(CASE WHEN rk = 1 THEN loadout END)          AS popular_loadout,\n        MAX(CASE WHEN rk = 1 THEN usage_share END)      AS popular_share,\n        MAX(CASE WHEN rk = 1 THEN wr_with_partner END)  AS popular_wr_with_partner,\n        MAX(CASE WHEN rk = 2 THEN loadout END)          AS other_loadout,\n        MAX(CASE WHEN rk = 2 THEN usage_share END)      AS other_share,\n        MAX(CASE WHEN rk = 2 THEN wr_with_partner END)  AS other_wr_with_partner\n    FROM ranked\n    GROUP BY hero\n)\nSELECT\n    hero,\n    popular_loadout,\n    ROUND(popular_share, 1)                                        AS popular_share_pct,\n    ROUND(popular_wr_with_partner, 1)                              AS popular_wr,\n    other_loadout,\n    ROUND(other_share, 1)                                          AS other_share_pct,\n    ROUND(other_wr_with_partner, 1)                                AS other_wr,\n    ROUND(other_wr_with_partner - popular_wr_with_partner, 1)      AS other_loadout_edge\nFROM pivoted\nWHERE other_wr_with_partner > popular_wr_with_partner\n  AND hero NOT LIKE 'Deadpool (%'          -- Deadpool's three role variants share one set of loadouts\nORDER BY other_loadout_edge DESC\nLIMIT 12;",
+   "sql": "WITH ranked AS (\n    SELECT *, ROW_NUMBER() OVER (PARTITION BY game, hero ORDER BY usage_share DESC) AS rk\n    FROM teamups\n    WHERE usage_share IS NOT NULL\n),\npivoted AS (\n    SELECT\n        game,\n        hero,\n        MAX(CASE WHEN rk = 1 THEN loadout END)          AS popular_loadout,\n        MAX(CASE WHEN rk = 1 THEN usage_share END)      AS popular_share,\n        MAX(CASE WHEN rk = 1 THEN wr_with_partner END)  AS popular_wr_with_partner,\n        MAX(CASE WHEN rk = 2 THEN loadout END)          AS other_loadout,\n        MAX(CASE WHEN rk = 2 THEN usage_share END)      AS other_share,\n        MAX(CASE WHEN rk = 2 THEN wr_with_partner END)  AS other_wr_with_partner\n    FROM ranked\n    GROUP BY game, hero\n)\nSELECT\n    game,\n    hero,\n    popular_loadout,\n    ROUND(popular_share, 1)                                        AS popular_share_pct,\n    ROUND(popular_wr_with_partner, 1)                              AS popular_wr,\n    other_loadout,\n    ROUND(other_share, 1)                                          AS other_share_pct,\n    ROUND(other_wr_with_partner, 1)                                AS other_wr,\n    ROUND(other_wr_with_partner - popular_wr_with_partner, 1)      AS other_loadout_edge\nFROM pivoted\nWHERE other_wr_with_partner > popular_wr_with_partner\n  AND hero NOT LIKE 'Deadpool (%'          -- Deadpool's three role variants share one set of loadouts\nQUALIFY ROW_NUMBER() OVER (PARTITION BY game ORDER BY other_wr_with_partner - popular_wr_with_partner DESC) <= 12\nORDER BY game, other_loadout_edge DESC;",
    "columns": [
+    "game",
     "hero",
     "popular_loadout",
     "popular_share_pct",
@@ -1486,6 +1522,7 @@
    "row_count": 12,
    "rows": [
     [
+     "marvel-rivals",
      "Groot",
      "Bubble Buddies",
      64.4,
@@ -1496,6 +1533,7 @@
      10.3
     ],
     [
+     "marvel-rivals",
      "Rocket Raccoon",
      "Mammalian Bond",
      63.1,
@@ -1506,6 +1544,7 @@
      9.6
     ],
     [
+     "marvel-rivals",
      "Cloak & Dagger",
      "Frozen Haven",
      70.3,
@@ -1516,6 +1555,7 @@
      6.6
     ],
     [
+     "marvel-rivals",
      "Doctor Strange",
      "Psionic Vortex",
      50.2,
@@ -1526,6 +1566,7 @@
      6.0
     ],
     [
+     "marvel-rivals",
      "Mister Fantastic",
      "Clobberin' Research Dept.",
      70.5,
@@ -1536,6 +1577,7 @@
      5.1
     ],
     [
+     "marvel-rivals",
      "Jeff The Land Shark",
      "Mr. Pool's Interdimensional Toy Box",
      86.5,
@@ -1546,6 +1588,7 @@
      4.5
     ],
     [
+     "marvel-rivals",
      "Captain America",
      "Stars Aligned",
      78.9,
@@ -1556,6 +1599,7 @@
      3.4
     ],
     [
+     "marvel-rivals",
      "Iron Fist",
      "Iron & Stone",
      70.8,
@@ -1566,6 +1610,7 @@
      3.2
     ],
     [
+     "marvel-rivals",
      "The Hood",
      "New Moon's Shadow",
      76.0,
@@ -1576,6 +1621,7 @@
      3.0
     ],
     [
+     "marvel-rivals",
      "Devil Dinosaur",
      "Primal Punishment",
      71.9,
@@ -1586,6 +1632,7 @@
      2.7
     ],
     [
+     "marvel-rivals",
      "The Punisher",
      "Bestial Hunt",
      63.0,
@@ -1596,6 +1643,7 @@
      2.6
     ],
     [
+     "marvel-rivals",
      "Thor",
      "Ragnarok Rebirth",
      72.9,
@@ -1606,8 +1654,8 @@
      1.3
     ]
    ],
-   "runtime_ms": 13.5,
-   "takeaway": "12 heroes have an underused loadout that wins more often. Biggest gap: Groot's Wild Wall (36% usage) wins +10.3 pts more than Bubble Buddies."
+   "runtime_ms": 13.9,
+   "takeaway": "marvel-rivals: 12 heroes have an underused loadout that wins more often; biggest gap is Groot's Wild Wall (36% usage), which wins +10.3 pts more than Bubble Buddies."
   },
   {
    "id": "09_matchup_consistency",
@@ -1616,8 +1664,9 @@
    "question": "If hero A wins X% against hero B, then B should win (100 - X)% against A, over the same number of games. Does the matchup data pass that test?",
    "techniques": "self-join, symmetric pair de-duplication (a.hero < a.enemy), validation metrics",
    "why": "Checking a source against its own logic before trusting it is basic data-quality practice, and an easy way to catch a broken feed.",
-   "sql": "SELECT\n    COUNT(*)                                                       AS hero_pairs_checked,\n    ROUND(AVG(ABS(a.win_rate + b.win_rate - 100)), 3)              AS avg_deviation_pts,\n    ROUND(MAX(ABS(a.win_rate + b.win_rate - 100)), 3)              AS max_deviation_pts,\n    COUNT(*) FILTER (WHERE a.matches = b.matches)                  AS pairs_with_equal_game_counts,\n    COUNT(*) FILTER (WHERE ABS(a.win_rate + b.win_rate - 100) > 0.5) AS pairs_failing_0_5pt_tolerance\nFROM matchups a\nJOIN matchups b\n  ON a.game = b.game\n AND a.hero = b.enemy\n AND a.enemy = b.hero\nWHERE a.hero < a.enemy;",
+   "sql": "SELECT\n    a.game,\n    COUNT(*)                                                       AS hero_pairs_checked,\n    ROUND(AVG(ABS(a.win_rate + b.win_rate - 100)), 3)              AS avg_deviation_pts,\n    ROUND(MAX(ABS(a.win_rate + b.win_rate - 100)), 3)              AS max_deviation_pts,\n    COUNT(*) FILTER (WHERE a.matches = b.matches)                  AS pairs_with_equal_game_counts,\n    COUNT(*) FILTER (WHERE ABS(a.win_rate + b.win_rate - 100) > 0.5) AS pairs_failing_0_5pt_tolerance\nFROM matchups a\nJOIN matchups b\n  ON a.game = b.game\n AND a.hero = b.enemy\n AND a.enemy = b.hero\nWHERE a.hero < a.enemy\nGROUP BY a.game\nORDER BY a.game;",
    "columns": [
+    "game",
     "hero_pairs_checked",
     "avg_deviation_pts",
     "max_deviation_pts",
@@ -1627,6 +1676,7 @@
    "row_count": 1,
    "rows": [
     [
+     "deadlock",
      946,
      0.014,
      0.04,
@@ -1634,18 +1684,19 @@
      0
     ]
    ],
-   "runtime_ms": 4.2,
-   "takeaway": "PASS: 946 matchup pairs; average deviation 0.014 pts, max 0.04 pts, 0 outside a 0.5-pt tolerance."
+   "runtime_ms": 5.7,
+   "takeaway": "deadlock: PASS, 946 matchup pairs, average deviation 0.014 pts, max 0.04 pts, 0 outside a 0.5-pt tolerance."
   },
   {
    "id": "10_week_over_week_movers",
    "file": "analysis/sql/10_week_over_week_movers.sql",
-   "title": "This week's biggest movers (Deadlock) and whether a patch explains them",
-   "question": "Which heroes' win rates changed most between the last 7 days and the 7 days before? Was each mover patched in that period?",
-   "techniques": "date-bounded CTEs, conditional aggregation, LEFT JOIN with string_agg, UNION ALL of top/bottom ranks",
+   "title": "This week's biggest movers, and whether a patch explains them",
+   "question": "Which heroes' win rates changed most between the last 7 days and the 7 days before? Was each mover patched in that period? Covers every game with daily match counts.",
+   "techniques": "per-game date bounds, conditional aggregation, ROW_NUMBER partitioned by game, LEFT JOIN with string_agg",
    "why": "Separating \"moved because of a patch\" from \"moved on its own\" is the first question to ask about any metric change.",
-   "sql": "WITH bounds AS (\n    SELECT MAX(date) AS last_day FROM hero_daily WHERE game = 'deadlock'\n),\nweekly AS (\n    SELECT\n        d.hero,\n        SUM(d.wins)    FILTER (WHERE d.date >  b.last_day - 7)                              AS wins_now,\n        SUM(d.matches) FILTER (WHERE d.date >  b.last_day - 7)                              AS games_now,\n        SUM(d.wins)    FILTER (WHERE d.date <= b.last_day - 7 AND d.date > b.last_day - 14) AS wins_prev,\n        SUM(d.matches) FILTER (WHERE d.date <= b.last_day - 7 AND d.date > b.last_day - 14) AS games_prev\n    FROM hero_daily d, bounds b\n    WHERE d.game = 'deadlock'\n    GROUP BY d.hero\n),\nmoves AS (\n    SELECT\n        hero,\n        100.0 * wins_now / games_now   AS wr_now,\n        100.0 * wins_prev / games_prev AS wr_prev,\n        100.0 * wins_now / games_now - 100.0 * wins_prev / games_prev AS change_pts,\n        games_now\n    FROM weekly\n    WHERE games_now >= 5000 AND games_prev >= 5000\n),\nranked AS (\n    SELECT *,\n        ROW_NUMBER() OVER (ORDER BY change_pts DESC) AS up_rank,\n        ROW_NUMBER() OVER (ORDER BY change_pts ASC)  AS down_rank\n    FROM moves\n),\npatched AS (\n    SELECT c.hero, string_agg(c.change_type || ' (' || strftime(c.patch_date, '%b %d') || ')', ', ') AS recent_patch\n    FROM patch_changes c, bounds b\n    WHERE c.game = 'deadlock' AND c.patch_date > b.last_day - 14\n    GROUP BY c.hero\n)\nSELECT\n    CASE WHEN up_rank <= 5 THEN 'riser' ELSE 'faller' END AS direction,\n    r.hero,\n    ROUND(wr_prev, 2)    AS win_rate_prev_week,\n    ROUND(wr_now, 2)     AS win_rate_this_week,\n    ROUND(change_pts, 2) AS change_pts,\n    games_now            AS games_this_week,\n    COALESCE(p.recent_patch, 'no patch: moved on its own') AS explained_by\nFROM ranked r\nLEFT JOIN patched p USING (hero)\nWHERE up_rank <= 5 OR down_rank <= 5\nORDER BY change_pts DESC;",
+   "sql": "WITH match_games AS (\n    SELECT game FROM games WHERE stats_format = 'matches'\n),\nbounds AS (\n    SELECT game, MAX(date) AS last_day\n    FROM hero_daily\n    WHERE game IN (SELECT game FROM match_games)\n    GROUP BY game\n),\nweekly AS (\n    SELECT\n        d.game,\n        d.hero,\n        SUM(d.wins)    FILTER (WHERE d.date >  b.last_day - 7)                              AS wins_now,\n        SUM(d.matches) FILTER (WHERE d.date >  b.last_day - 7)                              AS games_now,\n        SUM(d.wins)    FILTER (WHERE d.date <= b.last_day - 7 AND d.date > b.last_day - 14) AS wins_prev,\n        SUM(d.matches) FILTER (WHERE d.date <= b.last_day - 7 AND d.date > b.last_day - 14) AS games_prev\n    FROM hero_daily d\n    JOIN bounds b USING (game)\n    GROUP BY d.game, d.hero\n),\nmoves AS (\n    SELECT\n        game, hero,\n        100.0 * wins_now / games_now   AS wr_now,\n        100.0 * wins_prev / games_prev AS wr_prev,\n        100.0 * wins_now / games_now - 100.0 * wins_prev / games_prev AS change_pts,\n        games_now\n    FROM weekly\n    WHERE games_now >= 5000 AND games_prev >= 5000\n),\nranked AS (\n    SELECT *,\n        ROW_NUMBER() OVER (PARTITION BY game ORDER BY change_pts DESC) AS up_rank,\n        ROW_NUMBER() OVER (PARTITION BY game ORDER BY change_pts ASC)  AS down_rank\n    FROM moves\n),\npatched AS (\n    SELECT c.game, c.hero,\n        string_agg(c.change_type || ' (' || strftime(c.patch_date, '%b %d') || ')', ', ') AS recent_patch\n    FROM patch_changes c\n    JOIN bounds b USING (game)\n    WHERE c.patch_date > b.last_day - 14\n    GROUP BY c.game, c.hero\n)\nSELECT\n    r.game,\n    CASE WHEN up_rank <= 5 THEN 'riser' ELSE 'faller' END AS direction,\n    r.hero,\n    ROUND(wr_prev, 2)    AS win_rate_prev_week,\n    ROUND(wr_now, 2)     AS win_rate_this_week,\n    ROUND(change_pts, 2) AS change_pts,\n    games_now            AS games_this_week,\n    COALESCE(p.recent_patch, 'no patch: moved on its own') AS explained_by\nFROM ranked r\nLEFT JOIN patched p USING (game, hero)\nWHERE up_rank <= 5 OR down_rank <= 5\nORDER BY r.game, change_pts DESC;",
    "columns": [
+    "game",
     "direction",
     "hero",
     "win_rate_prev_week",
@@ -1657,6 +1708,7 @@
    "row_count": 10,
    "rows": [
     [
+     "deadlock",
      "riser",
      "Lady Geist",
      55.13,
@@ -1666,6 +1718,7 @@
      "no patch: moved on its own"
     ],
     [
+     "deadlock",
      "riser",
      "Baba",
      54.94,
@@ -1675,6 +1728,7 @@
      "no patch: moved on its own"
     ],
     [
+     "deadlock",
      "riser",
      "Nurse Harrow",
      50.58,
@@ -1684,6 +1738,7 @@
      "no patch: moved on its own"
     ],
     [
+     "deadlock",
      "riser",
      "Rem",
      45.26,
@@ -1693,6 +1748,7 @@
      "no patch: moved on its own"
     ],
     [
+     "deadlock",
      "riser",
      "Vyper",
      45.78,
@@ -1702,6 +1758,7 @@
      "no patch: moved on its own"
     ],
     [
+     "deadlock",
      "faller",
      "Calico",
      48.48,
@@ -1711,6 +1768,7 @@
      "no patch: moved on its own"
     ],
     [
+     "deadlock",
      "faller",
      "Viscous",
      46.34,
@@ -1720,6 +1778,7 @@
      "no patch: moved on its own"
     ],
     [
+     "deadlock",
      "faller",
      "Venator",
      46.2,
@@ -1729,6 +1788,7 @@
      "no patch: moved on its own"
     ],
     [
+     "deadlock",
      "faller",
      "Rat King",
      54.78,
@@ -1738,6 +1798,7 @@
      "no patch: moved on its own"
     ],
     [
+     "deadlock",
      "faller",
      "Mirage",
      43.31,
@@ -1747,8 +1808,8 @@
      "no patch: moved on its own"
     ]
    ],
-   "runtime_ms": 8.6,
-   "takeaway": "Top riser: Lady Geist (+1.33 pts). 10 of 10 movers had no patch in the window. Moves of about ±1 point are within normal weekly noise (see the Patch impact analysis)."
+   "runtime_ms": 12.2,
+   "takeaway": "deadlock: top riser Lady Geist (+1.33 pts); 10 of 10 movers had no patch in the window. Moves of about ±1 point are within normal weekly noise (see the Patch impact analysis)."
   }
  ]
 }

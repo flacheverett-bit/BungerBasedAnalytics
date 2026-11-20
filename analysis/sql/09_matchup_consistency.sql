@@ -3,6 +3,7 @@
 -- techniques: self-join, symmetric pair de-duplication (a.hero < a.enemy), validation metrics
 -- why: Checking a source against its own logic before trusting it is basic data-quality practice, and an easy way to catch a broken feed.
 SELECT
+    a.game,
     COUNT(*)                                                       AS hero_pairs_checked,
     ROUND(AVG(ABS(a.win_rate + b.win_rate - 100)), 3)              AS avg_deviation_pts,
     ROUND(MAX(ABS(a.win_rate + b.win_rate - 100)), 3)              AS max_deviation_pts,
@@ -13,4 +14,6 @@ JOIN matchups b
   ON a.game = b.game
  AND a.hero = b.enemy
  AND a.enemy = b.hero
-WHERE a.hero < a.enemy;
+WHERE a.hero < a.enemy
+GROUP BY a.game
+ORDER BY a.game;

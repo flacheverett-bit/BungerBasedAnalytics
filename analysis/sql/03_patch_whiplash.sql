@@ -23,4 +23,4 @@ FROM ordered
 WHERE previous_change IS NOT NULL
   AND previous_change <> change_type
   AND patch_date - previous_date <= 30
-ORDER BY reversed_on DESC;
+ORDER BY reversed_on DESC, game, hero;   -- tie-breakers keep the output order stable between runs

@@ -1,14 +1,15 @@
--- title: Underused team-up loadouts (Marvel Rivals)
--- question: For which heroes does the less popular team-up loadout have a higher win rate with its partner than the popular one?
+-- title: Underused team-up loadouts
+-- question: For which heroes does the less popular team-up loadout have a higher win rate with its partner than the popular one? Covers every game with team-up data (currently Marvel Rivals).
 -- techniques: ROW_NUMBER, pivot with conditional MAX(CASE ...), derived comparison column
 -- why: A gap between popularity and performance is an "insight you can act on": a free win-rate edge most players are ignoring.
 WITH ranked AS (
-    SELECT *, ROW_NUMBER() OVER (PARTITION BY hero ORDER BY usage_share DESC) AS rk
+    SELECT *, ROW_NUMBER() OVER (PARTITION BY game, hero ORDER BY usage_share DESC) AS rk
     FROM teamups
     WHERE usage_share IS NOT NULL
 ),
 pivoted AS (
     SELECT
+        game,
         hero,
         MAX(CASE WHEN rk = 1 THEN loadout END)          AS popular_loadout,
         MAX(CASE WHEN rk = 1 THEN usage_share END)      AS popular_share,
@@ -17,9 +18,10 @@ pivoted AS (
         MAX(CASE WHEN rk = 2 THEN usage_share END)      AS other_share,
         MAX(CASE WHEN rk = 2 THEN wr_with_partner END)  AS other_wr_with_partner
     FROM ranked
-    GROUP BY hero
+    GROUP BY game, hero
 )
 SELECT
+    game,
     hero,
     popular_loadout,
     ROUND(popular_share, 1)                                        AS popular_share_pct,
@@ -31,5 +33,5 @@ SELECT
 FROM pivoted
 WHERE other_wr_with_partner > popular_wr_with_partner
   AND hero NOT LIKE 'Deadpool (%'          -- Deadpool's three role variants share one set of loadouts
-ORDER BY other_loadout_edge DESC
-LIMIT 12;
+QUALIFY ROW_NUMBER() OVER (PARTITION BY game ORDER BY other_wr_with_partner - popular_wr_with_partner DESC) <= 12
+ORDER BY game, other_loadout_edge DESC;

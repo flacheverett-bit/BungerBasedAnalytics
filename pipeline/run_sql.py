@@ -47,8 +47,11 @@ def t01(df):
         f"{r.game}: {r.hero} ({r.total_changes} changes, {r.nerfs} nerfs / {r.buffs} buffs)" for r in g.itertuples()) + "."
 
 def t02(df):
-    top = df.sort_values("win_rate_30d", ascending=False).iloc[0]
-    return f"Best 30-day win rate overall: {top.hero} ({top.role}) at {top.win_rate_30d:.1f}% over {top.matches_30d:,.0f} games."
+    parts = []
+    for g, d in df.groupby("game"):
+        top = d.sort_values("win_rate_30d", ascending=False).iloc[0]
+        parts.append(f"{g}: {top.hero} ({top.role}) at {top.win_rate_30d:.1f}% over {top.matches_30d:,.0f} games")
+    return "Best 30-day win rate: " + "; ".join(parts) + "."
 
 def t03(df):
     by = df.groupby("game").size().to_dict()
@@ -72,11 +75,14 @@ def t05(df):
     return "; ".join(parts) + "."
 
 def t06(df):
-    a, b = df.iloc[0], df.iloc[-1]
-    flat = abs(b.diversity_pct_of_roster - a.diversity_pct_of_roster) < 2
-    return (f"Effective heroes went from {a.effective_heroes} ({a.month}) to {b.effective_heroes} ({b.month}), but relative to "
-            f"roster size diversity moved only from {a.diversity_pct_of_roster}% to {b.diversity_pct_of_roster}%"
-            + (": the rise comes from new heroes being added, not from a more balanced meta." if flat else "."))
+    parts = []
+    for g, d in df.groupby("game"):
+        a, b = d.iloc[0], d.iloc[-1]
+        flat = abs(b.diversity_pct_of_roster - a.diversity_pct_of_roster) < 2
+        parts.append(f"{g}: effective heroes went from {a.effective_heroes} ({a.month}) to {b.effective_heroes} ({b.month}), "
+                     f"while diversity relative to roster size moved from {a.diversity_pct_of_roster}% to {b.diversity_pct_of_roster}%"
+                     + (", so the rise comes from new heroes being added, not from a more balanced meta" if flat else ""))
+    return "; ".join(parts) + "."
 
 def t07(df):
     return " ".join(f"{r.game}: ban vs. win-rate correlation {r.corr_ban_vs_win:+.2f}, most banned {r.most_banned} ({r.top_ban_rate:.0f}%)."
@@ -85,21 +91,28 @@ def t07(df):
 def t08(df):
     if df.empty:
         return "No hero's less-popular loadout outperforms the popular one."
-    r = df.iloc[0]
-    return (f"{len(df)} heroes have an underused loadout that wins more often. Biggest gap: {r.hero}'s {r.other_loadout} "
-            f"({r.other_share_pct:.0f}% usage) wins {r.other_loadout_edge:+.1f} pts more than {r.popular_loadout}.")
+    parts = []
+    for g, d in df.groupby("game"):
+        r = d.iloc[0]
+        parts.append(f"{g}: {len(d)} heroes have an underused loadout that wins more often; biggest gap is {r.hero}'s {r.other_loadout} "
+                     f"({r.other_share_pct:.0f}% usage), which wins {r.other_loadout_edge:+.1f} pts more than {r.popular_loadout}")
+    return "; ".join(parts) + "."
 
 def t09(df):
-    r = df.iloc[0]
-    ok = r.pairs_failing_0_5pt_tolerance == 0
-    return (f"{'PASS' if ok else 'CHECK'}: {int(r.hero_pairs_checked)} matchup pairs; average deviation {r.avg_deviation_pts} pts, "
-            f"max {r.max_deviation_pts} pts, {int(r.pairs_failing_0_5pt_tolerance)} outside a 0.5-pt tolerance.")
+    parts = []
+    for r in df.itertuples():
+        ok = r.pairs_failing_0_5pt_tolerance == 0
+        parts.append(f"{r.game}: {'PASS' if ok else 'CHECK'}, {int(r.hero_pairs_checked)} matchup pairs, average deviation "
+                     f"{r.avg_deviation_pts} pts, max {r.max_deviation_pts} pts, {int(r.pairs_failing_0_5pt_tolerance)} outside a 0.5-pt tolerance")
+    return "; ".join(parts) + "."
 
 def t10(df):
-    unexplained = (df["explained_by"].str.startswith("no patch")).sum()
-    top = df.iloc[0]
-    return (f"Top riser: {top.hero} ({top.change_pts:+.2f} pts). {unexplained} of {len(df)} movers had no patch in the window. "
-            "Moves of about ±1 point are within normal weekly noise (see the Patch impact analysis).")
+    parts = []
+    for g, d in df.groupby("game"):
+        unexplained = d["explained_by"].str.startswith("no patch").sum()
+        top = d.sort_values("change_pts", ascending=False).iloc[0]
+        parts.append(f"{g}: top riser {top.hero} ({top.change_pts:+.2f} pts); {unexplained} of {len(d)} movers had no patch in the window")
+    return "; ".join(parts) + ". Moves of about ±1 point are within normal weekly noise (see the Patch impact analysis)."
 
 TAKEAWAYS = {"01": t01, "02": t02, "03": t03, "04": t04, "05": t05, "06": t06, "07": t07, "08": t08, "09": t09, "10": t10}
 
