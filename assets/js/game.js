@@ -145,7 +145,7 @@
     legend.replaceChildren(
       el("span", {}, el("span", { class: "key-line", style: `background:${token("--series-1")}` }), "Daily peak"),
       el("span", {}, el("span", { class: "key-line", style: `background:${token("--series-2")}` }), "Daily average"),
-      showPatches ? el("span", {}, el("span", { class: "key-flag", style: `background:${token("--neutral-mark")}` }), "Patch released") : null);
+      showPatches ? el("span", {}, el("span", { class: "key-flag", style: `background:${token("--neutral-mark")}` }), "Patch with hero changes") : null);
 
     box.querySelector(".chart-empty")?.remove();
     if (vis.length < 2) {
@@ -156,8 +156,10 @@
         ", save it in data/raw/ and run ", el("code", { text: "python pipeline/players.py import-steamdb <file>" }), ".")));
     }
 
+    // Only patches that changed at least one hero get a marker.
     const markerData = showPatches
-      ? markers.map((m) => ({ x: toMs(m.date), color: token("--neutral-mark"), emphasis: m.big || Object.keys(m.changes || {}).length >= 5, m }))
+      ? markers.filter((m) => Object.keys(m.changes || {}).length > 0)
+          .map((m) => ({ x: toMs(m.date), color: token("--neutral-mark"), emphasis: Object.keys(m.changes).length >= 5, m }))
           .filter((m) => m.x >= start)
       : [];
 
@@ -199,7 +201,7 @@
     const near = markerData.filter((m) => Math.abs(m.x - x) < DAY * 0.75);
     near.forEach(({ m }) => node.append(el("div", { class: "tt-patch" },
       el("strong", { text: m.title || "Patch" }),
-      el("div", { class: "muted", text: `${Object.keys(m.changes || {}).length || "No"} hero changes logged` }))));
+      el("div", { class: "muted", text: `${Object.keys(m.changes).length} hero${Object.keys(m.changes).length === 1 ? "" : "es"} changed` }))));
     return node;
   }
 
