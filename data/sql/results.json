@@ -1,0 +1,1754 @@
+{
+ "generated": "2026-11-20T22:04:05Z",
+ "engine": "DuckDB 2.0.1",
+ "tables": [
+  {
+   "name": "daily_totals",
+   "rows": 400
+  },
+  {
+   "name": "hero_daily",
+   "rows": 14888
+  },
+  {
+   "name": "heroes",
+   "rows": 155
+  },
+  {
+   "name": "matchups",
+   "rows": 1892
+  },
+  {
+   "name": "patch_changes",
+   "rows": 1035
+  },
+  {
+   "name": "patch_impact",
+   "rows": 319
+  },
+  {
+   "name": "patches",
+   "rows": 95
+  },
+  {
+   "name": "perks",
+   "rows": 216
+  },
+  {
+   "name": "players_daily",
+   "rows": 1148
+  },
+  {
+   "name": "teamups",
+   "rows": 118
+  }
+ ],
+ "queries": [
+  {
+   "id": "01_most_patched_heroes",
+   "file": "analysis/sql/01_most_patched_heroes.sql",
+   "title": "Which heroes do developers touch the most?",
+   "question": "Per game, which heroes were changed most often, and are they mostly being buffed or nerfed?",
+   "techniques": "conditional aggregation (FILTER), window ranking, QUALIFY",
+   "why": "Frequent changes signal a hero the developers can't get right, a design problem rather than a numbers problem.",
+   "sql": "SELECT\n    game,\n    hero,\n    COUNT(*)                                          AS total_changes,\n    COUNT(*) FILTER (WHERE change_type = 'buff')      AS buffs,\n    COUNT(*) FILTER (WHERE change_type = 'nerf')      AS nerfs,\n    COUNT(*) FILTER (WHERE change_type IN ('rework', 'adjustment')) AS reworks_or_adjustments,\n    COUNT(*) FILTER (WHERE change_type = 'buff')\n      - COUNT(*) FILTER (WHERE change_type = 'nerf')  AS net_direction,   -- >0 = mostly buffed\n    MIN(patch_date)                                   AS first_change,\n    MAX(patch_date)                                   AS last_change\nFROM patch_changes\nWHERE change_type <> 'new'\nGROUP BY game, hero\nQUALIFY ROW_NUMBER() OVER (PARTITION BY game ORDER BY total_changes DESC, hero) <= 5\nORDER BY game, total_changes DESC;",
+   "columns": [
+    "game",
+    "hero",
+    "total_changes",
+    "buffs",
+    "nerfs",
+    "reworks_or_adjustments",
+    "net_direction",
+    "first_change",
+    "last_change"
+   ],
+   "row_count": 15,
+   "rows": [
+    [
+     "deadlock",
+     "Shiv",
+     18,
+     5,
+     10,
+     3,
+     -5,
+     "2025-11-21",
+     "2026-10-30"
+    ],
+    [
+     "deadlock",
+     "Billy",
+     15,
+     3,
+     8,
+     4,
+     -5,
+     "2025-11-21",
+     "2026-10-30"
+    ],
+    [
+     "deadlock",
+     "Celeste",
+     15,
+     4,
+     9,
+     2,
+     -5,
+     "2026-02-12",
+     "2026-11-04"
+    ],
+    [
+     "deadlock",
+     "Silver",
+     15,
+     7,
+     6,
+     2,
+     1,
+     "2026-02-04",
+     "2026-10-30"
+    ],
+    [
+     "deadlock",
+     "Apollo",
+     14,
+     10,
+     4,
+     0,
+     6,
+     "2026-02-13",
+     "2026-11-04"
+    ],
+    [
+     "marvel-rivals",
+     "Gambit",
+     11,
+     1,
+     7,
+     3,
+     -6,
+     "2025-12-12",
+     "2026-11-13"
+    ],
+    [
+     "marvel-rivals",
+     "Invisible Woman",
+     10,
+     2,
+     5,
+     3,
+     -3,
+     "2025-11-14",
+     "2026-11-13"
+    ],
+    [
+     "marvel-rivals",
+     "Phoenix",
+     10,
+     5,
+     3,
+     2,
+     2,
+     "2025-11-14",
+     "2026-11-13"
+    ],
+    [
+     "marvel-rivals",
+     "Elsa Bloodstone",
+     9,
+     2,
+     7,
+     0,
+     -5,
+     "2026-02-19",
+     "2026-11-13"
+    ],
+    [
+     "marvel-rivals",
+     "Ultron",
+     8,
+     3,
+     3,
+     2,
+     0,
+     "2025-12-12",
+     "2026-11-13"
+    ],
+    [
+     "overwatch",
+     "Vendetta",
+     15,
+     6,
+     6,
+     3,
+     0,
+     "2025-12-09",
+     "2026-11-03"
+    ],
+    [
+     "overwatch",
+     "Emre",
+     9,
+     7,
+     2,
+     0,
+     5,
+     "2026-02-13",
+     "2026-11-03"
+    ],
+    [
+     "overwatch",
+     "Jetpack Cat",
+     9,
+     0,
+     5,
+     4,
+     -5,
+     "2026-02-13",
+     "2026-11-03"
+    ],
+    [
+     "overwatch",
+     "D.Va",
+     8,
+     2,
+     5,
+     1,
+     -3,
+     "2025-11-11",
+     "2026-10-06"
+    ],
+    [
+     "overwatch",
+     "Kiriko",
+     8,
+     1,
+     5,
+     2,
+     -4,
+     "2025-11-11",
+     "2026-10-13"
+    ]
+   ],
+   "runtime_ms": 7.6,
+   "takeaway": "Most-patched: deadlock: Shiv (18 changes, 10 nerfs / 5 buffs); marvel-rivals: Gambit (11 changes, 7 nerfs / 1 buffs); overwatch: Vendetta (15 changes, 6 nerfs / 6 buffs)."
+  },
+  {
+   "id": "02_rolling_winrate_leaders",
+   "file": "analysis/sql/02_rolling_winrate_leaders.sql",
+   "title": "Rolling 30-day win-rate leaders by role (Deadlock)",
+   "question": "Right now, which heroes have the best match-weighted win rate over the last 30 days in each role?",
+   "techniques": "window aggregates with a RANGE frame (rolling sums), JOIN, QUALIFY + ROW_NUMBER per partition",
+   "why": "A rolling window smooths daily noise, and weighting by matches stops a low-volume day from swinging the number.",
+   "sql": "WITH daily AS (\n    SELECT d.date, d.hero, h.role, d.wins, d.matches\n    FROM hero_daily d\n    JOIN heroes h USING (game, hero)\n    WHERE d.game = 'deadlock'\n),\nrolling AS (\n    SELECT *,\n        SUM(wins)    OVER w AS wins_30d,\n        SUM(matches) OVER w AS matches_30d\n    FROM daily\n    WINDOW w AS (PARTITION BY hero ORDER BY date\n                 RANGE BETWEEN INTERVAL 29 DAYS PRECEDING AND CURRENT ROW)\n)\nSELECT\n    role,\n    hero,\n    ROUND(100.0 * wins_30d / matches_30d, 2) AS win_rate_30d,\n    matches_30d\nFROM rolling\nWHERE date = (SELECT MAX(date) FROM daily)\nQUALIFY ROW_NUMBER() OVER (PARTITION BY role ORDER BY wins_30d / matches_30d DESC) <= 3\nORDER BY role, win_rate_30d DESC;",
+   "columns": [
+    "role",
+    "hero",
+    "win_rate_30d",
+    "matches_30d"
+   ],
+   "row_count": 15,
+   "rows": [
+    [
+     "Assassin",
+     "Haze",
+     53.53,
+     2970540.0
+    ],
+    [
+     "Assassin",
+     "Lash",
+     50.99,
+     2113097.0
+    ],
+    [
+     "Assassin",
+     "Drifter",
+     50.41,
+     2742972.0
+    ],
+    [
+     "Brawler",
+     "Rat King",
+     55.01,
+     3126042.0
+    ],
+    [
+     "Brawler",
+     "Victor",
+     54.0,
+     2153369.0
+    ],
+    [
+     "Brawler",
+     "Abrams",
+     52.06,
+     2183231.0
+    ],
+    [
+     "Healer",
+     "Paige",
+     56.01,
+     1944151.0
+    ],
+    [
+     "Healer",
+     "Kelvin",
+     55.04,
+     1001768.0
+    ],
+    [
+     "Healer",
+     "Ivy",
+     52.38,
+     1404479.0
+    ],
+    [
+     "Marksman",
+     "Deadman Danny",
+     52.79,
+     2182068.0
+    ],
+    [
+     "Marksman",
+     "Wraith",
+     50.18,
+     2371666.0
+    ],
+    [
+     "Marksman",
+     "Vindicta",
+     49.18,
+     2020863.0
+    ],
+    [
+     "Mystic",
+     "Graves",
+     57.35,
+     2940370.0
+    ],
+    [
+     "Mystic",
+     "Seven",
+     55.05,
+     2299306.0
+    ],
+    [
+     "Mystic",
+     "Baba",
+     54.76,
+     902561.0
+    ]
+   ],
+   "runtime_ms": 17.1,
+   "takeaway": "Best 30-day win rate overall: Graves (Mystic) at 57.4% over 2,940,370 games."
+  },
+  {
+   "id": "03_patch_whiplash",
+   "file": "analysis/sql/03_patch_whiplash.sql",
+   "title": "Patch whiplash: buffed, then nerfed within a month",
+   "question": "How often does a hero get changed one way and then reversed within 30 days?",
+   "techniques": "LAG() over an ordered partition, date arithmetic, filtering on window results",
+   "why": "Quick reversals point to over-corrections, a balance process that's reacting instead of predicting.",
+   "sql": "WITH ordered AS (\n    SELECT\n        game, hero, patch_date, change_type,\n        LAG(change_type) OVER w AS previous_change,\n        LAG(patch_date)  OVER w AS previous_date\n    FROM patch_changes\n    WHERE change_type IN ('buff', 'nerf')\n    WINDOW w AS (PARTITION BY game, hero ORDER BY patch_date)\n)\nSELECT\n    game,\n    hero,\n    previous_date,\n    previous_change,\n    patch_date                    AS reversed_on,\n    change_type                   AS reversed_with,\n    patch_date - previous_date    AS days_between\nFROM ordered\nWHERE previous_change IS NOT NULL\n  AND previous_change <> change_type\n  AND patch_date - previous_date <= 30\nORDER BY reversed_on DESC;",
+   "columns": [
+    "game",
+    "hero",
+    "previous_date",
+    "previous_change",
+    "reversed_on",
+    "reversed_with",
+    "days_between"
+   ],
+   "row_count": 91,
+   "rows": [
+    [
+     "deadlock",
+     "Nurse Harrow",
+     "2026-10-30",
+     "nerf",
+     "2026-11-04",
+     "buff",
+     5
+    ],
+    [
+     "deadlock",
+     "Rat King",
+     "2026-10-30",
+     "nerf",
+     "2026-11-04",
+     "buff",
+     5
+    ],
+    [
+     "deadlock",
+     "Mo & Krill",
+     "2026-10-30",
+     "nerf",
+     "2026-11-04",
+     "buff",
+     5
+    ],
+    [
+     "deadlock",
+     "Deadman Danny",
+     "2026-10-14",
+     "buff",
+     "2026-10-30",
+     "nerf",
+     16
+    ],
+    [
+     "marvel-rivals",
+     "The Thing",
+     "2026-09-11",
+     "nerf",
+     "2026-10-09",
+     "buff",
+     28
+    ],
+    [
+     "marvel-rivals",
+     "Devil Dinosaur",
+     "2026-09-11",
+     "buff",
+     "2026-10-09",
+     "nerf",
+     28
+    ],
+    [
+     "marvel-rivals",
+     "Magneto",
+     "2026-09-11",
+     "nerf",
+     "2026-10-09",
+     "buff",
+     28
+    ],
+    [
+     "overwatch",
+     "Zenyatta",
+     "2026-08-11",
+     "buff",
+     "2026-09-08",
+     "nerf",
+     28
+    ],
+    [
+     "deadlock",
+     "Celeste",
+     "2026-07-28",
+     "buff",
+     "2026-08-22",
+     "nerf",
+     25
+    ],
+    [
+     "marvel-rivals",
+     "Elsa Bloodstone",
+     "2026-07-10",
+     "buff",
+     "2026-08-07",
+     "nerf",
+     28
+    ],
+    [
+     "marvel-rivals",
+     "Gambit",
+     "2026-07-11",
+     "buff",
+     "2026-08-07",
+     "nerf",
+     27
+    ],
+    [
+     "marvel-rivals",
+     "Rogue",
+     "2026-07-10",
+     "nerf",
+     "2026-08-07",
+     "buff",
+     28
+    ],
+    [
+     "overwatch",
+     "Doomfist",
+     "2026-07-14",
+     "nerf",
+     "2026-07-30",
+     "buff",
+     16
+    ],
+    [
+     "overwatch",
+     "Mauga",
+     "2026-07-14",
+     "nerf",
+     "2026-07-30",
+     "buff",
+     16
+    ],
+    [
+     "deadlock",
+     "Silver",
+     "2026-07-09",
+     "buff",
+     "2026-07-28",
+     "nerf",
+     19
+    ],
+    [
+     "deadlock",
+     "Ivy",
+     "2026-06-30",
+     "buff",
+     "2026-07-28",
+     "nerf",
+     28
+    ],
+    [
+     "deadlock",
+     "Haze",
+     "2026-06-30",
+     "buff",
+     "2026-07-28",
+     "nerf",
+     28
+    ],
+    [
+     "overwatch",
+     "Reaper",
+     "2026-06-16",
+     "nerf",
+     "2026-07-14",
+     "buff",
+     28
+    ],
+    [
+     "overwatch",
+     "Ana",
+     "2026-06-16",
+     "nerf",
+     "2026-07-14",
+     "buff",
+     28
+    ],
+    [
+     "marvel-rivals",
+     "Cyclops",
+     "2026-07-10",
+     "nerf",
+     "2026-07-11",
+     "buff",
+     1
+    ],
+    [
+     "marvel-rivals",
+     "Ultron",
+     "2026-07-10",
+     "buff",
+     "2026-07-11",
+     "nerf",
+     1
+    ],
+    [
+     "marvel-rivals",
+     "Gambit",
+     "2026-06-12",
+     "nerf",
+     "2026-07-11",
+     "buff",
+     29
+    ],
+    [
+     "marvel-rivals",
+     "Psylocke",
+     "2026-07-10",
+     "buff",
+     "2026-07-11",
+     "nerf",
+     1
+    ],
+    [
+     "marvel-rivals",
+     "Phoenix",
+     "2026-06-12",
+     "nerf",
+     "2026-07-11",
+     "buff",
+     29
+    ],
+    [
+     "marvel-rivals",
+     "Deadpool (Strategist)",
+     "2026-06-12",
+     "buff",
+     "2026-07-10",
+     "nerf",
+     28
+    ],
+    [
+     "marvel-rivals",
+     "Ultron",
+     "2026-06-12",
+     "nerf",
+     "2026-07-10",
+     "buff",
+     28
+    ],
+    [
+     "marvel-rivals",
+     "Human Torch",
+     "2026-06-12",
+     "buff",
+     "2026-07-10",
+     "nerf",
+     28
+    ],
+    [
+     "marvel-rivals",
+     "Devil Dinosaur",
+     "2026-06-12",
+     "nerf",
+     "2026-07-10",
+     "buff",
+     28
+    ],
+    [
+     "marvel-rivals",
+     "Rogue",
+     "2026-06-12",
+     "buff",
+     "2026-07-10",
+     "nerf",
+     28
+    ],
+    [
+     "deadlock",
+     "Shiv",
+     "2026-07-01",
+     "buff",
+     "2026-07-09",
+     "nerf",
+     8
+    ],
+    [
+     "deadlock",
+     "Viscous",
+     "2026-06-30",
+     "buff",
+     "2026-07-09",
+     "nerf",
+     9
+    ],
+    [
+     "deadlock",
+     "Graves",
+     "2026-06-11",
+     "nerf",
+     "2026-07-09",
+     "buff",
+     28
+    ],
+    [
+     "deadlock",
+     "Silver",
+     "2026-06-11",
+     "nerf",
+     "2026-07-09",
+     "buff",
+     28
+    ],
+    [
+     "deadlock",
+     "Drifter",
+     "2026-06-30",
+     "buff",
+     "2026-07-09",
+     "nerf",
+     9
+    ],
+    [
+     "deadlock",
+     "Ivy",
+     "2026-06-11",
+     "nerf",
+     "2026-06-30",
+     "buff",
+     19
+    ],
+    [
+     "deadlock",
+     "Seven",
+     "2026-06-11",
+     "nerf",
+     "2026-06-30",
+     "buff",
+     19
+    ],
+    [
+     "deadlock",
+     "Shiv",
+     "2026-06-11",
+     "nerf",
+     "2026-06-12",
+     "buff",
+     1
+    ],
+    [
+     "marvel-rivals",
+     "Moon Knight",
+     "2026-05-15",
+     "buff",
+     "2026-06-12",
+     "nerf",
+     28
+    ],
+    [
+     "marvel-rivals",
+     "Star-Lord",
+     "2026-05-15",
+     "buff",
+     "2026-06-12",
+     "nerf",
+     28
+    ],
+    [
+     "deadlock",
+     "Grey Talon",
+     "2026-05-22",
+     "buff",
+     "2026-06-11",
+     "nerf",
+     20
+    ],
+    [
+     "deadlock",
+     "Bebop",
+     "2026-05-22",
+     "nerf",
+     "2026-06-11",
+     "buff",
+     20
+    ],
+    [
+     "deadlock",
+     "McGinnis",
+     "2026-05-22",
+     "buff",
+     "2026-05-31",
+     "nerf",
+     9
+    ],
+    [
+     "deadlock",
+     "Yamato",
+     "2026-05-22",
+     "buff",
+     "2026-05-31",
+     "nerf",
+     9
+    ],
+    [
+     "deadlock",
+     "Graves",
+     "2026-05-22",
+     "buff",
+     "2026-05-31",
+     "nerf",
+     9
+    ],
+    [
+     "deadlock",
+     "Apollo",
+     "2026-05-22",
+     "nerf",
+     "2026-05-31",
+     "buff",
+     9
+    ],
+    [
+     "deadlock",
+     "Venator",
+     "2026-04-30",
+     "nerf",
+     "2026-05-22",
+     "buff",
+     22
+    ],
+    [
+     "deadlock",
+     "Pocket",
+     "2026-04-30",
+     "buff",
+     "2026-05-22",
+     "nerf",
+     22
+    ],
+    [
+     "deadlock",
+     "Victor",
+     "2026-04-30",
+     "buff",
+     "2026-05-22",
+     "nerf",
+     22
+    ],
+    [
+     "deadlock",
+     "Infernus",
+     "2026-04-30",
+     "nerf",
+     "2026-05-22",
+     "buff",
+     22
+    ],
+    [
+     "deadlock",
+     "Abrams",
+     "2026-04-30",
+     "nerf",
+     "2026-05-22",
+     "buff",
+     22
+    ],
+    [
+     "deadlock",
+     "Vyper",
+     "2026-04-30",
+     "nerf",
+     "2026-05-22",
+     "buff",
+     22
+    ],
+    [
+     "overwatch",
+     "Emre",
+     "2026-04-14",
+     "buff",
+     "2026-05-12",
+     "nerf",
+     28
+    ],
+    [
+     "deadlock",
+     "Vyper",
+     "2026-04-10",
+     "buff",
+     "2026-04-30",
+     "nerf",
+     20
+    ],
+    [
+     "deadlock",
+     "Celeste",
+     "2026-04-10",
+     "nerf",
+     "2026-04-30",
+     "buff",
+     20
+    ],
+    [
+     "overwatch",
+     "Roadhog",
+     "2026-04-14",
+     "nerf",
+     "2026-04-23",
+     "buff",
+     9
+    ],
+    [
+     "overwatch",
+     "Vendetta",
+     "2026-04-14",
+     "nerf",
+     "2026-04-23",
+     "buff",
+     9
+    ],
+    [
+     "deadlock",
+     "The Doorman",
+     "2026-03-25",
+     "buff",
+     "2026-04-10",
+     "nerf",
+     16
+    ],
+    [
+     "deadlock",
+     "Bebop",
+     "2026-03-25",
+     "buff",
+     "2026-04-10",
+     "nerf",
+     16
+    ],
+    [
+     "deadlock",
+     "Victor",
+     "2026-03-25",
+     "nerf",
+     "2026-04-10",
+     "buff",
+     16
+    ],
+    [
+     "deadlock",
+     "Dynamo",
+     "2026-03-21",
+     "buff",
+     "2026-04-10",
+     "nerf",
+     20
+    ]
+   ],
+   "runtime_ms": 8.1,
+   "takeaway": "91 reversals within 30 days (deadlock: 59, marvel-rivals: 21, overwatch: 11); 21 were reversed within a week."
+  },
+  {
+   "id": "04_players_around_big_patches",
+   "file": "analysis/sql/04_players_around_big_patches.sql",
+   "title": "Do big patches bring players back?",
+   "question": "For each big patch (10+ heroes changed), how did average Steam players in the week after compare with the week before?",
+   "techniques": "CTEs, range join on dates, conditional aggregation, percentage change",
+   "why": "Ties balance work to a business outcome, player engagement, which is the question a game studio actually cares about.",
+   "sql": "WITH big AS (\n    SELECT game, patch_date, title, heroes_changed\n    FROM patches\n    WHERE heroes_changed >= 10\n),\nwindows AS (\n    SELECT\n        b.game, b.patch_date, b.title, b.heroes_changed,\n        AVG(p.avg_players) FILTER (WHERE p.date BETWEEN b.patch_date - 7 AND b.patch_date - 1) AS players_before,\n        AVG(p.avg_players) FILTER (WHERE p.date BETWEEN b.patch_date + 1 AND b.patch_date + 7) AS players_after,\n        COUNT(*) FILTER (WHERE p.date < b.patch_date) AS days_before,\n        COUNT(*) FILTER (WHERE p.date > b.patch_date) AS days_after\n    FROM big b\n    JOIN players_daily p\n      ON p.game = b.game\n     AND p.date BETWEEN b.patch_date - 7 AND b.patch_date + 7\n    GROUP BY ALL\n)\nSELECT\n    game,\n    patch_date,\n    title,\n    heroes_changed,\n    ROUND(players_before)                                          AS players_before,\n    ROUND(players_after)                                           AS players_after,\n    ROUND(100.0 * (players_after - players_before) / players_before, 1) AS pct_change\nFROM windows\nWHERE days_before >= 5 AND days_after >= 5      -- skip periods where only monthly history exists\nORDER BY patch_date DESC;",
+   "columns": [
+    "game",
+    "patch_date",
+    "title",
+    "heroes_changed",
+    "players_before",
+    "players_after",
+    "pct_change"
+   ],
+   "row_count": 23,
+   "rows": [
+    [
+     "marvel-rivals",
+     "2026-11-13",
+     "Season 11: Doomsday balance update",
+     30,
+     35503.0,
+     48244.0,
+     35.9
+    ],
+    [
+     "overwatch",
+     "2026-11-03",
+     "Taking Reign mid-season balance update",
+     18,
+     48101.0,
+     42911.0,
+     -10.8
+    ],
+    [
+     "deadlock",
+     "2026-10-30",
+     "Halloween 2026 + Gameplay Update",
+     33,
+     168559.0,
+     164714.0,
+     -2.3
+    ],
+    [
+     "marvel-rivals",
+     "2026-10-09",
+     "Season 10.5 mid-season balance",
+     13,
+     73894.0,
+     74792.0,
+     1.2
+    ],
+    [
+     "overwatch",
+     "2026-10-06",
+     "Reign of Talon Season 5: A Grim Doctrine",
+     11,
+     74086.0,
+     84506.0,
+     14.1
+    ],
+    [
+     "deadlock",
+     "2026-09-16",
+     "Minor Update - 09-16-2026",
+     19,
+     54885.0,
+     56055.0,
+     2.1
+    ],
+    [
+     "marvel-rivals",
+     "2026-09-11",
+     "Season 10 balance update",
+     39,
+     91667.0,
+     113248.0,
+     23.5
+    ],
+    [
+     "overwatch",
+     "2026-09-08",
+     "Season 4 mid-season balance update",
+     20,
+     71767.0,
+     83945.0,
+     17.0
+    ],
+    [
+     "deadlock",
+     "2026-08-12",
+     "Minor Update - 08-12-2026",
+     13,
+     58155.0,
+     57580.0,
+     -1.0
+    ],
+    [
+     "deadlock",
+     "2026-07-28",
+     "Minor Update - 07-28-2026",
+     21,
+     45324.0,
+     58357.0,
+     28.8
+    ],
+    [
+     "deadlock",
+     "2026-07-09",
+     "Minor Update - 07-09-2026",
+     13,
+     45640.0,
+     43740.0,
+     -4.2
+    ],
+    [
+     "deadlock",
+     "2026-06-30",
+     "Minor Update - 06-30-2026",
+     24,
+     44230.0,
+     45938.0,
+     3.9
+    ],
+    [
+     "deadlock",
+     "2026-06-11",
+     "Minor Update - 06-11-2026",
+     19,
+     51183.0,
+     48866.0,
+     -4.5
+    ],
+    [
+     "deadlock",
+     "2026-05-22",
+     "Gameplay Update - 05-22-2026",
+     32,
+     52127.0,
+     56820.0,
+     9.0
+    ],
+    [
+     "deadlock",
+     "2026-04-30",
+     "Gameplay Update - 04-30-2026",
+     23,
+     54618.0,
+     55665.0,
+     1.9
+    ],
+    [
+     "deadlock",
+     "2026-04-10",
+     "04-10-2026 Update",
+     17,
+     62868.0,
+     61488.0,
+     -2.2
+    ],
+    [
+     "deadlock",
+     "2026-03-25",
+     "03-25-2026 Update",
+     15,
+     67175.0,
+     64255.0,
+     -4.3
+    ],
+    [
+     "deadlock",
+     "2026-03-21",
+     "03-21-2026 Update",
+     20,
+     70944.0,
+     65425.0,
+     -7.8
+    ],
+    [
+     "deadlock",
+     "2026-03-10",
+     "Balance update (03-10-2026)",
+     18,
+     73173.0,
+     72553.0,
+     -0.8
+    ],
+    [
+     "deadlock",
+     "2026-03-06",
+     "Gameplay Update - 03-06-2026",
+     33,
+     71346.0,
+     74393.0,
+     4.3
+    ],
+    [
+     "deadlock",
+     "2026-01-30",
+     "01-30-2026 Update",
+     23,
+     48037.0,
+     63957.0,
+     33.1
+    ],
+    [
+     "deadlock",
+     "2025-12-29",
+     "12-29-2025 Update",
+     10,
+     19012.0,
+     20656.0,
+     8.7
+    ],
+    [
+     "deadlock",
+     "2025-11-21",
+     "11-21-2025 Update",
+     28,
+     18157.0,
+     19884.0,
+     9.5
+    ]
+   ],
+   "runtime_ms": 6.5,
+   "takeaway": "Players rose in the week after 61% of big patches (median change +2.1%). Biggest jump: marvel-rivals, Season 11: Doomsday balance update (+35.9%)."
+  },
+  {
+   "id": "05_weekday_pattern",
+   "file": "analysis/sql/05_weekday_pattern.sql",
+   "title": "Which days are busiest?",
+   "question": "Relative to its own weekly average, how many more (or fewer) players does each game have on each day of the week?",
+   "techniques": "date functions (dayname, isodow, date_trunc), window AVG per week for normalization, complete-week filter",
+   "why": "Normalizing by week removes growth and decline trends, leaving the pure weekly rhythm. That's useful for timing events and patches.",
+   "sql": "WITH d AS (\n    SELECT\n        game, date, avg_players,\n        AVG(avg_players) OVER (PARTITION BY game, date_trunc('week', date)) AS week_mean,\n        COUNT(*)         OVER (PARTITION BY game, date_trunc('week', date)) AS days_in_week\n    FROM players_daily\n    WHERE date >= (SELECT MAX(date) FROM players_daily) - INTERVAL 120 DAYS\n)\nSELECT\n    game,\n    dayname(date)                                        AS weekday,\n    isodow(date)                                         AS day_number,\n    ROUND(100.0 * AVG(avg_players / week_mean - 1), 1)   AS pct_vs_week_average,\n    COUNT(*)                                             AS weeks_used\nFROM d\nWHERE days_in_week = 7                                   -- complete weeks only\nGROUP BY ALL\nORDER BY game, day_number;",
+   "columns": [
+    "game",
+    "weekday",
+    "day_number",
+    "pct_vs_week_average",
+    "weeks_used"
+   ],
+   "row_count": 21,
+   "rows": [
+    [
+     "deadlock",
+     "Monday",
+     1,
+     -7.0,
+     16
+    ],
+    [
+     "deadlock",
+     "Tuesday",
+     2,
+     -6.6,
+     16
+    ],
+    [
+     "deadlock",
+     "Wednesday",
+     3,
+     -3.6,
+     16
+    ],
+    [
+     "deadlock",
+     "Thursday",
+     4,
+     -6.5,
+     16
+    ],
+    [
+     "deadlock",
+     "Friday",
+     5,
+     -1.2,
+     16
+    ],
+    [
+     "deadlock",
+     "Saturday",
+     6,
+     10.7,
+     16
+    ],
+    [
+     "deadlock",
+     "Sunday",
+     7,
+     14.3,
+     16
+    ],
+    [
+     "marvel-rivals",
+     "Monday",
+     1,
+     3.0,
+     12
+    ],
+    [
+     "marvel-rivals",
+     "Tuesday",
+     2,
+     -3.3,
+     12
+    ],
+    [
+     "marvel-rivals",
+     "Wednesday",
+     3,
+     -5.5,
+     12
+    ],
+    [
+     "marvel-rivals",
+     "Thursday",
+     4,
+     -9.7,
+     12
+    ],
+    [
+     "marvel-rivals",
+     "Friday",
+     5,
+     0.5,
+     12
+    ],
+    [
+     "marvel-rivals",
+     "Saturday",
+     6,
+     11.2,
+     12
+    ],
+    [
+     "marvel-rivals",
+     "Sunday",
+     7,
+     3.9,
+     12
+    ],
+    [
+     "overwatch",
+     "Monday",
+     1,
+     -0.7,
+     12
+    ],
+    [
+     "overwatch",
+     "Tuesday",
+     2,
+     -3.3,
+     12
+    ],
+    [
+     "overwatch",
+     "Wednesday",
+     3,
+     -6.5,
+     12
+    ],
+    [
+     "overwatch",
+     "Thursday",
+     4,
+     -9.8,
+     12
+    ],
+    [
+     "overwatch",
+     "Friday",
+     5,
+     -3.3,
+     12
+    ],
+    [
+     "overwatch",
+     "Saturday",
+     6,
+     11.7,
+     12
+    ],
+    [
+     "overwatch",
+     "Sunday",
+     7,
+     11.9,
+     12
+    ]
+   ],
+   "runtime_ms": 12.0,
+   "takeaway": "deadlock: busiest Sunday (+14%), quietest Monday (-7%); marvel-rivals: busiest Saturday (+11%), quietest Thursday (-10%); overwatch: busiest Sunday (+12%), quietest Thursday (-10%)."
+  },
+  {
+   "id": "06_meta_concentration",
+   "file": "analysis/sql/06_meta_concentration.sql",
+   "title": "Is the Deadlock meta getting more or less diverse?",
+   "question": "Each month, how concentrated are hero picks? Measured as the effective number of heroes (1 / HHI) and the top-5 share of all picks.",
+   "techniques": "window SUM for shares, ROW_NUMBER ranking, sum of squares (Herfindahl-Hirschman Index), monthly roll-up",
+   "why": "HHI is the economist's market-concentration measure. Here it turns \"is the game balanced?\" into a number you can track. Dividing by the roster size controls for new heroes being added.",
+   "sql": "WITH shares AS (\n    SELECT\n        date, hero,\n        matches * 1.0 / SUM(matches) OVER (PARTITION BY date) AS pick_share\n    FROM hero_daily\n    WHERE game = 'deadlock'\n),\nranked AS (\n    SELECT *, ROW_NUMBER() OVER (PARTITION BY date ORDER BY pick_share DESC) AS rk\n    FROM shares\n),\nper_day AS (\n    SELECT\n        date,\n        SUM(pick_share * pick_share)              AS hhi,\n        SUM(pick_share) FILTER (WHERE rk <= 5)    AS top5_share,\n        COUNT(*)                                  AS heroes_played\n    FROM ranked\n    GROUP BY date\n)\nSELECT\n    strftime(date_trunc('month', date), '%Y-%m') AS month,\n    ROUND(AVG(1 / hhi), 1)                       AS effective_heroes,\n    MAX(heroes_played)                           AS heroes_available,\n    ROUND(100 * AVG((1 / hhi) / heroes_played), 1) AS diversity_pct_of_roster,   -- 100% = every hero picked equally\n    ROUND(100 * AVG(top5_share), 1)              AS top5_pick_share_pct\nFROM per_day\nGROUP BY 1\nORDER BY 1;",
+   "columns": [
+    "month",
+    "effective_heroes",
+    "heroes_available",
+    "diversity_pct_of_roster",
+    "top5_pick_share_pct"
+   ],
+   "row_count": 14,
+   "rows": [
+    [
+     "2025-10",
+     28.2,
+     32,
+     88.1,
+     26.5
+    ],
+    [
+     "2025-11",
+     28.1,
+     32,
+     87.7,
+     26.7
+    ],
+    [
+     "2025-12",
+     28.9,
+     32,
+     90.4,
+     23.9
+    ],
+    [
+     "2026-01",
+     28.0,
+     34,
+     86.7,
+     27.0
+    ],
+    [
+     "2026-02",
+     28.1,
+     38,
+     75.5,
+     29.5
+    ],
+    [
+     "2026-03",
+     33.6,
+     38,
+     88.5,
+     21.4
+    ],
+    [
+     "2026-04",
+     34.1,
+     38,
+     89.7,
+     21.0
+    ],
+    [
+     "2026-05",
+     34.8,
+     38,
+     91.6,
+     20.0
+    ],
+    [
+     "2026-06",
+     34.7,
+     38,
+     91.4,
+     19.8
+    ],
+    [
+     "2026-07",
+     34.5,
+     38,
+     90.7,
+     20.6
+    ],
+    [
+     "2026-08",
+     35.1,
+     38,
+     92.2,
+     19.3
+    ],
+    [
+     "2026-09",
+     34.7,
+     38,
+     91.4,
+     19.5
+    ],
+    [
+     "2026-10",
+     34.4,
+     44,
+     81.7,
+     22.5
+    ],
+    [
+     "2026-11",
+     38.8,
+     44,
+     88.3,
+     18.0
+    ]
+   ],
+   "runtime_ms": 9.4,
+   "takeaway": "Effective heroes went from 28.2 (2025-10) to 38.8 (2026-11), but relative to roster size diversity moved only from 88.1% to 88.3%: the rise comes from new heroes being added, not from a more balanced meta."
+  },
+  {
+   "id": "07_ban_vs_winrate",
+   "file": "analysis/sql/07_ban_vs_winrate.sql",
+   "title": "Do players ban the right heroes?",
+   "question": "In Overwatch and Marvel Rivals, how strongly does ban rate track win rate and pick rate? Which heroes are banned the most despite a below-average win rate?",
+   "techniques": "CORR(), arg_max, PERCENT_RANK window, latest-snapshot filter",
+   "why": "Bans are a player perception signal. Comparing them with results shows where perception and data disagree.",
+   "sql": "WITH latest AS (\n    SELECT *\n    FROM hero_daily\n    WHERE game IN ('overwatch', 'marvel-rivals')\n      AND ban_rate IS NOT NULL\n    QUALIFY date = MAX(date) OVER (PARTITION BY game)\n),\nranked AS (\n    SELECT *,\n        PERCENT_RANK() OVER (PARTITION BY game ORDER BY ban_rate) AS ban_pctile,\n        AVG(win_rate)  OVER (PARTITION BY game)                   AS game_avg_wr\n    FROM latest\n)\nSELECT\n    game,\n    COUNT(*)                                         AS heroes,\n    ROUND(CORR(ban_rate, win_rate), 2)               AS corr_ban_vs_win,\n    ROUND(CORR(ban_rate, pick_rate), 2)              AS corr_ban_vs_pick,\n    arg_max(hero, ban_rate)                          AS most_banned,\n    ROUND(MAX(ban_rate), 1)                          AS top_ban_rate,\n    string_agg(hero, ', ' ORDER BY ban_rate DESC)\n        FILTER (WHERE ban_pctile >= 0.8 AND win_rate < game_avg_wr) AS overbanned_below_avg_wr\nFROM ranked\nGROUP BY game\nORDER BY game;",
+   "columns": [
+    "game",
+    "heroes",
+    "corr_ban_vs_win",
+    "corr_ban_vs_pick",
+    "most_banned",
+    "top_ban_rate",
+    "overbanned_below_avg_wr"
+   ],
+   "row_count": 2,
+   "rows": [
+    [
+     "marvel-rivals",
+     57,
+     0.06,
+     0.13,
+     "Devil Dinosaur",
+     35.5,
+     "Phoenix, Spider-Man, Elsa Bloodstone, Gambit, Emma Frost, Winter Soldier, Namor"
+    ],
+    [
+     "overwatch",
+     54,
+     -0.02,
+     -0.07,
+     "Zarya",
+     38.9,
+     "Zarya, Jetpack Cat, Roadhog, Orisa, Mauga, Ana"
+    ]
+   ],
+   "runtime_ms": 6.7,
+   "takeaway": "marvel-rivals: ban vs. win-rate correlation +0.06, most banned Devil Dinosaur (36%). overwatch: ban vs. win-rate correlation -0.02, most banned Zarya (39%). Bans track perception more than results."
+  },
+  {
+   "id": "08_teamup_underused",
+   "file": "analysis/sql/08_teamup_underused.sql",
+   "title": "Underused team-up loadouts (Marvel Rivals)",
+   "question": "For which heroes does the less popular team-up loadout have a higher win rate with its partner than the popular one?",
+   "techniques": "ROW_NUMBER, pivot with conditional MAX(CASE ...), derived comparison column",
+   "why": "A gap between popularity and performance is an \"insight you can act on\": a free win-rate edge most players are ignoring.",
+   "sql": "WITH ranked AS (\n    SELECT *, ROW_NUMBER() OVER (PARTITION BY hero ORDER BY usage_share DESC) AS rk\n    FROM teamups\n    WHERE usage_share IS NOT NULL\n),\npivoted AS (\n    SELECT\n        hero,\n        MAX(CASE WHEN rk = 1 THEN loadout END)          AS popular_loadout,\n        MAX(CASE WHEN rk = 1 THEN usage_share END)      AS popular_share,\n        MAX(CASE WHEN rk = 1 THEN wr_with_partner END)  AS popular_wr_with_partner,\n        MAX(CASE WHEN rk = 2 THEN loadout END)          AS other_loadout,\n        MAX(CASE WHEN rk = 2 THEN usage_share END)      AS other_share,\n        MAX(CASE WHEN rk = 2 THEN wr_with_partner END)  AS other_wr_with_partner\n    FROM ranked\n    GROUP BY hero\n)\nSELECT\n    hero,\n    popular_loadout,\n    ROUND(popular_share, 1)                                        AS popular_share_pct,\n    ROUND(popular_wr_with_partner, 1)                              AS popular_wr,\n    other_loadout,\n    ROUND(other_share, 1)                                          AS other_share_pct,\n    ROUND(other_wr_with_partner, 1)                                AS other_wr,\n    ROUND(other_wr_with_partner - popular_wr_with_partner, 1)      AS other_loadout_edge\nFROM pivoted\nWHERE other_wr_with_partner > popular_wr_with_partner\n  AND hero NOT LIKE 'Deadpool (%'          -- Deadpool's three role variants share one set of loadouts\nORDER BY other_loadout_edge DESC\nLIMIT 12;",
+   "columns": [
+    "hero",
+    "popular_loadout",
+    "popular_share_pct",
+    "popular_wr",
+    "other_loadout",
+    "other_share_pct",
+    "other_wr",
+    "other_loadout_edge"
+   ],
+   "row_count": 12,
+   "rows": [
+    [
+     "Groot",
+     "Bubble Buddies",
+     64.4,
+     53.4,
+     "Wild Wall",
+     35.6,
+     63.7,
+     10.3
+    ],
+    [
+     "Rocket Raccoon",
+     "Mammalian Bond",
+     63.1,
+     49.6,
+     "Planet X Pals",
+     36.9,
+     59.2,
+     9.6
+    ],
+    [
+     "Cloak & Dagger",
+     "Frozen Haven",
+     70.3,
+     42.5,
+     "Oblivion Shroud",
+     29.7,
+     49.1,
+     6.6
+    ],
+    [
+     "Doctor Strange",
+     "Psionic Vortex",
+     50.2,
+     52.8,
+     "Gamma Maelstrom",
+     49.8,
+     58.8,
+     6.0
+    ],
+    [
+     "Mister Fantastic",
+     "Clobberin' Research Dept.",
+     70.5,
+     54.7,
+     "Fantastic Amplifier",
+     29.5,
+     59.8,
+     5.1
+    ],
+    [
+     "Jeff The Land Shark",
+     "Mr. Pool's Interdimensional Toy Box",
+     86.5,
+     48.4,
+     "Guardian of the Deep",
+     13.5,
+     52.9,
+     4.5
+    ],
+    [
+     "Captain America",
+     "Stars Aligned",
+     78.9,
+     54.3,
+     "Voltaic Union",
+     21.1,
+     57.7,
+     3.4
+    ],
+    [
+     "Iron Fist",
+     "Iron & Stone",
+     70.8,
+     52.6,
+     "Kumiho Palm",
+     29.2,
+     55.8,
+     3.2
+    ],
+    [
+     "The Hood",
+     "New Moon's Shadow",
+     76.0,
+     50.5,
+     "Chaos Collision",
+     24.0,
+     53.5,
+     3.0
+    ],
+    [
+     "Devil Dinosaur",
+     "Primal Punishment",
+     71.9,
+     49.9,
+     "Surf & Turf",
+     28.1,
+     52.6,
+     2.7
+    ],
+    [
+     "The Punisher",
+     "Bestial Hunt",
+     63.0,
+     52.3,
+     "Ammo Overload",
+     37.0,
+     54.9,
+     2.6
+    ],
+    [
+     "Thor",
+     "Ragnarok Rebirth",
+     72.9,
+     58.2,
+     "Divine Armory",
+     27.1,
+     59.5,
+     1.3
+    ]
+   ],
+   "runtime_ms": 13.5,
+   "takeaway": "12 heroes have an underused loadout that wins more often. Biggest gap: Groot's Wild Wall (36% usage) wins +10.3 pts more than Bubble Buddies."
+  },
+  {
+   "id": "09_matchup_consistency",
+   "file": "analysis/sql/09_matchup_consistency.sql",
+   "title": "Data quality check: do the matchup numbers agree with each other?",
+   "question": "If hero A wins X% against hero B, then B should win (100 - X)% against A, over the same number of games. Does the matchup data pass that test?",
+   "techniques": "self-join, symmetric pair de-duplication (a.hero < a.enemy), validation metrics",
+   "why": "Checking a source against its own logic before trusting it is basic data-quality practice, and an easy way to catch a broken feed.",
+   "sql": "SELECT\n    COUNT(*)                                                       AS hero_pairs_checked,\n    ROUND(AVG(ABS(a.win_rate + b.win_rate - 100)), 3)              AS avg_deviation_pts,\n    ROUND(MAX(ABS(a.win_rate + b.win_rate - 100)), 3)              AS max_deviation_pts,\n    COUNT(*) FILTER (WHERE a.matches = b.matches)                  AS pairs_with_equal_game_counts,\n    COUNT(*) FILTER (WHERE ABS(a.win_rate + b.win_rate - 100) > 0.5) AS pairs_failing_0_5pt_tolerance\nFROM matchups a\nJOIN matchups b\n  ON a.game = b.game\n AND a.hero = b.enemy\n AND a.enemy = b.hero\nWHERE a.hero < a.enemy;",
+   "columns": [
+    "hero_pairs_checked",
+    "avg_deviation_pts",
+    "max_deviation_pts",
+    "pairs_with_equal_game_counts",
+    "pairs_failing_0_5pt_tolerance"
+   ],
+   "row_count": 1,
+   "rows": [
+    [
+     946,
+     0.014,
+     0.04,
+     946,
+     0
+    ]
+   ],
+   "runtime_ms": 4.2,
+   "takeaway": "PASS: 946 matchup pairs; average deviation 0.014 pts, max 0.04 pts, 0 outside a 0.5-pt tolerance."
+  },
+  {
+   "id": "10_week_over_week_movers",
+   "file": "analysis/sql/10_week_over_week_movers.sql",
+   "title": "This week's biggest movers (Deadlock) and whether a patch explains them",
+   "question": "Which heroes' win rates changed most between the last 7 days and the 7 days before? Was each mover patched in that period?",
+   "techniques": "date-bounded CTEs, conditional aggregation, LEFT JOIN with string_agg, UNION ALL of top/bottom ranks",
+   "why": "Separating \"moved because of a patch\" from \"moved on its own\" is the first question to ask about any metric change.",
+   "sql": "WITH bounds AS (\n    SELECT MAX(date) AS last_day FROM hero_daily WHERE game = 'deadlock'\n),\nweekly AS (\n    SELECT\n        d.hero,\n        SUM(d.wins)    FILTER (WHERE d.date >  b.last_day - 7)                              AS wins_now,\n        SUM(d.matches) FILTER (WHERE d.date >  b.last_day - 7)                              AS games_now,\n        SUM(d.wins)    FILTER (WHERE d.date <= b.last_day - 7 AND d.date > b.last_day - 14) AS wins_prev,\n        SUM(d.matches) FILTER (WHERE d.date <= b.last_day - 7 AND d.date > b.last_day - 14) AS games_prev\n    FROM hero_daily d, bounds b\n    WHERE d.game = 'deadlock'\n    GROUP BY d.hero\n),\nmoves AS (\n    SELECT\n        hero,\n        100.0 * wins_now / games_now   AS wr_now,\n        100.0 * wins_prev / games_prev AS wr_prev,\n        100.0 * wins_now / games_now - 100.0 * wins_prev / games_prev AS change_pts,\n        games_now\n    FROM weekly\n    WHERE games_now >= 5000 AND games_prev >= 5000\n),\nranked AS (\n    SELECT *,\n        ROW_NUMBER() OVER (ORDER BY change_pts DESC) AS up_rank,\n        ROW_NUMBER() OVER (ORDER BY change_pts ASC)  AS down_rank\n    FROM moves\n),\npatched AS (\n    SELECT c.hero, string_agg(c.change_type || ' (' || strftime(c.patch_date, '%b %d') || ')', ', ') AS recent_patch\n    FROM patch_changes c, bounds b\n    WHERE c.game = 'deadlock' AND c.patch_date > b.last_day - 14\n    GROUP BY c.hero\n)\nSELECT\n    CASE WHEN up_rank <= 5 THEN 'riser' ELSE 'faller' END AS direction,\n    r.hero,\n    ROUND(wr_prev, 2)    AS win_rate_prev_week,\n    ROUND(wr_now, 2)     AS win_rate_this_week,\n    ROUND(change_pts, 2) AS change_pts,\n    games_now            AS games_this_week,\n    COALESCE(p.recent_patch, 'no patch: moved on its own') AS explained_by\nFROM ranked r\nLEFT JOIN patched p USING (hero)\nWHERE up_rank <= 5 OR down_rank <= 5\nORDER BY change_pts DESC;",
+   "columns": [
+    "direction",
+    "hero",
+    "win_rate_prev_week",
+    "win_rate_this_week",
+    "change_pts",
+    "games_this_week",
+    "explained_by"
+   ],
+   "row_count": 10,
+   "rows": [
+    [
+     "riser",
+     "Lady Geist",
+     55.13,
+     56.46,
+     1.33,
+     579317.0,
+     "no patch: moved on its own"
+    ],
+    [
+     "riser",
+     "Baba",
+     54.94,
+     56.19,
+     1.25,
+     182092.0,
+     "no patch: moved on its own"
+    ],
+    [
+     "riser",
+     "Nurse Harrow",
+     50.58,
+     51.36,
+     0.78,
+     328873.0,
+     "no patch: moved on its own"
+    ],
+    [
+     "riser",
+     "Rem",
+     45.26,
+     45.61,
+     0.35,
+     413494.0,
+     "no patch: moved on its own"
+    ],
+    [
+     "riser",
+     "Vyper",
+     45.78,
+     46.08,
+     0.3,
+     193407.0,
+     "no patch: moved on its own"
+    ],
+    [
+     "faller",
+     "Calico",
+     48.48,
+     48.0,
+     -0.48,
+     216619.0,
+     "no patch: moved on its own"
+    ],
+    [
+     "faller",
+     "Viscous",
+     46.34,
+     45.82,
+     -0.52,
+     195195.0,
+     "no patch: moved on its own"
+    ],
+    [
+     "faller",
+     "Venator",
+     46.2,
+     45.66,
+     -0.54,
+     545787.0,
+     "no patch: moved on its own"
+    ],
+    [
+     "faller",
+     "Rat King",
+     54.78,
+     54.23,
+     -0.55,
+     509539.0,
+     "no patch: moved on its own"
+    ],
+    [
+     "faller",
+     "Mirage",
+     43.31,
+     42.7,
+     -0.61,
+     152052.0,
+     "no patch: moved on its own"
+    ]
+   ],
+   "runtime_ms": 8.6,
+   "takeaway": "Top riser: Lady Geist (+1.33 pts). 10 of 10 movers had no patch in the window. Moves of about ±1 point are within normal weekly noise (see the Patch impact analysis)."
+  }
+ ]
+}

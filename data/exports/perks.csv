@@ -1,0 +1,217 @@
+game,hero,tier,perk,pro_share
+overwatch,Ana,minor,Local Anesthetic,3.0
+overwatch,Ana,minor,Speed Serum,97.0
+overwatch,Ana,major,Biotic Bounce,1.0
+overwatch,Ana,major,Headhunter,99.0
+overwatch,Anran,minor,Smoulder,57.0
+overwatch,Anran,minor,Heat Shield,43.0
+overwatch,Anran,major,Short Fuse,64.0
+overwatch,Anran,major,Hungering Blaze,36.0
+overwatch,Ashe,minor,Remote Detonator,90.0
+overwatch,Ashe,minor,Double-Barreled,10.0
+overwatch,Ashe,major,Viper's Sting,92.0
+overwatch,Ashe,major,Airburst,8.0
+overwatch,Baptiste,minor,Expanded Field,
+overwatch,Baptiste,minor,Assault Burst,
+overwatch,Baptiste,major,Automated Healing,
+overwatch,Baptiste,major,Rocket Boots,
+overwatch,Bastion,minor,Smart Bomb,1.0
+overwatch,Bastion,minor,Configuration Reload,99.0
+overwatch,Bastion,major,Lindholm Explosives,18.0
+overwatch,Bastion,major,Self-Repair,82.0
+overwatch,Brigitte,minor,Combat Medic,92.0
+overwatch,Brigitte,minor,Morale Boost,8.0
+overwatch,Brigitte,major,Inspiring Strike,100.0
+overwatch,Brigitte,major,Whiplash,0.0
+overwatch,Cassidy,minor,Bang Bang,51.0
+overwatch,Cassidy,minor,Giddy Up,49.0
+overwatch,Cassidy,major,Rollin' Round-Up,9.0
+overwatch,Cassidy,major,Silver Bullet,91.0
+overwatch,D.Mon,minor,Beast Within,99.0
+overwatch,D.Mon,minor,MEKA Mobility,1.0
+overwatch,D.Mon,major,Overstrike,96.0
+overwatch,D.Mon,major,Focused Fusion,4.0
+overwatch,D.Va,minor,Bunny Power,4.0
+overwatch,D.Va,minor,Extended Boosters,96.0
+overwatch,D.Va,major,Shield System,43.0
+overwatch,D.Va,major,Precision Fusion,57.0
+overwatch,Doctrine,minor,Saving Grace,27.0
+overwatch,Doctrine,minor,Sanguine Siphon,73.0
+overwatch,Doctrine,major,Transfusion,97.0
+overwatch,Doctrine,major,Cost of Life,3.0
+overwatch,Domina,minor,Efficient Design,
+overwatch,Domina,minor,Extended Power,
+overwatch,Domina,major,Disruptive Detonation,
+overwatch,Domina,major,Corporate Retreat,
+overwatch,Doomfist,minor,One-Two,
+overwatch,Doomfist,minor,Survival of the Fittest,
+overwatch,Doomfist,major,Aftershock,
+overwatch,Doomfist,major,Power Matrix,
+overwatch,Echo,minor,Aerial Munitions,
+overwatch,Echo,minor,Partial Scan,
+overwatch,Echo,major,Full Salvo,
+overwatch,Echo,major,Focused Rush,
+overwatch,Emre,minor,Suppressive Security,43.0
+overwatch,Emre,minor,Enhanced Agility,57.0
+overwatch,Emre,major,Heat Sink,92.0
+overwatch,Emre,major,Cyber Adhesion,8.0
+overwatch,Freja,minor,Relentless Barrage,62.0
+overwatch,Freja,minor,Momentum Boost,38.0
+overwatch,Freja,major,Aerial Recovery,90.0
+overwatch,Freja,major,Rising Winds,10.0
+overwatch,Genji,minor,Swift Cuts,9.0
+overwatch,Genji,minor,Dragon's Thirst,91.0
+overwatch,Genji,major,Blade Twisting,81.0
+overwatch,Genji,major,Meditation,19.0
+overwatch,Hanzo,minor,Sonic Disruption,
+overwatch,Hanzo,minor,Dragon Fury,
+overwatch,Hanzo,major,Frost Arrow,
+overwatch,Hanzo,major,Scatter Arrows,
+overwatch,Hazard,minor,Reconstitution,14.0
+overwatch,Hazard,minor,Anarchic Zeal,86.0
+overwatch,Hazard,major,Deep Leap,97.0
+overwatch,Hazard,major,Explosive Impalements,3.0
+overwatch,Illari,minor,Rapid Construction,
+overwatch,Illari,minor,Summer Solstice,
+overwatch,Illari,major,Solar Flare,
+overwatch,Illari,major,Sunburn,
+overwatch,Jetpack Cat,minor,Ulterior Motive,36.0
+overwatch,Jetpack Cat,minor,Transport Shielding,64.0
+overwatch,Jetpack Cat,major,Purrfect Form,82.0
+overwatch,Jetpack Cat,major,Claws Out,18.0
+overwatch,Junker Queen,minor,Rampant Charge,82.0
+overwatch,Junker Queen,minor,Battle Shout,18.0
+overwatch,Junker Queen,major,Willy-Willy,9.0
+overwatch,Junker Queen,major,Savage Satiation,91.0
+overwatch,Junkrat,minor,Nitro Boost,94.0
+overwatch,Junkrat,minor,Bomb Voyage,6.0
+overwatch,Junkrat,major,Mine Recycling,
+overwatch,Junkrat,major,Frag Cannon,
+overwatch,Juno,minor,Familiar Vitals,100.0
+overwatch,Juno,minor,Locked On,0.0
+overwatch,Juno,major,Lift Off,50.0
+overwatch,Juno,major,Faster Blaster,50.0
+overwatch,Kiriko,minor,Urgent Care,6.0
+overwatch,Kiriko,minor,Fortune Teller,94.0
+overwatch,Kiriko,major,Ready Step,2.0
+overwatch,Kiriko,major,Foxtrot,98.0
+overwatch,Lifeweaver,minor,Petal Protection,90.0
+overwatch,Lifeweaver,minor,Dashing Escape,10.0
+overwatch,Lifeweaver,major,Sow the Seed,
+overwatch,Lifeweaver,major,Superbloom,
+overwatch,Lúcio,minor,Soundwave Rider,3.0
+overwatch,Lúcio,minor,Beat Drop,97.0
+overwatch,Lúcio,major,Noise Violation,99.0
+overwatch,Lúcio,major,Accelerando,1.0
+overwatch,Mauga,minor,Kinetic Bandolier,0.0
+overwatch,Mauga,minor,Pyromaniac,100.0
+overwatch,Mauga,major,Firewalker,84.0
+overwatch,Mauga,major,Combat Fuel,16.0
+overwatch,Mei,minor,Skating Rink,87.0
+overwatch,Mei,minor,Glacial Propulsion,13.0
+overwatch,Mei,major,Deep Freeze,
+overwatch,Mei,major,Cryo-Storm,
+overwatch,Mercy,minor,Angelic Resurrection,
+overwatch,Mercy,minor,Winged Reach,
+overwatch,Mercy,major,Chain Boost,
+overwatch,Mercy,major,Double Dose,
+overwatch,Mizuki,minor,Wellspring,
+overwatch,Mizuki,minor,Exposed Soul,
+overwatch,Mizuki,major,Resonant Return,
+overwatch,Mizuki,major,Quickstep,
+overwatch,Moira,minor,Destruction's Divide,
+overwatch,Moira,minor,Ethical Nourishment,
+overwatch,Moira,major,Reversal,
+overwatch,Moira,major,Phantom Step,
+overwatch,Orisa,minor,Defense Protocol,67.0
+overwatch,Orisa,minor,Mobile Fortification,33.0
+overwatch,Orisa,major,Heavy Javelin,93.0
+overwatch,Orisa,major,Protective Barrier,7.0
+overwatch,Pharah,minor,Concussive Force,
+overwatch,Pharah,minor,Helix Shields,
+overwatch,Pharah,major,Fuel Stores,
+overwatch,Pharah,major,Rocket Salvo,
+overwatch,Ramattra,minor,Relentless Form,94.0
+overwatch,Ramattra,minor,Prolonged Barrier,6.0
+overwatch,Ramattra,major,Void Surge,92.0
+overwatch,Ramattra,major,Nanite Repair,8.0
+overwatch,Reaper,minor,Soul Reaving,3.0
+overwatch,Reaper,minor,Lingering Wraith,97.0
+overwatch,Reaper,major,Shadow Blink,96.0
+overwatch,Reaper,major,Trigger Finger,4.0
+overwatch,Reinhardt,minor,Crusader's Fire,
+overwatch,Reinhardt,minor,Crusader's Resolve,
+overwatch,Reinhardt,major,Shield Slam,
+overwatch,Reinhardt,major,Ignited Fury,
+overwatch,Roadhog,minor,Scrap Hook,
+overwatch,Roadhog,minor,"Here, Piggy Piggy",
+overwatch,Roadhog,major,Hogdrogen Exposure,
+overwatch,Roadhog,major,Toxic Exhaust,
+overwatch,Shion,minor,Survival Instinct,1.0
+overwatch,Shion,minor,X Machina,99.0
+overwatch,Shion,major,Refuel,2.0
+overwatch,Shion,major,Faces of Death,98.0
+overwatch,Sierra,minor,Full Flight,73.0
+overwatch,Sierra,minor,Tight Grip,27.0
+overwatch,Sierra,major,Medi-Drone,0.0
+overwatch,Sierra,major,Locked In,100.0
+overwatch,Sigma,minor,Kinetic Cycle,0.0
+overwatch,Sigma,minor,Hyper Regeneration,100.0
+overwatch,Sigma,major,Hyper Strike,0.0
+overwatch,Sigma,major,Levitation,100.0
+overwatch,Sojourn,minor,Overcharged,96.0
+overwatch,Sojourn,minor,Deceleration Field,4.0
+overwatch,Sojourn,major,Friction Generators,1.0
+overwatch,Sojourn,major,Dual Thrusters,99.0
+overwatch,Soldier: 76,minor,Helix Propulsion,
+overwatch,Soldier: 76,minor,Tactical Salvo,
+overwatch,Soldier: 76,major,Full Stride,
+overwatch,Soldier: 76,major,Stim Pack,
+overwatch,Sombra,minor,Life Hack,97.0
+overwatch,Sombra,minor,CTRL ALT ESC,3.0
+overwatch,Sombra,major,Data Packet,11.0
+overwatch,Sombra,major,Cybersecurity,89.0
+overwatch,Symmetra,minor,Sentry Capacity,9.0
+overwatch,Symmetra,minor,Perfect Alignment,91.0
+overwatch,Symmetra,major,Hovering Barrier,0.0
+overwatch,Symmetra,major,Shield Battery,100.0
+overwatch,Torbjörn,minor,Hammer Time,100.0
+overwatch,Torbjörn,minor,Pre-Heated,0.0
+overwatch,Torbjörn,major,Anchor Bolts,
+overwatch,Torbjörn,major,Overloaded Turret,
+overwatch,Tracer,minor,Temporal Regen,1.0
+overwatch,Tracer,minor,Kinetic Reload,99.0
+overwatch,Tracer,major,Blink Packs,9.0
+overwatch,Tracer,major,Quantum Entanglement,91.0
+overwatch,Vendetta,minor,Extra Edge,49.0
+overwatch,Vendetta,minor,Raging Storm,51.0
+overwatch,Vendetta,major,Siphoning Strike,98.0
+overwatch,Vendetta,major,Relentless,2.0
+overwatch,Venture,minor,Deep Burrow,
+overwatch,Venture,minor,Excavation Exhilaration,
+overwatch,Venture,major,SMART Extender,
+overwatch,Venture,major,Covered In Dirt,
+overwatch,Widowmaker,minor,Scoped Efficiency,62.0
+overwatch,Widowmaker,minor,Sniper's Instinct,38.0
+overwatch,Widowmaker,major,Seeker Mine,13.0
+overwatch,Widowmaker,major,Widow's Bite,87.0
+overwatch,Winston,minor,Electric Charge,4.0
+overwatch,Winston,minor,Heavy Landing,96.0
+overwatch,Winston,major,Chain Lightning,32.0
+overwatch,Winston,major,Revitalizing Barrier,68.0
+overwatch,Wrecking Ball,minor,Steamroller,91.0
+overwatch,Wrecking Ball,minor,Multi-Ball,9.0
+overwatch,Wrecking Ball,major,Hang Time,2.0
+overwatch,Wrecking Ball,major,Adaptive Barrier,98.0
+overwatch,Wuyang,minor,Overflow,70.0
+overwatch,Wuyang,minor,Balance,30.0
+overwatch,Wuyang,major,Ebb and Flow,16.0
+overwatch,Wuyang,major,Falling Rain,84.0
+overwatch,Zarya,minor,Jump-Ups,72.0
+overwatch,Zarya,minor,Spotter,28.0
+overwatch,Zarya,major,Extra Oomph,98.0
+overwatch,Zarya,major,Energy Lance,2.0
+overwatch,Zenyatta,minor,Discordant Repair,48.0
+overwatch,Zenyatta,minor,Ascendance,52.0
+overwatch,Zenyatta,major,Focused Destruction,42.0
+overwatch,Zenyatta,major,Dual Harmony,58.0

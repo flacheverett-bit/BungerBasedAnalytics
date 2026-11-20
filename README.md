@@ -20,6 +20,32 @@ A static website that tracks hero shooter statistics: latest patch analysis, con
 
 Tier bands are set per game in `data/games.json` (`tier_bands`).
 
+## SQL analysis
+
+**Live page:** [sql.html](https://flacheverett-bit.github.io/BungerBasedAnalytics/sql.html) (the "SQL" link in the header) · **Queries:** [`analysis/sql/`](analysis/sql) · **Data:** [`data/exports/`](data/exports) (CSV)
+
+Every day, `pipeline/build_warehouse.py` loads all collected data into a **DuckDB** warehouse. It has 10 tables, all keyed by `game`: `hero_daily`, `patches`, `patch_changes`, `players_daily`, `matchups`, `teamups`, `perks`, `patch_impact` and more. It also exports each table as CSV for Tableau, Power BI or Excel. `pipeline/run_sql.py` then runs every query in `analysis/sql/` and publishes the results, with a data-driven one-line takeaway, to the SQL page.
+
+| # | Question | Techniques |
+|---|---|---|
+| 1 | Which heroes do developers touch the most? | conditional aggregation (`FILTER`), `QUALIFY` |
+| 2 | Rolling 30-day win-rate leaders by role | window `RANGE` frames, `ROW_NUMBER` per partition |
+| 3 | Patch whiplash: buffed then nerfed within a month | `LAG()`, date arithmetic |
+| 4 | Do big patches bring players back? | CTEs, range join on dates |
+| 5 | Which days are busiest? | date functions, window normalization |
+| 6 | Is the meta getting more diverse? | Herfindahl–Hirschman Index, shares via window `SUM` |
+| 7 | Do players ban the right heroes? | `CORR()`, `PERCENT_RANK`, `arg_max` |
+| 8 | Underused team-up loadouts | pivot with `MAX(CASE …)` |
+| 9 | Data quality: do matchup numbers agree with each other? | self-join validation |
+| 10 | This week's biggest movers, and was it a patch? | date-bounded CTEs, `LEFT JOIN` + `string_agg` |
+
+To add a query, drop a new `.sql` file into `analysis/sql/` with the `-- title:`, `-- question:`, `-- techniques:` and `-- why:` header lines. It appears on the site after the next run. Run it locally with:
+
+```powershell
+.\.venv\Scripts\python.exe pipeline/build_warehouse.py
+.\.venv\Scripts\python.exe pipeline/run_sql.py
+```
+
 ## Hypotheses
 
 Each game has a **Hypotheses** tab (`hypotheses.html?game=<id>`) showing ideas written down *before* checking the data, then tracked as they're tested. They live in plain Markdown files, `data/<game>/hypotheses.md`.

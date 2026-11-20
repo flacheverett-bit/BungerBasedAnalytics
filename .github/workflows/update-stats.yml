@@ -48,6 +48,12 @@ jobs:
         run: |
           pip install --quiet pandas numpy
           python pipeline/patch_impact.py
+      - name: SQL warehouse (DuckDB) + run the SQL analyses
+        continue-on-error: true
+        run: |
+          pip install --quiet pandas duckdb
+          python pipeline/build_warehouse.py
+          python pipeline/run_sql.py
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"

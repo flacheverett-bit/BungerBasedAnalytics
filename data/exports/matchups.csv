@@ -1,0 +1,1893 @@
+game,hero,enemy,win_rate,delta_vs_avg,matches
+deadlock,The Doorman,Graves,38.69,-7.15,87820
+deadlock,The Doorman,Rat King,39.81,-6.03,79412
+deadlock,The Doorman,Baba,40.17,-5.66,23055
+deadlock,The Doorman,Kelvin,40.6,-5.24,29841
+deadlock,The Doorman,Paige,40.7,-5.14,48574
+deadlock,The Doorman,Lady Geist,40.91,-4.93,51144
+deadlock,The Doorman,Seven,40.93,-4.9,63849
+deadlock,The Doorman,Victor,41.37,-4.46,57270
+deadlock,The Doorman,Deadman Danny,42.31,-3.52,59053
+deadlock,The Doorman,Haze,43.01,-2.82,88474
+deadlock,The Doorman,Abrams,43.46,-2.38,66233
+deadlock,The Doorman,Ivy,43.75,-2.09,37441
+deadlock,The Doorman,Dynamo,44.01,-1.82,39567
+deadlock,The Doorman,Nurse Harrow,44.6,-1.23,74378
+deadlock,The Doorman,Lash,44.69,-1.14,65315
+deadlock,The Doorman,Drifter,45.27,-0.56,68932
+deadlock,The Doorman,Violet,45.29,-0.54,48099
+deadlock,The Doorman,McGinnis,45.44,-0.39,20538
+deadlock,The Doorman,Warden,45.64,-0.19,32263
+deadlock,The Doorman,Wraith,45.92,0.08,62478
+deadlock,The Doorman,Mo & Krill,46.37,0.53,35626
+deadlock,The Doorman,Apollo,46.8,0.97,55657
+deadlock,The Doorman,Billy,47.3,1.46,71927
+deadlock,The Doorman,Bebop,47.32,1.49,83622
+deadlock,The Doorman,Vindicta,47.39,1.56,61500
+deadlock,The Doorman,Infernus,47.73,1.9,62776
+deadlock,The Doorman,Grey Talon,47.89,2.05,37552
+deadlock,The Doorman,Celeste,48.02,2.19,59602
+deadlock,The Doorman,Holliday,48.09,2.26,47453
+deadlock,The Doorman,Calico,48.09,2.26,27469
+deadlock,The Doorman,Solomon,48.73,2.89,24755
+deadlock,The Doorman,Yamato,49.03,3.19,51718
+deadlock,The Doorman,Paradox,49.33,3.5,63375
+deadlock,The Doorman,Venator,49.44,3.61,76047
+deadlock,The Doorman,Viscous,49.56,3.73,28658
+deadlock,The Doorman,Vyper,49.8,3.96,24841
+deadlock,The Doorman,Rem,49.87,4.03,65771
+deadlock,The Doorman,Silver,50.21,4.37,60144
+deadlock,The Doorman,Shiv,50.65,4.81,47406
+deadlock,The Doorman,Sinclair,50.76,4.93,20592
+deadlock,The Doorman,Pocket,51.28,5.45,38396
+deadlock,The Doorman,Mina,51.81,5.97,74059
+deadlock,The Doorman,Mirage,51.98,6.15,20620
+deadlock,Billy,Graves,40.98,-7.82,181644
+deadlock,Billy,Paige,42.88,-5.92,141440
+deadlock,Billy,Seven,43.32,-5.47,160303
+deadlock,Billy,Baba,43.73,-5.07,52983
+deadlock,Billy,Kelvin,44.34,-4.45,59668
+deadlock,Billy,Lady Geist,44.82,-3.98,134867
+deadlock,Billy,Rat King,44.87,-3.93,217507
+deadlock,Billy,Victor,45.18,-3.62,162540
+deadlock,Billy,Deadman Danny,45.19,-3.6,105036
+deadlock,Billy,Haze,45.91,-2.89,184980
+deadlock,Billy,Ivy,46.67,-2.12,93095
+deadlock,Billy,Dynamo,47.12,-1.68,108641
+deadlock,Billy,Abrams,47.17,-1.63,169508
+deadlock,Billy,Nurse Harrow,47.18,-1.61,111490
+deadlock,Billy,Drifter,48.16,-0.63,144655
+deadlock,Billy,McGinnis,48.43,-0.36,54489
+deadlock,Billy,Warden,48.55,-0.25,62688
+deadlock,Billy,Lash,48.57,-0.23,129242
+deadlock,Billy,Apollo,49.78,0.99,110913
+deadlock,Billy,Vindicta,49.85,1.05,99309
+deadlock,Billy,Wraith,49.89,1.09,150948
+deadlock,Billy,Violet,50.08,1.29,100841
+deadlock,Billy,Bebop,50.15,1.35,148338
+deadlock,Billy,Infernus,50.31,1.51,154443
+deadlock,Billy,Mo & Krill,50.39,1.59,76820
+deadlock,Billy,Celeste,50.44,1.65,124373
+deadlock,Billy,Grey Talon,51.16,2.36,62133
+deadlock,Billy,Holliday,51.65,2.86,77757
+deadlock,Billy,Solomon,51.69,2.89,55098
+deadlock,Billy,Calico,51.72,2.92,52001
+deadlock,Billy,Silver,52.22,3.42,143814
+deadlock,Billy,Yamato,52.26,3.46,109813
+deadlock,Billy,Venator,52.54,3.74,175983
+deadlock,Billy,Viscous,52.56,3.76,51644
+deadlock,Billy,The Doorman,52.68,3.89,71927
+deadlock,Billy,Paradox,52.9,4.1,112455
+deadlock,Billy,Shiv,53.5,4.7,132133
+deadlock,Billy,Mina,53.88,5.08,142147
+deadlock,Billy,Pocket,54.06,5.26,53582
+deadlock,Billy,Vyper,54.11,5.32,57236
+deadlock,Billy,Rem,54.19,5.39,113344
+deadlock,Billy,Sinclair,55.12,6.33,44782
+deadlock,Billy,Mirage,55.35,6.55,47845
+deadlock,Graves,Paige,49.3,-8.05,153879
+deadlock,Graves,Rat King,50.89,-6.45,226861
+deadlock,Graves,Seven,51.01,-6.34,174212
+deadlock,Graves,Baba,51.64,-5.7,65529
+deadlock,Graves,Kelvin,52.35,-4.99,68649
+deadlock,Graves,Lady Geist,52.45,-4.9,132571
+deadlock,Graves,Haze,53.02,-4.33,228546
+deadlock,Graves,Victor,53.18,-4.17,147196
+deadlock,Graves,McGinnis,54.38,-2.96,110658
+deadlock,Graves,Deadman Danny,54.64,-2.7,156077
+deadlock,Graves,Ivy,54.72,-2.63,93436
+deadlock,Graves,Dynamo,54.95,-2.39,108442
+deadlock,Graves,Nurse Harrow,55.38,-1.96,178780
+deadlock,Graves,Abrams,55.74,-1.6,161586
+deadlock,Graves,Lash,55.82,-1.53,160215
+deadlock,Graves,Wraith,56.35,-0.99,169601
+deadlock,Graves,Drifter,56.77,-0.57,203125
+deadlock,Graves,Warden,56.99,-0.36,74503
+deadlock,Graves,Violet,57.25,-0.09,145097
+deadlock,Graves,Mo & Krill,57.36,0.01,91555
+deadlock,Graves,Bebop,57.84,0.5,206881
+deadlock,Graves,Infernus,58.01,0.66,185856
+deadlock,Graves,Vindicta,58.24,0.89,166301
+deadlock,Graves,Celeste,58.34,0.99,176404
+deadlock,Graves,Apollo,58.83,1.48,148631
+deadlock,Graves,Billy,59.01,1.67,181644
+deadlock,Graves,Calico,59.36,2.02,76971
+deadlock,Graves,Holliday,59.46,2.12,116960
+deadlock,Graves,Grey Talon,59.55,2.2,92903
+deadlock,Graves,Solomon,60.02,2.67,68246
+deadlock,Graves,Yamato,60.65,3.31,133268
+deadlock,Graves,Venator,60.91,3.56,213613
+deadlock,Graves,The Doorman,61.3,3.95,87820
+deadlock,Graves,Paradox,61.42,4.08,152759
+deadlock,Graves,Sinclair,61.58,4.23,54811
+deadlock,Graves,Viscous,61.77,4.42,65537
+deadlock,Graves,Rem,62.18,4.83,164672
+deadlock,Graves,Vyper,62.21,4.87,68531
+deadlock,Graves,Mina,62.68,5.33,212186
+deadlock,Graves,Shiv,62.8,5.46,125742
+deadlock,Graves,Silver,62.83,5.48,151500
+deadlock,Graves,Pocket,62.87,5.52,93799
+deadlock,Graves,Mirage,63.77,6.42,55755
+deadlock,Apollo,Graves,41.16,-8.31,148631
+deadlock,Apollo,Paige,43.03,-6.44,85265
+deadlock,Apollo,Baba,43.04,-6.43,42868
+deadlock,Apollo,Seven,44.07,-5.4,106056
+deadlock,Apollo,Lady Geist,44.69,-4.78,89345
+deadlock,Apollo,Rat King,44.75,-4.72,152861
+deadlock,Apollo,Victor,44.98,-4.49,91008
+deadlock,Apollo,Kelvin,45.19,-4.28,47892
+deadlock,Apollo,Haze,46.4,-3.07,134985
+deadlock,Apollo,Dynamo,46.88,-2.59,72806
+deadlock,Apollo,Ivy,46.99,-2.48,63243
+deadlock,Apollo,Abrams,47.03,-2.44,101103
+deadlock,Apollo,Deadman Danny,47.23,-2.24,106294
+deadlock,Apollo,Nurse Harrow,48.24,-1.23,112617
+deadlock,Apollo,Warden,48.31,-1.16,46006
+deadlock,Apollo,Drifter,48.51,-0.96,145550
+deadlock,Apollo,McGinnis,48.65,-0.82,44563
+deadlock,Apollo,Violet,48.88,-0.59,86338
+deadlock,Apollo,Lash,49.54,0.07,109885
+deadlock,Apollo,Mo & Krill,49.71,0.24,53627
+deadlock,Apollo,Wraith,50.1,0.63,110071
+deadlock,Apollo,Billy,50.21,0.74,110913
+deadlock,Apollo,Infernus,50.59,1.12,117224
+deadlock,Apollo,Celeste,50.9,1.43,113163
+deadlock,Apollo,Bebop,51.29,1.82,139925
+deadlock,Apollo,Solomon,51.67,2.2,42728
+deadlock,Apollo,Yamato,51.77,2.3,90095
+deadlock,Apollo,Grey Talon,51.83,2.36,64867
+deadlock,Apollo,Vindicta,51.87,2.4,103574
+deadlock,Apollo,Calico,51.92,2.45,53984
+deadlock,Apollo,Holliday,52.49,3.02,79115
+deadlock,Apollo,Venator,52.8,3.33,138179
+deadlock,Apollo,The Doorman,53.18,3.71,55657
+deadlock,Apollo,Silver,53.49,4.02,96968
+deadlock,Apollo,Viscous,53.61,4.14,45426
+deadlock,Apollo,Paradox,53.95,4.48,105755
+deadlock,Apollo,Shiv,54.0,4.53,87423
+deadlock,Apollo,Sinclair,54.02,4.55,34510
+deadlock,Apollo,Rem,54.07,4.6,98432
+deadlock,Apollo,Vyper,54.28,4.81,45179
+deadlock,Apollo,Mina,54.85,5.38,135529
+deadlock,Apollo,Pocket,55.01,5.54,62365
+deadlock,Apollo,Mirage,56.15,6.68,37661
+deadlock,Deadman Danny,Graves,45.34,-7.52,156077
+deadlock,Deadman Danny,Kelvin,46.41,-6.44,50270
+deadlock,Deadman Danny,Seven,47.13,-5.72,121832
+deadlock,Deadman Danny,Rat King,47.49,-5.37,193239
+deadlock,Deadman Danny,Paige,47.62,-5.24,95976
+deadlock,Deadman Danny,Baba,48.57,-4.29,54278
+deadlock,Deadman Danny,Victor,48.96,-3.9,108796
+deadlock,Deadman Danny,Lady Geist,49.3,-3.55,103265
+deadlock,Deadman Danny,Ivy,49.87,-2.99,71267
+deadlock,Deadman Danny,Haze,50.34,-2.51,161946
+deadlock,Deadman Danny,Dynamo,50.59,-2.27,72792
+deadlock,Deadman Danny,Lash,51.0,-1.85,121545
+deadlock,Deadman Danny,McGinnis,51.28,-1.58,46777
+deadlock,Deadman Danny,Abrams,51.36,-1.5,108939
+deadlock,Deadman Danny,Wraith,51.84,-1.02,130181
+deadlock,Deadman Danny,Nurse Harrow,51.86,-1.0,178696
+deadlock,Deadman Danny,Violet,51.93,-0.92,129371
+deadlock,Deadman Danny,Vindicta,52.05,-0.81,109471
+deadlock,Deadman Danny,Drifter,52.66,-0.19,154994
+deadlock,Deadman Danny,Apollo,52.75,-0.11,106294
+deadlock,Deadman Danny,Mo & Krill,53.25,0.39,59194
+deadlock,Deadman Danny,Warden,53.78,0.92,57801
+deadlock,Deadman Danny,Infernus,54.09,1.23,128705
+deadlock,Deadman Danny,Bebop,54.39,1.53,147934
+deadlock,Deadman Danny,Grey Talon,54.59,1.73,68524
+deadlock,Deadman Danny,Yamato,54.64,1.79,101488
+deadlock,Deadman Danny,Billy,54.79,1.94,105036
+deadlock,Deadman Danny,Celeste,55.01,2.15,117023
+deadlock,Deadman Danny,Calico,55.26,2.4,57692
+deadlock,Deadman Danny,Holliday,55.61,2.75,81773
+deadlock,Deadman Danny,Venator,56.47,3.61,155963
+deadlock,Deadman Danny,Paradox,56.57,3.71,112233
+deadlock,Deadman Danny,Solomon,56.69,3.83,56576
+deadlock,Deadman Danny,Mina,56.75,3.9,140080
+deadlock,Deadman Danny,Viscous,57.29,4.43,47534
+deadlock,Deadman Danny,Rem,57.58,4.72,111413
+deadlock,Deadman Danny,Vyper,57.62,4.76,50592
+deadlock,Deadman Danny,The Doorman,57.67,4.82,59053
+deadlock,Deadman Danny,Sinclair,57.82,4.97,37041
+deadlock,Deadman Danny,Shiv,57.98,5.13,109011
+deadlock,Deadman Danny,Silver,58.0,5.15,109127
+deadlock,Deadman Danny,Pocket,58.87,6.02,69066
+deadlock,Deadman Danny,Mirage,58.93,6.08,42973
+deadlock,Rem,Graves,37.81,-7.44,164672
+deadlock,Rem,Seven,39.34,-5.91,120418
+deadlock,Rem,Victor,40.37,-4.88,108836
+deadlock,Rem,Paige,40.51,-4.74,125336
+deadlock,Rem,Baba,40.58,-4.67,44968
+deadlock,Rem,Rat King,40.6,-4.65,177772
+deadlock,Rem,Lady Geist,41.11,-4.14,102951
+deadlock,Rem,Kelvin,41.35,-3.9,54444
+deadlock,Rem,Haze,41.65,-3.6,150143
+deadlock,Rem,Deadman Danny,42.41,-2.85,111413
+deadlock,Rem,Abrams,42.72,-2.53,105919
+deadlock,Rem,Dynamo,43.68,-1.57,95114
+deadlock,Rem,Ivy,43.8,-1.45,79400
+deadlock,Rem,Lash,44.75,-0.5,105564
+deadlock,Rem,Warden,44.87,-0.38,53151
+deadlock,Rem,Nurse Harrow,44.89,-0.36,145459
+deadlock,Rem,Drifter,44.95,-0.3,148699
+deadlock,Rem,McGinnis,45.11,-0.14,53932
+deadlock,Rem,Wraith,45.24,-0.01,121059
+deadlock,Rem,Violet,45.65,0.39,94065
+deadlock,Rem,Billy,45.79,0.54,113344
+deadlock,Rem,Apollo,45.91,0.66,98432
+deadlock,Rem,Infernus,46.19,0.94,127951
+deadlock,Rem,Mo & Krill,46.42,1.17,57808
+deadlock,Rem,Bebop,46.8,1.55,136105
+deadlock,Rem,Vindicta,46.9,1.65,119681
+deadlock,Rem,Celeste,47.2,1.95,113335
+deadlock,Rem,Calico,47.72,2.47,54214
+deadlock,Rem,Yamato,47.91,2.66,94953
+deadlock,Rem,Holliday,48.33,3.07,75586
+deadlock,Rem,Grey Talon,48.5,3.25,65981
+deadlock,Rem,Solomon,48.66,3.4,48852
+deadlock,Rem,Silver,49.0,3.75,115231
+deadlock,Rem,Venator,49.08,3.83,129342
+deadlock,Rem,Vyper,49.38,4.13,50936
+deadlock,Rem,Paradox,49.7,4.44,107205
+deadlock,Rem,The Doorman,50.12,4.87,65771
+deadlock,Rem,Viscous,50.21,4.96,53286
+deadlock,Rem,Shiv,50.39,5.14,96094
+deadlock,Rem,Mina,51.04,5.79,129135
+deadlock,Rem,Pocket,51.15,5.89,67177
+deadlock,Rem,Sinclair,51.22,5.97,37504
+deadlock,Rem,Mirage,52.06,6.81,38999
+deadlock,Silver,Graves,37.15,-9.07,151500
+deadlock,Silver,Paige,39.89,-6.33,102174
+deadlock,Silver,Seven,40.58,-5.64,122064
+deadlock,Silver,Baba,41.32,-4.9,44857
+deadlock,Silver,Rat King,41.63,-4.59,190970
+deadlock,Silver,Deadman Danny,41.98,-4.24,109127
+deadlock,Silver,Kelvin,42.36,-3.86,49027
+deadlock,Silver,Victor,42.81,-3.41,128132
+deadlock,Silver,Lady Geist,42.94,-3.29,97371
+deadlock,Silver,Haze,43.13,-3.09,159745
+deadlock,Silver,Dynamo,43.46,-2.77,80048
+deadlock,Silver,Ivy,43.99,-2.24,71496
+deadlock,Silver,Abrams,44.96,-1.26,124601
+deadlock,Silver,Nurse Harrow,45.0,-1.23,123282
+deadlock,Silver,McGinnis,45.37,-0.85,53298
+deadlock,Silver,Lash,45.51,-0.71,102649
+deadlock,Silver,Drifter,45.69,-0.53,152500
+deadlock,Silver,Warden,46.03,-0.19,51535
+deadlock,Silver,Apollo,46.49,0.27,96968
+deadlock,Silver,Wraith,46.51,0.29,123508
+deadlock,Silver,Violet,46.62,0.4,98716
+deadlock,Silver,Celeste,47.65,1.42,117657
+deadlock,Silver,Billy,47.77,1.55,143814
+deadlock,Silver,Vindicta,47.89,1.66,117630
+deadlock,Silver,Infernus,47.95,1.73,130094
+deadlock,Silver,Mo & Krill,48.08,1.86,61629
+deadlock,Silver,Bebop,48.1,1.88,132705
+deadlock,Silver,Grey Talon,48.78,2.56,63272
+deadlock,Silver,Calico,48.9,2.68,53749
+deadlock,Silver,Solomon,49.31,3.08,48859
+deadlock,Silver,Yamato,49.51,3.28,88140
+deadlock,Silver,Venator,49.7,3.48,155554
+deadlock,Silver,The Doorman,49.77,3.55,60144
+deadlock,Silver,Holliday,49.8,3.58,75089
+deadlock,Silver,Viscous,50.07,3.84,49017
+deadlock,Silver,Paradox,50.33,4.1,99293
+deadlock,Silver,Vyper,50.36,4.14,53633
+deadlock,Silver,Rem,50.99,4.76,115231
+deadlock,Silver,Mina,51.61,5.38,145085
+deadlock,Silver,Pocket,51.64,5.42,64023
+deadlock,Silver,Shiv,51.73,5.5,107228
+deadlock,Silver,Sinclair,51.81,5.58,36356
+deadlock,Silver,Mirage,52.85,6.62,41633
+deadlock,Celeste,Paige,41.41,-6.47,100565
+deadlock,Celeste,Graves,41.64,-6.24,176404
+deadlock,Celeste,Seven,42.25,-5.63,127533
+deadlock,Celeste,Rat King,42.54,-5.34,170909
+deadlock,Celeste,Victor,43.16,-4.71,106835
+deadlock,Celeste,Baba,43.25,-4.62,49532
+deadlock,Celeste,Kelvin,43.3,-4.57,52110
+deadlock,Celeste,Lady Geist,43.51,-4.37,104418
+deadlock,Celeste,Haze,44.03,-3.84,157332
+deadlock,Celeste,Deadman Danny,44.97,-2.9,117023
+deadlock,Celeste,Ivy,45.52,-2.36,69040
+deadlock,Celeste,Abrams,45.85,-2.03,111298
+deadlock,Celeste,Dynamo,46.49,-1.38,81937
+deadlock,Celeste,Nurse Harrow,46.51,-1.36,122068
+deadlock,Celeste,Drifter,46.8,-1.08,155521
+deadlock,Celeste,Lash,47.16,-0.72,115141
+deadlock,Celeste,Warden,47.7,-0.18,53521
+deadlock,Celeste,McGinnis,47.81,-0.06,50244
+deadlock,Celeste,Wraith,47.95,0.08,126863
+deadlock,Celeste,Violet,48.07,0.19,105858
+deadlock,Celeste,Infernus,48.51,0.64,131415
+deadlock,Celeste,Vindicta,48.94,1.07,114729
+deadlock,Celeste,Mo & Krill,49.01,1.13,58603
+deadlock,Celeste,Apollo,49.08,1.2,113163
+deadlock,Celeste,Bebop,49.35,1.47,147463
+deadlock,Celeste,Billy,49.54,1.67,124373
+deadlock,Celeste,Calico,49.91,2.03,57098
+deadlock,Celeste,Grey Talon,50.26,2.38,67737
+deadlock,Celeste,Holliday,50.61,2.73,82824
+deadlock,Celeste,Solomon,50.99,3.12,47780
+deadlock,Celeste,Venator,51.25,3.37,151208
+deadlock,Celeste,Yamato,51.26,3.38,105238
+deadlock,Celeste,Paradox,51.5,3.63,112094
+deadlock,Celeste,Viscous,51.9,4.02,48661
+deadlock,Celeste,The Doorman,51.97,4.09,59602
+deadlock,Celeste,Shiv,52.06,4.18,93536
+deadlock,Celeste,Vyper,52.08,4.2,52339
+deadlock,Celeste,Silver,52.33,4.45,117657
+deadlock,Celeste,Rem,52.79,4.91,113335
+deadlock,Celeste,Sinclair,52.84,4.96,37093
+deadlock,Celeste,Mina,53.3,5.43,166359
+deadlock,Celeste,Pocket,54.0,6.12,68721
+deadlock,Celeste,Mirage,54.03,6.16,41827
+deadlock,Rat King,Paige,48.82,-6.18,140285
+deadlock,Rat King,Graves,49.09,-5.91,226861
+deadlock,Rat King,Seven,49.63,-5.37,163065
+deadlock,Rat King,Victor,49.97,-5.03,210598
+deadlock,Rat King,Kelvin,50.11,-4.89,72311
+deadlock,Rat King,Lady Geist,50.56,-4.44,179878
+deadlock,Rat King,Haze,50.68,-4.32,195821
+deadlock,Rat King,Abrams,51.66,-3.34,198080
+deadlock,Rat King,Ivy,52.33,-2.67,97945
+deadlock,Rat King,Deadman Danny,52.49,-2.51,193239
+deadlock,Rat King,Baba,52.7,-2.3,71297
+deadlock,Rat King,Dynamo,52.91,-2.09,107342
+deadlock,Rat King,Nurse Harrow,53.16,-1.84,249618
+deadlock,Rat King,Wraith,53.93,-1.07,175152
+deadlock,Rat King,Drifter,53.97,-1.03,233590
+deadlock,Rat King,Lash,54.31,-0.69,141565
+deadlock,Rat King,Mo & Krill,54.75,-0.25,104468
+deadlock,Rat King,Billy,55.12,0.12,217507
+deadlock,Rat King,Vindicta,55.23,0.23,179431
+deadlock,Rat King,Apollo,55.23,0.23,152861
+deadlock,Rat King,Infernus,55.27,0.27,181204
+deadlock,Rat King,Warden,55.31,0.31,87456
+deadlock,Rat King,Calico,55.73,0.73,83790
+deadlock,Rat King,Violet,55.93,0.93,150313
+deadlock,Rat King,McGinnis,56.1,1.1,76245
+deadlock,Rat King,Bebop,56.59,1.59,198415
+deadlock,Rat King,Grey Talon,56.86,1.86,98145
+deadlock,Rat King,Yamato,57.01,2.01,169810
+deadlock,Rat King,Celeste,57.44,2.44,170909
+deadlock,Rat King,Holliday,57.76,2.76,110346
+deadlock,Rat King,Vyper,58.07,3.07,74191
+deadlock,Rat King,Shiv,58.25,3.25,179980
+deadlock,Rat King,Silver,58.35,3.35,190970
+deadlock,Rat King,Paradox,58.53,3.53,143418
+deadlock,Rat King,Rem,59.38,4.38,177772
+deadlock,Rat King,Solomon,59.39,4.39,72111
+deadlock,Rat King,Sinclair,59.45,4.45,52012
+deadlock,Rat King,Viscous,59.48,4.48,72289
+deadlock,Rat King,Venator,59.59,4.59,200920
+deadlock,Rat King,The Doorman,60.17,5.17,79412
+deadlock,Rat King,Pocket,60.88,5.88,96950
+deadlock,Rat King,Mirage,60.96,5.96,54479
+deadlock,Rat King,Mina,61.23,6.23,174270
+deadlock,Solomon,Graves,39.97,-7.06,68246
+deadlock,Solomon,Rat King,40.61,-6.42,72111
+deadlock,Solomon,Kelvin,41.71,-5.32,22418
+deadlock,Solomon,Baba,42.18,-4.85,22520
+deadlock,Solomon,Paige,42.22,-4.8,44795
+deadlock,Solomon,Seven,42.61,-4.42,53350
+deadlock,Solomon,Victor,42.84,-4.19,49529
+deadlock,Solomon,Lady Geist,43.17,-3.86,43774
+deadlock,Solomon,Deadman Danny,43.31,-3.72,56576
+deadlock,Solomon,Haze,44.05,-2.97,68999
+deadlock,Solomon,Abrams,44.34,-2.69,50371
+deadlock,Solomon,Ivy,45.28,-1.75,31540
+deadlock,Solomon,Nurse Harrow,46.05,-0.98,73253
+deadlock,Solomon,Lash,46.11,-0.92,48225
+deadlock,Solomon,Dynamo,46.13,-0.89,36746
+deadlock,Solomon,Drifter,46.41,-0.61,62458
+deadlock,Solomon,Wraith,46.52,-0.51,55448
+deadlock,Solomon,Violet,46.93,-0.09,49833
+deadlock,Solomon,Warden,47.04,0.02,25446
+deadlock,Solomon,Vindicta,47.55,0.52,43522
+deadlock,Solomon,McGinnis,47.66,0.63,19541
+deadlock,Solomon,Billy,48.28,1.26,55098
+deadlock,Solomon,Apollo,48.32,1.29,42728
+deadlock,Solomon,Mo & Krill,48.39,1.36,27536
+deadlock,Solomon,Infernus,48.91,1.89,54043
+deadlock,Solomon,Grey Talon,48.99,1.96,27245
+deadlock,Solomon,Celeste,49.0,1.97,47780
+deadlock,Solomon,Calico,49.36,2.33,22116
+deadlock,Solomon,Bebop,49.67,2.64,58249
+deadlock,Solomon,Holliday,49.71,2.69,31568
+deadlock,Solomon,Yamato,50.27,3.24,40089
+deadlock,Solomon,Paradox,50.57,3.55,44173
+deadlock,Solomon,Silver,50.69,3.66,48859
+deadlock,Solomon,Venator,50.72,3.69,61019
+deadlock,Solomon,Vyper,50.84,3.81,22385
+deadlock,Solomon,Viscous,50.85,3.83,21285
+deadlock,Solomon,The Doorman,51.27,4.24,24755
+deadlock,Solomon,Rem,51.33,4.31,48852
+deadlock,Solomon,Mina,52.05,5.03,55919
+deadlock,Solomon,Shiv,52.37,5.34,44785
+deadlock,Solomon,Sinclair,53.29,6.26,14555
+deadlock,Solomon,Pocket,53.67,6.64,27769
+deadlock,Solomon,Mirage,53.73,6.7,18104
+deadlock,Violet,Graves,42.74,-6.71,145097
+deadlock,Violet,Paige,43.41,-6.04,92295
+deadlock,Violet,Kelvin,43.72,-5.73,43894
+deadlock,Violet,Baba,44.04,-5.4,53044
+deadlock,Violet,Rat King,44.06,-5.39,150313
+deadlock,Violet,Victor,44.8,-4.65,98190
+deadlock,Violet,Lady Geist,45.41,-4.04,87386
+deadlock,Violet,Seven,45.54,-3.91,105127
+deadlock,Violet,Ivy,46.07,-3.38,63398
+deadlock,Violet,Abrams,46.8,-2.65,95193
+deadlock,Violet,Haze,46.83,-2.62,140428
+deadlock,Violet,Dynamo,46.89,-2.55,71217
+deadlock,Violet,Deadman Danny,48.05,-1.4,129371
+deadlock,Violet,Wraith,48.65,-0.8,114189
+deadlock,Violet,Lash,48.73,-0.72,99551
+deadlock,Violet,Drifter,48.81,-0.64,125072
+deadlock,Violet,Warden,48.83,-0.62,48550
+deadlock,Violet,McGinnis,48.92,-0.53,39124
+deadlock,Violet,Nurse Harrow,49.49,0.04,154248
+deadlock,Violet,Mo & Krill,49.85,0.4,53101
+deadlock,Violet,Billy,49.9,0.45,100841
+deadlock,Violet,Infernus,50.2,0.75,118883
+deadlock,Violet,Bebop,50.25,0.81,112831
+deadlock,Violet,Calico,50.55,1.1,45600
+deadlock,Violet,Vindicta,50.83,1.38,94130
+deadlock,Violet,Apollo,51.11,1.66,86338
+deadlock,Violet,Celeste,51.92,2.47,105858
+deadlock,Violet,Grey Talon,51.94,2.49,55541
+deadlock,Violet,Holliday,52.26,2.81,62956
+deadlock,Violet,Venator,52.62,3.17,125805
+deadlock,Violet,Vyper,52.74,3.29,43830
+deadlock,Violet,Yamato,53.03,3.58,86469
+deadlock,Violet,Solomon,53.06,3.61,49833
+deadlock,Violet,Paradox,53.28,3.84,91086
+deadlock,Violet,Viscous,53.34,3.89,39501
+deadlock,Violet,Silver,53.36,3.91,98716
+deadlock,Violet,Shiv,54.11,4.66,93343
+deadlock,Violet,Sinclair,54.14,4.69,30189
+deadlock,Violet,Rem,54.34,4.89,94065
+deadlock,Violet,The Doorman,54.7,5.25,48099
+deadlock,Violet,Pocket,54.76,5.31,60900
+deadlock,Violet,Mina,54.81,5.36,127181
+deadlock,Violet,Mirage,55.27,5.82,38519
+deadlock,Nurse Harrow,Graves,44.6,-6.56,178780
+deadlock,Nurse Harrow,Paige,45.7,-5.46,144307
+deadlock,Nurse Harrow,Baba,45.71,-5.46,60761
+deadlock,Nurse Harrow,Seven,46.21,-4.96,122032
+deadlock,Nurse Harrow,Rat King,46.83,-4.34,249618
+deadlock,Nurse Harrow,Kelvin,47.1,-4.07,68261
+deadlock,Nurse Harrow,Victor,47.21,-3.96,119321
+deadlock,Nurse Harrow,Haze,47.89,-3.28,166350
+deadlock,Nurse Harrow,Lady Geist,48.04,-3.12,116522
+deadlock,Nurse Harrow,Deadman Danny,48.12,-3.04,178696
+deadlock,Nurse Harrow,Ivy,48.47,-2.69,97812
+deadlock,Nurse Harrow,Abrams,49.36,-1.8,116474
+deadlock,Nurse Harrow,Lash,49.75,-1.41,125144
+deadlock,Nurse Harrow,Dynamo,49.86,-1.3,107999
+deadlock,Nurse Harrow,Violet,50.49,-0.68,154248
+deadlock,Nurse Harrow,Wraith,50.63,-0.53,137554
+deadlock,Nurse Harrow,Drifter,50.68,-0.49,173205
+deadlock,Nurse Harrow,McGinnis,50.87,-0.29,57502
+deadlock,Nurse Harrow,Infernus,51.59,0.42,142429
+deadlock,Nurse Harrow,Apollo,51.75,0.58,112617
+deadlock,Nurse Harrow,Mo & Krill,51.96,0.8,68816
+deadlock,Nurse Harrow,Warden,52.06,0.89,58037
+deadlock,Nurse Harrow,Calico,52.18,1.01,66639
+deadlock,Nurse Harrow,Vindicta,52.21,1.04,133082
+deadlock,Nurse Harrow,Bebop,52.68,1.51,160642
+deadlock,Nurse Harrow,Billy,52.81,1.64,111490
+deadlock,Nurse Harrow,Celeste,53.48,2.31,122068
+deadlock,Nurse Harrow,Holliday,53.53,2.36,89890
+deadlock,Nurse Harrow,Grey Talon,53.78,2.61,78252
+deadlock,Nurse Harrow,Yamato,53.85,2.69,109069
+deadlock,Nurse Harrow,Solomon,53.93,2.77,73253
+deadlock,Nurse Harrow,Vyper,54.53,3.36,55719
+deadlock,Nurse Harrow,Sinclair,54.9,3.73,43127
+deadlock,Nurse Harrow,Silver,54.98,3.82,123282
+deadlock,Nurse Harrow,Rem,55.1,3.93,145459
+deadlock,Nurse Harrow,Paradox,55.21,4.05,124168
+deadlock,Nurse Harrow,The Doorman,55.38,4.21,74378
+deadlock,Nurse Harrow,Viscous,55.42,4.26,59594
+deadlock,Nurse Harrow,Venator,55.59,4.43,143831
+deadlock,Nurse Harrow,Shiv,55.89,4.72,122623
+deadlock,Nurse Harrow,Pocket,56.51,5.34,78568
+deadlock,Nurse Harrow,Mina,57.11,5.95,136928
+deadlock,Nurse Harrow,Mirage,57.49,6.33,45339
+deadlock,Baba,Rat King,47.28,-7.49,71297
+deadlock,Baba,Graves,48.33,-6.44,65529
+deadlock,Baba,Seven,48.8,-5.98,50927
+deadlock,Baba,Paige,49.42,-5.36,43534
+deadlock,Baba,Haze,50.34,-4.43,63940
+deadlock,Baba,Kelvin,50.5,-4.28,23992
+deadlock,Baba,Deadman Danny,51.42,-3.36,54278
+deadlock,Baba,Victor,51.8,-2.97,47297
+deadlock,Baba,Lady Geist,51.86,-2.92,43008
+deadlock,Baba,Ivy,52.46,-2.31,32547
+deadlock,Baba,Dynamo,52.62,-2.16,39103
+deadlock,Baba,Vindicta,53.26,-1.51,43072
+deadlock,Baba,McGinnis,53.49,-1.28,21757
+deadlock,Baba,Abrams,53.53,-1.25,47084
+deadlock,Baba,Wraith,53.92,-0.86,53558
+deadlock,Baba,Nurse Harrow,54.28,-0.5,60761
+deadlock,Baba,Warden,54.91,0.13,22013
+deadlock,Baba,Lash,54.94,0.16,45906
+deadlock,Baba,Infernus,55.04,0.26,57322
+deadlock,Baba,Drifter,55.15,0.37,64351
+deadlock,Baba,Violet,55.94,1.17,53044
+deadlock,Baba,Billy,56.26,1.48,52983
+deadlock,Baba,Grey Talon,56.62,1.85,26516
+deadlock,Baba,Celeste,56.74,1.96,49532
+deadlock,Baba,Bebop,56.79,2.02,56373
+deadlock,Baba,Venator,56.85,2.08,61252
+deadlock,Baba,Apollo,56.95,2.18,42868
+deadlock,Baba,Holliday,57.4,2.62,29008
+deadlock,Baba,Yamato,57.43,2.66,37450
+deadlock,Baba,Mo & Krill,57.5,2.72,24432
+deadlock,Baba,Calico,57.55,2.78,22615
+deadlock,Baba,Vyper,57.64,2.86,21716
+deadlock,Baba,Solomon,57.82,3.04,22520
+deadlock,Baba,Paradox,58.3,3.52,42707
+deadlock,Baba,Silver,58.65,3.88,44857
+deadlock,Baba,Viscous,58.98,4.2,21234
+deadlock,Baba,Rem,59.4,4.62,44968
+deadlock,Baba,Shiv,59.47,4.7,43916
+deadlock,Baba,Mina,59.74,4.97,58327
+deadlock,Baba,The Doorman,59.82,5.04,23055
+deadlock,Baba,Pocket,60.46,5.68,28597
+deadlock,Baba,Mirage,61.04,6.26,18902
+deadlock,Baba,Sinclair,61.27,6.49,14675
+deadlock,Infernus,Graves,41.98,-6.93,185856
+deadlock,Infernus,Paige,42.96,-5.95,137458
+deadlock,Infernus,Rat King,44.71,-4.2,181204
+deadlock,Infernus,Seven,44.83,-4.08,166414
+deadlock,Infernus,Baba,44.95,-3.96,57322
+deadlock,Infernus,Haze,45.17,-3.74,196672
+deadlock,Infernus,Kelvin,45.39,-3.52,70391
+deadlock,Infernus,Lady Geist,45.43,-3.48,137869
+deadlock,Infernus,Victor,45.61,-3.31,146023
+deadlock,Infernus,Deadman Danny,45.9,-3.01,128705
+deadlock,Infernus,Abrams,46.85,-2.06,137354
+deadlock,Infernus,Ivy,46.95,-1.97,100042
+deadlock,Infernus,Dynamo,47.62,-1.29,128101
+deadlock,Infernus,Lash,47.94,-0.97,121130
+deadlock,Infernus,Drifter,48.25,-0.66,180437
+deadlock,Infernus,Nurse Harrow,48.4,-0.51,142429
+deadlock,Infernus,Wraith,48.72,-0.19,169808
+deadlock,Infernus,Apollo,49.39,0.48,117224
+deadlock,Infernus,Billy,49.68,0.77,154443
+deadlock,Infernus,McGinnis,49.77,0.86,62675
+deadlock,Infernus,Violet,49.79,0.88,118883
+deadlock,Infernus,Vindicta,50.0,1.09,115884
+deadlock,Infernus,Calico,50.07,1.16,63046
+deadlock,Infernus,Warden,50.62,1.71,68355
+deadlock,Infernus,Grey Talon,50.8,1.89,72005
+deadlock,Infernus,Bebop,50.95,2.04,144162
+deadlock,Infernus,Solomon,51.06,2.15,54043
+deadlock,Infernus,Holliday,51.18,2.27,67314
+deadlock,Infernus,Celeste,51.47,2.56,131415
+deadlock,Infernus,Yamato,51.49,2.58,105757
+deadlock,Infernus,Mo & Krill,51.58,2.67,70099
+deadlock,Infernus,Paradox,52.03,3.12,100535
+deadlock,Infernus,Silver,52.03,3.12,130094
+deadlock,Infernus,The Doorman,52.26,3.35,62776
+deadlock,Infernus,Viscous,52.43,3.52,58457
+deadlock,Infernus,Venator,52.54,3.63,172989
+deadlock,Infernus,Vyper,53.02,4.11,65079
+deadlock,Infernus,Mina,53.62,4.71,154944
+deadlock,Infernus,Rem,53.8,4.89,127951
+deadlock,Infernus,Shiv,53.93,5.01,124695
+deadlock,Infernus,Pocket,54.44,5.53,68142
+deadlock,Infernus,Mirage,54.53,5.62,55078
+deadlock,Infernus,Sinclair,54.54,5.63,44874
+deadlock,Seven,Paige,48.68,-6.38,133614
+deadlock,Seven,Graves,48.98,-6.09,174212
+deadlock,Seven,Rat King,50.36,-4.71,163065
+deadlock,Seven,Kelvin,50.55,-4.52,56456
+deadlock,Seven,Haze,50.63,-4.43,193004
+deadlock,Seven,Victor,50.77,-4.29,148836
+deadlock,Seven,Lady Geist,50.77,-4.29,129330
+deadlock,Seven,Baba,51.19,-3.87,50927
+deadlock,Seven,Deadman Danny,52.84,-2.22,121832
+deadlock,Seven,Ivy,53.0,-2.06,88247
+deadlock,Seven,Abrams,53.53,-1.53,124969
+deadlock,Seven,Nurse Harrow,53.79,-1.28,122032
+deadlock,Seven,Wraith,53.86,-1.21,156467
+deadlock,Seven,Violet,54.45,-0.61,105127
+deadlock,Seven,Dynamo,54.47,-0.59,103097
+deadlock,Seven,Lash,54.5,-0.57,115009
+deadlock,Seven,Drifter,54.52,-0.55,177800
+deadlock,Seven,Vindicta,54.75,-0.31,104420
+deadlock,Seven,Infernus,55.15,0.08,166414
+deadlock,Seven,Warden,55.19,0.13,56978
+deadlock,Seven,Apollo,55.92,0.86,106056
+deadlock,Seven,Calico,56.22,1.16,56750
+deadlock,Seven,Grey Talon,56.37,1.31,62248
+deadlock,Seven,Bebop,56.46,1.4,136928
+deadlock,Seven,McGinnis,56.47,1.41,62130
+deadlock,Seven,Billy,56.66,1.59,160303
+deadlock,Seven,Mo & Krill,56.83,1.77,64619
+deadlock,Seven,Holliday,57.02,1.95,62737
+deadlock,Seven,Solomon,57.37,2.3,53350
+deadlock,Seven,Celeste,57.74,2.68,127533
+deadlock,Seven,Paradox,57.8,2.74,88459
+deadlock,Seven,Venator,58.0,2.94,186527
+deadlock,Seven,Yamato,58.41,3.34,95908
+deadlock,Seven,Vyper,58.63,3.56,63894
+deadlock,Seven,Sinclair,58.81,3.74,44272
+deadlock,Seven,The Doorman,59.06,3.99,63849
+deadlock,Seven,Viscous,59.07,4.0,49409
+deadlock,Seven,Silver,59.4,4.33,122064
+deadlock,Seven,Mina,59.72,4.66,147765
+deadlock,Seven,Shiv,60.32,5.25,100283
+deadlock,Seven,Mirage,60.34,5.27,49481
+deadlock,Seven,Rem,60.64,5.58,120418
+deadlock,Seven,Pocket,60.83,5.76,62769
+deadlock,Vindicta,Graves,41.74,-7.44,166301
+deadlock,Vindicta,Paige,43.3,-5.89,85118
+deadlock,Vindicta,Kelvin,44.43,-4.76,52591
+deadlock,Vindicta,Rat King,44.74,-4.44,179431
+deadlock,Vindicta,Seven,45.23,-3.96,104420
+deadlock,Vindicta,Haze,45.57,-3.62,179077
+deadlock,Vindicta,Lady Geist,45.83,-3.36,85544
+deadlock,Vindicta,Victor,46.03,-3.16,95713
+deadlock,Vindicta,Baba,46.71,-2.47,43072
+deadlock,Vindicta,Ivy,47.2,-1.99,54317
+deadlock,Vindicta,Nurse Harrow,47.78,-1.41,133082
+deadlock,Vindicta,Abrams,47.83,-1.36,92576
+deadlock,Vindicta,Deadman Danny,47.93,-1.26,109471
+deadlock,Vindicta,McGinnis,48.03,-1.16,39609
+deadlock,Vindicta,Apollo,48.12,-1.07,103574
+deadlock,Vindicta,Drifter,48.38,-0.81,125386
+deadlock,Vindicta,Lash,48.77,-0.42,112123
+deadlock,Vindicta,Dynamo,48.86,-0.33,51478
+deadlock,Vindicta,Wraith,49.03,-0.15,106755
+deadlock,Vindicta,Violet,49.16,-0.03,94130
+deadlock,Vindicta,Infernus,49.99,0.8,115884
+deadlock,Vindicta,Warden,50.12,0.94,63774
+deadlock,Vindicta,Billy,50.13,0.95,99309
+deadlock,Vindicta,Bebop,50.49,1.3,151766
+deadlock,Vindicta,Grey Talon,50.67,1.48,74885
+deadlock,Vindicta,Yamato,50.73,1.54,102583
+deadlock,Vindicta,Paradox,50.78,1.59,135165
+deadlock,Vindicta,Calico,50.8,1.61,50546
+deadlock,Vindicta,Holliday,51.0,1.81,93914
+deadlock,Vindicta,Celeste,51.04,1.85,114729
+deadlock,Vindicta,Venator,51.82,2.64,152893
+deadlock,Vindicta,Mo & Krill,51.93,2.74,48496
+deadlock,Vindicta,Silver,52.1,2.91,117630
+deadlock,Vindicta,Solomon,52.44,3.25,43522
+deadlock,Vindicta,The Doorman,52.59,3.4,61500
+deadlock,Vindicta,Rem,53.08,3.89,119681
+deadlock,Vindicta,Mina,53.37,4.18,143273
+deadlock,Vindicta,Viscous,53.64,4.45,47959
+deadlock,Vindicta,Vyper,53.92,4.73,43546
+deadlock,Vindicta,Sinclair,54.34,5.15,38761
+deadlock,Vindicta,Mirage,54.5,5.31,31626
+deadlock,Vindicta,Shiv,54.89,5.7,80300
+deadlock,Vindicta,Pocket,55.6,6.41,80269
+deadlock,Lady Geist,Graves,47.54,-6.61,132571
+deadlock,Lady Geist,Baba,48.13,-6.03,43008
+deadlock,Lady Geist,Paige,48.26,-5.89,103822
+deadlock,Lady Geist,Kelvin,48.84,-5.32,48909
+deadlock,Lady Geist,Seven,49.21,-4.94,129330
+deadlock,Lady Geist,Rat King,49.43,-4.73,179878
+deadlock,Lady Geist,Victor,49.64,-4.52,133154
+deadlock,Lady Geist,Haze,50.08,-4.08,164465
+deadlock,Lady Geist,Deadman Danny,50.68,-3.47,103265
+deadlock,Lady Geist,Abrams,51.9,-2.26,115345
+deadlock,Lady Geist,Ivy,51.94,-2.22,81750
+deadlock,Lady Geist,Nurse Harrow,51.94,-2.21,116522
+deadlock,Lady Geist,Dynamo,53.37,-0.79,89500
+deadlock,Lady Geist,Lash,53.46,-0.69,92129
+deadlock,Lady Geist,Drifter,53.54,-0.61,169058
+deadlock,Lady Geist,Warden,53.99,-0.16,42469
+deadlock,Lady Geist,Vindicta,54.16,0.0,85544
+deadlock,Lady Geist,Wraith,54.19,0.03,138435
+deadlock,Lady Geist,Infernus,54.55,0.4,137869
+deadlock,Lady Geist,Violet,54.58,0.42,87386
+deadlock,Lady Geist,McGinnis,55.07,0.92,55300
+deadlock,Lady Geist,Billy,55.17,1.01,134867
+deadlock,Lady Geist,Apollo,55.29,1.14,89345
+deadlock,Lady Geist,Mo & Krill,55.41,1.26,50954
+deadlock,Lady Geist,Calico,55.42,1.26,58217
+deadlock,Lady Geist,Grey Talon,56.45,2.29,59176
+deadlock,Lady Geist,Celeste,56.47,2.32,104418
+deadlock,Lady Geist,Bebop,56.49,2.34,118343
+deadlock,Lady Geist,Solomon,56.82,2.66,43774
+deadlock,Lady Geist,Silver,57.05,2.9,97371
+deadlock,Lady Geist,Yamato,57.23,3.07,84318
+deadlock,Lady Geist,Holliday,57.22,3.07,49760
+deadlock,Lady Geist,Venator,57.78,3.62,150099
+deadlock,Lady Geist,Viscous,57.81,3.66,44427
+deadlock,Lady Geist,Shiv,58.12,3.96,122057
+deadlock,Lady Geist,Vyper,58.26,4.1,53388
+deadlock,Lady Geist,Rem,58.88,4.73,102951
+deadlock,Lady Geist,Paradox,59.01,4.86,73861
+deadlock,Lady Geist,The Doorman,59.08,4.92,51144
+deadlock,Lady Geist,Mina,59.56,5.4,136439
+deadlock,Lady Geist,Sinclair,60.09,5.94,34719
+deadlock,Lady Geist,Pocket,60.61,6.46,53145
+deadlock,Lady Geist,Mirage,60.71,6.55,44410
+deadlock,Abrams,Graves,44.23,-7.82,161586
+deadlock,Abrams,Paige,46.06,-5.99,115432
+deadlock,Abrams,Seven,46.45,-5.6,124969
+deadlock,Abrams,Baba,46.46,-5.6,47084
+deadlock,Abrams,Kelvin,46.85,-5.2,57898
+deadlock,Abrams,Victor,47.7,-4.35,133993
+deadlock,Abrams,Lady Geist,48.09,-3.96,115345
+deadlock,Abrams,Rat King,48.33,-3.72,198080
+deadlock,Abrams,Deadman Danny,48.63,-3.42,108939
+deadlock,Abrams,Haze,49.33,-2.72,157765
+deadlock,Abrams,Ivy,49.67,-2.38,82514
+deadlock,Abrams,Dynamo,49.9,-2.16,90203
+deadlock,Abrams,Nurse Harrow,50.61,-1.44,116474
+deadlock,Abrams,Warden,51.36,-0.69,62033
+deadlock,Abrams,Lash,51.39,-0.66,128488
+deadlock,Abrams,Drifter,51.95,-0.1,138908
+deadlock,Abrams,McGinnis,51.98,-0.07,43988
+deadlock,Abrams,Wraith,52.07,0.02,125882
+deadlock,Abrams,Vindicta,52.15,0.1,92576
+deadlock,Abrams,Mo & Krill,52.55,0.5,73452
+deadlock,Abrams,Billy,52.81,0.76,169508
+deadlock,Abrams,Apollo,52.96,0.91,101103
+deadlock,Abrams,Infernus,53.13,1.08,137354
+deadlock,Abrams,Violet,53.19,1.14,95193
+deadlock,Abrams,Bebop,53.58,1.53,155787
+deadlock,Abrams,Celeste,54.14,2.09,111298
+deadlock,Abrams,Calico,54.3,2.25,52264
+deadlock,Abrams,Holliday,54.44,2.39,79409
+deadlock,Abrams,Grey Talon,54.52,2.47,67696
+deadlock,Abrams,Yamato,54.82,2.76,105192
+deadlock,Abrams,Silver,55.02,2.97,124601
+deadlock,Abrams,Solomon,55.64,3.59,50371
+deadlock,Abrams,Vyper,55.66,3.61,49391
+deadlock,Abrams,Paradox,55.71,3.66,112371
+deadlock,Abrams,Shiv,55.75,3.7,125995
+deadlock,Abrams,Venator,55.85,3.8,146758
+deadlock,Abrams,Viscous,56.21,4.16,49121
+deadlock,Abrams,The Doorman,56.52,4.47,66233
+deadlock,Abrams,Mina,57.06,5.01,132826
+deadlock,Abrams,Rem,57.27,5.22,105919
+deadlock,Abrams,Sinclair,57.7,5.65,40063
+deadlock,Abrams,Pocket,57.75,5.7,60677
+deadlock,Abrams,Mirage,58.47,6.42,44372
+deadlock,Wraith,Graves,43.63,-6.54,169601
+deadlock,Wraith,Paige,44.05,-6.12,130961
+deadlock,Wraith,Lady Geist,45.8,-4.37,138435
+deadlock,Wraith,Rat King,46.06,-4.11,175152
+deadlock,Wraith,Baba,46.07,-4.1,53558
+deadlock,Wraith,Seven,46.13,-4.04,156467
+deadlock,Wraith,Kelvin,46.46,-3.71,62271
+deadlock,Wraith,Victor,46.75,-3.42,150931
+deadlock,Wraith,Haze,46.79,-3.38,203473
+deadlock,Wraith,Abrams,47.92,-2.25,125882
+deadlock,Wraith,Ivy,48.07,-2.1,95540
+deadlock,Wraith,Deadman Danny,48.14,-2.03,130181
+deadlock,Wraith,Nurse Harrow,49.36,-0.81,137554
+deadlock,Wraith,Lash,49.51,-0.66,121931
+deadlock,Wraith,Dynamo,49.54,-0.63,113139
+deadlock,Wraith,Drifter,49.67,-0.5,191165
+deadlock,Wraith,McGinnis,49.86,-0.31,63812
+deadlock,Wraith,Apollo,49.89,-0.28,110071
+deadlock,Wraith,Billy,50.1,-0.07,150948
+deadlock,Wraith,Vindicta,50.96,0.79,106755
+deadlock,Wraith,Warden,51.19,1.02,65532
+deadlock,Wraith,Infernus,51.27,1.1,169808
+deadlock,Wraith,Violet,51.34,1.17,114189
+deadlock,Wraith,Calico,51.51,1.34,63841
+deadlock,Wraith,Bebop,51.94,1.77,131898
+deadlock,Wraith,Celeste,52.03,1.86,126863
+deadlock,Wraith,Mo & Krill,52.17,2.0,69500
+deadlock,Wraith,Holliday,52.17,2.0,62896
+deadlock,Wraith,Yamato,52.41,2.24,92512
+deadlock,Wraith,Grey Talon,52.66,2.49,68001
+deadlock,Wraith,Paradox,53.03,2.86,86270
+deadlock,Wraith,Venator,53.46,3.29,196213
+deadlock,Wraith,Silver,53.48,3.31,123508
+deadlock,Wraith,Solomon,53.48,3.31,55448
+deadlock,Wraith,Vyper,53.81,3.64,63631
+deadlock,Wraith,The Doorman,54.08,3.91,62478
+deadlock,Wraith,Viscous,54.21,4.04,48305
+deadlock,Wraith,Sinclair,54.63,4.46,43267
+deadlock,Wraith,Rem,54.75,4.58,121059
+deadlock,Wraith,Mina,55.09,4.92,148751
+deadlock,Wraith,Shiv,56.27,6.1,115113
+deadlock,Wraith,Mirage,56.3,6.13,52388
+deadlock,Wraith,Pocket,56.34,6.17,59056
+deadlock,McGinnis,Paige,42.94,-7.13,61652
+deadlock,McGinnis,Seven,43.52,-6.56,62130
+deadlock,McGinnis,Rat King,43.88,-6.19,76245
+deadlock,McGinnis,Lady Geist,44.9,-5.18,55300
+deadlock,McGinnis,Graves,45.6,-4.48,110658
+deadlock,McGinnis,Victor,45.76,-4.32,57646
+deadlock,McGinnis,Kelvin,46.07,-4.01,25047
+deadlock,McGinnis,Baba,46.48,-3.6,21757
+deadlock,McGinnis,Haze,47.22,-2.86,60965
+deadlock,McGinnis,Abrams,48.01,-2.07,43988
+deadlock,McGinnis,Ivy,48.1,-1.98,39426
+deadlock,McGinnis,Deadman Danny,48.7,-1.38,46777
+deadlock,McGinnis,Nurse Harrow,49.11,-0.97,57502
+deadlock,McGinnis,Dynamo,49.56,-0.52,52127
+deadlock,McGinnis,Lash,50.06,-0.01,37726
+deadlock,McGinnis,Drifter,50.07,-0.01,76707
+deadlock,McGinnis,Wraith,50.12,0.04,63812
+deadlock,McGinnis,Infernus,50.21,0.14,62675
+deadlock,McGinnis,Warden,50.91,0.84,19820
+deadlock,McGinnis,Mo & Krill,51.02,0.94,19492
+deadlock,McGinnis,Violet,51.06,0.98,39124
+deadlock,McGinnis,Apollo,51.34,1.26,44563
+deadlock,McGinnis,Billy,51.55,1.48,54489
+deadlock,McGinnis,Vindicta,51.97,1.89,39609
+deadlock,McGinnis,Bebop,52.09,2.01,45009
+deadlock,McGinnis,Celeste,52.17,2.09,50244
+deadlock,McGinnis,Calico,52.28,2.2,23019
+deadlock,McGinnis,Solomon,52.33,2.25,19541
+deadlock,McGinnis,Grey Talon,53.46,3.38,25126
+deadlock,McGinnis,Yamato,53.68,3.61,35469
+deadlock,McGinnis,Holliday,53.81,3.73,22319
+deadlock,McGinnis,Paradox,54.12,4.05,30428
+deadlock,McGinnis,Venator,54.19,4.11,63733
+deadlock,McGinnis,Vyper,54.45,4.38,27513
+deadlock,McGinnis,The Doorman,54.55,4.47,20538
+deadlock,McGinnis,Viscous,54.59,4.51,19523
+deadlock,McGinnis,Silver,54.62,4.54,53298
+deadlock,McGinnis,Rem,54.88,4.8,53932
+deadlock,McGinnis,Shiv,55.95,5.87,46924
+deadlock,McGinnis,Mina,56.3,6.22,46134
+deadlock,McGinnis,Sinclair,56.33,6.25,14938
+deadlock,McGinnis,Pocket,57.04,6.96,20310
+deadlock,McGinnis,Mirage,57.34,7.26,21396
+deadlock,Paradox,Graves,38.56,-8.07,152759
+deadlock,Paradox,Paige,40.72,-5.92,80297
+deadlock,Paradox,Lady Geist,40.97,-5.67,73861
+deadlock,Paradox,Kelvin,41.06,-5.58,48769
+deadlock,Paradox,Rat King,41.46,-5.18,143418
+deadlock,Paradox,Victor,41.51,-5.13,75325
+deadlock,Paradox,Baba,41.69,-4.94,42707
+deadlock,Paradox,Seven,42.19,-4.45,88459
+deadlock,Paradox,Deadman Danny,43.42,-3.22,112233
+deadlock,Paradox,Haze,43.77,-2.86,158885
+deadlock,Paradox,Abrams,44.27,-2.36,112371
+deadlock,Paradox,Ivy,44.29,-2.35,52839
+deadlock,Paradox,Nurse Harrow,44.77,-1.87,124168
+deadlock,Paradox,Dynamo,45.21,-1.43,51413
+deadlock,Paradox,Lash,45.49,-1.14,129191
+deadlock,Paradox,McGinnis,45.88,-0.76,30428
+deadlock,Paradox,Drifter,45.98,-0.66,105439
+deadlock,Paradox,Apollo,46.04,-0.6,105755
+deadlock,Paradox,Warden,46.25,-0.39,59533
+deadlock,Paradox,Violet,46.7,0.06,91086
+deadlock,Paradox,Wraith,46.97,0.33,86270
+deadlock,Paradox,Billy,47.08,0.45,112455
+deadlock,Paradox,Mo & Krill,47.37,0.74,68551
+deadlock,Paradox,Infernus,47.96,1.32,100535
+deadlock,Paradox,Calico,48.05,1.42,50327
+deadlock,Paradox,Bebop,48.34,1.7,180605
+deadlock,Paradox,Celeste,48.48,1.84,112094
+deadlock,Paradox,Yamato,48.88,2.25,98129
+deadlock,Paradox,Vindicta,49.2,2.57,135165
+deadlock,Paradox,Holliday,49.28,2.65,108951
+deadlock,Paradox,Solomon,49.42,2.78,44173
+deadlock,Paradox,Grey Talon,49.63,2.99,78934
+deadlock,Paradox,Silver,49.65,3.02,99293
+deadlock,Paradox,Vyper,50.0,3.37,33687
+deadlock,Paradox,Venator,50.27,3.63,145565
+deadlock,Paradox,Rem,50.29,3.65,107205
+deadlock,Paradox,The Doorman,50.65,4.01,63375
+deadlock,Paradox,Viscous,51.14,4.51,47875
+deadlock,Paradox,Mina,52.17,5.53,141404
+deadlock,Paradox,Shiv,52.18,5.55,76508
+deadlock,Paradox,Pocket,52.44,5.8,83385
+deadlock,Paradox,Sinclair,52.6,5.96,32580
+deadlock,Paradox,Mirage,53.61,6.98,31345
+deadlock,Dynamo,Graves,45.03,-6.53,108442
+deadlock,Dynamo,Seven,45.52,-6.05,103097
+deadlock,Dynamo,Paige,45.52,-6.05,113918
+deadlock,Dynamo,Kelvin,46.28,-5.28,35235
+deadlock,Dynamo,Lady Geist,46.62,-4.95,89500
+deadlock,Dynamo,Victor,46.73,-4.84,99917
+deadlock,Dynamo,Rat King,47.07,-4.49,107342
+deadlock,Dynamo,Baba,47.35,-4.21,39103
+deadlock,Dynamo,Haze,48.35,-3.21,97318
+deadlock,Dynamo,Ivy,48.92,-2.65,74355
+deadlock,Dynamo,Deadman Danny,49.4,-2.16,72792
+deadlock,Dynamo,Abrams,50.09,-1.47,90203
+deadlock,Dynamo,Nurse Harrow,50.12,-1.44,107999
+deadlock,Dynamo,McGinnis,50.41,-1.15,52127
+deadlock,Dynamo,Wraith,50.45,-1.11,113139
+deadlock,Dynamo,Vindicta,51.13,-0.44,51478
+deadlock,Dynamo,Lash,51.44,-0.13,68247
+deadlock,Dynamo,Infernus,52.36,0.8,128101
+deadlock,Dynamo,Warden,52.4,0.83,29909
+deadlock,Dynamo,Drifter,52.4,0.83,128109
+deadlock,Dynamo,Mo & Krill,52.85,1.29,38918
+deadlock,Dynamo,Billy,52.86,1.3,108641
+deadlock,Dynamo,Violet,53.09,1.53,71217
+deadlock,Dynamo,Apollo,53.1,1.54,72806
+deadlock,Dynamo,Grey Talon,53.46,1.9,35683
+deadlock,Dynamo,Celeste,53.5,1.93,81937
+deadlock,Dynamo,Solomon,53.85,2.29,36746
+deadlock,Dynamo,Calico,54.05,2.49,37677
+deadlock,Dynamo,Bebop,54.22,2.65,80276
+deadlock,Dynamo,Yamato,54.51,2.95,50357
+deadlock,Dynamo,Paradox,54.77,3.21,51413
+deadlock,Dynamo,Holliday,55.05,3.49,33786
+deadlock,Dynamo,Venator,55.98,4.41,117097
+deadlock,Dynamo,The Doorman,55.98,4.41,39567
+deadlock,Dynamo,Viscous,56.18,4.62,34899
+deadlock,Dynamo,Sinclair,56.29,4.72,30962
+deadlock,Dynamo,Rem,56.31,4.74,95114
+deadlock,Dynamo,Shiv,56.33,4.77,78818
+deadlock,Dynamo,Mina,56.44,4.88,70849
+deadlock,Dynamo,Silver,56.52,4.96,80048
+deadlock,Dynamo,Vyper,56.77,5.2,48290
+deadlock,Dynamo,Mirage,56.89,5.33,39147
+deadlock,Dynamo,Pocket,58.28,6.71,34549
+deadlock,Kelvin,Graves,47.63,-7.43,68649
+deadlock,Kelvin,Paige,49.17,-5.89,52068
+deadlock,Kelvin,Seven,49.43,-5.63,56456
+deadlock,Kelvin,Baba,49.47,-5.59,23992
+deadlock,Kelvin,Rat King,49.88,-5.19,72311
+deadlock,Kelvin,Haze,50.29,-4.77,73693
+deadlock,Kelvin,Lady Geist,51.16,-3.91,48909
+deadlock,Kelvin,Ivy,52.79,-2.28,38474
+deadlock,Kelvin,Victor,52.79,-2.27,51270
+deadlock,Kelvin,Nurse Harrow,52.9,-2.17,68261
+deadlock,Kelvin,Abrams,53.13,-1.93,57898
+deadlock,Kelvin,Wraith,53.52,-1.54,62271
+deadlock,Kelvin,Deadman Danny,53.58,-1.49,50270
+deadlock,Kelvin,Dynamo,53.7,-1.36,35235
+deadlock,Kelvin,McGinnis,53.93,-1.13,25047
+deadlock,Kelvin,Warden,54.36,-0.7,25116
+deadlock,Kelvin,Infernus,54.6,-0.46,70391
+deadlock,Kelvin,Apollo,54.79,-0.27,47892
+deadlock,Kelvin,Lash,55.35,0.29,55974
+deadlock,Kelvin,Vindicta,55.55,0.49,52591
+deadlock,Kelvin,Billy,55.64,0.58,59668
+deadlock,Kelvin,Drifter,55.75,0.69,65028
+deadlock,Kelvin,Mo & Krill,56.01,0.95,28458
+deadlock,Kelvin,Violet,56.27,1.2,43894
+deadlock,Kelvin,Celeste,56.68,1.62,52110
+deadlock,Kelvin,Bebop,56.87,1.81,70806
+deadlock,Kelvin,Silver,57.63,2.56,49027
+deadlock,Kelvin,Holliday,57.74,2.68,35157
+deadlock,Kelvin,Calico,57.95,2.89,26026
+deadlock,Kelvin,Yamato,57.98,2.91,42977
+deadlock,Kelvin,Solomon,58.27,3.21,22418
+deadlock,Kelvin,Venator,58.37,3.31,71698
+deadlock,Kelvin,Vyper,58.4,3.34,25346
+deadlock,Kelvin,Viscous,58.43,3.36,24912
+deadlock,Kelvin,Rem,58.63,3.57,54444
+deadlock,Kelvin,Grey Talon,58.66,3.6,31911
+deadlock,Kelvin,Paradox,58.92,3.86,48769
+deadlock,Kelvin,The Doorman,59.37,4.31,29841
+deadlock,Kelvin,Shiv,59.41,4.34,48714
+deadlock,Kelvin,Mina,60.89,5.83,58666
+deadlock,Kelvin,Mirage,60.92,5.86,21466
+deadlock,Kelvin,Sinclair,61.21,6.15,18546
+deadlock,Kelvin,Pocket,61.37,6.31,36231
+deadlock,Haze,Graves,46.97,-6.58,228546
+deadlock,Haze,Paige,47.65,-5.9,133301
+deadlock,Haze,Victor,48.85,-4.7,169647
+deadlock,Haze,Rat King,49.3,-4.24,195821
+deadlock,Haze,Seven,49.35,-4.19,193004
+deadlock,Haze,Baba,49.64,-3.91,63940
+deadlock,Haze,Deadman Danny,49.64,-3.9,161946
+deadlock,Haze,Kelvin,49.69,-3.86,73693
+deadlock,Haze,Lady Geist,49.91,-3.63,164465
+deadlock,Haze,Abrams,50.66,-2.89,157765
+deadlock,Haze,Ivy,51.2,-2.34,95538
+deadlock,Haze,Dynamo,51.64,-1.91,97318
+deadlock,Haze,Nurse Harrow,52.1,-1.45,166350
+deadlock,Haze,Lash,52.34,-1.2,182740
+deadlock,Haze,Drifter,52.48,-1.06,207784
+deadlock,Haze,McGinnis,52.78,-0.77,60965
+deadlock,Haze,Violet,53.16,-0.39,140428
+deadlock,Haze,Wraith,53.2,-0.34,203473
+deadlock,Haze,Apollo,53.59,0.04,134985
+deadlock,Haze,Warden,54.06,0.52,96928
+deadlock,Haze,Billy,54.08,0.53,184980
+deadlock,Haze,Calico,54.16,0.62,77032
+deadlock,Haze,Vindicta,54.41,0.87,179077
+deadlock,Haze,Mo & Krill,54.78,1.23,84851
+deadlock,Haze,Infernus,54.82,1.27,196672
+deadlock,Haze,Holliday,54.96,1.41,103134
+deadlock,Haze,Bebop,55.26,1.72,214684
+deadlock,Haze,Yamato,55.46,1.92,141838
+deadlock,Haze,Solomon,55.93,2.38,68999
+deadlock,Haze,Celeste,55.95,2.41,157332
+deadlock,Haze,Paradox,56.21,2.67,158885
+deadlock,Haze,Venator,56.29,2.75,245872
+deadlock,Haze,Vyper,56.3,2.76,75040
+deadlock,Haze,Grey Talon,56.39,2.84,101043
+deadlock,Haze,Silver,56.85,3.31,159745
+deadlock,Haze,The Doorman,56.97,3.43,88474
+deadlock,Haze,Viscous,57.37,3.83,64524
+deadlock,Haze,Mina,57.8,4.26,211086
+deadlock,Haze,Rem,58.33,4.79,150143
+deadlock,Haze,Pocket,58.67,5.13,98277
+deadlock,Haze,Sinclair,59.21,5.67,50964
+deadlock,Haze,Mirage,59.28,5.73,61287
+deadlock,Haze,Shiv,59.86,6.31,115871
+deadlock,Holliday,Graves,40.53,-7.18,116960
+deadlock,Holliday,Paige,42.12,-5.59,51633
+deadlock,Holliday,Rat King,42.23,-5.48,110346
+deadlock,Holliday,Kelvin,42.25,-5.46,35157
+deadlock,Holliday,Victor,42.6,-5.11,51056
+deadlock,Holliday,Baba,42.6,-5.11,29008
+deadlock,Holliday,Lady Geist,42.77,-4.94,49760
+deadlock,Holliday,Seven,42.98,-4.73,62737
+deadlock,Holliday,Deadman Danny,44.38,-3.33,81773
+deadlock,Holliday,Dynamo,44.94,-2.77,33786
+deadlock,Holliday,Haze,45.03,-2.67,103134
+deadlock,Holliday,Abrams,45.54,-2.16,79409
+deadlock,Holliday,Ivy,45.9,-1.8,38431
+deadlock,Holliday,McGinnis,46.17,-1.53,22319
+deadlock,Holliday,Lash,46.28,-1.42,97802
+deadlock,Holliday,Nurse Harrow,46.46,-1.24,89890
+deadlock,Holliday,Apollo,47.49,-0.21,79115
+deadlock,Holliday,Drifter,47.56,-0.15,81997
+deadlock,Holliday,Violet,47.73,0.02,62956
+deadlock,Holliday,Warden,47.78,0.07,42709
+deadlock,Holliday,Wraith,47.82,0.11,62896
+deadlock,Holliday,Billy,48.33,0.63,77757
+deadlock,Holliday,Mo & Krill,48.65,0.94,49154
+deadlock,Holliday,Infernus,48.81,1.11,67314
+deadlock,Holliday,Vindicta,48.98,1.28,93914
+deadlock,Holliday,Calico,49.18,1.48,38850
+deadlock,Holliday,Bebop,49.34,1.64,134207
+deadlock,Holliday,Celeste,49.38,1.67,82824
+deadlock,Holliday,Grey Talon,49.8,2.1,55525
+deadlock,Holliday,Yamato,49.92,2.21,69818
+deadlock,Holliday,Silver,50.19,2.49,75089
+deadlock,Holliday,Solomon,50.28,2.57,31568
+deadlock,Holliday,Venator,50.63,2.92,102658
+deadlock,Holliday,Paradox,50.7,3.0,108951
+deadlock,Holliday,Vyper,51.42,3.72,26120
+deadlock,Holliday,Rem,51.66,3.95,75586
+deadlock,Holliday,Viscous,51.85,4.14,34684
+deadlock,Holliday,The Doorman,51.89,4.19,47453
+deadlock,Holliday,Sinclair,52.6,4.89,24114
+deadlock,Holliday,Shiv,52.91,5.2,55740
+deadlock,Holliday,Mina,53.25,5.54,100122
+deadlock,Holliday,Mirage,53.36,5.65,23102
+deadlock,Holliday,Pocket,53.41,5.7,62798
+deadlock,Bebop,Paige,41.96,-6.46,112390
+deadlock,Bebop,Graves,42.14,-6.28,206881
+deadlock,Bebop,Kelvin,43.12,-5.3,70806
+deadlock,Bebop,Baba,43.19,-5.24,56373
+deadlock,Bebop,Rat King,43.4,-5.03,198415
+deadlock,Bebop,Lady Geist,43.5,-4.92,118343
+deadlock,Bebop,Seven,43.52,-4.9,136928
+deadlock,Bebop,Haze,44.72,-3.7,214684
+deadlock,Bebop,Victor,44.79,-3.63,104352
+deadlock,Bebop,Ivy,44.87,-3.55,81525
+deadlock,Bebop,Deadman Danny,45.6,-2.83,147934
+deadlock,Bebop,Dynamo,45.77,-2.65,80276
+deadlock,Bebop,Abrams,46.41,-2.02,155787
+deadlock,Bebop,Nurse Harrow,47.31,-1.11,160642
+deadlock,Bebop,McGinnis,47.9,-0.53,45009
+deadlock,Bebop,Lash,47.9,-0.52,178463
+deadlock,Bebop,Warden,48.01,-0.41,70799
+deadlock,Bebop,Wraith,48.05,-0.37,131898
+deadlock,Bebop,Drifter,48.31,-0.12,156831
+deadlock,Bebop,Apollo,48.69,0.27,139925
+deadlock,Bebop,Infernus,49.03,0.61,144162
+deadlock,Bebop,Vindicta,49.49,1.07,151766
+deadlock,Bebop,Violet,49.73,1.31,112831
+deadlock,Bebop,Billy,49.84,1.42,148338
+deadlock,Bebop,Calico,49.91,1.49,72416
+deadlock,Bebop,Mo & Krill,50.12,1.7,90008
+deadlock,Bebop,Solomon,50.32,1.89,58249
+deadlock,Bebop,Celeste,50.64,2.21,147463
+deadlock,Bebop,Holliday,50.64,2.22,134207
+deadlock,Bebop,Grey Talon,50.83,2.41,102643
+deadlock,Bebop,Yamato,51.13,2.71,133729
+deadlock,Bebop,Viscous,51.34,2.92,63267
+deadlock,Bebop,Paradox,51.65,3.23,180605
+deadlock,Bebop,Silver,51.89,3.47,132705
+deadlock,Bebop,Venator,51.98,3.55,191012
+deadlock,Bebop,Vyper,52.59,4.16,47157
+deadlock,Bebop,The Doorman,52.66,4.23,83622
+deadlock,Bebop,Shiv,52.82,4.4,113876
+deadlock,Bebop,Sinclair,53.02,4.6,50957
+deadlock,Bebop,Rem,53.19,4.77,136105
+deadlock,Bebop,Mina,53.57,5.14,183594
+deadlock,Bebop,Pocket,53.59,5.17,85620
+deadlock,Bebop,Mirage,54.19,5.77,46916
+deadlock,Calico,Graves,40.62,-7.56,76971
+deadlock,Calico,Paige,42.01,-6.16,47959
+deadlock,Calico,Kelvin,42.04,-6.13,26026
+deadlock,Calico,Baba,42.43,-5.74,22615
+deadlock,Calico,Seven,43.77,-4.41,56750
+deadlock,Calico,Victor,43.77,-4.4,51258
+deadlock,Calico,Rat King,44.25,-3.93,83790
+deadlock,Calico,Lady Geist,44.57,-3.6,58217
+deadlock,Calico,Deadman Danny,44.73,-3.44,57692
+deadlock,Calico,Abrams,45.69,-2.49,52264
+deadlock,Calico,Haze,45.83,-2.35,77032
+deadlock,Calico,Dynamo,45.94,-2.23,37677
+deadlock,Calico,Ivy,45.96,-2.21,36586
+deadlock,Calico,Lash,47.43,-0.75,55131
+deadlock,Calico,Warden,47.65,-0.52,25768
+deadlock,Calico,McGinnis,47.7,-0.48,23019
+deadlock,Calico,Nurse Harrow,47.81,-0.36,66639
+deadlock,Calico,Drifter,47.83,-0.35,85208
+deadlock,Calico,Apollo,48.06,-0.11,53984
+deadlock,Calico,Billy,48.27,0.1,52001
+deadlock,Calico,Wraith,48.47,0.3,63841
+deadlock,Calico,Mo & Krill,48.9,0.73,27063
+deadlock,Calico,Vindicta,49.18,1.0,50546
+deadlock,Calico,Violet,49.43,1.26,45600
+deadlock,Calico,Infernus,49.92,1.75,63046
+deadlock,Calico,Bebop,50.06,1.89,72416
+deadlock,Calico,Celeste,50.08,1.91,57098
+deadlock,Calico,Solomon,50.62,2.45,22116
+deadlock,Calico,Grey Talon,50.63,2.46,34009
+deadlock,Calico,Holliday,50.81,2.64,38850
+deadlock,Calico,Yamato,50.82,2.65,53219
+deadlock,Calico,Silver,51.09,2.92,53749
+deadlock,Calico,Venator,51.19,3.02,72247
+deadlock,Calico,Viscous,51.75,3.58,24210
+deadlock,Calico,Vyper,51.85,3.68,25563
+deadlock,Calico,The Doorman,51.91,3.74,27469
+deadlock,Calico,Paradox,51.94,3.77,50327
+deadlock,Calico,Rem,52.26,4.09,54214
+deadlock,Calico,Shiv,52.9,4.73,54473
+deadlock,Calico,Mina,53.18,5.01,69901
+deadlock,Calico,Sinclair,53.77,5.6,18959
+deadlock,Calico,Pocket,53.94,5.77,27039
+deadlock,Calico,Mirage,55.18,7.01,21224
+deadlock,Grey Talon,Graves,40.43,-7.33,92903
+deadlock,Grey Talon,Kelvin,41.32,-6.44,31911
+deadlock,Grey Talon,Paige,41.8,-5.96,52035
+deadlock,Grey Talon,Rat King,43.13,-4.64,98145
+deadlock,Grey Talon,Baba,43.37,-4.39,26516
+deadlock,Grey Talon,Victor,43.5,-4.26,59442
+deadlock,Grey Talon,Lady Geist,43.54,-4.22,59176
+deadlock,Grey Talon,Haze,43.59,-4.17,101043
+deadlock,Grey Talon,Seven,43.61,-4.15,62248
+deadlock,Grey Talon,Ivy,44.66,-3.1,38693
+deadlock,Grey Talon,Deadman Danny,45.4,-2.36,68524
+deadlock,Grey Talon,Abrams,45.46,-2.3,67696
+deadlock,Grey Talon,Nurse Harrow,46.21,-1.55,78252
+deadlock,Grey Talon,Lash,46.5,-1.26,77072
+deadlock,Grey Talon,McGinnis,46.53,-1.24,25126
+deadlock,Grey Talon,Dynamo,46.53,-1.23,35683
+deadlock,Grey Talon,Drifter,46.73,-1.03,89940
+deadlock,Grey Talon,Wraith,47.33,-0.44,68001
+deadlock,Grey Talon,Violet,48.05,0.28,55541
+deadlock,Grey Talon,Warden,48.14,0.37,36763
+deadlock,Grey Talon,Apollo,48.16,0.39,64867
+deadlock,Grey Talon,Billy,48.83,1.06,62133
+deadlock,Grey Talon,Bebop,49.16,1.39,102643
+deadlock,Grey Talon,Infernus,49.19,1.43,72005
+deadlock,Grey Talon,Vindicta,49.32,1.55,74885
+deadlock,Grey Talon,Mo & Krill,49.33,1.56,36557
+deadlock,Grey Talon,Calico,49.35,1.59,34009
+deadlock,Grey Talon,Celeste,49.73,1.96,67737
+deadlock,Grey Talon,Yamato,50.09,2.33,63784
+deadlock,Grey Talon,Holliday,50.18,2.42,55525
+deadlock,Grey Talon,Paradox,50.36,2.6,78934
+deadlock,Grey Talon,Venator,50.75,2.98,88127
+deadlock,Grey Talon,Vyper,50.99,3.22,28570
+deadlock,Grey Talon,Solomon,51.01,3.24,27245
+deadlock,Grey Talon,Silver,51.21,3.45,63272
+deadlock,Grey Talon,Rem,51.48,3.71,65981
+deadlock,Grey Talon,Viscous,51.83,4.07,29815
+deadlock,Grey Talon,The Doorman,52.1,4.33,37552
+deadlock,Grey Talon,Shiv,52.98,5.22,57765
+deadlock,Grey Talon,Sinclair,53.0,5.24,23619
+deadlock,Grey Talon,Mina,53.61,5.85,86122
+deadlock,Grey Talon,Mirage,53.97,6.21,24288
+deadlock,Grey Talon,Pocket,54.42,6.66,48311
+deadlock,Shiv,Graves,37.19,-7.71,125742
+deadlock,Shiv,Paige,38.22,-6.68,95798
+deadlock,Shiv,Seven,39.67,-5.23,100283
+deadlock,Shiv,Haze,40.13,-4.77,115871
+deadlock,Shiv,Baba,40.52,-4.38,43916
+deadlock,Shiv,Kelvin,40.58,-4.32,48714
+deadlock,Shiv,Rat King,41.74,-3.16,179980
+deadlock,Shiv,Lady Geist,41.86,-3.04,122057
+deadlock,Shiv,Deadman Danny,42.01,-2.89,109011
+deadlock,Shiv,Victor,42.27,-2.63,121449
+deadlock,Shiv,Ivy,42.54,-2.36,74834
+deadlock,Shiv,Dynamo,43.66,-1.24,78818
+deadlock,Shiv,Wraith,43.72,-1.18,115113
+deadlock,Shiv,Lash,43.89,-1.01,94792
+deadlock,Shiv,McGinnis,44.04,-0.86,46924
+deadlock,Shiv,Nurse Harrow,44.1,-0.8,122623
+deadlock,Shiv,Abrams,44.23,-0.67,125995
+deadlock,Shiv,Warden,44.53,-0.37,49735
+deadlock,Shiv,Drifter,45.09,0.19,155214
+deadlock,Shiv,Vindicta,45.1,0.2,80300
+deadlock,Shiv,Violet,45.88,0.98,93343
+deadlock,Shiv,Apollo,45.99,1.09,87423
+deadlock,Shiv,Infernus,46.06,1.16,124695
+deadlock,Shiv,Billy,46.49,1.59,132133
+deadlock,Shiv,Grey Talon,47.01,2.11,57765
+deadlock,Shiv,Holliday,47.08,2.18,55740
+deadlock,Shiv,Calico,47.09,2.19,54473
+deadlock,Shiv,Bebop,47.17,2.27,113876
+deadlock,Shiv,Mo & Krill,47.56,2.66,61092
+deadlock,Shiv,Solomon,47.63,2.73,44785
+deadlock,Shiv,Paradox,47.81,2.91,76508
+deadlock,Shiv,Celeste,47.93,3.03,93536
+deadlock,Shiv,Yamato,47.96,3.06,92811
+deadlock,Shiv,Vyper,48.2,3.3,46402
+deadlock,Shiv,Silver,48.26,3.36,107228
+deadlock,Shiv,Venator,48.46,3.56,121034
+deadlock,Shiv,Viscous,48.78,3.88,42725
+deadlock,Shiv,The Doorman,49.33,4.43,47406
+deadlock,Shiv,Rem,49.6,4.7,96094
+deadlock,Shiv,Mina,49.94,5.04,116196
+deadlock,Shiv,Sinclair,50.44,5.54,34051
+deadlock,Shiv,Pocket,50.76,5.86,54892
+deadlock,Shiv,Mirage,51.04,6.14,42085
+deadlock,Ivy,Graves,45.27,-7.11,93436
+deadlock,Ivy,Seven,46.99,-5.39,88247
+deadlock,Ivy,Paige,47.13,-5.24,90086
+deadlock,Ivy,Kelvin,47.2,-5.18,38474
+deadlock,Ivy,Baba,47.53,-4.85,32547
+deadlock,Ivy,Rat King,47.65,-4.73,97945
+deadlock,Ivy,Lady Geist,48.06,-4.32,81750
+deadlock,Ivy,Haze,48.78,-3.6,95538
+deadlock,Ivy,Victor,49.01,-3.37,85639
+deadlock,Ivy,Deadman Danny,50.12,-2.26,71267
+deadlock,Ivy,Abrams,50.31,-2.07,82514
+deadlock,Ivy,Dynamo,51.07,-1.31,74355
+deadlock,Ivy,Nurse Harrow,51.52,-0.86,97812
+deadlock,Ivy,Drifter,51.87,-0.51,108803
+deadlock,Ivy,McGinnis,51.89,-0.49,39426
+deadlock,Ivy,Wraith,51.92,-0.46,95540
+deadlock,Ivy,Lash,52.03,-0.35,69233
+deadlock,Ivy,Warden,52.73,0.36,35413
+deadlock,Ivy,Vindicta,52.8,0.42,54317
+deadlock,Ivy,Apollo,53.0,0.62,63243
+deadlock,Ivy,Infernus,53.04,0.66,100042
+deadlock,Ivy,Billy,53.3,0.93,93095
+deadlock,Ivy,Violet,53.92,1.54,63398
+deadlock,Ivy,Calico,54.02,1.64,36586
+deadlock,Ivy,Holliday,54.08,1.71,38431
+deadlock,Ivy,Mo & Krill,54.22,1.84,39200
+deadlock,Ivy,Celeste,54.47,2.09,69040
+deadlock,Ivy,Solomon,54.71,2.34,31540
+deadlock,Ivy,Bebop,55.12,2.74,81525
+deadlock,Ivy,Grey Talon,55.33,2.95,38693
+deadlock,Ivy,Vyper,55.44,3.06,39785
+deadlock,Ivy,Yamato,55.56,3.19,55546
+deadlock,Ivy,Paradox,55.71,3.33,52839
+deadlock,Ivy,Silver,56.0,3.62,71496
+deadlock,Ivy,Venator,56.13,3.75,96640
+deadlock,Ivy,Rem,56.18,3.8,79400
+deadlock,Ivy,The Doorman,56.25,3.88,37441
+deadlock,Ivy,Viscous,56.43,4.05,35691
+deadlock,Ivy,Mina,57.2,4.82,77291
+deadlock,Ivy,Shiv,57.45,5.07,74834
+deadlock,Ivy,Sinclair,57.87,5.49,25285
+deadlock,Ivy,Pocket,58.29,5.91,38375
+deadlock,Ivy,Mirage,58.32,5.95,31721
+deadlock,Warden,Graves,43.0,-7.04,74503
+deadlock,Warden,Paige,44.13,-5.92,38758
+deadlock,Warden,Rat King,44.68,-5.36,87456
+deadlock,Warden,Seven,44.79,-5.25,56978
+deadlock,Warden,Baba,45.07,-4.97,22013
+deadlock,Warden,Kelvin,45.62,-4.42,25116
+deadlock,Warden,Haze,45.92,-4.12,96928
+deadlock,Warden,Lady Geist,46.0,-4.04,42469
+deadlock,Warden,Deadman Danny,46.22,-3.82,57801
+deadlock,Warden,Victor,46.66,-3.38,53739
+deadlock,Warden,Ivy,47.26,-2.78,35413
+deadlock,Warden,Dynamo,47.6,-2.44,29909
+deadlock,Warden,Nurse Harrow,47.93,-2.11,58037
+deadlock,Warden,Abrams,48.63,-1.41,62033
+deadlock,Warden,Wraith,48.79,-1.25,65532
+deadlock,Warden,Lash,48.82,-1.22,60512
+deadlock,Warden,McGinnis,49.08,-0.97,19820
+deadlock,Warden,Infernus,49.36,-0.68,68355
+deadlock,Warden,Vindicta,49.87,-0.17,63774
+deadlock,Warden,Drifter,50.0,-0.04,61032
+deadlock,Warden,Mo & Krill,50.77,0.73,32381
+deadlock,Warden,Violet,51.15,1.11,48550
+deadlock,Warden,Billy,51.44,1.4,62688
+deadlock,Warden,Apollo,51.68,1.64,46006
+deadlock,Warden,Grey Talon,51.85,1.81,36763
+deadlock,Warden,Bebop,51.97,1.93,70799
+deadlock,Warden,Holliday,52.21,2.17,42709
+deadlock,Warden,Celeste,52.29,2.25,53521
+deadlock,Warden,Calico,52.34,2.3,25768
+deadlock,Warden,Solomon,52.94,2.89,25446
+deadlock,Warden,Yamato,53.03,2.99,43541
+deadlock,Warden,Venator,53.45,3.41,82057
+deadlock,Warden,Paradox,53.75,3.7,59533
+deadlock,Warden,Silver,53.96,3.91,51535
+deadlock,Warden,Vyper,54.03,3.99,20759
+deadlock,Warden,Viscous,54.21,4.17,25401
+deadlock,Warden,The Doorman,54.34,4.3,32263
+deadlock,Warden,Sinclair,54.86,4.82,17520
+deadlock,Warden,Rem,55.12,5.08,53151
+deadlock,Warden,Mina,55.13,5.09,74771
+deadlock,Warden,Shiv,55.45,5.41,49735
+deadlock,Warden,Mirage,55.84,5.79,20589
+deadlock,Warden,Pocket,56.66,6.61,39269
+deadlock,Yamato,Graves,39.33,-7.94,133268
+deadlock,Yamato,Paige,40.49,-6.79,74649
+deadlock,Yamato,Seven,41.58,-5.69,95908
+deadlock,Yamato,Kelvin,42.01,-5.26,42977
+deadlock,Yamato,Baba,42.55,-4.73,37450
+deadlock,Yamato,Lady Geist,42.76,-4.52,84318
+deadlock,Yamato,Rat King,42.97,-4.31,169810
+deadlock,Yamato,Victor,43.39,-3.89,92575
+deadlock,Yamato,Ivy,44.42,-2.85,55546
+deadlock,Yamato,Haze,44.52,-2.75,141838
+deadlock,Yamato,Abrams,45.17,-2.1,105192
+deadlock,Yamato,Deadman Danny,45.33,-1.94,101488
+deadlock,Yamato,Dynamo,45.47,-1.8,50357
+deadlock,Yamato,Nurse Harrow,46.14,-1.14,109069
+deadlock,Yamato,McGinnis,46.3,-0.97,35469
+deadlock,Yamato,Drifter,46.7,-0.58,130101
+deadlock,Yamato,Warden,46.96,-0.32,43541
+deadlock,Yamato,Violet,46.96,-0.32,86469
+deadlock,Yamato,Lash,46.97,-0.3,101056
+deadlock,Yamato,Wraith,47.58,0.31,92512
+deadlock,Yamato,Billy,47.72,0.45,109813
+deadlock,Yamato,Apollo,48.21,0.93,90095
+deadlock,Yamato,Mo & Krill,48.47,1.2,54642
+deadlock,Yamato,Infernus,48.5,1.22,105757
+deadlock,Yamato,Celeste,48.73,1.45,105238
+deadlock,Yamato,Bebop,48.86,1.59,133729
+deadlock,Yamato,Calico,49.17,1.9,53219
+deadlock,Yamato,Vindicta,49.25,1.98,102583
+deadlock,Yamato,Solomon,49.72,2.44,40089
+deadlock,Yamato,Grey Talon,49.9,2.63,63784
+deadlock,Yamato,Holliday,50.07,2.8,69818
+deadlock,Yamato,Venator,50.39,3.12,122110
+deadlock,Yamato,Silver,50.48,3.21,88140
+deadlock,Yamato,Viscous,50.7,3.42,42032
+deadlock,Yamato,The Doorman,50.96,3.69,51718
+deadlock,Yamato,Paradox,51.11,3.83,98129
+deadlock,Yamato,Vyper,51.69,4.42,36633
+deadlock,Yamato,Shiv,52.03,4.75,92811
+deadlock,Yamato,Mina,52.02,4.75,146490
+deadlock,Yamato,Rem,52.08,4.81,94953
+deadlock,Yamato,Sinclair,52.47,5.19,31028
+deadlock,Yamato,Pocket,52.8,5.53,64419
+deadlock,Yamato,Mirage,53.79,6.52,33434
+deadlock,Lash,Graves,44.17,-6.83,160215
+deadlock,Lash,Kelvin,44.64,-6.35,55974
+deadlock,Lash,Baba,45.05,-5.95,45906
+deadlock,Lash,Seven,45.49,-5.51,115009
+deadlock,Lash,Paige,45.67,-5.33,85461
+deadlock,Lash,Rat King,45.67,-5.32,141565
+deadlock,Lash,Victor,46.3,-4.7,94312
+deadlock,Lash,Lady Geist,46.53,-4.47,92129
+deadlock,Lash,Haze,47.65,-3.35,182740
+deadlock,Lash,Ivy,47.96,-3.04,69233
+deadlock,Lash,Dynamo,48.56,-2.44,68247
+deadlock,Lash,Abrams,48.6,-2.39,128488
+deadlock,Lash,Deadman Danny,48.98,-2.02,121545
+deadlock,Lash,McGinnis,49.92,-1.07,37726
+deadlock,Lash,Nurse Harrow,50.23,-0.76,125144
+deadlock,Lash,Apollo,50.45,-0.55,109885
+deadlock,Lash,Wraith,50.48,-0.51,121931
+deadlock,Lash,Drifter,51.14,0.15,130873
+deadlock,Lash,Warden,51.17,0.17,60512
+deadlock,Lash,Vindicta,51.22,0.22,112123
+deadlock,Lash,Violet,51.25,0.26,99551
+deadlock,Lash,Billy,51.41,0.42,129242
+deadlock,Lash,Mo & Krill,51.92,0.93,73545
+deadlock,Lash,Infernus,52.05,1.05,121130
+deadlock,Lash,Bebop,52.08,1.09,178463
+deadlock,Lash,Calico,52.57,1.57,55131
+deadlock,Lash,Celeste,52.83,1.83,115141
+deadlock,Lash,Yamato,53.01,2.01,101056
+deadlock,Lash,Grey Talon,53.48,2.49,77072
+deadlock,Lash,Holliday,53.7,2.71,97802
+deadlock,Lash,Solomon,53.89,2.89,48225
+deadlock,Lash,Venator,54.29,3.29,159386
+deadlock,Lash,Silver,54.48,3.48,102649
+deadlock,Lash,Paradox,54.5,3.5,129191
+deadlock,Lash,Vyper,55.19,4.2,43925
+deadlock,Lash,Rem,55.23,4.23,105564
+deadlock,Lash,The Doorman,55.29,4.3,65315
+deadlock,Lash,Viscous,55.47,4.47,50167
+deadlock,Lash,Mina,55.84,4.84,153336
+deadlock,Lash,Shiv,56.1,5.1,94792
+deadlock,Lash,Sinclair,56.45,5.45,38381
+deadlock,Lash,Pocket,56.62,5.62,75660
+deadlock,Lash,Mirage,57.49,6.49,41247
+deadlock,Viscous,Graves,38.23,-7.8,65537
+deadlock,Viscous,Rat King,40.51,-5.51,72289
+deadlock,Viscous,Seven,40.92,-5.11,49409
+deadlock,Viscous,Baba,41.0,-5.03,21234
+deadlock,Viscous,Kelvin,41.57,-4.45,24912
+deadlock,Viscous,Paige,42.0,-4.02,42409
+deadlock,Viscous,Lady Geist,42.17,-3.86,44427
+deadlock,Viscous,Victor,42.18,-3.85,49298
+deadlock,Viscous,Haze,42.62,-3.4,64524
+deadlock,Viscous,Deadman Danny,42.7,-3.33,47534
+deadlock,Viscous,Ivy,43.56,-2.47,35691
+deadlock,Viscous,Abrams,43.78,-2.24,49121
+deadlock,Viscous,Dynamo,43.81,-2.22,34899
+deadlock,Viscous,Lash,44.51,-1.52,50167
+deadlock,Viscous,Nurse Harrow,44.55,-1.47,59594
+deadlock,Viscous,McGinnis,45.39,-0.64,19523
+deadlock,Viscous,Wraith,45.78,-0.25,48305
+deadlock,Viscous,Warden,45.78,-0.24,25401
+deadlock,Viscous,Drifter,46.13,0.11,62401
+deadlock,Viscous,Vindicta,46.34,0.32,47959
+deadlock,Viscous,Apollo,46.37,0.35,45426
+deadlock,Viscous,Violet,46.65,0.63,39501
+deadlock,Viscous,Mo & Krill,46.89,0.87,25406
+deadlock,Viscous,Billy,47.42,1.4,51644
+deadlock,Viscous,Infernus,47.55,1.53,58457
+deadlock,Viscous,Celeste,48.09,2.07,48661
+deadlock,Viscous,Holliday,48.13,2.11,34684
+deadlock,Viscous,Grey Talon,48.16,2.14,29815
+deadlock,Viscous,Calico,48.24,2.21,24210
+deadlock,Viscous,Bebop,48.65,2.63,63267
+deadlock,Viscous,Paradox,48.85,2.82,47875
+deadlock,Viscous,Solomon,49.12,3.1,21285
+deadlock,Viscous,Venator,49.13,3.11,61385
+deadlock,Viscous,Yamato,49.29,3.27,42032
+deadlock,Viscous,Rem,49.78,3.75,53286
+deadlock,Viscous,Silver,49.91,3.89,49017
+deadlock,Viscous,Vyper,49.92,3.9,24417
+deadlock,Viscous,The Doorman,50.4,4.38,28658
+deadlock,Viscous,Shiv,51.21,5.19,42725
+deadlock,Viscous,Pocket,51.38,5.36,30976
+deadlock,Viscous,Sinclair,51.64,5.62,17880
+deadlock,Viscous,Mina,51.72,5.7,54525
+deadlock,Viscous,Mirage,52.11,6.08,18846
+deadlock,Pocket,Graves,37.12,-7.15,93799
+deadlock,Pocket,Kelvin,38.62,-5.64,36231
+deadlock,Pocket,Paige,38.78,-5.48,43841
+deadlock,Pocket,Rat King,39.1,-5.17,96950
+deadlock,Pocket,Seven,39.16,-5.1,62769
+deadlock,Pocket,Lady Geist,39.38,-4.88,53145
+deadlock,Pocket,Baba,39.53,-4.74,28597
+deadlock,Pocket,Victor,39.73,-4.53,54573
+deadlock,Pocket,Deadman Danny,41.12,-3.15,69066
+deadlock,Pocket,Haze,41.32,-2.95,98277
+deadlock,Pocket,Ivy,41.71,-2.56,38375
+deadlock,Pocket,Dynamo,41.72,-2.55,34549
+deadlock,Pocket,Abrams,42.24,-2.03,60677
+deadlock,Pocket,McGinnis,42.94,-1.32,20310
+deadlock,Pocket,Warden,43.33,-0.94,39269
+deadlock,Pocket,Lash,43.37,-0.9,75660
+deadlock,Pocket,Nurse Harrow,43.47,-0.8,78568
+deadlock,Pocket,Wraith,43.66,-0.6,59056
+deadlock,Pocket,Drifter,44.05,-0.22,71698
+deadlock,Pocket,Vindicta,44.38,0.12,80269
+deadlock,Pocket,Mo & Krill,44.76,0.49,33155
+deadlock,Pocket,Apollo,44.97,0.7,62365
+deadlock,Pocket,Violet,45.23,0.96,60900
+deadlock,Pocket,Infernus,45.54,1.27,68142
+deadlock,Pocket,Grey Talon,45.55,1.29,48311
+deadlock,Pocket,Billy,45.94,1.67,53582
+deadlock,Pocket,Celeste,45.98,1.72,68721
+deadlock,Pocket,Calico,46.06,1.79,27039
+deadlock,Pocket,Solomon,46.32,2.05,27769
+deadlock,Pocket,Bebop,46.39,2.13,85620
+deadlock,Pocket,Holliday,46.57,2.3,62798
+deadlock,Pocket,Yamato,47.17,2.9,64419
+deadlock,Pocket,Paradox,47.55,3.28,83385
+deadlock,Pocket,Venator,47.72,3.45,89024
+deadlock,Pocket,Vyper,47.9,3.63,22789
+deadlock,Pocket,Silver,48.35,4.08,64023
+deadlock,Pocket,Viscous,48.61,4.35,30976
+deadlock,Pocket,The Doorman,48.7,4.43,38396
+deadlock,Pocket,Sinclair,48.82,4.55,22429
+deadlock,Pocket,Rem,48.85,4.58,67177
+deadlock,Pocket,Mina,49.18,4.92,94695
+deadlock,Pocket,Shiv,49.23,4.97,54892
+deadlock,Pocket,Mirage,50.54,6.27,25462
+deadlock,Mirage,Graves,36.22,-7.44,55755
+deadlock,Mirage,Paige,37.26,-6.4,43184
+deadlock,Mirage,Baba,38.95,-4.7,18902
+deadlock,Mirage,Rat King,39.03,-4.63,54479
+deadlock,Mirage,Kelvin,39.07,-4.59,21466
+deadlock,Mirage,Lady Geist,39.29,-4.37,44410
+deadlock,Mirage,Victor,39.51,-4.15,46458
+deadlock,Mirage,Seven,39.65,-4.01,49481
+deadlock,Mirage,Haze,40.71,-2.95,61287
+deadlock,Mirage,Deadman Danny,41.06,-2.6,42973
+deadlock,Mirage,Abrams,41.51,-2.15,44372
+deadlock,Mirage,Ivy,41.66,-2.0,31721
+deadlock,Mirage,Lash,42.49,-1.17,41247
+deadlock,Mirage,Nurse Harrow,42.5,-1.16,45339
+deadlock,Mirage,McGinnis,42.64,-1.02,21396
+deadlock,Mirage,Drifter,42.75,-0.91,61125
+deadlock,Mirage,Dynamo,43.1,-0.56,39147
+deadlock,Mirage,Wraith,43.7,0.04,52388
+deadlock,Mirage,Apollo,43.84,0.18,37661
+deadlock,Mirage,Warden,44.16,0.5,20589
+deadlock,Mirage,Billy,44.64,0.99,47845
+deadlock,Mirage,Violet,44.71,1.05,38519
+deadlock,Mirage,Calico,44.8,1.14,21224
+deadlock,Mirage,Mo & Krill,45.04,1.38,21349
+deadlock,Mirage,Infernus,45.46,1.8,55078
+deadlock,Mirage,Vindicta,45.48,1.83,31626
+deadlock,Mirage,Bebop,45.79,2.13,46916
+deadlock,Mirage,Celeste,45.95,2.29,41827
+deadlock,Mirage,Grey Talon,46.01,2.35,24288
+deadlock,Mirage,Yamato,46.18,2.53,33434
+deadlock,Mirage,Solomon,46.26,2.6,18104
+deadlock,Mirage,Paradox,46.38,2.72,31345
+deadlock,Mirage,Holliday,46.63,2.97,23102
+deadlock,Mirage,Silver,47.14,3.48,41633
+deadlock,Mirage,Venator,47.77,4.11,56246
+deadlock,Mirage,Viscous,47.89,4.23,18846
+deadlock,Mirage,Rem,47.92,4.27,38999
+deadlock,Mirage,Vyper,47.98,4.32,20164
+deadlock,Mirage,The Doorman,47.99,4.33,20620
+deadlock,Mirage,Mina,48.55,4.9,53002
+deadlock,Mirage,Shiv,48.94,5.29,42085
+deadlock,Mirage,Pocket,49.45,5.79,25462
+deadlock,Mirage,Sinclair,49.48,5.82,14461
+deadlock,Vyper,Graves,37.78,-8.11,68531
+deadlock,Vyper,Paige,39.98,-5.91,52677
+deadlock,Vyper,Seven,41.36,-4.53,63894
+deadlock,Vyper,Kelvin,41.59,-4.3,25346
+deadlock,Vyper,Lady Geist,41.73,-4.15,53388
+deadlock,Vyper,Rat King,41.91,-3.98,74191
+deadlock,Vyper,Baba,42.34,-3.55,21716
+deadlock,Vyper,Deadman Danny,42.37,-3.52,50592
+deadlock,Vyper,Victor,42.55,-3.33,59328
+deadlock,Vyper,Dynamo,43.21,-2.68,48290
+deadlock,Vyper,Haze,43.68,-2.2,75040
+deadlock,Vyper,Abrams,44.33,-1.55,49391
+deadlock,Vyper,Ivy,44.54,-1.34,39785
+deadlock,Vyper,Lash,44.8,-1.09,43925
+deadlock,Vyper,Nurse Harrow,45.46,-0.43,55719
+deadlock,Vyper,McGinnis,45.53,-0.36,27513
+deadlock,Vyper,Apollo,45.69,-0.2,45179
+deadlock,Vyper,Billy,45.87,-0.02,57236
+deadlock,Vyper,Warden,45.95,0.06,20759
+deadlock,Vyper,Vindicta,46.08,0.19,43546
+deadlock,Vyper,Wraith,46.18,0.29,63631
+deadlock,Vyper,Drifter,46.27,0.38,77400
+deadlock,Vyper,Infernus,46.96,1.07,65079
+deadlock,Vyper,Mo & Krill,47.13,1.24,22774
+deadlock,Vyper,Violet,47.25,1.36,43830
+deadlock,Vyper,Bebop,47.4,1.51,47157
+deadlock,Vyper,Celeste,47.9,2.01,52339
+deadlock,Vyper,Calico,48.11,2.22,25563
+deadlock,Vyper,Yamato,48.29,2.4,36633
+deadlock,Vyper,Holliday,48.56,2.68,26120
+deadlock,Vyper,Grey Talon,49.0,3.11,28570
+deadlock,Vyper,Solomon,49.14,3.25,22385
+deadlock,Vyper,Venator,49.61,3.72,73680
+deadlock,Vyper,Silver,49.63,3.74,53633
+deadlock,Vyper,Paradox,49.99,4.1,33687
+deadlock,Vyper,Viscous,50.06,4.17,24417
+deadlock,Vyper,The Doorman,50.19,4.3,24841
+deadlock,Vyper,Rem,50.6,4.72,50936
+deadlock,Vyper,Mina,50.84,4.95,56977
+deadlock,Vyper,Sinclair,51.55,5.66,18122
+deadlock,Vyper,Shiv,51.76,5.87,46402
+deadlock,Vyper,Mirage,51.99,6.1,20164
+deadlock,Vyper,Pocket,52.08,6.19,22789
+deadlock,Sinclair,Graves,38.4,-6.36,54811
+deadlock,Sinclair,Baba,38.73,-6.04,14675
+deadlock,Sinclair,Kelvin,38.77,-5.99,18546
+deadlock,Sinclair,Paige,39.85,-4.91,35901
+deadlock,Sinclair,Lady Geist,39.88,-4.88,34719
+deadlock,Sinclair,Rat King,40.53,-4.23,52012
+deadlock,Sinclair,Haze,40.78,-3.98,50964
+deadlock,Sinclair,Victor,40.98,-3.78,36948
+deadlock,Sinclair,Seven,41.19,-3.57,44272
+deadlock,Sinclair,Ivy,42.12,-2.64,25285
+deadlock,Sinclair,Deadman Danny,42.16,-2.6,37041
+deadlock,Sinclair,Abrams,42.28,-2.48,40063
+deadlock,Sinclair,Drifter,43.4,-1.36,50074
+deadlock,Sinclair,Lash,43.53,-1.23,38381
+deadlock,Sinclair,McGinnis,43.67,-1.09,14938
+deadlock,Sinclair,Dynamo,43.71,-1.06,30962
+deadlock,Sinclair,Billy,44.86,0.1,44782
+deadlock,Sinclair,Mo & Krill,45.07,0.31,19981
+deadlock,Sinclair,Nurse Harrow,45.1,0.34,43127
+deadlock,Sinclair,Warden,45.13,0.37,17520
+deadlock,Sinclair,Wraith,45.36,0.6,43267
+deadlock,Sinclair,Infernus,45.44,0.68,44874
+deadlock,Sinclair,Vindicta,45.66,0.9,38761
+deadlock,Sinclair,Violet,45.84,1.08,30189
+deadlock,Sinclair,Apollo,45.95,1.19,34510
+deadlock,Sinclair,Calico,46.23,1.47,18959
+deadlock,Sinclair,Solomon,46.71,1.95,14555
+deadlock,Sinclair,Bebop,46.97,2.21,50957
+deadlock,Sinclair,Grey Talon,46.98,2.22,23619
+deadlock,Sinclair,Celeste,47.15,2.39,37093
+deadlock,Sinclair,Paradox,47.39,2.63,32580
+deadlock,Sinclair,Holliday,47.4,2.64,24114
+deadlock,Sinclair,Yamato,47.52,2.76,31028
+deadlock,Sinclair,Venator,47.52,2.76,45014
+deadlock,Sinclair,Silver,48.18,3.42,36356
+deadlock,Sinclair,Viscous,48.36,3.59,17880
+deadlock,Sinclair,Vyper,48.45,3.69,18122
+deadlock,Sinclair,Rem,48.76,4.0,37504
+deadlock,Sinclair,The Doorman,49.23,4.47,20592
+deadlock,Sinclair,Shiv,49.56,4.79,34051
+deadlock,Sinclair,Mirage,50.5,5.74,14461
+deadlock,Sinclair,Mina,51.05,6.29,45998
+deadlock,Sinclair,Pocket,51.17,6.41,22429
+deadlock,Mina,Graves,37.3,-7.37,212186
+deadlock,Mina,Paige,38.14,-6.53,107740
+deadlock,Mina,Rat King,38.75,-5.92,174270
+deadlock,Mina,Kelvin,39.09,-5.58,58666
+deadlock,Mina,Victor,40.03,-4.64,127057
+deadlock,Mina,Baba,40.24,-4.43,58327
+deadlock,Mina,Seven,40.26,-4.41,147765
+deadlock,Mina,Lady Geist,40.43,-4.24,136439
+deadlock,Mina,Haze,42.18,-2.49,211086
+deadlock,Mina,Ivy,42.79,-1.88,77291
+deadlock,Mina,Nurse Harrow,42.87,-1.8,136928
+deadlock,Mina,Abrams,42.93,-1.75,132826
+deadlock,Mina,Deadman Danny,43.23,-1.44,140080
+deadlock,Mina,Dynamo,43.55,-1.13,70849
+deadlock,Mina,McGinnis,43.69,-0.98,46134
+deadlock,Mina,Drifter,43.95,-0.72,186472
+deadlock,Mina,Lash,44.14,-0.53,153336
+deadlock,Mina,Warden,44.85,0.18,74771
+deadlock,Mina,Wraith,44.89,0.22,148751
+deadlock,Mina,Apollo,45.14,0.47,135529
+deadlock,Mina,Violet,45.17,0.49,127181
+deadlock,Mina,Mo & Krill,45.43,0.76,67531
+deadlock,Mina,Billy,46.11,1.44,142147
+deadlock,Mina,Infernus,46.37,1.7,154944
+deadlock,Mina,Grey Talon,46.37,1.7,86122
+deadlock,Mina,Bebop,46.41,1.74,183594
+deadlock,Mina,Vindicta,46.61,1.94,143273
+deadlock,Mina,Celeste,46.68,2.01,166359
+deadlock,Mina,Holliday,46.74,2.06,100122
+deadlock,Mina,Calico,46.81,2.14,69901
+deadlock,Mina,Paradox,47.81,3.14,141404
+deadlock,Mina,Venator,47.91,3.23,187071
+deadlock,Mina,Solomon,47.94,3.26,55919
+deadlock,Mina,Yamato,47.96,3.29,146490
+deadlock,Mina,The Doorman,48.17,3.5,74059
+deadlock,Mina,Viscous,48.26,3.59,54525
+deadlock,Mina,Silver,48.38,3.71,145085
+deadlock,Mina,Sinclair,48.94,4.27,45998
+deadlock,Mina,Rem,48.94,4.27,129135
+deadlock,Mina,Vyper,49.14,4.47,56977
+deadlock,Mina,Shiv,50.05,5.38,116196
+deadlock,Mina,Pocket,50.8,6.13,94695
+deadlock,Mina,Mirage,51.44,6.76,53002
+deadlock,Drifter,Graves,43.21,-7.2,203125
+deadlock,Drifter,Kelvin,44.24,-6.17,65028
+deadlock,Drifter,Paige,44.51,-5.9,136059
+deadlock,Drifter,Baba,44.84,-5.57,64351
+deadlock,Drifter,Seven,45.46,-4.95,177800
+deadlock,Drifter,Rat King,46.01,-4.4,233590
+deadlock,Drifter,Lady Geist,46.44,-3.97,169058
+deadlock,Drifter,Victor,46.91,-3.5,164600
+deadlock,Drifter,Deadman Danny,47.33,-3.08,154994
+deadlock,Drifter,Haze,47.5,-2.91,207784
+deadlock,Drifter,Dynamo,47.59,-2.82,128109
+deadlock,Drifter,Abrams,48.04,-2.37,138908
+deadlock,Drifter,Ivy,48.12,-2.29,108803
+deadlock,Drifter,Lash,48.85,-1.56,130873
+deadlock,Drifter,Nurse Harrow,49.31,-1.1,173205
+deadlock,Drifter,McGinnis,49.92,-0.49,76707
+deadlock,Drifter,Warden,49.99,-0.42,61032
+deadlock,Drifter,Wraith,50.32,-0.09,191165
+deadlock,Drifter,Mo & Krill,50.73,0.32,55471
+deadlock,Drifter,Violet,51.18,0.77,125072
+deadlock,Drifter,Apollo,51.48,1.07,145550
+deadlock,Drifter,Vindicta,51.61,1.2,125386
+deadlock,Drifter,Bebop,51.68,1.27,156831
+deadlock,Drifter,Infernus,51.74,1.33,180437
+deadlock,Drifter,Billy,51.82,1.41,144655
+deadlock,Drifter,Calico,52.17,1.76,85208
+deadlock,Drifter,Holliday,52.43,2.02,81997
+deadlock,Drifter,Celeste,53.18,2.77,155521
+deadlock,Drifter,Grey Talon,53.25,2.84,89940
+deadlock,Drifter,Yamato,53.28,2.87,130101
+deadlock,Drifter,Solomon,53.57,3.16,62458
+deadlock,Drifter,Vyper,53.71,3.3,77400
+deadlock,Drifter,Viscous,53.85,3.45,62401
+deadlock,Drifter,Venator,53.99,3.58,209328
+deadlock,Drifter,Paradox,54.01,3.6,105439
+deadlock,Drifter,Silver,54.29,3.88,152500
+deadlock,Drifter,The Doorman,54.72,4.31,68932
+deadlock,Drifter,Shiv,54.9,4.49,155214
+deadlock,Drifter,Rem,55.03,4.62,148699
+deadlock,Drifter,Pocket,55.93,5.52,71698
+deadlock,Drifter,Mina,56.03,5.62,186472
+deadlock,Drifter,Sinclair,56.58,6.17,50074
+deadlock,Drifter,Mirage,57.24,6.83,61125
+deadlock,Venator,Graves,39.08,-7.27,213613
+deadlock,Venator,Paige,39.71,-6.63,123894
+deadlock,Venator,Rat King,40.39,-5.95,200920
+deadlock,Venator,Kelvin,41.62,-4.73,71698
+deadlock,Venator,Seven,41.98,-4.36,186527
+deadlock,Venator,Lady Geist,42.21,-4.14,150099
+deadlock,Venator,Victor,43.08,-3.26,155916
+deadlock,Venator,Baba,43.13,-3.22,61252
+deadlock,Venator,Deadman Danny,43.51,-2.84,155963
+deadlock,Venator,Haze,43.69,-2.65,245872
+deadlock,Venator,Ivy,43.86,-2.49,96640
+deadlock,Venator,Dynamo,44.01,-2.33,117097
+deadlock,Venator,Abrams,44.13,-2.22,146758
+deadlock,Venator,Nurse Harrow,44.39,-1.95,143831
+deadlock,Venator,Lash,45.7,-0.65,159386
+deadlock,Venator,McGinnis,45.79,-0.55,63733
+deadlock,Venator,Drifter,46.0,-0.35,209328
+deadlock,Venator,Warden,46.53,0.18,82057
+deadlock,Venator,Wraith,46.53,0.18,196213
+deadlock,Venator,Apollo,47.19,0.84,138179
+deadlock,Venator,Violet,47.37,1.03,125805
+deadlock,Venator,Infernus,47.45,1.1,172989
+deadlock,Venator,Billy,47.45,1.1,175983
+deadlock,Venator,Mo & Krill,47.73,1.38,77687
+deadlock,Venator,Bebop,48.0,1.66,191012
+deadlock,Venator,Vindicta,48.16,1.81,152893
+deadlock,Venator,Celeste,48.74,2.39,151208
+deadlock,Venator,Calico,48.79,2.44,72247
+deadlock,Venator,Grey Talon,49.24,2.89,88127
+deadlock,Venator,Solomon,49.26,2.92,61019
+deadlock,Venator,Holliday,49.36,3.01,102658
+deadlock,Venator,Yamato,49.59,3.25,122110
+deadlock,Venator,Paradox,49.72,3.37,145565
+deadlock,Venator,Silver,50.28,3.94,155554
+deadlock,Venator,Vyper,50.38,4.03,73680
+deadlock,Venator,The Doorman,50.55,4.2,76047
+deadlock,Venator,Viscous,50.85,4.5,61385
+deadlock,Venator,Rem,50.91,4.57,129342
+deadlock,Venator,Shiv,51.52,5.18,121034
+deadlock,Venator,Mina,52.08,5.73,187071
+deadlock,Venator,Mirage,52.22,5.87,56246
+deadlock,Venator,Pocket,52.27,5.92,89024
+deadlock,Venator,Sinclair,52.46,6.12,45014
+deadlock,Victor,Graves,46.81,-7.17,147196
+deadlock,Victor,Kelvin,47.21,-6.78,51270
+deadlock,Victor,Paige,48.11,-5.87,116991
+deadlock,Victor,Baba,48.17,-5.82,47297
+deadlock,Victor,Seven,49.22,-4.77,148836
+deadlock,Victor,Rat King,50.01,-3.97,210598
+deadlock,Victor,Lady Geist,50.35,-3.64,133154
+deadlock,Victor,Ivy,50.98,-3.01,85639
+deadlock,Victor,Deadman Danny,51.03,-2.95,108796
+deadlock,Victor,Haze,51.14,-2.84,169647
+deadlock,Victor,Abrams,52.27,-1.71,133993
+deadlock,Victor,Nurse Harrow,52.78,-1.21,119321
+deadlock,Victor,Drifter,53.07,-0.91,164600
+deadlock,Victor,Wraith,53.23,-0.75,150931
+deadlock,Victor,Dynamo,53.26,-0.73,99917
+deadlock,Victor,Warden,53.33,-0.65,53739
+deadlock,Victor,Lash,53.69,-0.3,94312
+deadlock,Victor,Vindicta,53.96,-0.03,95713
+deadlock,Victor,McGinnis,54.21,0.23,57646
+deadlock,Victor,Infernus,54.38,0.4,146023
+deadlock,Victor,Mo & Krill,54.59,0.61,65617
+deadlock,Victor,Billy,54.81,0.82,162540
+deadlock,Victor,Apollo,55.01,1.02,91008
+deadlock,Victor,Violet,55.18,1.2,98190
+deadlock,Victor,Bebop,55.2,1.21,104352
+deadlock,Victor,Calico,56.21,2.23,51258
+deadlock,Victor,Grey Talon,56.49,2.5,59442
+deadlock,Victor,Yamato,56.6,2.61,92575
+deadlock,Victor,Celeste,56.82,2.84,106835
+deadlock,Victor,Venator,56.89,2.91,155916
+deadlock,Victor,Solomon,57.14,3.16,49529
+deadlock,Victor,Silver,57.18,3.19,128132
+deadlock,Victor,Holliday,57.39,3.41,51056
+deadlock,Victor,Vyper,57.42,3.44,59328
+deadlock,Victor,Shiv,57.71,3.73,121449
+deadlock,Victor,Viscous,57.81,3.82,49298
+deadlock,Victor,Paradox,58.48,4.5,75325
+deadlock,Victor,The Doorman,58.61,4.63,57270
+deadlock,Victor,Sinclair,58.99,5.01,36948
+deadlock,Victor,Rem,59.61,5.63,108836
+deadlock,Victor,Mina,59.96,5.97,127057
+deadlock,Victor,Pocket,60.26,6.27,54573
+deadlock,Victor,Mirage,60.48,6.49,46458
+deadlock,Paige,Baba,50.57,-5.46,43534
+deadlock,Paige,Graves,50.69,-5.34,153879
+deadlock,Paige,Kelvin,50.82,-5.21,52068
+deadlock,Paige,Rat King,51.17,-4.86,140285
+deadlock,Paige,Seven,51.31,-4.72,133614
+deadlock,Paige,Lady Geist,51.73,-4.3,103822
+deadlock,Paige,Victor,51.88,-4.15,116991
+deadlock,Paige,Haze,52.35,-3.68,133301
+deadlock,Paige,Deadman Danny,52.37,-3.66,95976
+deadlock,Paige,Ivy,52.86,-3.17,90086
+deadlock,Paige,Abrams,53.92,-2.11,115432
+deadlock,Paige,Nurse Harrow,54.29,-1.74,144307
+deadlock,Paige,Lash,54.33,-1.7,85461
+deadlock,Paige,Dynamo,54.47,-1.56,113918
+deadlock,Paige,Drifter,55.48,-0.55,136059
+deadlock,Paige,Warden,55.87,-0.16,38758
+deadlock,Paige,Wraith,55.93,-0.09,130961
+deadlock,Paige,Violet,56.58,0.55,92295
+deadlock,Paige,Mo & Krill,56.65,0.62,56573
+deadlock,Paige,Vindicta,56.69,0.66,85118
+deadlock,Paige,Apollo,56.96,0.93,85265
+deadlock,Paige,Infernus,57.02,0.99,137458
+deadlock,Paige,McGinnis,57.05,1.02,61652
+deadlock,Paige,Billy,57.11,1.08,141440
+deadlock,Paige,Solomon,57.77,1.74,44795
+deadlock,Paige,Holliday,57.86,1.84,51633
+deadlock,Paige,Calico,57.98,1.95,47959
+deadlock,Paige,Viscous,57.99,1.96,42409
+deadlock,Paige,Bebop,58.02,2.0,112390
+deadlock,Paige,Grey Talon,58.17,2.14,52035
+deadlock,Paige,Celeste,58.58,2.55,100565
+deadlock,Paige,Paradox,59.27,3.24,80297
+deadlock,Paige,The Doorman,59.28,3.26,48574
+deadlock,Paige,Rem,59.48,3.45,125336
+deadlock,Paige,Yamato,59.49,3.46,74649
+deadlock,Paige,Vyper,60.01,3.98,52677
+deadlock,Paige,Silver,60.09,4.06,102174
+deadlock,Paige,Sinclair,60.14,4.11,35901
+deadlock,Paige,Venator,60.28,4.25,123894
+deadlock,Paige,Pocket,61.21,5.18,43841
+deadlock,Paige,Shiv,61.77,5.74,95798
+deadlock,Paige,Mina,61.85,5.82,107740
+deadlock,Paige,Mirage,62.72,6.7,43184
+deadlock,Mo & Krill,Baba,42.48,-6.36,24432
+deadlock,Mo & Krill,Graves,42.62,-6.22,91555
+deadlock,Mo & Krill,Seven,43.14,-5.71,64619
+deadlock,Mo & Krill,Paige,43.34,-5.51,56573
+deadlock,Mo & Krill,Kelvin,43.98,-4.87,28458
+deadlock,Mo & Krill,Lady Geist,44.57,-4.27,50954
+deadlock,Mo & Krill,Haze,45.2,-3.65,84851
+deadlock,Mo & Krill,Rat King,45.23,-3.61,104468
+deadlock,Mo & Krill,Victor,45.39,-3.46,65617
+deadlock,Mo & Krill,Ivy,45.77,-3.08,39200
+deadlock,Mo & Krill,Deadman Danny,46.73,-2.11,59194
+deadlock,Mo & Krill,Dynamo,47.12,-1.73,38918
+deadlock,Mo & Krill,Abrams,47.44,-1.41,73452
+deadlock,Mo & Krill,Wraith,47.82,-1.02,69500
+deadlock,Mo & Krill,Nurse Harrow,48.02,-0.83,68816
+deadlock,Mo & Krill,Lash,48.06,-0.79,73545
+deadlock,Mo & Krill,Vindicta,48.06,-0.79,48496
+deadlock,Mo & Krill,Infernus,48.41,-0.43,70099
+deadlock,Mo & Krill,McGinnis,48.97,0.13,19492
+deadlock,Mo & Krill,Warden,49.22,0.37,32381
+deadlock,Mo & Krill,Drifter,49.25,0.4,55471
+deadlock,Mo & Krill,Billy,49.6,0.75,76820
+deadlock,Mo & Krill,Bebop,49.86,1.02,90008
+deadlock,Mo & Krill,Violet,50.14,1.3,53101
+deadlock,Mo & Krill,Apollo,50.27,1.43,53627
+deadlock,Mo & Krill,Grey Talon,50.66,1.82,36557
+deadlock,Mo & Krill,Celeste,50.97,2.12,58603
+deadlock,Mo & Krill,Calico,51.08,2.24,27063
+deadlock,Mo & Krill,Holliday,51.34,2.5,49154
+deadlock,Mo & Krill,Yamato,51.5,2.65,54642
+deadlock,Mo & Krill,Solomon,51.61,2.76,27536
+deadlock,Mo & Krill,Silver,51.9,3.05,61629
+deadlock,Mo & Krill,Venator,52.25,3.4,77687
+deadlock,Mo & Krill,Shiv,52.42,3.57,61092
+deadlock,Mo & Krill,Paradox,52.61,3.77,68551
+deadlock,Mo & Krill,Vyper,52.87,4.02,22774
+deadlock,Mo & Krill,Viscous,53.07,4.23,25406
+deadlock,Mo & Krill,Rem,53.56,4.72,57808
+deadlock,Mo & Krill,The Doorman,53.62,4.78,35626
+deadlock,Mo & Krill,Mina,54.55,5.71,67531
+deadlock,Mo & Krill,Sinclair,54.92,6.08,19981
+deadlock,Mo & Krill,Mirage,54.95,6.11,21349
+deadlock,Mo & Krill,Pocket,55.23,6.39,33155

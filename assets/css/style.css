@@ -331,6 +331,35 @@ details summary { cursor: pointer; color: var(--text-secondary); font-size: 14px
 .empty-state p { max-width: 60ch; margin: 8px auto 16px; }
 @media (max-width: 640px) { .head-actions { align-items: flex-start; } .hypo-head { flex-direction: column; } }
 
+/* SQL page */
+.nav-link { text-decoration: none; padding: 6px 10px; border-radius: 8px; color: var(--text-secondary); font-size: 14px; font-weight: 600;
+  border: 1px solid var(--border); }
+.nav-link:hover, .nav-link[aria-current="page"] { color: var(--text-primary); background: var(--accent-soft); }
+.schema { display: flex; flex-wrap: wrap; gap: 6px; }
+.schema code { font-size: 12px; color: var(--text-primary); }
+.toc ol { margin: 6px 0 0; padding-left: 22px; columns: 2 300px; }
+.toc li { margin: 4px 0; break-inside: avoid; }
+.sql-card { scroll-margin-top: 70px; }
+.sql-head { display: flex; gap: 12px; align-items: flex-start; }
+.sql-head .teamup-rank { margin-top: 2px; flex: none; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+.takeaway { background: var(--accent-soft); border-radius: 8px; padding: 10px 12px; margin: 10px 0; font-size: 14px; }
+.sql-details { margin: 10px 0; }
+.sql-details summary { font-weight: 600; color: var(--text-primary); }
+.code-wrap { position: relative; margin-top: 8px; }
+pre.sql { background: var(--surface-2); border-radius: 8px; padding: 14px; overflow-x: auto; font-size: 13px; line-height: 1.5; margin: 0;
+  font-family: ui-monospace, "Cascadia Code", Consolas, monospace; }
+pre.sql .k { color: var(--series-1); font-weight: 600; }
+pre.sql .s { color: var(--buff); }
+pre.sql .n { color: var(--rework); }
+pre.sql .c { color: var(--text-muted); font-style: italic; }
+.copy-btn { position: absolute; top: 8px; right: 8px; font: 600 12px var(--font); padding: 4px 10px; border-radius: 6px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--surface-1); color: var(--text-secondary); }
+.copy-btn:hover { color: var(--text-primary); }
+table.sql-result { font-size: 13px; }
+table.sql-result th { text-transform: none; letter-spacing: 0; font-family: ui-monospace, Consolas, monospace; font-size: 12px; }
+.linkish { background: none; border: 0; color: var(--accent); font: 600 13px var(--font); cursor: pointer; padding: 6px 0; }
+
 .notice { background: var(--accent-soft); border-radius: 10px; padding: 12px 14px; font-size: 14px; color: var(--text-secondary); }
 .notice code { font-size: 13px; }
 footer { border-top: 1px solid var(--border); padding: 20px 0 40px; color: var(--text-muted); font-size: 13px; }

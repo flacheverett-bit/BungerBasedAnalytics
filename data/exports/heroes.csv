@@ -1,0 +1,156 @@
+game,hero,slug,role
+deadlock,Abrams,abrams,Brawler
+deadlock,Apollo,apollo,Assassin
+deadlock,Baba,baba,Mystic
+deadlock,Bebop,bebop,Brawler
+deadlock,Billy,billy,Brawler
+deadlock,Calico,calico,Assassin
+deadlock,Celeste,celeste,Mystic
+deadlock,Deadman Danny,deadman-danny,Marksman
+deadlock,Drifter,drifter,Assassin
+deadlock,Dynamo,dynamo,Healer
+deadlock,Graves,graves,Mystic
+deadlock,Grey Talon,grey-talon,Mystic
+deadlock,Haze,haze,Assassin
+deadlock,Holliday,holliday,Marksman
+deadlock,Infernus,infernus,Mystic
+deadlock,Ivy,ivy,Healer
+deadlock,Kelvin,kelvin,Healer
+deadlock,Lady Geist,lady-geist,Mystic
+deadlock,Lash,lash,Assassin
+deadlock,McGinnis,mcginnis,Mystic
+deadlock,Mina,mina,Mystic
+deadlock,Mirage,mirage,Assassin
+deadlock,Mo & Krill,mo-and-krill,Brawler
+deadlock,Nurse Harrow,nurse-harrow,Healer
+deadlock,Paige,paige,Healer
+deadlock,Paradox,paradox,Marksman
+deadlock,Pocket,pocket,Assassin
+deadlock,Rat King,rat-king,Brawler
+deadlock,Rem,rem,Healer
+deadlock,Seven,seven,Mystic
+deadlock,Shiv,shiv,Brawler
+deadlock,Silver,silver,Brawler
+deadlock,Sinclair,sinclair,Mystic
+deadlock,Solomon,solomon,Mystic
+deadlock,The Doorman,the-doorman,Mystic
+deadlock,Venator,venator,Marksman
+deadlock,Victor,victor,Brawler
+deadlock,Vindicta,vindicta,Marksman
+deadlock,Violet,violet,Mystic
+deadlock,Viscous,viscous,Brawler
+deadlock,Vyper,vyper,Assassin
+deadlock,Warden,warden,Brawler
+deadlock,Wraith,wraith,Marksman
+deadlock,Yamato,yamato,Assassin
+overwatch,Ana,ana,Support
+overwatch,Anran,anran,Damage
+overwatch,Ashe,ashe,Damage
+overwatch,Baptiste,baptiste,Support
+overwatch,Bastion,bastion,Damage
+overwatch,Brigitte,brigitte,Support
+overwatch,Cassidy,cassidy,Damage
+overwatch,D.Mon,dmon,Tank
+overwatch,D.Va,dva,Tank
+overwatch,Doctrine,doctrine,Support
+overwatch,Domina,domina,Tank
+overwatch,Doomfist,doomfist,Tank
+overwatch,Echo,echo,Damage
+overwatch,Emre,emre,Damage
+overwatch,Freja,freja,Damage
+overwatch,Genji,genji,Damage
+overwatch,Hanzo,hanzo,Damage
+overwatch,Hazard,hazard,Tank
+overwatch,Illari,illari,Support
+overwatch,Jetpack Cat,jetpack-cat,Support
+overwatch,Junker Queen,junker-queen,Tank
+overwatch,Junkrat,junkrat,Damage
+overwatch,Juno,juno,Support
+overwatch,Kiriko,kiriko,Support
+overwatch,Lifeweaver,lifeweaver,Support
+overwatch,Lúcio,lucio,Support
+overwatch,Mauga,mauga,Tank
+overwatch,Mei,mei,Damage
+overwatch,Mercy,mercy,Support
+overwatch,Mizuki,mizuki,Support
+overwatch,Moira,moira,Support
+overwatch,Orisa,orisa,Tank
+overwatch,Pharah,pharah,Damage
+overwatch,Ramattra,ramattra,Tank
+overwatch,Reaper,reaper,Damage
+overwatch,Reinhardt,reinhardt,Tank
+overwatch,Roadhog,roadhog,Tank
+overwatch,Shion,shion,Damage
+overwatch,Sierra,sierra,Damage
+overwatch,Sigma,sigma,Tank
+overwatch,Sojourn,sojourn,Damage
+overwatch,Soldier: 76,soldier-76,Damage
+overwatch,Sombra,sombra,Support
+overwatch,Symmetra,symmetra,Damage
+overwatch,Torbjörn,torbjorn,Damage
+overwatch,Tracer,tracer,Damage
+overwatch,Vendetta,vendetta,Damage
+overwatch,Venture,venture,Damage
+overwatch,Widowmaker,widowmaker,Damage
+overwatch,Winston,winston,Tank
+overwatch,Wrecking Ball,wrecking-ball,Tank
+overwatch,Wuyang,wuyang,Support
+overwatch,Zarya,zarya,Tank
+overwatch,Zenyatta,zenyatta,Support
+marvel-rivals,Adam Warlock,adam-warlock,Strategist
+marvel-rivals,Angela,angela,Vanguard
+marvel-rivals,Black Cat,black-cat,Duelist
+marvel-rivals,Black Panther,black-panther,Duelist
+marvel-rivals,Black Widow,black-widow,Duelist
+marvel-rivals,Blade,blade,Duelist
+marvel-rivals,Captain America,captain-america,Vanguard
+marvel-rivals,Cloak & Dagger,cloak-and-dagger,Strategist
+marvel-rivals,Cyclops,cyclops,Duelist
+marvel-rivals,Daredevil,daredevil,Duelist
+marvel-rivals,Deadpool (Duelist),deadpool-duelist,Duelist
+marvel-rivals,Deadpool (Strategist),deadpool-strategist,Strategist
+marvel-rivals,Deadpool (Vanguard),deadpool-vanguard,Vanguard
+marvel-rivals,Devil Dinosaur,devil-dinosaur,Vanguard
+marvel-rivals,Doctor Strange,doctor-strange,Vanguard
+marvel-rivals,Elsa Bloodstone,elsa-bloodstone,Duelist
+marvel-rivals,Emma Frost,emma-frost,Vanguard
+marvel-rivals,Gambit,gambit,Strategist
+marvel-rivals,Gorr,gorr,Duelist
+marvel-rivals,Groot,groot,Vanguard
+marvel-rivals,Hawkeye,hawkeye,Duelist
+marvel-rivals,Hela,hela,Duelist
+marvel-rivals,Hulk,hulk,Vanguard
+marvel-rivals,Human Torch,human-torch,Duelist
+marvel-rivals,Invisible Woman,invisible-woman,Strategist
+marvel-rivals,Iron Fist,iron-fist,Duelist
+marvel-rivals,Iron Man,iron-man,Duelist
+marvel-rivals,Jeff The Land Shark,jeff-the-land-shark,Strategist
+marvel-rivals,Jubilee,jubilee,Strategist
+marvel-rivals,Loki,loki,Strategist
+marvel-rivals,Luna Snow,luna-snow,Strategist
+marvel-rivals,Magik,magik,Duelist
+marvel-rivals,Magneto,magneto,Vanguard
+marvel-rivals,Mantis,mantis,Strategist
+marvel-rivals,Mister Fantastic,mister-fantastic,Duelist
+marvel-rivals,Moon Knight,moon-knight,Duelist
+marvel-rivals,Namor,namor,Duelist
+marvel-rivals,Nightcrawler,nightcrawler,Strategist
+marvel-rivals,Peni Parker,peni-parker,Vanguard
+marvel-rivals,Phoenix,phoenix,Duelist
+marvel-rivals,Psylocke,psylocke,Duelist
+marvel-rivals,Rocket Raccoon,rocket-raccoon,Strategist
+marvel-rivals,Rogue,rogue,Vanguard
+marvel-rivals,Scarlet Witch,scarlet-witch,Duelist
+marvel-rivals,Spider-Man,spider-man,Duelist
+marvel-rivals,Squirrel Girl,squirrel-girl,Duelist
+marvel-rivals,Star-Lord,star-lord,Duelist
+marvel-rivals,Storm,storm,Duelist
+marvel-rivals,The Hood,the-hood,Vanguard
+marvel-rivals,The Punisher,the-punisher,Duelist
+marvel-rivals,The Thing,the-thing,Vanguard
+marvel-rivals,Thor,thor,Vanguard
+marvel-rivals,Ultron,ultron,Strategist
+marvel-rivals,Venom,venom,Vanguard
+marvel-rivals,White Fox,white-fox,Strategist
+marvel-rivals,Winter Soldier,winter-soldier,Duelist
+marvel-rivals,Wolverine,wolverine,Duelist

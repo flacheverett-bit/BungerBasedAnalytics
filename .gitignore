@@ -6,3 +6,8 @@ Thumbs.db
 .claude/
 # Raw third-party exports stay local; the processed data in data/<game>/ is what's published.
 *.csv
+# ...except the warehouse's own CSV exports, which are published for download.
+!data/exports/*.csv
+# The DuckDB warehouse is rebuilt from the JSON data on every run.
+*.duckdb
+*.duckdb.wal

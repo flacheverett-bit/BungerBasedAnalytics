@@ -1,0 +1,1036 @@
+game,patch_date,hero,change_type
+deadlock,2026-11-04,Apollo,buff
+deadlock,2026-11-04,Celeste,nerf
+deadlock,2026-11-04,Deadman Danny,nerf
+deadlock,2026-11-04,Mo & Krill,buff
+deadlock,2026-11-04,Nurse Harrow,buff
+deadlock,2026-11-04,Rat King,buff
+deadlock,2026-11-04,Baba,nerf
+deadlock,2026-10-30,Abrams,buff
+deadlock,2026-10-30,Apollo,buff
+deadlock,2026-10-30,Billy,buff
+deadlock,2026-10-30,Calico,buff
+deadlock,2026-10-30,Celeste,nerf
+deadlock,2026-10-30,Deadman Danny,nerf
+deadlock,2026-10-30,The Doorman,buff
+deadlock,2026-10-30,Drifter,buff
+deadlock,2026-10-30,Graves,nerf
+deadlock,2026-10-30,Grey Talon,buff
+deadlock,2026-10-30,Infernus,buff
+deadlock,2026-10-30,Kelvin,buff
+deadlock,2026-10-30,Lady Geist,buff
+deadlock,2026-10-30,Lash,buff
+deadlock,2026-10-30,McGinnis,buff
+deadlock,2026-10-30,Mirage,rework
+deadlock,2026-10-30,Mo & Krill,nerf
+deadlock,2026-10-30,Nurse Harrow,nerf
+deadlock,2026-10-30,Paige,adjustment
+deadlock,2026-10-30,Paradox,buff
+deadlock,2026-10-30,Rat King,nerf
+deadlock,2026-10-30,Seven,buff
+deadlock,2026-10-30,Shiv,adjustment
+deadlock,2026-10-30,Silver,buff
+deadlock,2026-10-30,Solomon,adjustment
+deadlock,2026-10-30,Venator,adjustment
+deadlock,2026-10-30,Victor,buff
+deadlock,2026-10-30,Viscous,buff
+deadlock,2026-10-30,Warden,buff
+deadlock,2026-10-30,Wraith,nerf
+deadlock,2026-10-30,Yamato,nerf
+deadlock,2026-10-30,Baba,nerf
+deadlock,2026-10-30,Violet,nerf
+deadlock,2026-10-20,Nurse Harrow,new
+deadlock,2026-10-16,Violet,new
+deadlock,2026-10-14,Deadman Danny,buff
+deadlock,2026-10-14,Baba,nerf
+deadlock,2026-10-13,Deadman Danny,new
+deadlock,2026-10-09,Solomon,new
+deadlock,2026-10-06,Baba,new
+deadlock,2026-10-05,Rat King,nerf
+deadlock,2026-10-05,Sinclair,nerf
+deadlock,2026-10-02,Rat King,new
+deadlock,2026-09-16,Abrams,adjustment
+deadlock,2026-09-16,Celeste,nerf
+deadlock,2026-09-16,Graves,buff
+deadlock,2026-09-16,Haze,buff
+deadlock,2026-09-16,Holliday,buff
+deadlock,2026-09-16,Ivy,nerf
+deadlock,2026-09-16,Kelvin,buff
+deadlock,2026-09-16,Lady Geist,buff
+deadlock,2026-09-16,Lash,adjustment
+deadlock,2026-09-16,Paige,buff
+deadlock,2026-09-16,Paradox,nerf
+deadlock,2026-09-16,Shiv,buff
+deadlock,2026-09-16,Silver,buff
+deadlock,2026-09-16,Venator,buff
+deadlock,2026-09-16,Viscous,nerf
+deadlock,2026-09-16,Vyper,nerf
+deadlock,2026-09-16,Warden,nerf
+deadlock,2026-09-16,Wraith,nerf
+deadlock,2026-09-16,Yamato,buff
+deadlock,2026-08-22,Celeste,nerf
+deadlock,2026-08-12,Apollo,buff
+deadlock,2026-08-12,Billy,nerf
+deadlock,2026-08-12,The Doorman,nerf
+deadlock,2026-08-12,Drifter,nerf
+deadlock,2026-08-12,Holliday,adjustment
+deadlock,2026-08-12,Ivy,nerf
+deadlock,2026-08-12,Lash,nerf
+deadlock,2026-08-12,McGinnis,nerf
+deadlock,2026-08-12,Paige,buff
+deadlock,2026-08-12,Seven,buff
+deadlock,2026-08-12,Vindicta,nerf
+deadlock,2026-08-12,Vyper,buff
+deadlock,2026-08-12,Wraith,nerf
+deadlock,2026-07-28,Apollo,buff
+deadlock,2026-07-28,Billy,nerf
+deadlock,2026-07-28,Calico,nerf
+deadlock,2026-07-28,Celeste,buff
+deadlock,2026-07-28,The Doorman,nerf
+deadlock,2026-07-28,Drifter,nerf
+deadlock,2026-07-28,Dynamo,buff
+deadlock,2026-07-28,Haze,nerf
+deadlock,2026-07-28,Ivy,nerf
+deadlock,2026-07-28,Kelvin,buff
+deadlock,2026-07-28,Lady Geist,adjustment
+deadlock,2026-07-28,Mina,buff
+deadlock,2026-07-28,Mirage,nerf
+deadlock,2026-07-28,Mo & Krill,buff
+deadlock,2026-07-28,Paige,buff
+deadlock,2026-07-28,Pocket,nerf
+deadlock,2026-07-28,Shiv,nerf
+deadlock,2026-07-28,Silver,nerf
+deadlock,2026-07-28,Venator,adjustment
+deadlock,2026-07-28,Viscous,adjustment
+deadlock,2026-07-28,Yamato,nerf
+deadlock,2026-07-09,Billy,nerf
+deadlock,2026-07-09,The Doorman,nerf
+deadlock,2026-07-09,Drifter,nerf
+deadlock,2026-07-09,Graves,buff
+deadlock,2026-07-09,Haze,adjustment
+deadlock,2026-07-09,Holliday,nerf
+deadlock,2026-07-09,Mirage,adjustment
+deadlock,2026-07-09,Pocket,nerf
+deadlock,2026-07-09,Shiv,nerf
+deadlock,2026-07-09,Silver,buff
+deadlock,2026-07-09,Victor,buff
+deadlock,2026-07-09,Viscous,nerf
+deadlock,2026-07-09,Yamato,nerf
+deadlock,2026-07-01,Shiv,buff
+deadlock,2026-06-30,Abrams,nerf
+deadlock,2026-06-30,Apollo,buff
+deadlock,2026-06-30,Billy,nerf
+deadlock,2026-06-30,Celeste,buff
+deadlock,2026-06-30,The Doorman,nerf
+deadlock,2026-06-30,Drifter,buff
+deadlock,2026-06-30,Dynamo,buff
+deadlock,2026-06-30,Grey Talon,nerf
+deadlock,2026-06-30,Holliday,nerf
+deadlock,2026-06-30,Haze,buff
+deadlock,2026-06-30,Ivy,buff
+deadlock,2026-06-30,Lash,buff
+deadlock,2026-06-30,Mina,buff
+deadlock,2026-06-30,Mo & Krill,buff
+deadlock,2026-06-30,Paige,buff
+deadlock,2026-06-30,Paradox,buff
+deadlock,2026-06-30,Pocket,nerf
+deadlock,2026-06-30,Rem,nerf
+deadlock,2026-06-30,Seven,buff
+deadlock,2026-06-30,Shiv,buff
+deadlock,2026-06-30,Vindicta,buff
+deadlock,2026-06-30,Viscous,buff
+deadlock,2026-06-30,Vyper,buff
+deadlock,2026-06-30,Warden,buff
+deadlock,2026-06-12,Shiv,buff
+deadlock,2026-06-11,Apollo,buff
+deadlock,2026-06-11,Bebop,buff
+deadlock,2026-06-11,Calico,buff
+deadlock,2026-06-11,The Doorman,nerf
+deadlock,2026-06-11,Graves,nerf
+deadlock,2026-06-11,Grey Talon,nerf
+deadlock,2026-06-11,Holliday,adjustment
+deadlock,2026-06-11,Infernus,buff
+deadlock,2026-06-11,Ivy,nerf
+deadlock,2026-06-11,McGinnis,nerf
+deadlock,2026-06-11,Paige,buff
+deadlock,2026-06-11,Pocket,nerf
+deadlock,2026-06-11,Seven,nerf
+deadlock,2026-06-11,Shiv,nerf
+deadlock,2026-06-11,Silver,nerf
+deadlock,2026-06-11,Viscous,buff
+deadlock,2026-06-11,Victor,adjustment
+deadlock,2026-06-11,Vindicta,buff
+deadlock,2026-06-11,Warden,adjustment
+deadlock,2026-05-31,Apollo,buff
+deadlock,2026-05-31,Graves,nerf
+deadlock,2026-05-31,McGinnis,nerf
+deadlock,2026-05-31,Pocket,nerf
+deadlock,2026-05-31,Silver,nerf
+deadlock,2026-05-31,Victor,nerf
+deadlock,2026-05-31,Yamato,nerf
+deadlock,2026-05-22,Abrams,buff
+deadlock,2026-05-22,Apollo,nerf
+deadlock,2026-05-22,Bebop,nerf
+deadlock,2026-05-22,Billy,adjustment
+deadlock,2026-05-22,Calico,adjustment
+deadlock,2026-05-22,Celeste,buff
+deadlock,2026-05-22,The Doorman,nerf
+deadlock,2026-05-22,Drifter,buff
+deadlock,2026-05-22,Dynamo,nerf
+deadlock,2026-05-22,Graves,buff
+deadlock,2026-05-22,Grey Talon,buff
+deadlock,2026-05-22,Haze,buff
+deadlock,2026-05-22,Holliday,buff
+deadlock,2026-05-22,Infernus,buff
+deadlock,2026-05-22,Kelvin,nerf
+deadlock,2026-05-22,Lash,buff
+deadlock,2026-05-22,McGinnis,buff
+deadlock,2026-05-22,Mina,adjustment
+deadlock,2026-05-22,Mo & Krill,buff
+deadlock,2026-05-22,Paige,buff
+deadlock,2026-05-22,Paradox,buff
+deadlock,2026-05-22,Pocket,nerf
+deadlock,2026-05-22,Rem,buff
+deadlock,2026-05-22,Seven,adjustment
+deadlock,2026-05-22,Shiv,adjustment
+deadlock,2026-05-22,Silver,adjustment
+deadlock,2026-05-22,Venator,buff
+deadlock,2026-05-22,Victor,nerf
+deadlock,2026-05-22,Viscous,buff
+deadlock,2026-05-22,Vyper,buff
+deadlock,2026-05-22,Warden,nerf
+deadlock,2026-05-22,Yamato,buff
+deadlock,2026-04-30,Lady Geist,nerf
+deadlock,2026-04-30,Abrams,nerf
+deadlock,2026-04-30,Apollo,nerf
+deadlock,2026-04-30,Billy,buff
+deadlock,2026-04-30,Celeste,buff
+deadlock,2026-04-30,Drifter,buff
+deadlock,2026-04-30,Dynamo,nerf
+deadlock,2026-04-30,Haze,buff
+deadlock,2026-04-30,Holliday,buff
+deadlock,2026-04-30,Infernus,nerf
+deadlock,2026-04-30,McGinnis,buff
+deadlock,2026-04-30,Mina,nerf
+deadlock,2026-04-30,Mirage,nerf
+deadlock,2026-04-30,Mo & Krill,buff
+deadlock,2026-04-30,Paige,buff
+deadlock,2026-04-30,Paradox,buff
+deadlock,2026-04-30,Pocket,buff
+deadlock,2026-04-30,Rem,buff
+deadlock,2026-04-30,Shiv,nerf
+deadlock,2026-04-30,Silver,nerf
+deadlock,2026-04-30,Venator,nerf
+deadlock,2026-04-30,Victor,buff
+deadlock,2026-04-30,Vyper,nerf
+deadlock,2026-04-10,Bebop,nerf
+deadlock,2026-04-10,Billy,adjustment
+deadlock,2026-04-10,Celeste,nerf
+deadlock,2026-04-10,The Doorman,nerf
+deadlock,2026-04-10,Dynamo,nerf
+deadlock,2026-04-10,Grey Talon,buff
+deadlock,2026-04-10,Haze,buff
+deadlock,2026-04-10,Holliday,buff
+deadlock,2026-04-10,Kelvin,nerf
+deadlock,2026-04-10,Lady Geist,nerf
+deadlock,2026-04-10,McGinnis,buff
+deadlock,2026-04-10,Mirage,nerf
+deadlock,2026-04-10,Paradox,buff
+deadlock,2026-04-10,Rem,buff
+deadlock,2026-04-10,Venator,adjustment
+deadlock,2026-04-10,Victor,buff
+deadlock,2026-04-10,Vyper,buff
+deadlock,2026-03-30,Graves,nerf
+deadlock,2026-03-25,Bebop,buff
+deadlock,2026-03-25,Calico,buff
+deadlock,2026-03-25,Celeste,nerf
+deadlock,2026-03-25,The Doorman,buff
+deadlock,2026-03-25,Graves,nerf
+deadlock,2026-03-25,Holliday,buff
+deadlock,2026-03-25,Infernus,buff
+deadlock,2026-03-25,Kelvin,nerf
+deadlock,2026-03-25,Lady Geist,nerf
+deadlock,2026-03-25,McGinnis,buff
+deadlock,2026-03-25,Mirage,nerf
+deadlock,2026-03-25,Rem,buff
+deadlock,2026-03-25,Silver,nerf
+deadlock,2026-03-25,Venator,nerf
+deadlock,2026-03-25,Victor,nerf
+deadlock,2026-03-21,Abrams,buff
+deadlock,2026-03-21,Apollo,buff
+deadlock,2026-03-21,Billy,adjustment
+deadlock,2026-03-21,Calico,nerf
+deadlock,2026-03-21,Celeste,adjustment
+deadlock,2026-03-21,The Doorman,nerf
+deadlock,2026-03-21,Dynamo,buff
+deadlock,2026-03-21,Graves,buff
+deadlock,2026-03-21,Infernus,buff
+deadlock,2026-03-21,Ivy,nerf
+deadlock,2026-03-21,Kelvin,buff
+deadlock,2026-03-21,McGinnis,adjustment
+deadlock,2026-03-21,Mina,buff
+deadlock,2026-03-21,Mirage,adjustment
+deadlock,2026-03-21,Mo & Krill,nerf
+deadlock,2026-03-21,Shiv,nerf
+deadlock,2026-03-21,Silver,buff
+deadlock,2026-03-21,Victor,adjustment
+deadlock,2026-03-21,Viscous,nerf
+deadlock,2026-03-21,Wraith,nerf
+deadlock,2026-03-10,Apollo,buff
+deadlock,2026-03-10,Calico,nerf
+deadlock,2026-03-10,Celeste,nerf
+deadlock,2026-03-10,The Doorman,buff
+deadlock,2026-03-10,Ivy,nerf
+deadlock,2026-03-10,Lash,buff
+deadlock,2026-03-10,McGinnis,nerf
+deadlock,2026-03-10,Mirage,buff
+deadlock,2026-03-10,Mo & Krill,nerf
+deadlock,2026-03-10,Paradox,adjustment
+deadlock,2026-03-10,Pocket,adjustment
+deadlock,2026-03-10,Seven,buff
+deadlock,2026-03-10,Shiv,buff
+deadlock,2026-03-10,Silver,buff
+deadlock,2026-03-10,Victor,nerf
+deadlock,2026-03-10,Viscous,nerf
+deadlock,2026-03-10,Warden,adjustment
+deadlock,2026-03-10,Wraith,nerf
+deadlock,2026-03-07,The Doorman,nerf
+deadlock,2026-03-07,Ivy,nerf
+deadlock,2026-03-07,Paradox,buff
+deadlock,2026-03-07,Silver,buff
+deadlock,2026-03-07,Viscous,nerf
+deadlock,2026-03-07,Wraith,nerf
+deadlock,2026-03-06,Abrams,adjustment
+deadlock,2026-03-06,Apollo,nerf
+deadlock,2026-03-06,Bebop,buff
+deadlock,2026-03-06,Billy,nerf
+deadlock,2026-03-06,Calico,adjustment
+deadlock,2026-03-06,Celeste,nerf
+deadlock,2026-03-06,The Doorman,buff
+deadlock,2026-03-06,Drifter,nerf
+deadlock,2026-03-06,Dynamo,adjustment
+deadlock,2026-03-06,Graves,adjustment
+deadlock,2026-03-06,Haze,adjustment
+deadlock,2026-03-06,Infernus,adjustment
+deadlock,2026-03-06,Ivy,adjustment
+deadlock,2026-03-06,Kelvin,adjustment
+deadlock,2026-03-06,Lady Geist,buff
+deadlock,2026-03-06,Lash,adjustment
+deadlock,2026-03-06,McGinnis,adjustment
+deadlock,2026-03-06,Mina,nerf
+deadlock,2026-03-06,Mirage,adjustment
+deadlock,2026-03-06,Mo & Krill,adjustment
+deadlock,2026-03-06,Paige,adjustment
+deadlock,2026-03-06,Paradox,adjustment
+deadlock,2026-03-06,Pocket,buff
+deadlock,2026-03-06,Rem,adjustment
+deadlock,2026-03-06,Seven,adjustment
+deadlock,2026-03-06,Shiv,adjustment
+deadlock,2026-03-06,Silver,nerf
+deadlock,2026-03-06,Victor,adjustment
+deadlock,2026-03-06,Vindicta,adjustment
+deadlock,2026-03-06,Viscous,adjustment
+deadlock,2026-03-06,Warden,adjustment
+deadlock,2026-03-06,Wraith,adjustment
+deadlock,2026-03-06,Yamato,adjustment
+deadlock,2026-02-17,Apollo,nerf
+deadlock,2026-02-13,Apollo,buff
+deadlock,2026-02-13,Celeste,adjustment
+deadlock,2026-02-12,Apollo,new
+deadlock,2026-02-12,Celeste,nerf
+deadlock,2026-02-12,Graves,adjustment
+deadlock,2026-02-12,Rem,buff
+deadlock,2026-02-12,Silver,buff
+deadlock,2026-02-12,Venator,buff
+deadlock,2026-02-09,Celeste,new
+deadlock,2026-02-05,Venator,new
+deadlock,2026-02-04,Bebop,nerf
+deadlock,2026-02-04,Graves,adjustment
+deadlock,2026-02-04,Silver,rework
+deadlock,2026-02-02,Silver,new
+deadlock,2026-02-02,Graves,nerf
+deadlock,2026-02-02,Bebop,buff
+deadlock,2026-02-02,Shiv,nerf
+deadlock,2026-02-02,Rem,buff
+deadlock,2026-01-30,Abrams,buff
+deadlock,2026-01-30,Bebop,adjustment
+deadlock,2026-01-30,Billy,adjustment
+deadlock,2026-01-30,Drifter,adjustment
+deadlock,2026-01-30,Grey Talon,buff
+deadlock,2026-01-30,Ivy,nerf
+deadlock,2026-01-30,Kelvin,buff
+deadlock,2026-01-30,Lash,nerf
+deadlock,2026-01-30,Mina,nerf
+deadlock,2026-01-30,Paige,nerf
+deadlock,2026-01-30,Shiv,nerf
+deadlock,2026-01-30,Victor,nerf
+deadlock,2026-01-30,Viscous,nerf
+deadlock,2026-01-30,Vyper,adjustment
+deadlock,2026-01-30,Vindicta,adjustment
+deadlock,2026-01-30,Warden,nerf
+deadlock,2026-01-30,McGinnis,nerf
+deadlock,2026-01-30,Seven,nerf
+deadlock,2026-01-30,Dynamo,nerf
+deadlock,2026-01-30,Graves,nerf
+deadlock,2026-01-30,Holliday,buff
+deadlock,2026-01-30,Mirage,buff
+deadlock,2026-01-30,Calico,buff
+deadlock,2026-01-29,Graves,new
+deadlock,2026-01-26,Rem,new
+deadlock,2025-12-30,Billy,nerf
+deadlock,2025-12-30,Lady Geist,nerf
+deadlock,2025-12-30,McGinnis,adjustment
+deadlock,2025-12-30,Bebop,buff
+deadlock,2025-12-29,Bebop,adjustment
+deadlock,2025-12-29,Grey Talon,buff
+deadlock,2025-12-29,Holliday,buff
+deadlock,2025-12-29,Ivy,buff
+deadlock,2025-12-29,Kelvin,buff
+deadlock,2025-12-29,Mo & Krill,buff
+deadlock,2025-12-29,Paradox,buff
+deadlock,2025-12-29,Seven,buff
+deadlock,2025-12-29,Sinclair,buff
+deadlock,2025-12-29,Yamato,buff
+deadlock,2025-12-16,Wraith,nerf
+deadlock,2025-12-16,Billy,nerf
+deadlock,2025-12-16,Dynamo,nerf
+deadlock,2025-12-16,Lady Geist,nerf
+deadlock,2025-12-16,Mirage,nerf
+deadlock,2025-12-16,Shiv,nerf
+deadlock,2025-12-16,Vindicta,nerf
+deadlock,2025-12-03,Billy,nerf
+deadlock,2025-12-03,Drifter,nerf
+deadlock,2025-12-03,Dynamo,nerf
+deadlock,2025-12-03,Infernus,nerf
+deadlock,2025-12-03,Shiv,nerf
+deadlock,2025-12-03,Wraith,nerf
+deadlock,2025-11-22,Warden,nerf
+deadlock,2025-11-22,Drifter,nerf
+deadlock,2025-11-21,Abrams,buff
+deadlock,2025-11-21,Bebop,adjustment
+deadlock,2025-11-21,Billy,buff
+deadlock,2025-11-21,Calico,adjustment
+deadlock,2025-11-21,The Doorman,nerf
+deadlock,2025-11-21,Drifter,buff
+deadlock,2025-11-21,Dynamo,buff
+deadlock,2025-11-21,Holliday,nerf
+deadlock,2025-11-21,Infernus,nerf
+deadlock,2025-11-21,Ivy,buff
+deadlock,2025-11-21,Kelvin,nerf
+deadlock,2025-11-21,Lash,buff
+deadlock,2025-11-21,Lady Geist,buff
+deadlock,2025-11-21,Mina,nerf
+deadlock,2025-11-21,McGinnis,buff
+deadlock,2025-11-21,Mirage,buff
+deadlock,2025-11-21,Mo & Krill,nerf
+deadlock,2025-11-21,Paige,nerf
+deadlock,2025-11-21,Paradox,nerf
+deadlock,2025-11-21,Pocket,nerf
+deadlock,2025-11-21,Seven,buff
+deadlock,2025-11-21,Shiv,nerf
+deadlock,2025-11-21,Sinclair,adjustment
+deadlock,2025-11-21,Viscous,adjustment
+deadlock,2025-11-21,Vyper,buff
+deadlock,2025-11-21,Warden,adjustment
+deadlock,2025-11-21,Wraith,buff
+deadlock,2025-11-21,Yamato,nerf
+overwatch,2026-11-05,Wrecking Ball,buff
+overwatch,2026-11-03,D.Mon,nerf
+overwatch,2026-11-03,Junker Queen,buff
+overwatch,2026-11-03,Mauga,buff
+overwatch,2026-11-03,Ramattra,buff
+overwatch,2026-11-03,Winston,nerf
+overwatch,2026-11-03,Anran,adjustment
+overwatch,2026-11-03,Echo,buff
+overwatch,2026-11-03,Emre,buff
+overwatch,2026-11-03,Genji,nerf
+overwatch,2026-11-03,Reaper,buff
+overwatch,2026-11-03,Shion,buff
+overwatch,2026-11-03,Vendetta,nerf
+overwatch,2026-11-03,Ana,nerf
+overwatch,2026-11-03,Brigitte,buff
+overwatch,2026-11-03,Doctrine,nerf
+overwatch,2026-11-03,Illari,buff
+overwatch,2026-11-03,Jetpack Cat,nerf
+overwatch,2026-11-03,Sombra,nerf
+overwatch,2026-10-13,Doctrine,nerf
+overwatch,2026-10-13,Sombra,nerf
+overwatch,2026-10-13,Roadhog,buff
+overwatch,2026-10-13,Kiriko,buff
+overwatch,2026-10-13,D.Mon,nerf
+overwatch,2026-10-06,Doctrine,new
+overwatch,2026-10-06,Roadhog,rework
+overwatch,2026-10-06,Sombra,rework
+overwatch,2026-10-06,D.Va,buff
+overwatch,2026-10-06,Domina,buff
+overwatch,2026-10-06,Bastion,nerf
+overwatch,2026-10-06,Emre,buff
+overwatch,2026-10-06,Genji,adjustment
+overwatch,2026-10-06,Ana,adjustment
+overwatch,2026-10-06,Shion,adjustment
+overwatch,2026-10-06,Lúcio,adjustment
+overwatch,2026-09-17,D.Mon,nerf
+overwatch,2026-09-08,D.Mon,adjustment
+overwatch,2026-09-08,D.Va,buff
+overwatch,2026-09-08,Domina,buff
+overwatch,2026-09-08,Mauga,nerf
+overwatch,2026-09-08,Winston,adjustment
+overwatch,2026-09-08,Wrecking Ball,nerf
+overwatch,2026-09-08,Zarya,nerf
+overwatch,2026-09-08,Anran,buff
+overwatch,2026-09-08,Freja,nerf
+overwatch,2026-09-08,Junkrat,adjustment
+overwatch,2026-09-08,Sierra,adjustment
+overwatch,2026-09-08,Symmetra,nerf
+overwatch,2026-09-08,Torbjörn,adjustment
+overwatch,2026-09-08,Vendetta,adjustment
+overwatch,2026-09-08,Baptiste,buff
+overwatch,2026-09-08,Brigitte,adjustment
+overwatch,2026-09-08,Jetpack Cat,nerf
+overwatch,2026-09-08,Kiriko,nerf
+overwatch,2026-09-08,Wuyang,buff
+overwatch,2026-09-08,Zenyatta,nerf
+overwatch,2026-08-14,D.Mon,buff
+overwatch,2026-08-14,Jetpack Cat,nerf
+overwatch,2026-08-12,D.Mon,buff
+overwatch,2026-08-11,D.Mon,new
+overwatch,2026-08-11,Domina,buff
+overwatch,2026-08-11,Doomfist,buff
+overwatch,2026-08-11,Hazard,adjustment
+overwatch,2026-08-11,Mauga,adjustment
+overwatch,2026-08-11,Orisa,adjustment
+overwatch,2026-08-11,Winston,buff
+overwatch,2026-08-11,Cassidy,adjustment
+overwatch,2026-08-11,Echo,buff
+overwatch,2026-08-11,Emre,buff
+overwatch,2026-08-11,Genji,buff
+overwatch,2026-08-11,Pharah,nerf
+overwatch,2026-08-11,Shion,nerf
+overwatch,2026-08-11,Tracer,buff
+overwatch,2026-08-11,Vendetta,buff
+overwatch,2026-08-11,Venture,buff
+overwatch,2026-08-11,Jetpack Cat,adjustment
+overwatch,2026-08-11,Juno,buff
+overwatch,2026-08-11,Lifeweaver,adjustment
+overwatch,2026-08-11,Mizuki,nerf
+overwatch,2026-08-11,Wuyang,buff
+overwatch,2026-08-11,Zenyatta,buff
+overwatch,2026-07-30,Domina,adjustment
+overwatch,2026-07-30,Doomfist,buff
+overwatch,2026-07-30,Hazard,buff
+overwatch,2026-07-30,Mauga,buff
+overwatch,2026-07-30,Ramattra,adjustment
+overwatch,2026-07-14,Doomfist,nerf
+overwatch,2026-07-14,Junker Queen,buff
+overwatch,2026-07-14,Mauga,nerf
+overwatch,2026-07-14,Ramattra,buff
+overwatch,2026-07-14,Sigma,nerf
+overwatch,2026-07-14,Cassidy,nerf
+overwatch,2026-07-14,Freja,buff
+overwatch,2026-07-14,Reaper,buff
+overwatch,2026-07-14,Shion,adjustment
+overwatch,2026-07-14,Sierra,adjustment
+overwatch,2026-07-14,Vendetta,buff
+overwatch,2026-07-14,Venture,buff
+overwatch,2026-07-14,Ana,buff
+overwatch,2026-07-14,Brigitte,adjustment
+overwatch,2026-07-14,Kiriko,nerf
+overwatch,2026-07-14,Lúcio,buff
+overwatch,2026-06-25,Shion,nerf
+overwatch,2026-06-16,Shion,new
+overwatch,2026-06-16,D.Va,nerf
+overwatch,2026-06-16,Domina,adjustment
+overwatch,2026-06-16,Doomfist,nerf
+overwatch,2026-06-16,Hazard,adjustment
+overwatch,2026-06-16,Ramattra,buff
+overwatch,2026-06-16,Reinhardt,buff
+overwatch,2026-06-16,Zarya,buff
+overwatch,2026-06-16,Anran,buff
+overwatch,2026-06-16,Ashe,adjustment
+overwatch,2026-06-16,Bastion,adjustment
+overwatch,2026-06-16,Cassidy,adjustment
+overwatch,2026-06-16,Echo,nerf
+overwatch,2026-06-16,Emre,nerf
+overwatch,2026-06-16,Genji,buff
+overwatch,2026-06-16,Junkrat,buff
+overwatch,2026-06-16,Mei,buff
+overwatch,2026-06-16,Reaper,nerf
+overwatch,2026-06-16,Sierra,adjustment
+overwatch,2026-06-16,Sojourn,buff
+overwatch,2026-06-16,Tracer,nerf
+overwatch,2026-06-16,Vendetta,buff
+overwatch,2026-06-16,Ana,nerf
+overwatch,2026-06-16,Brigitte,buff
+overwatch,2026-06-16,Illari,buff
+overwatch,2026-06-16,Jetpack Cat,adjustment
+overwatch,2026-06-16,Juno,buff
+overwatch,2026-06-16,Lifeweaver,nerf
+overwatch,2026-06-16,Mercy,adjustment
+overwatch,2026-06-16,Mizuki,buff
+overwatch,2026-06-16,Moira,buff
+overwatch,2026-06-16,Wuyang,buff
+overwatch,2026-05-12,Winston,adjustment
+overwatch,2026-05-12,D.Va,nerf
+overwatch,2026-05-12,Hazard,adjustment
+overwatch,2026-05-12,Wrecking Ball,adjustment
+overwatch,2026-05-12,Doomfist,adjustment
+overwatch,2026-05-12,Junker Queen,buff
+overwatch,2026-05-12,Emre,nerf
+overwatch,2026-05-12,Freja,buff
+overwatch,2026-05-12,Pharah,nerf
+overwatch,2026-05-12,Baptiste,buff
+overwatch,2026-05-12,Illari,adjustment
+overwatch,2026-05-12,Kiriko,nerf
+overwatch,2026-05-12,Lúcio,nerf
+overwatch,2026-05-12,Mercy,adjustment
+overwatch,2026-05-12,Mizuki,adjustment
+overwatch,2026-04-23,Roadhog,buff
+overwatch,2026-04-23,Sombra,buff
+overwatch,2026-04-23,Vendetta,buff
+overwatch,2026-04-17,Sierra,buff
+overwatch,2026-04-14,Sierra,new
+overwatch,2026-04-14,Sigma,nerf
+overwatch,2026-04-14,Ramattra,rework
+overwatch,2026-04-14,Roadhog,nerf
+overwatch,2026-04-14,Winston,adjustment
+overwatch,2026-04-14,Anran,buff
+overwatch,2026-04-14,Ashe,nerf
+overwatch,2026-04-14,Bastion,adjustment
+overwatch,2026-04-14,Echo,rework
+overwatch,2026-04-14,Emre,buff
+overwatch,2026-04-14,Junkrat,adjustment
+overwatch,2026-04-14,Pharah,rework
+overwatch,2026-04-14,Reaper,rework
+overwatch,2026-04-14,Soldier: 76,rework
+overwatch,2026-04-14,Sombra,adjustment
+overwatch,2026-04-14,Tracer,buff
+overwatch,2026-04-14,Vendetta,nerf
+overwatch,2026-04-14,Widowmaker,buff
+overwatch,2026-04-14,Ana,buff
+overwatch,2026-04-14,Brigitte,buff
+overwatch,2026-04-14,Jetpack Cat,adjustment
+overwatch,2026-04-14,Juno,nerf
+overwatch,2026-04-14,Kiriko,adjustment
+overwatch,2026-04-14,Lifeweaver,buff
+overwatch,2026-04-14,Lúcio,rework
+overwatch,2026-04-14,Mercy,adjustment
+overwatch,2026-04-14,Mizuki,nerf
+overwatch,2026-04-14,Wuyang,nerf
+overwatch,2026-03-10,D.Va,nerf
+overwatch,2026-03-10,Hazard,adjustment
+overwatch,2026-03-10,Ramattra,buff
+overwatch,2026-03-10,Roadhog,buff
+overwatch,2026-03-10,Anran,buff
+overwatch,2026-03-10,Emre,buff
+overwatch,2026-03-10,Vendetta,adjustment
+overwatch,2026-03-10,Illari,nerf
+overwatch,2026-03-10,Jetpack Cat,rework
+overwatch,2026-03-10,Mizuki,adjustment
+overwatch,2026-02-24,Domina,nerf
+overwatch,2026-02-24,Anran,buff
+overwatch,2026-02-24,Emre,buff
+overwatch,2026-02-24,Vendetta,nerf
+overwatch,2026-02-24,Jetpack Cat,nerf
+overwatch,2026-02-24,Mizuki,buff
+overwatch,2026-02-13,Domina,nerf
+overwatch,2026-02-13,Anran,buff
+overwatch,2026-02-13,Emre,buff
+overwatch,2026-02-13,Jetpack Cat,nerf
+overwatch,2026-02-13,Mizuki,adjustment
+overwatch,2026-02-13,Vendetta,nerf
+overwatch,2026-02-10,Domina,new
+overwatch,2026-02-10,Anran,new
+overwatch,2026-02-10,Emre,new
+overwatch,2026-02-10,Jetpack Cat,new
+overwatch,2026-02-10,Mizuki,new
+overwatch,2026-02-10,D.Va,nerf
+overwatch,2026-02-10,Mauga,adjustment
+overwatch,2026-02-10,Reinhardt,adjustment
+overwatch,2026-02-10,Roadhog,buff
+overwatch,2026-02-10,Sigma,nerf
+overwatch,2026-02-10,Winston,rework
+overwatch,2026-02-10,Wrecking Ball,rework
+overwatch,2026-02-10,Zarya,rework
+overwatch,2026-02-10,Ashe,rework
+overwatch,2026-02-10,Cassidy,buff
+overwatch,2026-02-10,Echo,buff
+overwatch,2026-02-10,Freja,adjustment
+overwatch,2026-02-10,Hanzo,adjustment
+overwatch,2026-02-10,Pharah,rework
+overwatch,2026-02-10,Reaper,adjustment
+overwatch,2026-02-10,Soldier: 76,buff
+overwatch,2026-02-10,Sombra,rework
+overwatch,2026-02-10,Torbjörn,rework
+overwatch,2026-02-10,Tracer,adjustment
+overwatch,2026-02-10,Vendetta,adjustment
+overwatch,2026-02-10,Widowmaker,buff
+overwatch,2026-02-10,Baptiste,adjustment
+overwatch,2026-02-10,Illari,nerf
+overwatch,2026-02-10,Kiriko,adjustment
+overwatch,2026-02-10,Lifeweaver,rework
+overwatch,2026-02-10,Mercy,adjustment
+overwatch,2026-02-10,Moira,buff
+overwatch,2026-02-10,Wuyang,adjustment
+overwatch,2026-02-10,Zenyatta,rework
+overwatch,2026-01-08,Doomfist,nerf
+overwatch,2026-01-08,D.Va,nerf
+overwatch,2026-01-08,Roadhog,buff
+overwatch,2026-01-08,Ashe,nerf
+overwatch,2026-01-08,Bastion,nerf
+overwatch,2026-01-08,Freja,buff
+overwatch,2026-01-08,Genji,buff
+overwatch,2026-01-08,Symmetra,adjustment
+overwatch,2026-01-08,Vendetta,nerf
+overwatch,2026-01-08,Venture,nerf
+overwatch,2026-01-08,Illari,buff
+overwatch,2026-01-08,Lúcio,nerf
+overwatch,2026-01-08,Moira,buff
+overwatch,2026-01-08,Zenyatta,buff
+overwatch,2025-12-18,Vendetta,nerf
+overwatch,2025-12-12,Sigma,nerf
+overwatch,2025-12-11,Vendetta,buff
+overwatch,2025-12-09,Junker Queen,nerf
+overwatch,2025-12-09,Hazard,buff
+overwatch,2025-12-09,Reinhardt,nerf
+overwatch,2025-12-09,Sigma,buff
+overwatch,2025-12-09,Bastion,buff
+overwatch,2025-12-09,Freja,adjustment
+overwatch,2025-12-09,Junkrat,adjustment
+overwatch,2025-12-09,Reaper,nerf
+overwatch,2025-12-09,Vendetta,buff
+overwatch,2025-12-09,Venture,nerf
+overwatch,2025-12-09,Baptiste,buff
+overwatch,2025-12-09,Illari,adjustment
+overwatch,2025-12-09,Juno,buff
+overwatch,2025-12-09,Kiriko,nerf
+overwatch,2025-12-09,Wuyang,nerf
+overwatch,2025-11-11,D.Va,adjustment
+overwatch,2025-11-11,Hazard,adjustment
+overwatch,2025-11-11,Orisa,adjustment
+overwatch,2025-11-11,Ramattra,buff
+overwatch,2025-11-11,Wrecking Ball,nerf
+overwatch,2025-11-11,Zarya,nerf
+overwatch,2025-11-11,Ashe,buff
+overwatch,2025-11-11,Cassidy,buff
+overwatch,2025-11-11,Echo,buff
+overwatch,2025-11-11,Genji,adjustment
+overwatch,2025-11-11,Mei,buff
+overwatch,2025-11-11,Sojourn,buff
+overwatch,2025-11-11,Sombra,buff
+overwatch,2025-11-11,Tracer,adjustment
+overwatch,2025-11-11,Brigitte,buff
+overwatch,2025-11-11,Juno,buff
+overwatch,2025-11-11,Kiriko,nerf
+overwatch,2025-11-11,Lifeweaver,buff
+marvel-rivals,2026-11-13,Angela,buff
+marvel-rivals,2026-11-13,Deadpool (Vanguard),adjustment
+marvel-rivals,2026-11-13,Devil Dinosaur,nerf
+marvel-rivals,2026-11-13,Doctor Strange,nerf
+marvel-rivals,2026-11-13,Emma Frost,nerf
+marvel-rivals,2026-11-13,Groot,adjustment
+marvel-rivals,2026-11-13,Peni Parker,nerf
+marvel-rivals,2026-11-13,Rogue,adjustment
+marvel-rivals,2026-11-13,Venom,nerf
+marvel-rivals,2026-11-13,Black Cat,buff
+marvel-rivals,2026-11-13,Black Widow,buff
+marvel-rivals,2026-11-13,Elsa Bloodstone,nerf
+marvel-rivals,2026-11-13,Human Torch,adjustment
+marvel-rivals,2026-11-13,Phoenix,nerf
+marvel-rivals,2026-11-13,Squirrel Girl,rework
+marvel-rivals,2026-11-13,Star-Lord,buff
+marvel-rivals,2026-11-13,Winter Soldier,nerf
+marvel-rivals,2026-11-13,Wolverine,nerf
+marvel-rivals,2026-11-13,Adam Warlock,adjustment
+marvel-rivals,2026-11-13,Cloak & Dagger,adjustment
+marvel-rivals,2026-11-13,Gambit,nerf
+marvel-rivals,2026-11-13,Invisible Woman,nerf
+marvel-rivals,2026-11-13,Jubilee,adjustment
+marvel-rivals,2026-11-13,Loki,nerf
+marvel-rivals,2026-11-13,Luna Snow,nerf
+marvel-rivals,2026-11-13,Mantis,nerf
+marvel-rivals,2026-11-13,Rocket Raccoon,adjustment
+marvel-rivals,2026-11-13,Ultron,nerf
+marvel-rivals,2026-11-13,White Fox,rework
+marvel-rivals,2026-11-13,Nightcrawler,new
+marvel-rivals,2026-10-09,Devil Dinosaur,nerf
+marvel-rivals,2026-10-09,Hulk,buff
+marvel-rivals,2026-10-09,Magneto,buff
+marvel-rivals,2026-10-09,The Thing,buff
+marvel-rivals,2026-10-09,Cyclops,buff
+marvel-rivals,2026-10-09,Gorr,nerf
+marvel-rivals,2026-10-09,Hawkeye,buff
+marvel-rivals,2026-10-09,Iron Man,rework
+marvel-rivals,2026-10-09,Phoenix,buff
+marvel-rivals,2026-10-09,Scarlet Witch,nerf
+marvel-rivals,2026-10-09,Adam Warlock,buff
+marvel-rivals,2026-10-09,Gambit,adjustment
+marvel-rivals,2026-10-09,Jubilee,buff
+marvel-rivals,2026-09-11,Gorr,new
+marvel-rivals,2026-09-11,Angela,nerf
+marvel-rivals,2026-09-11,Captain America,buff
+marvel-rivals,2026-09-11,Deadpool (Vanguard),buff
+marvel-rivals,2026-09-11,Devil Dinosaur,buff
+marvel-rivals,2026-09-11,Doctor Strange,buff
+marvel-rivals,2026-09-11,Emma Frost,buff
+marvel-rivals,2026-09-11,Groot,buff
+marvel-rivals,2026-09-11,Magneto,nerf
+marvel-rivals,2026-09-11,Peni Parker,buff
+marvel-rivals,2026-09-11,Rogue,buff
+marvel-rivals,2026-09-11,The Hood,nerf
+marvel-rivals,2026-09-11,The Thing,nerf
+marvel-rivals,2026-09-11,Thor,buff
+marvel-rivals,2026-09-11,Black Cat,adjustment
+marvel-rivals,2026-09-11,Black Widow,nerf
+marvel-rivals,2026-09-11,Blade,buff
+marvel-rivals,2026-09-11,Elsa Bloodstone,nerf
+marvel-rivals,2026-09-11,Deadpool (Duelist),buff
+marvel-rivals,2026-09-11,Iron Fist,adjustment
+marvel-rivals,2026-09-11,Magik,nerf
+marvel-rivals,2026-09-11,Mister Fantastic,buff
+marvel-rivals,2026-09-11,Namor,buff
+marvel-rivals,2026-09-11,Psylocke,buff
+marvel-rivals,2026-09-11,Scarlet Witch,rework
+marvel-rivals,2026-09-11,Spider-Man,buff
+marvel-rivals,2026-09-11,Star-Lord,buff
+marvel-rivals,2026-09-11,Winter Soldier,nerf
+marvel-rivals,2026-09-11,Wolverine,buff
+marvel-rivals,2026-09-11,Cloak & Dagger,nerf
+marvel-rivals,2026-09-11,Deadpool (Strategist),buff
+marvel-rivals,2026-09-11,Gambit,nerf
+marvel-rivals,2026-09-11,Invisible Woman,adjustment
+marvel-rivals,2026-09-11,Jeff The Land Shark,buff
+marvel-rivals,2026-09-11,Loki,buff
+marvel-rivals,2026-09-11,Luna Snow,adjustment
+marvel-rivals,2026-09-11,Mantis,adjustment
+marvel-rivals,2026-09-11,Ultron,adjustment
+marvel-rivals,2026-09-11,White Fox,buff
+marvel-rivals,2026-08-07,The Hood,new
+marvel-rivals,2026-08-07,Devil Dinosaur,buff
+marvel-rivals,2026-08-07,Doctor Strange,buff
+marvel-rivals,2026-08-07,Magneto,buff
+marvel-rivals,2026-08-07,Peni Parker,adjustment
+marvel-rivals,2026-08-07,Rogue,buff
+marvel-rivals,2026-08-07,Venom,nerf
+marvel-rivals,2026-08-07,Black Panther,nerf
+marvel-rivals,2026-08-07,Cyclops,buff
+marvel-rivals,2026-08-07,Elsa Bloodstone,nerf
+marvel-rivals,2026-08-07,Hela,nerf
+marvel-rivals,2026-08-07,Moon Knight,buff
+marvel-rivals,2026-08-07,Phoenix,buff
+marvel-rivals,2026-08-07,Wolverine,buff
+marvel-rivals,2026-08-07,Scarlet Witch,adjustment
+marvel-rivals,2026-08-07,Gambit,nerf
+marvel-rivals,2026-08-07,Jubilee,buff
+marvel-rivals,2026-08-07,Loki,buff
+marvel-rivals,2026-08-07,White Fox,buff
+marvel-rivals,2026-07-11,Black Panther,nerf
+marvel-rivals,2026-07-11,Black Widow,buff
+marvel-rivals,2026-07-11,Cyclops,buff
+marvel-rivals,2026-07-11,Iron Man,nerf
+marvel-rivals,2026-07-11,Phoenix,buff
+marvel-rivals,2026-07-11,Psylocke,nerf
+marvel-rivals,2026-07-11,Gambit,buff
+marvel-rivals,2026-07-11,Invisible Woman,buff
+marvel-rivals,2026-07-11,Jubilee,buff
+marvel-rivals,2026-07-11,Luna Snow,buff
+marvel-rivals,2026-07-11,Mantis,nerf
+marvel-rivals,2026-07-11,Rocket Raccoon,buff
+marvel-rivals,2026-07-11,Ultron,nerf
+marvel-rivals,2026-07-10,Jubilee,new
+marvel-rivals,2026-07-10,Angela,adjustment
+marvel-rivals,2026-07-10,Captain America,nerf
+marvel-rivals,2026-07-10,Deadpool (Vanguard),buff
+marvel-rivals,2026-07-10,Devil Dinosaur,buff
+marvel-rivals,2026-07-10,Doctor Strange,buff
+marvel-rivals,2026-07-10,Groot,adjustment
+marvel-rivals,2026-07-10,Hulk,adjustment
+marvel-rivals,2026-07-10,Peni Parker,nerf
+marvel-rivals,2026-07-10,Rogue,nerf
+marvel-rivals,2026-07-10,The Thing,buff
+marvel-rivals,2026-07-10,Thor,adjustment
+marvel-rivals,2026-07-10,Venom,nerf
+marvel-rivals,2026-07-10,Black Cat,adjustment
+marvel-rivals,2026-07-10,Black Panther,rework
+marvel-rivals,2026-07-10,Cyclops,nerf
+marvel-rivals,2026-07-10,Daredevil,nerf
+marvel-rivals,2026-07-10,Deadpool (Duelist),nerf
+marvel-rivals,2026-07-10,Elsa Bloodstone,buff
+marvel-rivals,2026-07-10,Hawkeye,buff
+marvel-rivals,2026-07-10,Hela,adjustment
+marvel-rivals,2026-07-10,Human Torch,nerf
+marvel-rivals,2026-07-10,Iron Man,nerf
+marvel-rivals,2026-07-10,Magik,buff
+marvel-rivals,2026-07-10,Moon Knight,adjustment
+marvel-rivals,2026-07-10,Phoenix,adjustment
+marvel-rivals,2026-07-10,Psylocke,buff
+marvel-rivals,2026-07-10,Scarlet Witch,buff
+marvel-rivals,2026-07-10,Star-Lord,nerf
+marvel-rivals,2026-07-10,Storm,adjustment
+marvel-rivals,2026-07-10,The Punisher,adjustment
+marvel-rivals,2026-07-10,Adam Warlock,adjustment
+marvel-rivals,2026-07-10,Cloak & Dagger,adjustment
+marvel-rivals,2026-07-10,Deadpool (Strategist),nerf
+marvel-rivals,2026-07-10,Gambit,adjustment
+marvel-rivals,2026-07-10,Invisible Woman,adjustment
+marvel-rivals,2026-07-10,Luna Snow,rework
+marvel-rivals,2026-07-10,Mantis,adjustment
+marvel-rivals,2026-07-10,Rocket Raccoon,adjustment
+marvel-rivals,2026-07-10,Ultron,buff
+marvel-rivals,2026-07-10,White Fox,adjustment
+marvel-rivals,2026-06-12,Cyclops,new
+marvel-rivals,2026-06-12,Angela,buff
+marvel-rivals,2026-06-12,Devil Dinosaur,nerf
+marvel-rivals,2026-06-12,Magneto,buff
+marvel-rivals,2026-06-12,Rogue,buff
+marvel-rivals,2026-06-12,Black Cat,nerf
+marvel-rivals,2026-06-12,Blade,buff
+marvel-rivals,2026-06-12,Daredevil,nerf
+marvel-rivals,2026-06-12,Elsa Bloodstone,buff
+marvel-rivals,2026-06-12,Human Torch,buff
+marvel-rivals,2026-06-12,Moon Knight,nerf
+marvel-rivals,2026-06-12,Namor,buff
+marvel-rivals,2026-06-12,Phoenix,nerf
+marvel-rivals,2026-06-12,Star-Lord,nerf
+marvel-rivals,2026-06-12,Adam Warlock,buff
+marvel-rivals,2026-06-12,Cloak & Dagger,adjustment
+marvel-rivals,2026-06-12,Deadpool (Strategist),buff
+marvel-rivals,2026-06-12,Gambit,nerf
+marvel-rivals,2026-06-12,Ultron,nerf
+marvel-rivals,2026-06-12,White Fox,nerf
+marvel-rivals,2026-05-15,Devil Dinosaur,new
+marvel-rivals,2026-05-15,Deadpool (Vanguard),nerf
+marvel-rivals,2026-05-15,Emma Frost,buff
+marvel-rivals,2026-05-15,The Thing,buff
+marvel-rivals,2026-05-15,Iron Fist,buff
+marvel-rivals,2026-05-15,Mister Fantastic,adjustment
+marvel-rivals,2026-05-15,Moon Knight,buff
+marvel-rivals,2026-05-15,Phoenix,adjustment
+marvel-rivals,2026-05-15,Spider-Man,buff
+marvel-rivals,2026-05-15,Squirrel Girl,buff
+marvel-rivals,2026-05-15,Star-Lord,buff
+marvel-rivals,2026-05-15,Wolverine,buff
+marvel-rivals,2026-05-15,Invisible Woman,nerf
+marvel-rivals,2026-05-15,Loki,adjustment
+marvel-rivals,2026-05-15,Mantis,adjustment
+marvel-rivals,2026-05-15,Rocket Raccoon,buff
+marvel-rivals,2026-05-15,White Fox,adjustment
+marvel-rivals,2026-04-17,Black Cat,new
+marvel-rivals,2026-04-17,Emma Frost,buff
+marvel-rivals,2026-04-17,Deadpool (Vanguard),nerf
+marvel-rivals,2026-04-17,Peni Parker,adjustment
+marvel-rivals,2026-04-17,Elsa Bloodstone,nerf
+marvel-rivals,2026-04-17,Human Torch,rework
+marvel-rivals,2026-04-17,Winter Soldier,adjustment
+marvel-rivals,2026-04-17,Adam Warlock,buff
+marvel-rivals,2026-04-17,Cloak & Dagger,nerf
+marvel-rivals,2026-04-17,Jeff The Land Shark,nerf
+marvel-rivals,2026-04-17,Luna Snow,buff
+marvel-rivals,2026-04-17,Ultron,buff
+marvel-rivals,2026-03-26,Deadpool (Vanguard),nerf
+marvel-rivals,2026-03-26,Deadpool (Duelist),nerf
+marvel-rivals,2026-03-26,Deadpool (Strategist),nerf
+marvel-rivals,2026-03-26,Elsa Bloodstone,nerf
+marvel-rivals,2026-03-26,White Fox,adjustment
+marvel-rivals,2026-03-20,White Fox,new
+marvel-rivals,2026-03-20,Angela,adjustment
+marvel-rivals,2026-03-20,Captain America,nerf
+marvel-rivals,2026-03-20,Deadpool (Vanguard),nerf
+marvel-rivals,2026-03-20,Doctor Strange,nerf
+marvel-rivals,2026-03-20,Emma Frost,adjustment
+marvel-rivals,2026-03-20,Hulk,buff
+marvel-rivals,2026-03-20,Magneto,adjustment
+marvel-rivals,2026-03-20,Black Panther,buff
+marvel-rivals,2026-03-20,Blade,buff
+marvel-rivals,2026-03-20,Daredevil,nerf
+marvel-rivals,2026-03-20,Deadpool (Duelist),adjustment
+marvel-rivals,2026-03-20,Elsa Bloodstone,nerf
+marvel-rivals,2026-03-20,Hawkeye,nerf
+marvel-rivals,2026-03-20,Human Torch,buff
+marvel-rivals,2026-03-20,Iron Man,buff
+marvel-rivals,2026-03-20,Magik,adjustment
+marvel-rivals,2026-03-20,Psylocke,buff
+marvel-rivals,2026-03-20,Scarlet Witch,adjustment
+marvel-rivals,2026-03-20,Winter Soldier,nerf
+marvel-rivals,2026-03-20,Deadpool (Strategist),nerf
+marvel-rivals,2026-03-20,Gambit,adjustment
+marvel-rivals,2026-03-20,Invisible Woman,adjustment
+marvel-rivals,2026-03-20,Luna Snow,buff
+marvel-rivals,2026-02-19,Elsa Bloodstone,nerf
+marvel-rivals,2026-02-19,Hawkeye,nerf
+marvel-rivals,2026-02-19,Hela,adjustment
+marvel-rivals,2026-02-19,Gambit,nerf
+marvel-rivals,2026-02-13,Elsa Bloodstone,new
+marvel-rivals,2026-02-13,Doctor Strange,adjustment
+marvel-rivals,2026-02-13,Rogue,buff
+marvel-rivals,2026-02-13,Thor,adjustment
+marvel-rivals,2026-02-13,Venom,buff
+marvel-rivals,2026-02-13,Deadpool (Duelist),buff
+marvel-rivals,2026-02-13,Moon Knight,nerf
+marvel-rivals,2026-02-13,Phoenix,nerf
+marvel-rivals,2026-02-13,Psylocke,adjustment
+marvel-rivals,2026-02-13,Squirrel Girl,buff
+marvel-rivals,2026-02-13,Star-Lord,buff
+marvel-rivals,2026-02-13,Storm,adjustment
+marvel-rivals,2026-02-13,The Punisher,buff
+marvel-rivals,2026-02-13,Wolverine,buff
+marvel-rivals,2026-02-13,Adam Warlock,buff
+marvel-rivals,2026-02-13,Invisible Woman,nerf
+marvel-rivals,2026-02-13,Loki,nerf
+marvel-rivals,2026-02-13,Ultron,buff
+marvel-rivals,2026-01-16,Deadpool (Vanguard),new
+marvel-rivals,2026-01-16,Deadpool (Duelist),new
+marvel-rivals,2026-01-16,Deadpool (Strategist),new
+marvel-rivals,2026-01-16,Angela,nerf
+marvel-rivals,2026-01-16,Captain America,buff
+marvel-rivals,2026-01-16,Doctor Strange,buff
+marvel-rivals,2026-01-16,Emma Frost,buff
+marvel-rivals,2026-01-16,Hulk,buff
+marvel-rivals,2026-01-16,Black Panther,buff
+marvel-rivals,2026-01-16,Blade,adjustment
+marvel-rivals,2026-01-16,Daredevil,nerf
+marvel-rivals,2026-01-16,Iron Fist,buff
+marvel-rivals,2026-01-16,Namor,adjustment
+marvel-rivals,2026-01-16,Cloak & Dagger,adjustment
+marvel-rivals,2026-01-16,Gambit,nerf
+marvel-rivals,2026-01-16,Invisible Woman,nerf
+marvel-rivals,2026-01-16,Rocket Raccoon,nerf
+marvel-rivals,2025-12-12,Rogue,new
+marvel-rivals,2025-12-12,Emma Frost,adjustment
+marvel-rivals,2025-12-12,The Thing,buff
+marvel-rivals,2025-12-12,Thor,buff
+marvel-rivals,2025-12-12,Peni Parker,nerf
+marvel-rivals,2025-12-12,Blade,buff
+marvel-rivals,2025-12-12,Human Torch,buff
+marvel-rivals,2025-12-12,Phoenix,buff
+marvel-rivals,2025-12-12,Scarlet Witch,buff
+marvel-rivals,2025-12-12,The Punisher,buff
+marvel-rivals,2025-12-12,Wolverine,buff
+marvel-rivals,2025-12-12,Daredevil,nerf
+marvel-rivals,2025-12-12,Psylocke,nerf
+marvel-rivals,2025-12-12,Loki,buff
+marvel-rivals,2025-12-12,Luna Snow,buff
+marvel-rivals,2025-12-12,Ultron,rework
+marvel-rivals,2025-12-12,Gambit,nerf
+marvel-rivals,2025-12-12,Invisible Woman,nerf
+marvel-rivals,2025-12-12,Rocket Raccoon,nerf
+marvel-rivals,2025-11-14,Gambit,new
+marvel-rivals,2025-11-14,Angela,buff
+marvel-rivals,2025-11-14,Captain America,buff
+marvel-rivals,2025-11-14,Groot,buff
+marvel-rivals,2025-11-14,Hulk,buff
+marvel-rivals,2025-11-14,Magneto,adjustment
+marvel-rivals,2025-11-14,Peni Parker,buff
+marvel-rivals,2025-11-14,The Thing,adjustment
+marvel-rivals,2025-11-14,Hawkeye,adjustment
+marvel-rivals,2025-11-14,Mister Fantastic,buff
+marvel-rivals,2025-11-14,Phoenix,buff
+marvel-rivals,2025-11-14,Spider-Man,buff
+marvel-rivals,2025-11-14,Squirrel Girl,buff
+marvel-rivals,2025-11-14,Storm,buff
+marvel-rivals,2025-11-14,The Punisher,adjustment
+marvel-rivals,2025-11-14,Wolverine,buff
+marvel-rivals,2025-11-14,Adam Warlock,buff
+marvel-rivals,2025-11-14,Cloak & Dagger,buff
+marvel-rivals,2025-11-14,Invisible Woman,buff
+marvel-rivals,2025-11-14,Loki,buff
+marvel-rivals,2025-11-14,Rocket Raccoon,buff
