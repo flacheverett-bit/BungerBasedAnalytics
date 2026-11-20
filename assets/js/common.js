@@ -89,10 +89,23 @@ const HMT = (() => {
     return n;
   }
 
+  // Browser-tab icon: the "B" brand mark, tinted with the game's theme color.
+  const GAME_ICON_COLORS = { deadlock: "#4f8a62", overwatch: "#f99e1a" };
+  function setFavicon(color) {
+    let link = document.querySelector('link[rel="icon"]');
+    if (!link) { link = document.createElement("link"); link.rel = "icon"; document.head.append(link); }
+    if (!color) { link.type = "image/svg+xml"; link.href = "assets/img/favicon.svg"; return; }
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="${color}"/>` +
+      `<text x="32" y="46" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="40" font-weight="800" fill="#ffffff">B</text></svg>`;
+    link.type = "image/svg+xml";
+    link.href = "data:image/svg+xml," + encodeURIComponent(svg);
+  }
+
   function renderTopbar({ game = null, page = "home" } = {}) {
     // Per-game accent theme (see style.css); the home page keeps the neutral brass accent.
     if (game) document.documentElement.setAttribute("data-game", game.id);
     else document.documentElement.removeAttribute("data-game");
+    setFavicon(game ? GAME_ICON_COLORS[game.id] : null);
     const crumbs = el("nav", { class: "crumbs", "aria-label": "Breadcrumb" });
     if (game) {
       crumbs.append(el("span", { "aria-hidden": "true", text: "/" }), el("a", { href: `game.html?game=${game.id}`, text: game.name }));
