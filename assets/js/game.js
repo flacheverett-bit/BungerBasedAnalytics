@@ -100,6 +100,7 @@
   const daily = (players && players.daily) || [];
   const rows = daily.map(([d, avg, peak, n]) => ({ x: toMs(d), avg, peak, live: n !== null }));
   const markers = (patches && patches.markers) || [];
+  const BIG_PATCH = game.big_patch_min_heroes || 10;
 
   let range = HMT.store.get("playersRange", "12m");
   let showPatches = HMT.store.get("playersPatches", true);
@@ -108,7 +109,7 @@
     onChange: (k) => { range = k; HMT.store.set("playersRange", k); drawPlayers(); } });
   const patchToggle = el("input", { type: "checkbox", checked: showPatches ? true : null,
     onchange: (e) => { showPatches = e.target.checked; HMT.store.set("playersPatches", showPatches); drawPlayers(); } });
-  controls.append(el("label", { class: "check" }, patchToggle, "Show patch markers"));
+  controls.append(el("label", { class: "check" }, patchToggle, "Show big patches"));
   const tiles = el("div", { class: "tiles" });
   const legend = el("div", { class: "legend" });
   const box = el("div", { class: "chart-box" });
@@ -145,7 +146,7 @@
     legend.replaceChildren(
       el("span", {}, el("span", { class: "key-line", style: `background:${token("--series-1")}` }), "Daily peak"),
       el("span", {}, el("span", { class: "key-line", style: `background:${token("--series-2")}` }), "Daily average"),
-      showPatches ? el("span", {}, el("span", { class: "key-flag", style: `background:${token("--neutral-mark")}` }), "Patch with hero changes") : null);
+      showPatches ? el("span", {}, el("span", { class: "key-flag", style: `background:${token("--neutral-mark")}` }), `Big patch (${BIG_PATCH}+ heroes changed)`) : null);
 
     box.querySelector(".chart-empty")?.remove();
     if (vis.length < 2) {
@@ -156,10 +157,10 @@
         ", save it in data/raw/ and run ", el("code", { text: "python pipeline/players.py import-steamdb <file>" }), ".")));
     }
 
-    // Only patches that changed at least one hero get a marker.
+    // Only big patches get a marker: ones that changed at least `big_patch_min_heroes` heroes.
     const markerData = showPatches
-      ? markers.filter((m) => Object.keys(m.changes || {}).length > 0)
-          .map((m) => ({ x: toMs(m.date), color: token("--neutral-mark"), emphasis: Object.keys(m.changes).length >= 5, m }))
+      ? markers.filter((m) => Object.keys(m.changes || {}).length >= BIG_PATCH)
+          .map((m) => ({ x: toMs(m.date), color: token("--neutral-mark"), emphasis: true, m }))
           .filter((m) => m.x >= start)
       : [];
 

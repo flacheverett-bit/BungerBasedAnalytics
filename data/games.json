@@ -10,7 +10,8 @@
     "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1422450/header.jpg",
     "tier_bands": [54, 52, 50, 48, 46],
     "tier_note": "Deadlock win rates usually span about 44–57%, so tiers use 2-point bands.",
-    "sections": ["matchups", "builds"]
+    "sections": ["matchups", "builds"],
+    "big_patch_min_heroes": 10
   },
   {
     "id": "overwatch",
@@ -23,6 +24,7 @@
     "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/2357570/header.jpg",
     "tier_bands": [53, 51.5, 50, 48.5, 47],
     "tier_note": "Overwatch Competitive win rates cluster tighter (about 44–55%), so tiers use 1.5-point bands.",
-    "sections": ["comps", "perks"]
+    "sections": ["comps", "perks"],
+    "big_patch_min_heroes": 10
   }
 ]
