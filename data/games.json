@@ -8,9 +8,18 @@
     "steam_appid": 1422450,
     "character_label": "Heroes",
     "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1422450/header.jpg",
-    "tier_bands": [54, 52, 50, 48, 46],
+    "tier_bands": [
+      54,
+      52,
+      50,
+      48,
+      46
+    ],
     "tier_note": "Deadlock win rates usually span about 44–57%, so tiers use 2-point bands.",
-    "sections": ["matchups", "builds"],
+    "sections": [
+      "matchups",
+      "builds"
+    ],
     "big_patch_min_heroes": 10
   },
   {
@@ -22,9 +31,41 @@
     "steam_appid": 2357570,
     "character_label": "Heroes",
     "image": "assets/img/overwatch-cover.png",
-    "tier_bands": [53, 51.5, 50, 48.5, 47],
+    "tier_bands": [
+      53,
+      51.5,
+      50,
+      48.5,
+      47
+    ],
     "tier_note": "Overwatch Competitive win rates cluster tighter (about 44–55%), so tiers use 1.5-point bands.",
-    "sections": ["comps", "perks"],
+    "sections": [
+      "comps",
+      "perks"
+    ],
+    "big_patch_min_heroes": 10
+  },
+  {
+    "id": "marvel-rivals",
+    "name": "Marvel Rivals",
+    "developer": "NetEase Games",
+    "genre": "Hero shooter",
+    "tagline": "6v6 super hero team shooter",
+    "steam_appid": 2767030,
+    "character_label": "Heroes",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/2767030/header.jpg",
+    "tier_bands": [
+      55,
+      52.5,
+      50,
+      47.5,
+      45
+    ],
+    "tier_note": "Marvel Rivals win rates spread wider (about 43–59%), so tiers use 2.5-point bands.",
+    "sections": [
+      "comps",
+      "teamups"
+    ],
     "big_patch_min_heroes": 10
   }
 ]

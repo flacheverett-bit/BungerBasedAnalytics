@@ -1,0 +1,797 @@
+{
+  "game": "marvel-rivals",
+  "updated": "2026-11-20T19:48:56Z",
+  "latest": {
+    "version": "Version 20261113 (Season 11: Doomsday)",
+    "date": "2026-11-13",
+    "title": "Season 11 Balance Update",
+    "url": "https://www.marvelrivals.com/balancepost/20261110/41667_1319209.html",
+    "summary": "Season 11 launch patch adjusted 29 heroes and added Nightcrawler as a new Strategist. Crowd control and Strategist survivability were cut broadly, Devil Dinosaur, Emma Frost and Doctor Strange lost tankiness, and dive/brawl Duelists gained room. The Version 20261119 follow-up was only bug fixes (e.g. Mantis Life Orbs from barriers).",
+    "meta_impact": "Shorter sleeps, freezes and blinds (Mantis, Luna Snow, Cloak & Dagger, White Fox) make dives and brawls safer, so Magik, Storm and Gorr top the Duelist charts while Peni Parker stays the strongest Vanguard.\n\nSustain-heavy supports lost self-healing, which rewards Mantis, Ultron and Rocket Raccoon for raw output. 2-2-2 is still the dominant structure, and team-ups such as Rocket Network, Flawless Design and Ragnarok drive hero choice.",
+    "changes": [
+      {
+        "character": "Angela",
+        "type": "buff",
+        "details": [
+          "Axes of Ichors first three strikes 30 -> 35 damage",
+          "Divine Judgement Movement Speed and Bonus Health now persist 6s after casting without staying in the domain (removed by Wingblade Ascent)",
+          "Dual-axe form: Bonus Health per Axes hit 50 -> 55",
+          "Dual-axe form: Divine Judgement damage 12.5/s -> 15/s"
+        ],
+        "playstyle_impact": "Ground form is more rewarding: trade with axes and use Divine Judgement as a mobile engage buff rather than a zone to sit in.",
+        "meta_impact": "Climbs into the A-tier Vanguard group as a brawl/dive frontliner."
+      },
+      {
+        "character": "Deadpool (Vanguard)",
+        "type": "adjustment",
+        "details": [
+          "The Big Test: removed 50 Bonus Health to nearby allies; self Bonus Health 300 -> 400",
+          "The Big Test (Upgraded): removed per-strike ally Bonus Health; self damage-to-Bonus Health ratio 1 -> 1.5"
+        ],
+        "playstyle_impact": "The Big Test is now a selfish survival ult, so use it to stay alive while brawling rather than to shield the team.",
+        "meta_impact": "Still a low-tier Vanguard; the change aims to make The Big Test competitive with The Ban Hammer."
+      },
+      {
+        "character": "Devil Dinosaur",
+        "type": "nerf",
+        "details": [
+          "Savage Predation control 0.8s -> 0.6s; follow-up launch 1.5s -> 1.2s",
+          "Buddy Barrier: removed 15% Slow; duration 6s -> 4s; shield 450 -> 400",
+          "Apex Advantage Bonus Health 150% -> 125% of Bleed damage",
+          "Team-up with The Punisher: Primal Punishment cooldown 12s -> 18s"
+        ],
+        "playstyle_impact": "Less control and less self-sustain, so pick fights more carefully and lean on teammates to secure picks.",
+        "meta_impact": "Drops from a dominant pick to a solid but beatable A-tier tank."
+      },
+      {
+        "character": "Doctor Strange",
+        "type": "nerf",
+        "details": [
+          "Shield of the Seraphim 850 -> 800; recovery 60/s -> 50/s",
+          "Team-up with Invisible Woman: bonus shield 150 -> 100; ally Bonus Health from Psionic Vortex removed; self damage-to-Bonus Health 0.5 -> 0.7",
+          "Team-up with Hulk: minimum Gamma Maelstrom energy retained 50 -> 25"
+        ],
+        "playstyle_impact": "Shield breaks sooner, so cycle it more carefully and avoid long poke duels.",
+        "meta_impact": "Slips to a B-tier main tank behind brawl and dive Vanguards."
+      },
+      {
+        "character": "Emma Frost",
+        "type": "nerf",
+        "details": [
+          "Mind's Aegis 400 -> 350; recovery 80/s -> 65/s",
+          "Psychic Spear sentience damage 25% Max Health -> 60 + 10% Max Health",
+          "Team-up with Luna Snow: Iced Out Diamond shield 350 -> 300"
+        ],
+        "playstyle_impact": "Less percentage burst against tanks and a thinner barrier; play her as an off-tank rather than a tank killer.",
+        "meta_impact": "Falls to C tier."
+      },
+      {
+        "character": "Groot",
+        "type": "adjustment",
+        "details": [
+          "Thornlash Wall (Flora Colossus) damage 60 -> 65",
+          "Ironwood Wall health 600 -> 550",
+          "Team-up with Mantis: Wild Wall now benefits from the Flora Colossus passive"
+        ],
+        "playstyle_impact": "Walls are a bit easier to break but hit harder; pair with Mantis to get full value from Wild Wall.",
+        "meta_impact": "Mid-tier overall, but the Groot + Mantis team-up is one of the highest win-rate pairs."
+      },
+      {
+        "character": "Peni Parker",
+        "type": "nerf",
+        "details": [
+          "Cyber-Web Cluster explosion damage 15 -> 12",
+          "Arachno-Mine detonation delay 0.6s -> 0.7s"
+        ],
+        "playstyle_impact": "Slightly less splash and slower mines, but the nest-and-web zone game is unchanged.",
+        "meta_impact": "Remains the top S-tier Vanguard and a frequent ban."
+      },
+      {
+        "character": "Rogue",
+        "type": "adjustment",
+        "details": [
+          "Power Surge Punch first two hits 35 -> 40",
+          "Defensive Stance absorption radius 2m -> 1.2m; damage-to-Energy ratio 0.55 -> 0.6",
+          "Team-up with Gambit: Mr. & Mrs. X cooldown 30s -> 15s; kinetic explosion 5+1% -> 3+1% Max Health; ally healing 15 -> 10"
+        ],
+        "playstyle_impact": "Hits harder up close but protects allies over a smaller area, so play closer to the frontline.",
+        "meta_impact": "Stays a viable A/B-tier brawl Vanguard."
+      },
+      {
+        "character": "Venom",
+        "type": "nerf",
+        "details": [
+          "Symbiotic Resilience base Bonus Health 100 -> 75; lost-Health scaling 110% -> 100%",
+          "Frenzied Arrival falloff now starts at 3m (was 2m) and caps at 60% at 6m (was 40%)",
+          "Dark Predation detection radius slightly increased"
+        ],
+        "playstyle_impact": "Less emergency survivability on dives; commit with cooldowns ready and exit earlier.",
+        "meta_impact": "Still a playable dive tank, especially with Gorr's Hive Mind team-up."
+      },
+      {
+        "character": "Black Cat",
+        "type": "buff",
+        "details": [
+          "Feline Fury max Fortune per cast 50 -> 75",
+          "Team-up with Black Panther: Feline Alliance Bonus Health 25 -> 50; Fortune per enemy hit 50 -> 100; Fortune cap 100 -> 200"
+        ],
+        "playstyle_impact": "Builds Fortune faster, especially alongside Black Panther.",
+        "meta_impact": "Moves up slightly but remains a niche flank pick."
+      },
+      {
+        "character": "Black Widow",
+        "type": "buff",
+        "details": [
+          "Electro-Plasma Blast 50-70 -> 55-75 damage",
+          "Team-up with Phoenix: Electro-Plasma Blast 70 -> 75",
+          "Team-up with Hawkeye: Allied Agents grants Bonus Health equal to 50% of damage dealt while Focused (max 75)"
+        ],
+        "playstyle_impact": "Stronger secondary burst and some self-sustain with Hawkeye.",
+        "meta_impact": "Still a low-tier niche sniper."
+      },
+      {
+        "character": "Elsa Bloodstone",
+        "type": "nerf",
+        "details": [
+          "Double-Barrel Blaster falloff starts at 10m (was 20m)",
+          "Team-up with Devil Dinosaur: one ability charge removed; Smoky Snare cooldown 15s -> 12s"
+        ],
+        "playstyle_impact": "Must play close-to-mid range now; long-range shotgun poke is gone.",
+        "meta_impact": "Drops to C tier."
+      },
+      {
+        "character": "Human Torch",
+        "type": "adjustment",
+        "details": [
+          "Fire Cluster projectile spread changed from random to fixed"
+        ],
+        "playstyle_impact": "More predictable damage; aim with the fixed pattern.",
+        "meta_impact": "Mid-tier aerial pick; the change mostly improves consistency."
+      },
+      {
+        "character": "Phoenix",
+        "type": "nerf",
+        "details": [
+          "Spark detonation direct damage 45 -> 40; area damage 20 -> 15",
+          "Endsong Inferno shockwave applies 1 Spark stack (was 2)"
+        ],
+        "playstyle_impact": "Less burst from Spark combos and a weaker ult, so rely more on sustained fire.",
+        "meta_impact": "Falls to the bottom tier of Duelists."
+      },
+      {
+        "character": "Squirrel Girl",
+        "type": "rework",
+        "details": [
+          "Burst Acorn 110 -> 95 damage; max falloff at 3m 70% -> 60%",
+          "Squirrel Blockade projectile speed 20-60 -> 60-90 m/s; Imprison 1.3s -> 0.8s; damage 50 -> 25",
+          "Squirrel Blockade hit now creates Acorn Rain: 30/s for 2s with 20% Slow in 5m",
+          "Mammal Bond: +100% Attack Speed for 5s, projectile speed 80 -> 150 m/s with no gravity, single acorn at 65% damage",
+          "Tail Bounce grants 25 Bonus Health"
+        ],
+        "playstyle_impact": "Shifts from lobbing heavy acorns to a faster, flatter spam window after Mammal Bond, with Blockade used for area denial.",
+        "meta_impact": "Kit is more consistent but she remains a low-tier pick."
+      },
+      {
+        "character": "Star-Lord",
+        "type": "buff",
+        "details": [
+          "Galactic Legend Element Guns ammo 40 -> 50",
+          "Team-up with Human Torch: Cosmic Soul cooldown 30s -> 25s; resurrection cooldown 120s -> 105s"
+        ],
+        "playstyle_impact": "Longer ult uptime; slightly better value from the Human Torch revive.",
+        "meta_impact": "B-tier; best with the Mantis Star Blossom team-up."
+      },
+      {
+        "character": "Winter Soldier",
+        "type": "nerf",
+        "details": [
+          "Roterstern max falloff 70% at 40m -> 65% at 30m",
+          "Roterstern spell field damage 45 -> 40"
+        ],
+        "playstyle_impact": "Must close distance to deal full damage; less long-range poke.",
+        "meta_impact": "Drops to C tier."
+      },
+      {
+        "character": "Wolverine",
+        "type": "nerf",
+        "details": [
+          "Feral Leap cooldown 12s -> 15s",
+          "Last Stand bonus damage per Rage point 0.3% -> 0.2% Max Health (vs 250 HP: 150 -> 125; vs 700 HP: 330 -> 260)"
+        ],
+        "playstyle_impact": "Fewer engages and a weaker ult against tanks, so pick targets and timing carefully.",
+        "meta_impact": "Falls to C tier."
+      },
+      {
+        "character": "Adam Warlock",
+        "type": "adjustment",
+        "details": [
+          "Avatar Life Stream initial heal 95 -> 55; bounces 2 -> 4 (285 -> 275 total)",
+          "Team-up with Storm: Soaring Surge speed boost 67% -> 100%",
+          "Soul Bond ally damage boost 12% -> 8%"
+        ],
+        "playstyle_impact": "Spread healing across more allies; pair with Storm for faster aerial rotations.",
+        "meta_impact": "Stays A tier, boosted by the Storm and Ultron team-ups."
+      },
+      {
+        "character": "Cloak & Dagger",
+        "type": "adjustment",
+        "details": [
+          "Dagger Storm cooldown 12s -> 15s; self-heal 50/s -> 35/s; each ally or enemy hit by Veil/Terror Cape cuts its cooldown by 0.6s",
+          "Darkforce Cloak damage 80/s -> 85/s",
+          "Terror Cape Blind 1.5s -> 1s",
+          "Veil of Lightforce and Terror Cape speed 20 -> 35 m/s",
+          "Team-up with The Hood: Twilight/Void Veil now launch enemies along their path"
+        ],
+        "playstyle_impact": "Hit people with Veil/Cape to keep Dagger Storm cycling; less self-sustain.",
+        "meta_impact": "Remains a low-tier Strategist."
+      },
+      {
+        "character": "Gambit",
+        "type": "nerf",
+        "details": [
+          "Kinetic Cards outer spread 2 -> 3 degrees",
+          "Healing Hearts self-heal 30/s -> 20/s"
+        ],
+        "playstyle_impact": "Less consistent at range and less self-sustain; stay behind the frontline.",
+        "meta_impact": "Low-tier Strategist."
+      },
+      {
+        "character": "Invisible Woman",
+        "type": "nerf",
+        "details": [
+          "Veiled Step cooldown 6s -> 8s",
+          "Psionic Vortex slow: center 50% -> 40%, edge 0% -> 20%"
+        ],
+        "playstyle_impact": "Fewer escapes; play safer positions and use Vortex for area slow.",
+        "meta_impact": "Mid/low-tier Strategist."
+      },
+      {
+        "character": "Jubilee",
+        "type": "adjustment",
+        "details": [
+          "Sparkle Mark detonation no longer grants allies a 20% Healing Boost",
+          "Firework Finale healing 180/s -> 190/s; outer plasmoid rotation 20 -> 25 m/s",
+          "Team-up with Blade: Vampiric Kin lifesteal 30% -> 40%"
+        ],
+        "playstyle_impact": "Less passive healing amplification; best as a brawl healer with Blade.",
+        "meta_impact": "A/B tier; the Blade pairing is a recommended brawl duo."
+      },
+      {
+        "character": "Loki",
+        "type": "nerf",
+        "details": [
+          "Deception cooldown 15s -> 18s",
+          "Team-up with Hela: each destroyed illusion adds 1s to Doppelganger and Devious Exchange cooldowns",
+          "Team-up with Mantis: Regeneration Domain no longer grants allies a Damage Boost"
+        ],
+        "playstyle_impact": "Fewer escapes and illusions are riskier; position carefully.",
+        "meta_impact": "B tier, still strong in Mantis (Vibrant Vitality) pairings."
+      },
+      {
+        "character": "Luna Snow",
+        "type": "nerf",
+        "details": [
+          "Absolute Zero freeze 2.7s -> 1.5s",
+          "Team-up with White Fox: Charm removed; Spirit Fox ally healing 70 -> 80, enemy damage 35 -> 45",
+          "Team-up with Adam Warlock: Duality Dance self-heal conversion 25% -> 35%"
+        ],
+        "playstyle_impact": "Freeze is now a short interrupt, not a kill setup; focus on healing output.",
+        "meta_impact": "Falls to C tier."
+      },
+      {
+        "character": "Mantis",
+        "type": "nerf",
+        "details": [
+          "Spore Slumber sleep 3.5s -> 1.5s",
+          "Allied Inspiration Life Orb cost 1 -> 2",
+          "Nature's Favor self-heal 12.5/s -> 8/s",
+          "Life Energy Blast non-critical hits now grant 0.3 Life Orbs"
+        ],
+        "playstyle_impact": "Sleep is now a brief peel tool; land body shots too to build Orbs for buffs.",
+        "meta_impact": "Despite the nerfs she sits in S tier thanks to strong team-ups (Groot, Loki, Star-Lord, Adam Warlock)."
+      },
+      {
+        "character": "Rocket Raccoon",
+        "type": "adjustment",
+        "details": [
+          "Repair Mode heal after passing allies 55 -> 50; continuous self-heal 30/s -> 20/s",
+          "Primary falloff now starts at 15m (was 10m), 55% at 30m (was 40% at 20m)",
+          "Jetpack Dash grants 25 Bonus Health"
+        ],
+        "playstyle_impact": "Slightly less healing but better damage at range; dash to survive divers.",
+        "meta_impact": "S tier, especially with Peni Parker (Rocket Network)."
+      },
+      {
+        "character": "Ultron",
+        "type": "nerf",
+        "details": [
+          "Imperative: Firewall ally Bonus Health 40 -> 25",
+          "Firewall ally movement speed boost 20% -> 10%"
+        ],
+        "playstyle_impact": "Firewall is a smaller save; rely on drone healing and aerial positioning.",
+        "meta_impact": "Still S tier, with Adam Warlock's Flawless Design among the best team-ups."
+      },
+      {
+        "character": "White Fox",
+        "type": "rework",
+        "details": [
+          "Spirit Sanctuary shield 200 -> 100",
+          "Spectral Surge no longer grants allies Invincibility; enemy Charm radius 0.6m -> 0.4m",
+          "Fox Form Awakening base 7s -> 8s; per Spirit Tail 1s -> 2s (max 9s -> 12s)",
+          "Awakened Claw Strike 35 -> 40; Predatory Pounce cooldown 6s -> 4s",
+          "Kumiho Unleashed can now receive ally healing; health 1200 -> 1000"
+        ],
+        "playstyle_impact": "Less team protection, more personal fighting power in Fox Form; play her as an aggressive battle support.",
+        "meta_impact": "Remains low-to-mid tier; best with Iron Fist (Kumiho Palm)."
+      },
+      {
+        "character": "Nightcrawler",
+        "type": "new",
+        "details": [
+          "New Strategist hero released with Season 11",
+          "Team-ups include Magik (Demon Disciple) and Rogue (Protective Siblings)"
+        ],
+        "playstyle_impact": "Teleporting support who can rescue or reposition allies.",
+        "meta_impact": "Early tier lists range from A to C while players learn him."
+      }
+    ]
+  },
+  "markers": [
+    {
+      "date": "2026-11-13",
+      "version": "Version 20261113 (Season 11)",
+      "title": "Season 11: Doomsday balance update",
+      "url": "https://www.marvelrivals.com/balancepost/20261110/41667_1319209.html",
+      "changes": {
+        "Angela": "buff",
+        "Deadpool (Vanguard)": "adjustment",
+        "Devil Dinosaur": "nerf",
+        "Doctor Strange": "nerf",
+        "Emma Frost": "nerf",
+        "Groot": "adjustment",
+        "Peni Parker": "nerf",
+        "Rogue": "adjustment",
+        "Venom": "nerf",
+        "Black Cat": "buff",
+        "Black Widow": "buff",
+        "Elsa Bloodstone": "nerf",
+        "Human Torch": "adjustment",
+        "Phoenix": "nerf",
+        "Squirrel Girl": "rework",
+        "Star-Lord": "buff",
+        "Winter Soldier": "nerf",
+        "Wolverine": "nerf",
+        "Adam Warlock": "adjustment",
+        "Cloak & Dagger": "adjustment",
+        "Gambit": "nerf",
+        "Invisible Woman": "nerf",
+        "Jubilee": "adjustment",
+        "Loki": "nerf",
+        "Luna Snow": "nerf",
+        "Mantis": "nerf",
+        "Rocket Raccoon": "adjustment",
+        "Ultron": "nerf",
+        "White Fox": "rework",
+        "Nightcrawler": "new"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-10-09",
+      "version": "Version 20261009 (Season 10.5)",
+      "title": "Season 10.5 mid-season balance",
+      "url": "https://www.marvelrivals.com/balancepost/20261006/41667_1315864.html",
+      "changes": {
+        "Devil Dinosaur": "nerf",
+        "Hulk": "buff",
+        "Magneto": "buff",
+        "The Thing": "buff",
+        "Cyclops": "buff",
+        "Gorr": "nerf",
+        "Hawkeye": "buff",
+        "Iron Man": "rework",
+        "Phoenix": "buff",
+        "Scarlet Witch": "nerf",
+        "Adam Warlock": "buff",
+        "Gambit": "adjustment",
+        "Jubilee": "buff"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-09-11",
+      "version": "Version 20260911 (Season 10)",
+      "title": "Season 10 balance update",
+      "url": "https://www.marvelrivals.com/balancepost/20260908/41667_1313334.html",
+      "changes": {
+        "Gorr": "new",
+        "Angela": "nerf",
+        "Captain America": "buff",
+        "Deadpool (Vanguard)": "buff",
+        "Devil Dinosaur": "buff",
+        "Doctor Strange": "buff",
+        "Emma Frost": "buff",
+        "Groot": "buff",
+        "Magneto": "nerf",
+        "Peni Parker": "buff",
+        "Rogue": "buff",
+        "The Hood": "nerf",
+        "The Thing": "nerf",
+        "Thor": "buff",
+        "Black Cat": "adjustment",
+        "Black Widow": "nerf",
+        "Blade": "buff",
+        "Elsa Bloodstone": "nerf",
+        "Deadpool (Duelist)": "buff",
+        "Iron Fist": "adjustment",
+        "Magik": "nerf",
+        "Mister Fantastic": "buff",
+        "Namor": "buff",
+        "Psylocke": "buff",
+        "Scarlet Witch": "rework",
+        "Spider-Man": "buff",
+        "Star-Lord": "buff",
+        "Winter Soldier": "nerf",
+        "Wolverine": "buff",
+        "Cloak & Dagger": "nerf",
+        "Deadpool (Strategist)": "buff",
+        "Gambit": "nerf",
+        "Invisible Woman": "adjustment",
+        "Jeff The Land Shark": "buff",
+        "Loki": "buff",
+        "Luna Snow": "adjustment",
+        "Mantis": "adjustment",
+        "Ultron": "adjustment",
+        "White Fox": "buff"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-08-07",
+      "version": "Version 20260807 (Season 9.5)",
+      "title": "Season 9.5 mid-season balance",
+      "url": "https://www.marvelrivals.com/balancepost/20260804/41667_1309952.html",
+      "changes": {
+        "The Hood": "new",
+        "Devil Dinosaur": "buff",
+        "Doctor Strange": "buff",
+        "Magneto": "buff",
+        "Peni Parker": "adjustment",
+        "Rogue": "buff",
+        "Venom": "nerf",
+        "Black Panther": "nerf",
+        "Cyclops": "buff",
+        "Elsa Bloodstone": "nerf",
+        "Hela": "nerf",
+        "Moon Knight": "buff",
+        "Phoenix": "buff",
+        "Wolverine": "buff",
+        "Scarlet Witch": "adjustment",
+        "Gambit": "nerf",
+        "Jubilee": "buff",
+        "Loki": "buff",
+        "White Fox": "buff"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-07-11",
+      "version": "Version 20260711",
+      "title": "Season 9 emergency balance hotfix",
+      "url": "https://www.marvelrivals.com/balancepost/20260711/41667_1307328.html",
+      "changes": {
+        "Black Panther": "nerf",
+        "Black Widow": "buff",
+        "Cyclops": "buff",
+        "Iron Man": "nerf",
+        "Phoenix": "buff",
+        "Psylocke": "nerf",
+        "Gambit": "buff",
+        "Invisible Woman": "buff",
+        "Jubilee": "buff",
+        "Luna Snow": "buff",
+        "Mantis": "nerf",
+        "Rocket Raccoon": "buff",
+        "Ultron": "nerf"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-07-10",
+      "version": "Version 20260710 (Season 9)",
+      "title": "Season 9 balance update (Regenerative Shields, team-up bonus removal)",
+      "url": "https://www.marvelrivals.com/balancepost/20260706/41667_1306647.html",
+      "changes": {
+        "Jubilee": "new",
+        "Angela": "adjustment",
+        "Captain America": "nerf",
+        "Deadpool (Vanguard)": "buff",
+        "Devil Dinosaur": "buff",
+        "Doctor Strange": "buff",
+        "Groot": "adjustment",
+        "Hulk": "adjustment",
+        "Peni Parker": "nerf",
+        "Rogue": "nerf",
+        "The Thing": "buff",
+        "Thor": "adjustment",
+        "Venom": "nerf",
+        "Black Cat": "adjustment",
+        "Black Panther": "rework",
+        "Cyclops": "nerf",
+        "Daredevil": "nerf",
+        "Deadpool (Duelist)": "nerf",
+        "Elsa Bloodstone": "buff",
+        "Hawkeye": "buff",
+        "Hela": "adjustment",
+        "Human Torch": "nerf",
+        "Iron Man": "nerf",
+        "Magik": "buff",
+        "Moon Knight": "adjustment",
+        "Phoenix": "adjustment",
+        "Psylocke": "buff",
+        "Scarlet Witch": "buff",
+        "Star-Lord": "nerf",
+        "Storm": "adjustment",
+        "The Punisher": "adjustment",
+        "Adam Warlock": "adjustment",
+        "Cloak & Dagger": "adjustment",
+        "Deadpool (Strategist)": "nerf",
+        "Gambit": "adjustment",
+        "Invisible Woman": "adjustment",
+        "Luna Snow": "rework",
+        "Mantis": "adjustment",
+        "Rocket Raccoon": "adjustment",
+        "Ultron": "buff",
+        "White Fox": "adjustment"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-06-12",
+      "version": "Version 20260612 (Season 8.5)",
+      "title": "Season 8.5 mid-season balance",
+      "url": "https://www.marvelrivals.com/balancepost/20260609/41667_1303507.html",
+      "changes": {
+        "Cyclops": "new",
+        "Angela": "buff",
+        "Devil Dinosaur": "nerf",
+        "Magneto": "buff",
+        "Rogue": "buff",
+        "Black Cat": "nerf",
+        "Blade": "buff",
+        "Daredevil": "nerf",
+        "Elsa Bloodstone": "buff",
+        "Human Torch": "buff",
+        "Moon Knight": "nerf",
+        "Namor": "buff",
+        "Phoenix": "nerf",
+        "Star-Lord": "nerf",
+        "Adam Warlock": "buff",
+        "Cloak & Dagger": "adjustment",
+        "Deadpool (Strategist)": "buff",
+        "Gambit": "nerf",
+        "Ultron": "nerf",
+        "White Fox": "nerf"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-05-15",
+      "version": "Version 20260515 (Season 8)",
+      "title": "Season 8 balance update",
+      "url": "https://www.marvelrivals.com/balancepost/20260512/41667_1299947.html",
+      "changes": {
+        "Devil Dinosaur": "new",
+        "Deadpool (Vanguard)": "nerf",
+        "Emma Frost": "buff",
+        "The Thing": "buff",
+        "Iron Fist": "buff",
+        "Mister Fantastic": "adjustment",
+        "Moon Knight": "buff",
+        "Phoenix": "adjustment",
+        "Spider-Man": "buff",
+        "Squirrel Girl": "buff",
+        "Star-Lord": "buff",
+        "Wolverine": "buff",
+        "Invisible Woman": "nerf",
+        "Loki": "adjustment",
+        "Mantis": "adjustment",
+        "Rocket Raccoon": "buff",
+        "White Fox": "adjustment"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-04-17",
+      "version": "Version 20260417 (Season 7.5)",
+      "title": "Season 7.5 mid-season balance",
+      "url": "https://www.marvelrivals.com/balancepost/20260414/41667_1295988.html",
+      "changes": {
+        "Black Cat": "new",
+        "Emma Frost": "buff",
+        "Deadpool (Vanguard)": "nerf",
+        "Peni Parker": "adjustment",
+        "Elsa Bloodstone": "nerf",
+        "Human Torch": "rework",
+        "Winter Soldier": "adjustment",
+        "Adam Warlock": "buff",
+        "Cloak & Dagger": "nerf",
+        "Jeff The Land Shark": "nerf",
+        "Luna Snow": "buff",
+        "Ultron": "buff"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-03-26",
+      "version": "Version 20260326",
+      "title": "Season 7 follow-up balance (Deadpool mobility, Elsa, White Fox)",
+      "url": "https://www.marvelrivals.com/balancepost/20260325/41667_1292877.html",
+      "changes": {
+        "Deadpool (Vanguard)": "nerf",
+        "Deadpool (Duelist)": "nerf",
+        "Deadpool (Strategist)": "nerf",
+        "Elsa Bloodstone": "nerf",
+        "White Fox": "adjustment"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-03-20",
+      "version": "Season 7",
+      "title": "Season 7 balance update (global Ultimate charge nerf)",
+      "url": "https://allthings.how/marvel-rivals-season-7-balance-changes-every-buff-nerf-and-global-ultimate-rework/",
+      "changes": {
+        "White Fox": "new",
+        "Angela": "adjustment",
+        "Captain America": "nerf",
+        "Deadpool (Vanguard)": "nerf",
+        "Doctor Strange": "nerf",
+        "Emma Frost": "adjustment",
+        "Hulk": "buff",
+        "Magneto": "adjustment",
+        "Black Panther": "buff",
+        "Blade": "buff",
+        "Daredevil": "nerf",
+        "Deadpool (Duelist)": "adjustment",
+        "Elsa Bloodstone": "nerf",
+        "Hawkeye": "nerf",
+        "Human Torch": "buff",
+        "Iron Man": "buff",
+        "Magik": "adjustment",
+        "Psylocke": "buff",
+        "Scarlet Witch": "adjustment",
+        "Winter Soldier": "nerf",
+        "Deadpool (Strategist)": "nerf",
+        "Gambit": "adjustment",
+        "Invisible Woman": "adjustment",
+        "Luna Snow": "buff"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-02-19",
+      "version": "Version 20260219",
+      "title": "Season 6.5 balance adjustments",
+      "url": "https://www.marvelrivals.com/balancepost/20260215/41667_1287401.html",
+      "changes": {
+        "Elsa Bloodstone": "nerf",
+        "Hawkeye": "nerf",
+        "Hela": "adjustment",
+        "Gambit": "nerf"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-02-13",
+      "version": "Season 6.5",
+      "title": "Season 6.5 mid-season balance",
+      "url": "https://www.vice.com/en/article/marvel-rivals-season-6-5-patch-notes-buffs-nerfs-team-ups-changes-more/",
+      "changes": {
+        "Elsa Bloodstone": "new",
+        "Doctor Strange": "adjustment",
+        "Rogue": "buff",
+        "Thor": "adjustment",
+        "Venom": "buff",
+        "Deadpool (Duelist)": "buff",
+        "Moon Knight": "nerf",
+        "Phoenix": "nerf",
+        "Psylocke": "adjustment",
+        "Squirrel Girl": "buff",
+        "Star-Lord": "buff",
+        "Storm": "adjustment",
+        "The Punisher": "buff",
+        "Wolverine": "buff",
+        "Adam Warlock": "buff",
+        "Invisible Woman": "nerf",
+        "Loki": "nerf",
+        "Ultron": "buff"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-01-16",
+      "version": "Version 20260116 (Season 6)",
+      "title": "Season 6 balance update",
+      "url": "https://insider-gaming.com/marvel-rivals-season-6-balance-changes-all-buffs-nerfs/",
+      "changes": {
+        "Deadpool (Vanguard)": "new",
+        "Deadpool (Duelist)": "new",
+        "Deadpool (Strategist)": "new",
+        "Angela": "nerf",
+        "Captain America": "buff",
+        "Doctor Strange": "buff",
+        "Emma Frost": "buff",
+        "Hulk": "buff",
+        "Black Panther": "buff",
+        "Blade": "adjustment",
+        "Daredevil": "nerf",
+        "Iron Fist": "buff",
+        "Namor": "adjustment",
+        "Cloak & Dagger": "adjustment",
+        "Gambit": "nerf",
+        "Invisible Woman": "nerf",
+        "Rocket Raccoon": "nerf"
+      },
+      "curated": true
+    },
+    {
+      "date": "2025-12-12",
+      "version": "Version 20251212 (Season 5.5)",
+      "title": "Season 5.5 mid-season balance",
+      "url": "https://beebom.com/every-marvel-rivals-season-5-5-hero-buffs-and-nerfs",
+      "changes": {
+        "Rogue": "new",
+        "Emma Frost": "adjustment",
+        "The Thing": "buff",
+        "Thor": "buff",
+        "Peni Parker": "nerf",
+        "Blade": "buff",
+        "Human Torch": "buff",
+        "Phoenix": "buff",
+        "Scarlet Witch": "buff",
+        "The Punisher": "buff",
+        "Wolverine": "buff",
+        "Daredevil": "nerf",
+        "Psylocke": "nerf",
+        "Loki": "buff",
+        "Luna Snow": "buff",
+        "Ultron": "rework",
+        "Gambit": "nerf",
+        "Invisible Woman": "nerf",
+        "Rocket Raccoon": "nerf"
+      },
+      "curated": true
+    },
+    {
+      "date": "2025-11-14",
+      "version": "Version 20251114 (Season 5)",
+      "title": "Season 5: Love is a Battlefield balance update",
+      "url": "https://thegamepost.com/marvel-rivals-season-5-full-patch-notes/",
+      "changes": {
+        "Gambit": "new",
+        "Angela": "buff",
+        "Captain America": "buff",
+        "Groot": "buff",
+        "Hulk": "buff",
+        "Magneto": "adjustment",
+        "Peni Parker": "buff",
+        "The Thing": "adjustment",
+        "Hawkeye": "adjustment",
+        "Mister Fantastic": "buff",
+        "Phoenix": "buff",
+        "Spider-Man": "buff",
+        "Squirrel Girl": "buff",
+        "Storm": "buff",
+        "The Punisher": "adjustment",
+        "Wolverine": "buff",
+        "Adam Warlock": "buff",
+        "Cloak & Dagger": "buff",
+        "Invisible Woman": "buff",
+        "Loki": "buff",
+        "Rocket Raccoon": "buff"
+      },
+      "curated": true
+    }
+  ]
+}

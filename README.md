@@ -1,6 +1,6 @@
 # Bunger Based Analytics
 
-A static website that tracks hero shooter statistics: latest patch analysis, concurrent players, and per-hero win and pick rates with patch markers. Supported games: **Deadlock** and **Overwatch**. The site is built so more games can be added.
+A static website that tracks hero shooter statistics: latest patch analysis, concurrent players, and per-hero win and pick rates with patch markers. Supported games: **Deadlock**, **Overwatch** and **Marvel Rivals**. The site is built so more games can be added.
 
 **Live site:** https://flacheverett-bit.github.io/BungerBasedAnalytics/
 
@@ -13,6 +13,8 @@ A static website that tracks hero shooter statistics: latest patch analysis, con
 | `heroes.html?game=deadlock` | Every hero with 30-day win and pick rate. Select a hero to see daily win rate and pick rate charts with markers for the patches that changed that hero (colored by buff, nerf or rework), a **patch impact table** (7 days before vs after each patch), **counters & matchups**, and **meta builds** (core items by game phase + the 3 most-played community builds) |
 | `tiers.html?game=deadlock` | **Tier list**: every hero placed in S–F by win rate (fixed bands: S ≥ 54%, A 52–54, B 50–52, C 48–50, D 46–48, F < 46) for the latest patch, last 30 days or last 3 months |
 | `…?game=overwatch` | The same three pages for Overwatch. The hero page shows **ban rate**, **meta team comps** that include the hero (in place of builds) and the hero's **perks with pro pick shares** (in place of items). No counters section, since no public matchup data exists. Tier bands are tighter for Overwatch: S ≥ 53%, A 51.5–53, B 50–51.5, C 48.5–50, D 47–48.5, F < 47 |
+
+| `…?game=marvel-rivals` | Same as Overwatch, but with **team-up loadouts** in place of perks: for the selected hero, how often each of their two loadouts is picked, the hero's win rate with that partner, and what the loadout does. Tier bands are wider: S ≥ 55%, A 52.5–55, B 50–52.5, C 47.5–50, D 45–47.5, F < 45 |
 
 Tier bands are set per game in `data/games.json` (`tier_bands`).
 
@@ -29,6 +31,9 @@ Tier bands are set per game in `data/games.json` (`tier_bands`).
 | **Overwatch** hero win / pick / ban rates | [Blizzard's official hero statistics](https://overwatch.blizzard.com/en-us/rates/): Competitive Role Queue, PC, Americas, all ranks. Blizzard publishes current numbers only, so history grows by one snapshot per day (started Nov 20, 2026) | Daily (GitHub Action) |
 | Overwatch perks | Names, icons and text from the [OverFast API](https://overfast-api.tekrop.fr) (Blizzard data); pick shares from [owtics.gg](https://owtics.gg) (**pro players in OWCS matches**; heroes not played in OWCS have no share) | Daily (GitHub Action) |
 | Overwatch concurrent players | Steam Web API (hourly) + SteamCharts history back to Aug 2023 (monthly averages before 2026). **Steam only**: Battle.net and console players aren't counted | Hourly |
+| **Marvel Rivals** hero win / pick / ban rates | [rivalsheroes.com](https://rivalsheroes.com/heroes/stats) ranked data (Competitive, all ranks, season to date). No official stats API exists. Daily snapshots, history started Nov 20, 2026 | Daily (GitHub Action) |
+| Marvel Rivals team-up loadouts | Usage share: [rivalsdata.com](https://rivalsdata.com/team-ups) (**Grandmaster+** ranked, the only public source of actual loadout picks). Partner win rate and loadout text: rivalsheroes.com hero pages (all ranks) | Daily (GitHub Action) |
+| Marvel Rivals concurrent players | Steam Web API (hourly) + SteamCharts history back to launch, Dec 2024 (monthly averages early on). Steam only | Hourly |
 | Overwatch patch notes, meta team comps | Hand-written in `data/overwatch/patch-notes.curated.json` and `data/overwatch/comps.curated.json` (no public source tracks comp statistics) | Each patch |
 
 **Definitions**
@@ -57,7 +62,9 @@ python pipeline/deadlock_heroes.py     # hero stats (~40 s)
 python pipeline/deadlock_meta.py       # matchups, builds, core items (~1 min)
 python pipeline/overwatch_heroes.py    # today's Overwatch snapshot (Blizzard)
 python pipeline/overwatch_perks.py     # Overwatch perks + pro pick shares (~1 min)
-python pipeline/patches.py deadlock overwatch
+python pipeline/marvel_rivals_heroes.py   # today's Marvel Rivals snapshot
+python pipeline/marvel_rivals_teamups.py  # team-up loadout usage (~1 min)
+python pipeline/patches.py deadlock overwatch marvel-rivals
 python pipeline/patches.py             # rebuild patch markers after editing curated notes
 python pipeline/players.py record      # take one live Steam reading for every game
 ```

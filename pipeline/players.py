@@ -29,6 +29,7 @@ from common import DATA, get_json, now_iso, read_json, write_json
 GAMES = {
     "deadlock": 1422450,
     "overwatch": 2357570,
+    "marvel-rivals": 2767030,
 }
 STEAM_CURRENT = "https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid={appid}"
 STEAM_CHARTS = "https://api.steampowered.com/ISteamChartsService/GetGamesByConcurrentPlayers/v1/"

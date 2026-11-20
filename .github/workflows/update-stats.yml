@@ -34,9 +34,15 @@ jobs:
       - name: Overwatch - perks and pro pick shares
         continue-on-error: true
         run: python pipeline/overwatch_perks.py
+      - name: Marvel Rivals - hero win/pick/ban snapshot
+        continue-on-error: true
+        run: python pipeline/marvel_rivals_heroes.py
+      - name: Marvel Rivals - team-up loadout usage
+        continue-on-error: true
+        run: python pipeline/marvel_rivals_teamups.py
       - name: Rebuild patch markers
         continue-on-error: true
-        run: python pipeline/patches.py deadlock overwatch
+        run: python pipeline/patches.py deadlock overwatch marvel-rivals
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"

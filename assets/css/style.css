@@ -71,12 +71,15 @@
    darkened so accent text/marks keep contrast on the light surface. */
 :root[data-game="deadlock"] { --accent: #3b6b4c; --accent-soft: rgba(59, 107, 76, 0.14); --game-stripe: #4f8a62; }
 :root[data-game="overwatch"] { --accent: #b35c00; --accent-soft: rgba(249, 158, 26, 0.18); --game-stripe: #f99e1a; }
+:root[data-game="marvel-rivals"] { --accent: #876a00; --accent-soft: rgba(245, 196, 0, 0.2); --game-stripe: #f5c400; }
 @media (prefers-color-scheme: dark) {
+  :root[data-game="marvel-rivals"]:not([data-theme="light"]) { --accent: #f5c400; --accent-soft: rgba(245, 196, 0, 0.16); --game-stripe: #f5c400; }
   :root[data-game="deadlock"]:not([data-theme="light"]) { --accent: #7fbf91; --accent-soft: rgba(127, 191, 145, 0.16); --game-stripe: #5f9e71; }
   :root[data-game="overwatch"]:not([data-theme="light"]) { --accent: #f99e1a; --accent-soft: rgba(249, 158, 26, 0.16); --game-stripe: #f99e1a; }
 }
 :root[data-game="deadlock"][data-theme="dark"] { --accent: #7fbf91; --accent-soft: rgba(127, 191, 145, 0.16); --game-stripe: #5f9e71; }
 :root[data-game="overwatch"][data-theme="dark"] { --accent: #f99e1a; --accent-soft: rgba(249, 158, 26, 0.16); --game-stripe: #f99e1a; }
+:root[data-game="marvel-rivals"][data-theme="dark"] { --accent: #f5c400; --accent-soft: rgba(245, 196, 0, 0.16); --game-stripe: #f5c400; }
 :root[data-game] .topbar { box-shadow: inset 0 -3px 0 var(--game-stripe); }
 :root[data-game] .page-head h1 { border-left: 4px solid var(--game-stripe); padding-left: 12px; }
 
@@ -294,6 +297,10 @@ details summary { cursor: pointer; color: var(--text-secondary); font-size: 14px
 .share-bar { height: 6px; border-radius: 3px; background: var(--surface-1); margin: 6px 0 4px; overflow: hidden; }
 .share-bar span { display: block; height: 100%; border-radius: 3px; background: var(--series-1); }
 .perk p { margin: 2px 0 0; }
+/* team-up loadouts */
+.teamup-rank { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 13px;
+  background: var(--accent-soft); color: var(--text-primary); }
+.teamup .comp-hero { margin-top: 3px; }
 
 @media (max-width: 640px) { .build-cat { grid-template-columns: 1fr; gap: 4px; } .tier-row { grid-template-columns: 64px 1fr; } }
 

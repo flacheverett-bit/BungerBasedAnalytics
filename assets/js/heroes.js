@@ -3,17 +3,18 @@
   const app = document.getElementById("app");
   const gameId = HMT.params.get("game") || "deadlock";
 
-  let game, data, patches, meta, comps, perks;
+  let game, data, patches, meta, comps, perks, teamups;
   try {
     game = await HMT.getGame(gameId);
     if (!game) throw new Error(`Unknown game "${gameId}"`);
     const sections = game.sections || [];
-    [data, patches, meta, comps, perks] = await Promise.all([
+    [data, patches, meta, comps, perks, teamups] = await Promise.all([
       loadJSON(`data/${gameId}/heroes.json`),
       loadJSON(`data/${gameId}/patches.json`).catch(() => ({ markers: [] })),
       sections.includes("matchups") || sections.includes("builds") ? loadJSON(`data/${gameId}/meta.json`).catch(() => null) : null,
       sections.includes("comps") ? loadJSON(`data/${gameId}/comps.curated.json`).catch(() => null) : null,
       sections.includes("perks") ? loadJSON(`data/${gameId}/perks.json`).catch(() => null) : null,
+      sections.includes("teamups") ? loadJSON(`data/${gameId}/teamups.json`).catch(() => null) : null,
     ]);
   } catch (e) {
     HMT.renderTopbar();
@@ -92,11 +93,13 @@
   const buildSec = el("section", { class: "card section", "aria-labelledby": "builds-h" });
   const compSec = el("section", { class: "card section", "aria-labelledby": "comps-h" });
   const perkSec = el("section", { class: "card section", "aria-labelledby": "perks-h" });
+  const teamupSec = el("section", { class: "card section", "aria-labelledby": "teamups-h" });
   app.append(detail);
   if (sections.includes("matchups")) app.append(matchupSec);
   if (sections.includes("comps")) app.append(compSec);
   if (sections.includes("builds")) app.append(buildSec);
   if (sections.includes("perks")) app.append(perkSec);
+  if (sections.includes("teamups")) app.append(teamupSec);
 
   HMT.rangeControl(controls, { keys: ["1m", "3m", "ytd", "12m"], value: range,
     onChange: (k) => { range = k; HMT.store.set("heroRange", k); drawDetail(); } });
@@ -253,12 +256,21 @@
     if (sections.includes("builds")) drawBuilds(h);
     if (sections.includes("comps")) drawComps(h);
     if (sections.includes("perks")) drawPerks(h);
+    if (sections.includes("teamups")) drawTeamups(h);
   }
 
   /* ---------- meta team comps (researched, per season) ---------- */
-  const ROLE_ORDER = [["tank", "Tank"], ["damage", "Damage"], ["support", "Support"]];
+  // Role slots are named per game (Overwatch: tank/damage/support; Marvel Rivals: vanguard/duelist/strategist).
+  const ROLE_ORDER = comps && comps.comps && comps.comps.some((c) => c.vanguard)
+    ? [["vanguard", "Vanguard"], ["duelist", "Duelist"], ["strategist", "Strategist"]]
+    : [["tank", "Tank"], ["damage", "Damage"], ["support", "Support"]];
+  // Loose name lookup: case/punctuation-insensitive, and "Deadpool" finds a "Deadpool (Role)" variant.
+  const looseKey = (s) => s.replace(/\s*\(\w+\)\s*$/, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+  const heroByLoose = new Map();
+  for (const x of data.heroes) if (!heroByLoose.has(looseKey(x.name))) heroByLoose.set(looseKey(x.name), x);
+  const findHero = (name) => heroByName.get(name) || heroByLoose.get(looseKey(name));
   function heroChip(name, current, core) {
-    const x = heroByName.get(name);
+    const x = findHero(name);
     return el("a", {
       class: `comp-hero${name === current ? " is-current" : ""}${core ? " is-core" : ""}`,
       href: x ? `heroes.html?game=${gameId}&hero=${x.slug}` : null,
@@ -271,8 +283,8 @@
       el("h2", { id: "comps-h", text: "Meta team comps" }),
       el("span", { class: "muted small", text: comps ? `${comps.season || "Current season"} · researched ${fmt.date(toMs(comps.updated))}` : "" })));
     if (!comps || !comps.comps) { compSec.append(el("p", { class: "muted", text: "No team comps yet." })); return; }
-    const inComp = (c) => ROLE_ORDER.some(([k]) => (c[k] || []).includes(h.name));
-    const mine = comps.comps.filter(inComp);
+    const mine = comps.comps.filter((c) => compIncludes(c, h.name));
+    const isCore = (c, name) => (c.core || []).some((n) => n === name || looseKey(n) === looseKey(name));
     if (!mine.length) {
       compSec.append(el("p", { class: "muted", text: `${h.name} isn't a standard pick in this season's main meta comps. They're usually a counter-pick or flex choice.` }));
       return;
@@ -281,15 +293,45 @@
       text: `Comps ${h.name} fits into. Each slot lists the viable options; bold outline = core heroes that define the comp.` }));
     mine.forEach((c) => compSec.append(el("div", { class: "build" },
       el("div", { class: "build-head" }, el("strong", { text: c.name }),
-        (c.core || []).includes(h.name) ? el("span", { class: "badge buff", text: `${h.name} is core` }) : el("span", { class: "badge adjustment", text: "Flex slot" }),
+        isCore(c, h.name) ? el("span", { class: "badge buff", text: `${h.name} is core` }) : el("span", { class: "badge adjustment", text: "Flex slot" }),
         c.style ? el("span", { class: "muted small", text: c.style }) : null),
       el("div", { class: "build-cats" }, ROLE_ORDER.map(([k, lbl]) => (c[k] || []).length ? el("div", { class: "build-cat" },
-        el("span", { text: lbl }), el("div", { class: "icons" }, c[k].map((n) => heroChip(n, h.name, (c.core || []).includes(n))))) : null)),
+        el("span", { text: lbl }), el("div", { class: "icons" }, c[k].map((n) => heroChip(n, h.name, isCore(c, n))))) : null)),
       el("div", { class: "comp-notes" },
         c.why ? el("div", { class: "impact" }, el("b", { text: "Why it works" }), c.why) : null,
         c.how_to_play ? el("div", { class: "impact" }, el("b", { text: "Game plan" }), c.how_to_play) : null,
         c.counters ? el("div", { class: "impact" }, el("b", { text: "Beaten by" }), c.counters) : null))));
     compSec.append(el("p", { class: "source", text: "Comps are researched from current tier lists, patch notes and pro play, refreshed each patch. No public data source tracks team comp statistics." }));
+  }
+  function compIncludes(c, name) {
+    return ROLE_ORDER.some(([k]) => (c[k] || []).some((n) => n === name || looseKey(n) === looseKey(name)));
+  }
+
+  /* ---------- team-up loadouts (Marvel Rivals) ---------- */
+  function drawTeamups(h) {
+    const t = teamups && teamups.heroes && teamups.heroes[h.name];
+    teamupSec.replaceChildren(el("div", { class: "section-head" },
+      el("h2", { id: "teamups-h", text: "Team-up loadouts" }),
+      el("span", { class: "muted small", text: teamups ? teamups.usage_label : "" })));
+    if (!t || !t.loadouts || !t.loadouts.length) { teamupSec.append(el("p", { class: "muted", text: "No team-up data yet." })); return; }
+    teamupSec.append(el("p", { class: "muted small", style: "margin:0 0 10px",
+      text: `${h.name} picks one of these loadouts before each match. Its base effect always works; the enhanced effect turns on when the partner is on the team.` +
+        (/\(\w+\)$/.test(h.name) ? " Deadpool's loadouts and usage are shared across his three roles." : "") }));
+    const fmtDelta = (d) => d === null || d === undefined ? "" : ` (${d >= 0 ? "+" : "−"}${Math.abs(d).toFixed(1)} vs. ${h.name}'s average)`;
+    teamupSec.append(el("div", { class: "phase-grid" }, t.loadouts.map((l, i) => el("div", { class: "phase teamup" },
+      el("div", { class: "perk-head" },
+        el("span", { class: "teamup-rank", text: String(i + 1) }),
+        el("div", {}, el("strong", { text: l.loadout }), el("div", { class: "small muted" }, "Partner: ", heroChip(l.partner, h.name, false))),
+        el("span", { class: "perk-share", text: l.share === null ? "—" : `${Math.round(l.share)}%` })),
+      l.share !== null ? el("div", { class: "share-bar", role: "img", "aria-label": `${Math.round(l.share)}% of ${h.name} players pick this loadout` },
+        el("span", { style: `width:${Math.max(0, Math.min(100, l.share))}%` })) : null,
+      el("div", { class: "small muted", text: l.share !== null ? `Picked in ${Math.round(l.share)}% of ${h.name} games${l.games_gm ? ` (${fmt.int(l.games_gm)} games)` : ""}` : "No usage data" }),
+      l.wr_with_partner !== null && l.wr_with_partner !== undefined
+        ? el("div", { class: "impact", style: "margin-top:8px" }, el("b", { text: "Win rate with partner (all ranks)" }),
+            `${fmt.pct(l.wr_with_partner)}${fmtDelta(l.wr_delta_all)}${l.matches_with_partner ? ` · ${fmt.int(l.matches_with_partner)} matches` : ""}`)
+        : null,
+      l.description ? el("p", { class: "small", style: "margin:8px 0 0", text: l.description }) : null))));
+    teamupSec.append(el("p", { class: "source", text: "Usage share: Grandmaster+ ranked matches this season (rivalsdata.com), the only public source of actual loadout picks. Win rate with partner and loadout text: rivalsheroes.com." }));
   }
 
   /* ---------- perks ---------- */

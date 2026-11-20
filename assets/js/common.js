@@ -90,13 +90,15 @@ const HMT = (() => {
   }
 
   // Browser-tab icon: the "B" brand mark, tinted with the game's theme color.
-  const GAME_ICON_COLORS = { deadlock: "#4f8a62", overwatch: "#f99e1a" };
-  function setFavicon(color) {
+  // [background, letter] — yellow needs a dark letter to stay readable.
+  const GAME_ICON_COLORS = { deadlock: ["#4f8a62", "#ffffff"], overwatch: ["#f99e1a", "#ffffff"], "marvel-rivals": ["#f5c400", "#1a1a19"] };
+  function setFavicon(colors) {
     let link = document.querySelector('link[rel="icon"]');
     if (!link) { link = document.createElement("link"); link.rel = "icon"; document.head.append(link); }
-    if (!color) { link.type = "image/svg+xml"; link.href = "assets/img/favicon.svg"; return; }
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="${color}"/>` +
-      `<text x="32" y="46" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="40" font-weight="800" fill="#ffffff">B</text></svg>`;
+    if (!colors) { link.type = "image/svg+xml"; link.href = "assets/img/favicon.svg"; return; }
+    const [bg, fg] = colors;
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="${bg}"/>` +
+      `<text x="32" y="46" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="40" font-weight="800" fill="${fg}">B</text></svg>`;
     link.type = "image/svg+xml";
     link.href = "data:image/svg+xml," + encodeURIComponent(svg);
   }
