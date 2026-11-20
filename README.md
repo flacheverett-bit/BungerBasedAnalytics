@@ -20,6 +20,14 @@ A static website that tracks hero shooter statistics: latest patch analysis, con
 
 Tier bands are set per game in `data/games.json` (`tier_bands`).
 
+## Hypotheses
+
+Each game has a **Hypotheses** tab (`hypotheses.html?game=<id>`) showing ideas written down *before* checking the data, then tracked as they're tested. They live in plain Markdown files, `data/<game>/hypotheses.md`.
+- The easiest way to edit is the **Edit on GitHub** button on the page. It opens the file in GitHub's web editor, and the site updates about a minute after you commit.
+- A hidden template at the top of each file shows the format: `## Title`, then `- Status:` (Untested / Testing / Supported / Refuted / Inconclusive), `- Created:`, optional `- Heroes:` (these become links) and `- Metric:`, then free text.
+- Free text supports **bold**, *italics*, `code`, links and bullet lists.
+- If you edit on GitHub, pull in GitHub Desktop afterwards before making local changes.
+
 ## Analysis: do balance patches actually work?
 
 **Notebook:** [`analysis/deadlock_patch_impact.ipynb`](analysis/deadlock_patch_impact.ipynb) · **Live page:** Deadlock → *Patch impact* · **Code:** `pipeline/patch_impact.py` (recomputed daily)

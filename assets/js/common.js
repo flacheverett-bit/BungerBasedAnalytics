@@ -1,6 +1,7 @@
 /* Shared helpers: data loading, theme, formatting, date ranges, chart plumbing. */
 const HMT = (() => {
   const SITE_NAME = "Bunger Based Analytics";
+  const REPO = "https://github.com/flacheverett-bit/BungerBasedAnalytics";
   const params = new URLSearchParams(location.search);
 
   /* ---------- tiers (fixed win-rate bands, set per game from games.json "tier_bands") ---------- */
@@ -117,7 +118,8 @@ const HMT = (() => {
           el("a", { href: `game.html?game=${game.id}`, "aria-current": page === "game" ? "page" : null, text: "Patch & players" }),
           el("a", { href: `heroes.html?game=${game.id}`, "aria-current": page === "heroes" ? "page" : null, text: game.character_label || "Characters" }),
           el("a", { href: `tiers.html?game=${game.id}`, "aria-current": page === "tiers" ? "page" : null, text: "Tier list" }),
-          game.analysis ? el("a", { href: `analysis.html?game=${game.id}`, "aria-current": page === "analysis" ? "page" : null, text: "Patch impact" }) : null)
+          game.analysis ? el("a", { href: `analysis.html?game=${game.id}`, "aria-current": page === "analysis" ? "page" : null, text: "Patch impact" }) : null,
+          el("a", { href: `hypotheses.html?game=${game.id}`, "aria-current": page === "hypotheses" ? "page" : null, text: "Hypotheses" }))
       : null;
     const themeBtn = el("button", { class: "icon-btn", type: "button", title: "Toggle light/dark", "aria-label": "Toggle light or dark theme", onclick: toggleTheme, text: "◐" });
     const bar = el("header", { class: "topbar" },
@@ -305,7 +307,7 @@ const HMT = (() => {
   }
 
   return {
-    SITE_NAME, tiers, useTierBands, tierFor, tierBadge, tierRangeLabel,
+    SITE_NAME, REPO, tiers, useTierBands, tierFor, tierBadge, tierRangeLabel,
     params, loadJSON, getGame, store, token, el, renderTopbar, showError, fmt, toMs, DAY,
     RANGES, rangeStart, rangeControl, applyChartDefaults, onThemeChange, isDark,
     crosshairPlugin, patchMarkerPlugin, refLinePlugin, htmlTooltip, ttRow, badge, changeColor, CHANGE_LABEL, footer,

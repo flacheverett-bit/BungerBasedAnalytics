@@ -2,7 +2,7 @@
   const { el, loadJSON, fmt, toMs, token } = HMT;
   const app = document.getElementById("app");
   const gameId = HMT.params.get("game") || "deadlock";
-  const REPO = "https://github.com/flacheverett-bit/BungerBasedAnalytics";
+  const REPO = HMT.REPO;
 
   let game, res, heroes;
   try {

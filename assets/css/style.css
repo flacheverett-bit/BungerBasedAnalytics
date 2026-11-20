@@ -310,6 +310,27 @@ details summary { cursor: pointer; color: var(--text-secondary); font-size: 14px
 .method ol { padding-left: 20px; }
 .method li { margin: 6px 0; max-width: 95ch; }
 
+/* hypotheses */
+.head-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+.button { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 8px; font-weight: 600; font-size: 14px;
+  text-decoration: none; background: var(--accent); color: var(--surface-1); }
+.button:hover { filter: brightness(1.08); }
+.hypo-list { display: grid; gap: 14px; }
+.hypo { border-left: 4px solid var(--neutral-mark); }
+.hypo.status-supported { border-left-color: var(--buff); }
+.hypo.status-refuted { border-left-color: var(--nerf); }
+.hypo.status-testing { border-left-color: var(--rework); }
+.hypo-head { display: flex; gap: 12px; align-items: flex-start; justify-content: space-between; }
+.hypo-head h2 { font-size: 18px; }
+.hypo-meta { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 4px 0 10px; }
+.hypo-meta b { color: var(--text-secondary); font-weight: 600; }
+.hypo-heroes { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.hypo-body p { margin: 0 0 10px; max-width: 85ch; }
+.hypo-body ul { margin: 0 0 10px; padding-left: 20px; }
+.empty-state { text-align: center; padding: 40px 20px; }
+.empty-state p { max-width: 60ch; margin: 8px auto 16px; }
+@media (max-width: 640px) { .head-actions { align-items: flex-start; } .hypo-head { flex-direction: column; } }
+
 .notice { background: var(--accent-soft); border-radius: 10px; padding: 12px 14px; font-size: 14px; color: var(--text-secondary); }
 .notice code { font-size: 13px; }
 footer { border-top: 1px solid var(--border); padding: 20px 0 40px; color: var(--text-muted); font-size: 13px; }
