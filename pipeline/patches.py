@@ -1,13 +1,13 @@
-"""Build data/deadlock/patches.json — the patch summary + chart markers.
+"""Build data/<game>/patches.json — the patch summary + chart markers.
 
 Inputs
-  data/deadlock/patch-notes.curated.json   Hand-written analysis (edit this file!):
+  data/<game>/patch-notes.curated.json   Hand-written analysis (edit this file!):
       latest_patch  - summary, meta impact, per-hero changes + playstyle impact
       patch_history - dated patches with {hero: buff|nerf|rework|adjustment|new}
-  Deadlock API /v2/patches + /v1/patches/big-days - official changelog feed, used to
-      catch patches that aren't in the curated file yet (shown as generic markers).
+  Deadlock only: Deadlock API /v2/patches + /v1/patches/big-days - official changelog
+      feed, used to catch patches that aren't in the curated file yet.
 
-Run after editing the curated file:  python pipeline/patches.py
+Run after editing a curated file:  python pipeline/patches.py deadlock overwatch
 """
 from __future__ import annotations
 
@@ -16,8 +16,6 @@ from datetime import date, datetime
 from common import DATA, get_json, now_iso, read_json, write_json
 
 API = "https://api.deadlock-api.com"
-CURATED = DATA / "deadlock" / "patch-notes.curated.json"
-OUT = DATA / "deadlock" / "patches.json"
 MATCH_WINDOW_DAYS = 2
 
 
@@ -45,11 +43,13 @@ def official_feed():
     return out
 
 
-def main():
-    curated = read_json(CURATED)
+def main(game: str = "deadlock"):
+    curated_path = DATA / game / "patch-notes.curated.json"
+    out_path = DATA / game / "patches.json"
+    curated = read_json(curated_path)
     if curated is None:
-        raise SystemExit(f"Missing {CURATED}")
-    roster = {h["name"] for h in (read_json(DATA / "deadlock" / "heroes.json", {}) or {}).get("heroes", [])}
+        raise SystemExit(f"Missing {curated_path}")
+    roster = {h["name"] for h in (read_json(DATA / game / "heroes.json", {}) or {}).get("heroes", [])}
 
     markers = []
     for p in curated.get("patch_history", []):
@@ -60,7 +60,7 @@ def main():
 
     # Add official-feed patches that the curated history doesn't cover yet.
     curated_dates = [_d(m["date"]) for m in markers]
-    for f in official_feed():
+    for f in (official_feed() if game == "deadlock" else []):
         fd = _d(f["date"])
         if any(abs((fd - cd).days) <= MATCH_WINDOW_DAYS for cd in curated_dates):
             continue
@@ -79,14 +79,16 @@ def main():
         if unknown:
             print(f"warning: hero names not in current roster: {unknown}")
 
-    write_json(OUT, {
-        "game": "deadlock",
+    write_json(out_path, {
+        "game": game,
         "updated": now_iso(),
         "latest": curated.get("latest_patch"),
         "markers": markers,
     })
-    print(f"patches.json: latest={curated.get('latest_patch', {}).get('version')} markers={len(markers)}")
+    print(f"{game} patches.json: latest={curated.get('latest_patch', {}).get('version')} markers={len(markers)}")
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    for g in (sys.argv[1:] or ["deadlock"]):
+        main(g)

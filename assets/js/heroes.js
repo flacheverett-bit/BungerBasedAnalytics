@@ -3,26 +3,34 @@
   const app = document.getElementById("app");
   const gameId = HMT.params.get("game") || "deadlock";
 
-  let game, data, patches, meta;
+  let game, data, patches, meta, comps, perks;
   try {
     game = await HMT.getGame(gameId);
     if (!game) throw new Error(`Unknown game "${gameId}"`);
-    [data, patches, meta] = await Promise.all([
+    const sections = game.sections || [];
+    [data, patches, meta, comps, perks] = await Promise.all([
       loadJSON(`data/${gameId}/heroes.json`),
       loadJSON(`data/${gameId}/patches.json`).catch(() => ({ markers: [] })),
-      loadJSON(`data/${gameId}/meta.json`).catch(() => null),
+      sections.includes("matchups") || sections.includes("builds") ? loadJSON(`data/${gameId}/meta.json`).catch(() => null) : null,
+      sections.includes("comps") ? loadJSON(`data/${gameId}/comps.curated.json`).catch(() => null) : null,
+      sections.includes("perks") ? loadJSON(`data/${gameId}/perks.json`).catch(() => null) : null,
     ]);
   } catch (e) {
     HMT.renderTopbar();
     return HMT.showError(app, e);
   }
   const label = game.character_label || "Characters";
+  const sections = game.sections || [];
   document.title = `${game.name} ${label}`;
+  HMT.useTierBands(game.tier_bands);
   HMT.renderTopbar({ game, page: "heroes" });
   HMT.footer();
   HMT.applyChartDefaults();
 
   /* ---------- derived series ---------- */
+  // Two data formats: "matches" (daily wins/matches, e.g. Deadlock) and
+  // "rates" (daily published win/pick/ban % snapshots, e.g. Overwatch).
+  const isRates = data.format === "rates";
   const dates = data.dates.map(toMs);
   const N = dates.length;
   const total = data.total_matches;
@@ -30,15 +38,22 @@
 
   // Sum of arr[i0..i1] inclusive, clamped.
   const sum = (arr, i0, i1) => { let s = 0; for (let i = Math.max(0, i0); i <= Math.min(N - 1, i1); i++) s += arr[i]; return s; };
-  // Rates over an index window (match-weighted, so low-volume days don't swing the line).
+  const mean = (arr, i0, i1) => {
+    let s = 0, n = 0;
+    for (let i = Math.max(0, i0); i <= Math.min(N - 1, i1); i++) if (arr[i] !== null && arr[i] !== undefined) { s += arr[i]; n++; }
+    return n ? s / n : null;
+  };
+  // Rates over an index window. Match format is match-weighted, so low-volume days don't swing the line;
+  // rates format averages the daily snapshots.
   function rates(h, i0, i1) {
+    if (isRates) return { wr: mean(h.wr, i0, i1), pr: mean(h.pr, i0, i1), ban: mean(h.ban, i0, i1), matches: null };
     const m = sum(h.matches, i0, i1), w = sum(h.wins, i0, i1), t = sum(total, i0, i1);
     return m > 0 ? { wr: (w / m) * 100, pr: (m / t) * 100, matches: m } : { wr: null, pr: null, matches: 0 };
   }
   const indexAtOrAfter = (ms) => { let i = dates.findIndex((d) => d >= ms); return i === -1 ? N : i; };
 
   for (const h of data.heroes) {
-    h.firstIdx = h.matches.findIndex((m) => m > 0);
+    h.firstIdx = isRates ? h.wr.findIndex((v) => v !== null) : h.matches.findIndex((m) => m > 0);
     const r30 = rates(h, N - 30, N - 1), p30 = rates(h, N - 60, N - 31);
     h.wr30 = r30.wr; h.pr30 = r30.pr;
     h.wrDelta = r30.wr !== null && p30.wr !== null ? r30.wr - p30.wr : null;
@@ -69,11 +84,19 @@
   const impactBox = el("div", { class: "section" });
   detail.append(titleBox, controls, tiles, legend, box,
     el("p", { class: "source" }, `Source: `, el("a", { href: data.source_url, target: "_blank", rel: "noopener", text: data.source }),
-      `. ${data.pick_rate_definition} Updated ${fmt.date(toMs(data.updated))}.`),
+      data.slice ? ` (${data.slice})` : "",
+      `. ${data.pick_rate_definition} Updated ${fmt.date(toMs(data.updated))}.`,
+      isRates ? ` ${game.developer} publishes current numbers only, so this history started ${fmt.date(dates[0])} and grows by one point per day.` : ""),
     impactBox);
   const matchupSec = el("section", { class: "card section", "aria-labelledby": "matchups-h" });
   const buildSec = el("section", { class: "card section", "aria-labelledby": "builds-h" });
-  app.append(detail, matchupSec, buildSec);
+  const compSec = el("section", { class: "card section", "aria-labelledby": "comps-h" });
+  const perkSec = el("section", { class: "card section", "aria-labelledby": "perks-h" });
+  app.append(detail);
+  if (sections.includes("matchups")) app.append(matchupSec);
+  if (sections.includes("comps")) app.append(compSec);
+  if (sections.includes("builds")) app.append(buildSec);
+  if (sections.includes("perks")) app.append(perkSec);
 
   HMT.rangeControl(controls, { keys: ["1m", "3m", "ytd", "12m"], value: range,
     onChange: (k) => { range = k; HMT.store.set("heroRange", k); drawDetail(); } });
@@ -141,8 +164,8 @@
       el("div", {},
         el("h2", { id: "hero-name", style: "display:flex;gap:10px;align-items:center" }, h.name,
           HMT.tierBadge(HMT.tierFor(h.wr30)),
-          el("a", { class: "small muted", href: `tiers.html?game=${gameId}`, style: "font-weight:400", text: "30-day tier" })),
-        el("p", { class: "muted small", text: [h.role, h.tagline].filter(Boolean).join(" · ") }),
+          el("a", { class: "small muted", href: `tiers.html?game=${gameId}`, style: "font-weight:400", text: N >= 30 ? "30-day tier" : "tier" })),
+        el("p", { class: "muted small", text: [h.role, h.subrole, h.tagline].filter(Boolean).join(" · ") }),
         h.playstyle ? el("p", { class: "small", style: "max-width:80ch;margin-top:4px", text: h.playstyle }) : null));
     canvas.setAttribute("aria-label", `${h.name} daily win rate and pick rate, with patch markers`);
 
@@ -163,12 +186,16 @@
     const len = N - i0;
     const before = rates(h, i0 - len, i0 - 1);
     const l30 = h.last30 || {};
+    const days = N - i0;
     tiles.replaceChildren(
       tile("Win rate", fmt.pct(cur.wr), deltaText(cur.wr, before.wr, "pts vs prior period")),
       tile("Pick rate", fmt.pct(cur.pr), deltaText(cur.pr, before.pr, "pts vs prior period")),
-      tile("Matches tracked", fmt.compact(cur.matches), `in selected range`),
-      tile("K / D / A", l30.kills ? `${l30.kills.toFixed(1)} / ${l30.deaths.toFixed(1)} / ${l30.assists.toFixed(1)}` : "—", "per match, last 30 days"),
-      tile("Souls per match", fmt.compact(l30.souls), `hero damage ${fmt.compact(l30.hero_damage)}`));
+      ...(isRates
+        ? [tile("Ban rate", fmt.pct(cur.ban), deltaText(cur.ban, before.ban, "pts vs prior period")),
+           tile("Days of data", String(days), `since ${fmt.date(dates[i0])}`)]
+        : [tile("Matches tracked", fmt.compact(cur.matches), `in selected range`),
+           tile("K / D / A", l30.kills ? `${l30.kills.toFixed(1)} / ${l30.deaths.toFixed(1)} / ${l30.assists.toFixed(1)}` : "—", "per match, last 30 days"),
+           tile("Souls per match", fmt.compact(l30.souls), `hero damage ${fmt.compact(l30.hero_damage)}`)]));
 
     // markers
     // Only patches that changed this hero are drawn.
@@ -196,7 +223,8 @@
       responsive: true, maintainAspectRatio: false,
       layout: { padding: { top: 16 } },
       spanGaps: false,
-      elements: { line: { borderWidth: 2, tension: smooth ? 0.25 : 0 }, point: { radius: 0, hoverRadius: 4, hitRadius: 12 } },
+      // Short histories get visible points so a single day isn't an invisible zero-length line.
+      elements: { line: { borderWidth: 2, tension: smooth ? 0.25 : 0 }, point: { radius: wr.length < 15 ? 4 : 0, hoverRadius: 4, hitRadius: 12 } },
       interaction: { mode: "index", intersect: false },
       scales: {
         x: { type: "time", min: start, max: end,
@@ -221,8 +249,70 @@
     else chart = new Chart(canvas, { type: "line", data: chartData, options, plugins: [HMT.crosshairPlugin, HMT.patchMarkerPlugin, HMT.refLinePlugin] });
 
     drawImpact(h, vis);
-    drawMatchups(h);
-    drawBuilds(h);
+    if (sections.includes("matchups")) drawMatchups(h);
+    if (sections.includes("builds")) drawBuilds(h);
+    if (sections.includes("comps")) drawComps(h);
+    if (sections.includes("perks")) drawPerks(h);
+  }
+
+  /* ---------- meta team comps (researched, per season) ---------- */
+  const ROLE_ORDER = [["tank", "Tank"], ["damage", "Damage"], ["support", "Support"]];
+  function heroChip(name, current, core) {
+    const x = heroByName.get(name);
+    return el("a", {
+      class: `comp-hero${name === current ? " is-current" : ""}${core ? " is-core" : ""}`,
+      href: x ? `heroes.html?game=${gameId}&hero=${x.slug}` : null,
+      title: core ? `${name} (core)` : name,
+      onclick: x ? (ev) => { ev.preventDefault(); select(x); detail.scrollIntoView({ behavior: "smooth", block: "start" }); } : null,
+    }, x ? el("img", { src: x.image, alt: "", loading: "lazy" }) : null, el("span", { text: name }));
+  }
+  function drawComps(h) {
+    compSec.replaceChildren(el("div", { class: "section-head" },
+      el("h2", { id: "comps-h", text: "Meta team comps" }),
+      el("span", { class: "muted small", text: comps ? `${comps.season || "Current season"} · researched ${fmt.date(toMs(comps.updated))}` : "" })));
+    if (!comps || !comps.comps) { compSec.append(el("p", { class: "muted", text: "No team comps yet." })); return; }
+    const inComp = (c) => ROLE_ORDER.some(([k]) => (c[k] || []).includes(h.name));
+    const mine = comps.comps.filter(inComp);
+    if (!mine.length) {
+      compSec.append(el("p", { class: "muted", text: `${h.name} isn't a standard pick in this season's main meta comps. They're usually a counter-pick or flex choice.` }));
+      return;
+    }
+    compSec.append(el("p", { class: "muted small", style: "margin:0 0 10px",
+      text: `Comps ${h.name} fits into. Each slot lists the viable options; bold outline = core heroes that define the comp.` }));
+    mine.forEach((c) => compSec.append(el("div", { class: "build" },
+      el("div", { class: "build-head" }, el("strong", { text: c.name }),
+        (c.core || []).includes(h.name) ? el("span", { class: "badge buff", text: `${h.name} is core` }) : el("span", { class: "badge adjustment", text: "Flex slot" }),
+        c.style ? el("span", { class: "muted small", text: c.style }) : null),
+      el("div", { class: "build-cats" }, ROLE_ORDER.map(([k, lbl]) => (c[k] || []).length ? el("div", { class: "build-cat" },
+        el("span", { text: lbl }), el("div", { class: "icons" }, c[k].map((n) => heroChip(n, h.name, (c.core || []).includes(n))))) : null)),
+      el("div", { class: "comp-notes" },
+        c.why ? el("div", { class: "impact" }, el("b", { text: "Why it works" }), c.why) : null,
+        c.how_to_play ? el("div", { class: "impact" }, el("b", { text: "Game plan" }), c.how_to_play) : null,
+        c.counters ? el("div", { class: "impact" }, el("b", { text: "Beaten by" }), c.counters) : null))));
+    compSec.append(el("p", { class: "source", text: "Comps are researched from current tier lists, patch notes and pro play, refreshed each patch. No public data source tracks team comp statistics." }));
+  }
+
+  /* ---------- perks ---------- */
+  function drawPerks(h) {
+    const p = perks && perks.heroes && perks.heroes[h.name];
+    perkSec.replaceChildren(el("div", { class: "section-head" },
+      el("h2", { id: "perks-h", text: "Perks" }),
+      el("span", { class: "muted small", text: perks ? perks.share_label : "" })));
+    if (!p) { perkSec.append(el("p", { class: "muted", text: "No perk data yet." })); return; }
+    const anyShare = ["minor", "major"].some((t) => (p[t] || []).some((x) => x.share !== null));
+    perkSec.append(el("div", { class: "phase-grid" }, [["minor", "Minor perks (level 2)"], ["major", "Major perks (level 3)"]].map(([t, lbl]) =>
+      el("div", { class: "phase" }, el("h4", { text: lbl }),
+        (p[t] || []).map((x) => el("div", { class: "perk" },
+          el("div", { class: "perk-head" },
+            x.icon ? el("img", { class: "item-icon", src: x.icon, alt: "", loading: "lazy" }) : null,
+            el("strong", { text: x.name }),
+            el("span", { class: "perk-share", text: x.share === null ? "—" : `${Math.round(x.share)}%` })),
+          x.share !== null ? el("div", { class: "share-bar", role: "img", "aria-label": `${Math.round(x.share)}% pro pick share` },
+            el("span", { style: `width:${Math.max(0, Math.min(100, x.share))}%` })) : null,
+          el("p", { class: "small muted", text: x.description || "" })))))));
+    perkSec.append(el("p", { class: "source", text: anyShare
+      ? `Choose rate = ${perks.share_label.toLowerCase()} (owtics.gg); the two options at each level add up to 100%. Perk text from Blizzard via OverFast API.`
+      : `No pro pick data for ${h.name} this season (owtics.gg only tracks heroes played in OWCS). Perk text from Blizzard via OverFast API.` }));
   }
 
   /* ---------- matchups ---------- */
@@ -321,7 +411,7 @@
     const own = markers.filter((m) => heroChange(m)).reverse();
     impactBox.replaceChildren(
       el("div", { class: "section-head" }, el("h3", { text: `Patch impact on ${h.name}` }),
-        el("span", { class: "muted small", text: "7 days before vs 7 days after each patch (match-weighted)" })));
+        el("span", { class: "muted small", text: `7 days before vs 7 days after each patch (${isRates ? "average of daily snapshots" : "match-weighted"})` })));
     if (!own.length) {
       impactBox.append(el("p", { class: "muted small", text: `No logged patch changes to ${h.name} in this period.` }));
       return;

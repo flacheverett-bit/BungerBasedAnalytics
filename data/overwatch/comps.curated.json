@@ -1,0 +1,110 @@
+{
+  "game": "Overwatch",
+  "updated": "2026-11-20",
+  "season": "Season 5: A Grim Doctrine (Reign of Talon, started 2026-10-06)",
+  "comps": [
+    {
+      "name": "Dive",
+      "style": "Jump the backline together and burst isolated targets",
+      "tank": ["Winston", "Doomfist"],
+      "damage": ["Genji", "Tracer", "Venture", "Echo"],
+      "support": ["Zenyatta", "Lúcio", "Juno", "Sombra"],
+      "core": ["Winston", "Genji", "Tracer", "Zenyatta"],
+      "why": "Season 5 write-ups call dive the strongest ranked style, with Winston, Genji and Tracer among the most picked and banned heroes. Zenyatta is the top support by win rate, and Discord makes dive targets fall quickly.",
+      "how_to_play": "Winston or Doomfist picks a backline target on high ground while Genji and Tracer follow in the same window, then the team leaves before cooldowns run out. Save Lúcio's Sound Barrier or Juno's speed for the dive's counter-engage.",
+      "counters": "Peel-heavy brawl with Brigitte and Junker Queen, or hard-hitting close-range heroes like Reaper, punishes dives that commit too deep.",
+      "sources": [
+        "https://www.twoaveragegamers.com/overwatch-2-best-heroes/",
+        "https://owherostats.com/blog/overwatch-season-5-meta-report",
+        "https://owherostats.com/tier-list/damage",
+        "https://esportport.com/owcs-2026-world-finals-stockholm-crazy-raccoon-vs-team-falcons-dive-tank-meta-championship-predictions/",
+        "https://overwatch.blizzard.com/en-us/rates/?input=PC&map=all-maps&region=Americas&role=All&rq=1&tier=All"
+      ]
+    },
+    {
+      "name": "Reinhardt Brawl",
+      "style": "Walk in behind the shield and win the close-range fight",
+      "tank": ["Reinhardt"],
+      "damage": ["Reaper", "Mei", "Junkrat"],
+      "support": ["Brigitte", "Lúcio", "Moira"],
+      "core": ["Reinhardt", "Brigitte", "Reaper", "Lúcio"],
+      "why": "Reinhardt has one of the highest tank win rates in ranked and stays a top tank on Season 5 tier lists. The November 3 update buffed Brigitte's Inspire and Reaper's health, both strong in close fights.",
+      "how_to_play": "Use Lúcio speed to close the gap behind the shield, then trade cooldowns in a tight ball. Look for an Earthshatter into Reaper or Mei follow-up.",
+      "counters": "High-ground poke and Pharah spam can wear the team down before it reaches the fight.",
+      "sources": [
+        "https://overwatch.blizzard.com/en-us/rates/?input=PC&map=all-maps&region=Americas&role=All&rq=1&tier=All",
+        "https://gametree.me/blog/overwatch-2-tier-list/",
+        "https://www.twoaveragegamers.com/overwatch-2-best-heroes/",
+        "https://owherostats.com/blog/overwatch-season-5-meta-report"
+      ]
+    },
+    {
+      "name": "Junker Queen Rush",
+      "style": "Sprint in with Commanding Shout and overwhelm with wounds and sustain",
+      "tank": ["Junker Queen", "Hazard", "Mauga"],
+      "damage": ["Vendetta", "Reaper", "Anran"],
+      "support": ["Brigitte", "Lúcio", "Illari"],
+      "core": ["Junker Queen", "Vendetta", "Brigitte", "Lúcio"],
+      "why": "Junker Queen got +50 health and a shorter Carnage cooldown on November 3 and now has the best tank win rate. Mauga and Hazard also win often in higher ranks, and Vendetta is a top-win-rate melee damage pick.",
+      "how_to_play": "Group up and stack Commanding Shout with Lúcio speed to reach the enemy before they can poke. Keep the fight brief and close, and use wounds and lifesteal to outlast them.",
+      "counters": "Kiting heroes and Ana anti-heal punish the rush if it is slow to commit.",
+      "sources": [
+        "https://owherostats.com/blog/overwatch-season-5-meta-report",
+        "https://owherostats.com/tier-list/tank",
+        "https://mobalytics.gg/overwatch/tier-lists/standard",
+        "https://overwatch.blizzard.com/en-us/rates/?input=PC&map=all-maps&region=Americas&role=All&rq=1&tier=Grandmaster",
+        "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11"
+      ]
+    },
+    {
+      "name": "Domina Area Denial",
+      "style": "Lock down a choke with barriers, turrets and spam",
+      "tank": ["Domina"],
+      "damage": ["Torbjörn", "Symmetra", "Junkrat", "Mei"],
+      "support": ["Zenyatta", "Illari", "Brigitte"],
+      "core": ["Domina", "Torbjörn", "Symmetra", "Illari"],
+      "why": "Domina, Torbjörn and Symmetra all win well above average in ranked, and Torbjörn has the top damage win rate. Illari's Healing Pylon was buffed to 50 healing per projectile, which suits holding a fixed position.",
+      "how_to_play": "Set up turrets and Pylon behind Domina's barriers at a choke and make the enemy walk through spam damage. Works best on defense and on short sightline maps.",
+      "counters": "Dive teams that skip the choke and hit the backline from high ground, or long-range poke that destroys deployables.",
+      "sources": [
+        "https://gametree.me/blog/overwatch-2-tier-list/",
+        "https://owherostats.com/tier-list/damage",
+        "https://owherostats.com/blog/overwatch-season-5-meta-report",
+        "https://overwatch.blizzard.com/en-us/rates/?input=PC&map=all-maps&region=Americas&role=All&rq=1&tier=All"
+      ]
+    },
+    {
+      "name": "Pharah Air",
+      "style": "Pressure from the sky while pocket supports keep the flyers alive",
+      "tank": ["Winston", "Doomfist"],
+      "damage": ["Pharah", "Echo", "Soldier: 76"],
+      "support": ["Mercy", "Juno", "Illari"],
+      "core": ["Pharah", "Echo", "Mercy", "Juno"],
+      "why": "Pharah has the highest damage win rate in Grandmaster, Echo is also above 52% there, and Echo's Aerial Munitions perk now refills ammo. Many ground comps lack enough hitscan to answer two flyers.",
+      "how_to_play": "Keep Pharah and Echo in the air with Mercy or Juno pocketing them, while the tank takes space below. Use height to split the enemy's focus and spam the backline.",
+      "counters": "Strong hitscans such as Soldier: 76 and Ashe, or a dive tank that pressures the pocket support.",
+      "sources": [
+        "https://overwatch.blizzard.com/en-us/rates/?input=PC&map=all-maps&region=Americas&role=All&rq=1&tier=Grandmaster",
+        "https://gametree.me/blog/overwatch-2-tier-list/",
+        "https://owherostats.com/tier-list/damage",
+        "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11"
+      ]
+    },
+    {
+      "name": "High-Rank Hybrid",
+      "style": "Flexible hitscan and Tracer pressure backed by Kiriko and Doctrine",
+      "tank": ["Hazard", "Zarya", "Winston"],
+      "damage": ["Tracer", "Soldier: 76", "Ashe", "Cassidy", "Shion"],
+      "support": ["Kiriko", "Doctrine", "Juno"],
+      "core": ["Tracer", "Kiriko", "Doctrine", "Soldier: 76"],
+      "why": "In Grandmaster, Kiriko and Doctrine are the two most picked supports and Tracer and Cassidy the most picked damage heroes, while Soldier: 76 and Ashe win above 51%. Poke is weak at lower ranks, so this style is mainly a high-rank choice.",
+      "how_to_play": "Hold good angles with hitscan while Tracer harasses the backline, then swap tank to match the enemy. Kiriko's Suzu and Doctrine's sustain win the trades that follow.",
+      "counters": "Coordinated dive or rush that closes the distance quickly before the hitscans can trade at range.",
+      "sources": [
+        "https://overwatch.blizzard.com/en-us/rates/?input=PC&map=all-maps&region=Americas&role=All&rq=1&tier=Grandmaster",
+        "https://www.twoaveragegamers.com/overwatch-2-best-heroes/",
+        "https://mobalytics.gg/overwatch/tier-lists/standard"
+      ]
+    }
+  ]
+}

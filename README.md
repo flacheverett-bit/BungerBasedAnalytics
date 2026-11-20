@@ -1,6 +1,6 @@
 # Bunger Based Analytics
 
-A static website that tracks hero shooter statistics: latest patch analysis, concurrent players, and per-hero win and pick rates with patch markers. **Deadlock** is supported today. The site is built so other games can be added later.
+A static website that tracks hero shooter statistics: latest patch analysis, concurrent players, and per-hero win and pick rates with patch markers. Supported games: **Deadlock** and **Overwatch**. The site is built so more games can be added.
 
 **Live site:** https://flacheverett-bit.github.io/BungerBasedAnalytics/
 
@@ -12,6 +12,9 @@ A static website that tracks hero shooter statistics: latest patch analysis, con
 | `game.html?game=deadlock` | Latest patch summary, meta impact, per-hero change cards (*how to play it now* and *meta effect*), concurrent-players chart (1 month / 3 months / YTD / 12 months / 3 years) with patch markers, full patch history |
 | `heroes.html?game=deadlock` | Every hero with 30-day win and pick rate. Select a hero to see daily win rate and pick rate charts with markers for the patches that changed that hero (colored by buff, nerf or rework), a **patch impact table** (7 days before vs after each patch), **counters & matchups**, and **meta builds** (core items by game phase + the 3 most-played community builds) |
 | `tiers.html?game=deadlock` | **Tier list**: every hero placed in S–F by win rate (fixed bands: S ≥ 54%, A 52–54, B 50–52, C 48–50, D 46–48, F < 46) for the latest patch, last 30 days or last 3 months |
+| `…?game=overwatch` | The same three pages for Overwatch. The hero page shows **ban rate**, **meta team comps** that include the hero (in place of builds) and the hero's **perks with pro pick shares** (in place of items). No counters section, since no public matchup data exists. Tier bands are tighter for Overwatch: S ≥ 53%, A 51.5–53, B 50–51.5, C 48.5–50, D 47–48.5, F < 47 |
+
+Tier bands are set per game in `data/games.json` (`tier_bands`).
 
 ## Data sources
 
@@ -23,6 +26,10 @@ A static website that tracks hero shooter statistics: latest patch analysis, con
 | Concurrent players, history | SteamDB CSV export (one-time manual import, see below) | Once |
 | Patch summaries and meta analysis | Hand-written in `data/deadlock/patch-notes.curated.json` | When a new patch drops |
 | Patch dates (fallback) | Deadlock API `/v2/patches` (official forum and Steam changelog feed) | Daily |
+| **Overwatch** hero win / pick / ban rates | [Blizzard's official hero statistics](https://overwatch.blizzard.com/en-us/rates/): Competitive Role Queue, PC, Americas, all ranks. Blizzard publishes current numbers only, so history grows by one snapshot per day (started Nov 20, 2026) | Daily (GitHub Action) |
+| Overwatch perks | Names, icons and text from the [OverFast API](https://overfast-api.tekrop.fr) (Blizzard data); pick shares from [owtics.gg](https://owtics.gg) (**pro players in OWCS matches**; heroes not played in OWCS have no share) | Daily (GitHub Action) |
+| Overwatch concurrent players | Steam Web API (hourly) + SteamCharts history back to Aug 2023 (monthly averages before 2026). **Steam only**: Battle.net and console players aren't counted | Hourly |
+| Overwatch patch notes, meta team comps | Hand-written in `data/overwatch/patch-notes.curated.json` and `data/overwatch/comps.curated.json` (no public source tracks comp statistics) | Each patch |
 
 **Definitions**
 - **Win rate** = wins / matches played by the hero.
@@ -48,8 +55,11 @@ Then open http://localhost:8000. Opening the HTML files directly with `file://` 
 ```powershell
 python pipeline/deadlock_heroes.py     # hero stats (~40 s)
 python pipeline/deadlock_meta.py       # matchups, builds, core items (~1 min)
+python pipeline/overwatch_heroes.py    # today's Overwatch snapshot (Blizzard)
+python pipeline/overwatch_perks.py     # Overwatch perks + pro pick shares (~1 min)
+python pipeline/patches.py deadlock overwatch
 python pipeline/patches.py             # rebuild patch markers after editing curated notes
-python pipeline/players.py record      # take one live Steam reading
+python pipeline/players.py record      # take one live Steam reading for every game
 ```
 
 ### One-time: import player history from SteamDB

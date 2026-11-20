@@ -3,15 +3,14 @@ const HMT = (() => {
   const SITE_NAME = "Bunger Based Analytics";
   const params = new URLSearchParams(location.search);
 
-  /* ---------- tiers (fixed win-rate bands) ---------- */
-  const TIERS = [
-    { tier: "S", min: 54 },
-    { tier: "A", min: 52 },
-    { tier: "B", min: 50 },
-    { tier: "C", min: 48 },
-    { tier: "D", min: 46 },
-    { tier: "F", min: -Infinity },
-  ];
+  /* ---------- tiers (fixed win-rate bands, set per game from games.json "tier_bands") ---------- */
+  let TIERS = [];
+  function useTierBands(bands = [54, 52, 50, 48, 46]) {
+    TIERS = ["S", "A", "B", "C", "D"].map((tier, i) => ({ tier, min: bands[i] })).concat({ tier: "F", min: -Infinity });
+    return TIERS;
+  }
+  useTierBands();
+  function tiers() { return TIERS; }
   function tierFor(wr) {
     if (wr === null || wr === undefined || Number.isNaN(wr)) return null;
     return TIERS.find((t) => wr >= t.min).tier;
@@ -287,7 +286,7 @@ const HMT = (() => {
   }
 
   return {
-    SITE_NAME, TIERS, tierFor, tierBadge, tierRangeLabel,
+    SITE_NAME, tiers, useTierBands, tierFor, tierBadge, tierRangeLabel,
     params, loadJSON, getGame, store, token, el, renderTopbar, showError, fmt, toMs, DAY,
     RANGES, rangeStart, rangeControl, applyChartDefaults, onThemeChange, isDark,
     crosshairPlugin, patchMarkerPlugin, refLinePlugin, htmlTooltip, ttRow, badge, changeColor, CHANGE_LABEL, footer,

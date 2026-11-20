@@ -1,0 +1,738 @@
+{
+  "game": "overwatch",
+  "updated": "2026-11-20T19:01:14Z",
+  "latest": {
+    "version": "Season 5 mid-season update (Taking Reign)",
+    "date": "2026-11-03",
+    "title": "Taking Reign mid-season balance update",
+    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11",
+    "summary": "The Season 5 mid-season update reins in Doctrine, Sombra, D.Mon, Genji and Vendetta. It buffs brawl tanks and sustain supports such as Junker Queen, Mauga, Brigitte and Illari. A November 5 hotfix then made Wrecking Ball's Grappling Claw retract faster.",
+    "meta_impact": "Close-range brawl got stronger. Junker Queen jumped to the top tank win rate, and Reaper and Brigitte rose with her. Dive lost some power through Genji's shorter Deflect and Winston's weaker healing perk.\n\nOn support, the high-output Doctrine and Sombra lost power, and Ana's grenade does less damage. Zenyatta, Brigitte and Illari now lead the support win rates. D.Mon fell from a strong pick to one of the weakest tanks.",
+    "changes": [
+      {
+        "character": "D.Mon",
+        "type": "nerf",
+        "details": [
+          "Overstrike (Major Perk): lifesteal 150% -> 125%",
+          "Power Barrier: recovery 0.2s -> 0.3s, new 0.25s minimum deploy duration",
+          "Propulsors: impact damage 15 -> 0 (knockback kept)"
+        ],
+        "playstyle_impact": "Commit to barrier placements deliberately and rely less on Propulsors for burst damage.",
+        "meta_impact": "Drops from a strong pick to one of the lowest win-rate tanks."
+      },
+      {
+        "character": "Junker Queen",
+        "type": "buff",
+        "details": [
+          "Base health 375 -> 425 (6v6: 450 -> 500)",
+          "Carnage cooldown 9s -> 7s",
+          "Commanding Shout: new UI showing allies in range and affected"
+        ],
+        "playstyle_impact": "Brawl longer even without wounds applied, and use Carnage more often to keep pressure up.",
+        "meta_impact": "Now the highest win-rate tank and the core of rush comps."
+      },
+      {
+        "character": "Mauga",
+        "type": "buff",
+        "details": [
+          "Base armor 125 -> 150",
+          "Incendiary Chaingun burn damage over time 15 -> 20"
+        ],
+        "playstyle_impact": "Lean on ignites and frontline more confidently with the extra armor.",
+        "meta_impact": "Climbs back into viability, especially in higher ranks."
+      },
+      {
+        "character": "Ramattra",
+        "type": "buff",
+        "details": [
+          "Void Accelerator ammo 100 -> 125"
+        ],
+        "playstyle_impact": "Poke longer in Omnic form before needing to reload or enter Nemesis Form.",
+        "meta_impact": "Small buff that does not lift him out of the lower tank tier."
+      },
+      {
+        "character": "Winston",
+        "type": "nerf",
+        "details": [
+          "Revitalizing Barrier (Major Perk): healing per second 35 -> 30"
+        ],
+        "playstyle_impact": "Expect slightly less self-sustain from the bubble, so dive and leave sooner.",
+        "meta_impact": "Still a top dive tank, but slipped a tier."
+      },
+      {
+        "character": "Anran",
+        "type": "adjustment",
+        "details": [
+          "Zhuque Fans damage 22 -> 24",
+          "Inferno Rush: knockback removed, can no longer hit the same target more than once per use",
+          "Vermillion Ascent cast time 1.2s -> 1s"
+        ],
+        "playstyle_impact": "Do more damage with fans at range and use Inferno Rush to reposition rather than for burst.",
+        "meta_impact": "Stays a mid-tier damage option."
+      },
+      {
+        "character": "Echo",
+        "type": "buff",
+        "details": [
+          "Aerial Munitions (Minor Perk): now also refills ammo on use"
+        ],
+        "playstyle_impact": "Take flight to reload mid-fight and keep up aerial pressure.",
+        "meta_impact": "Better in air comps with Pharah, and strong in Grandmaster."
+      },
+      {
+        "character": "Emre",
+        "type": "buff",
+        "details": [
+          "Cyber Frag detonation time 0.6s -> 0.5s"
+        ],
+        "playstyle_impact": "Frags punish targets faster, so use them more aggressively in close trades.",
+        "meta_impact": "Small buff for a hero that remains among the weakest damage picks."
+      },
+      {
+        "character": "Genji",
+        "type": "nerf",
+        "details": [
+          "Deflect duration 2s -> 1.5s"
+        ],
+        "playstyle_impact": "Time Deflect precisely to key damage instead of holding it up as a long safety window.",
+        "meta_impact": "Still a top dive pick, but slightly less dominant."
+      },
+      {
+        "character": "Reaper",
+        "type": "buff",
+        "details": [
+          "Base health 275 -> 300"
+        ],
+        "playstyle_impact": "Survive longer while flanking and brawling at close range.",
+        "meta_impact": "Rose to one of the best damage heroes by win rate and pick rate."
+      },
+      {
+        "character": "Shion",
+        "type": "buff",
+        "details": [
+          "Execution starting spread 8.5 -> 5.7 degrees",
+          "Satsuriku Spree cast/move time per volley 0.6s -> 0.5s"
+        ],
+        "playstyle_impact": "Shots land more reliably without a full charge, so take quicker close-range duels.",
+        "meta_impact": "Mid-tier overall, but heavily picked in Grandmaster."
+      },
+      {
+        "character": "Vendetta",
+        "type": "nerf",
+        "details": [
+          "Palatine Fang overhead leap speed 11 -> 9.5",
+          "Palatine Fang initial swing delay 0.15s -> 0.2s",
+          "Whirlwind Dash (Raging Storm perk) horizontal knockback 8 -> 4"
+        ],
+        "playstyle_impact": "Combos are slower, so pick engages carefully instead of chaining leaps.",
+        "meta_impact": "Toned down but still a strong melee pick for rush comps."
+      },
+      {
+        "character": "Ana",
+        "type": "nerf",
+        "details": [
+          "Biotic Grenade explosion damage 90 -> 60 (healing unchanged)"
+        ],
+        "playstyle_impact": "Use nade mainly for anti-heal and healing rather than burst damage.",
+        "meta_impact": "Still widely picked but has one of the lowest support win rates."
+      },
+      {
+        "character": "Brigitte",
+        "type": "buff",
+        "details": [
+          "Inspire internal cooldown 1.25s -> 1s",
+          "Inspire instant healing 12 -> 15"
+        ],
+        "playstyle_impact": "Hit enemies constantly in brawls to keep Inspire healing flowing.",
+        "meta_impact": "Jumped to a top support, the core of brawl and rush comps."
+      },
+      {
+        "character": "Doctrine",
+        "type": "nerf",
+        "details": [
+          "Eternal Scepter primary fire recovery 0.6 -> 0.65",
+          "Infused damage 90 -> 80, infused healing 120 -> 110",
+          "Shrouded Momentum cooldown 8s -> 10s",
+          "Infuse cooldown 8s -> 9s"
+        ],
+        "playstyle_impact": "Output and escapes are lower, so time Infuse carefully and position more safely.",
+        "meta_impact": "Still heavily picked, but now near a 50% win rate after repeated nerfs."
+      },
+      {
+        "character": "Illari",
+        "type": "buff",
+        "details": [
+          "Solar Rifle time to max charge 0.65s -> 0.575s",
+          "Healing Pylon heal per projectile 40 -> 50"
+        ],
+        "playstyle_impact": "Use more charged shots for damage and place Pylon to anchor a hold position.",
+        "meta_impact": "Rose sharply to one of the top supports by win rate."
+      },
+      {
+        "character": "Jetpack Cat",
+        "type": "nerf",
+        "details": [
+          "Base health 225 -> 200",
+          "Frenetic Flight acceleration 25 -> 28 m/s",
+          "Frenetic Flight fuel regeneration 25% -> 20% per second"
+        ],
+        "playstyle_impact": "Stay further from danger and use the faster acceleration for repositioning, not aggression.",
+        "meta_impact": "Most banned support but low win rate, now weaker still."
+      },
+      {
+        "character": "Sombra",
+        "type": "nerf",
+        "details": [
+          "Hotfix duration 12s -> 10s",
+          "Cyberspace weaken effect 50% -> 40%",
+          "EMP now overrides enemy hack effects on health packs"
+        ],
+        "playstyle_impact": "Target Hotfix and Weaken more carefully because their windows are shorter and weaker.",
+        "meta_impact": "Fell from top tier to a mid-tier support."
+      },
+      {
+        "character": "Wrecking Ball",
+        "type": "buff",
+        "details": [
+          "Grappling Claw: base speed limit while retracting +15% (Nov 5 hotfix)",
+          "Grappling Claw: allied speed boosts now also raise the retraction speed limit (Nov 5 hotfix)"
+        ],
+        "playstyle_impact": "Retract grapple more often to rotate and escape, ideally with Lúcio or Juno speed.",
+        "meta_impact": "Small buff for one of the lowest win-rate tanks, and not enough to make him meta."
+      }
+    ]
+  },
+  "markers": [
+    {
+      "date": "2026-11-05",
+      "version": "Hotfix - November 5, 2026",
+      "title": "Wrecking Ball Grappling Claw hotfix",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11",
+      "changes": {
+        "Wrecking Ball": "buff"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-11-03",
+      "version": "Season 5 mid-season update (Taking Reign)",
+      "title": "Taking Reign mid-season balance update",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11",
+      "changes": {
+        "D.Mon": "nerf",
+        "Junker Queen": "buff",
+        "Mauga": "buff",
+        "Ramattra": "buff",
+        "Winston": "nerf",
+        "Anran": "adjustment",
+        "Echo": "buff",
+        "Emre": "buff",
+        "Genji": "nerf",
+        "Reaper": "buff",
+        "Shion": "buff",
+        "Vendetta": "nerf",
+        "Ana": "nerf",
+        "Brigitte": "buff",
+        "Doctrine": "nerf",
+        "Illari": "buff",
+        "Jetpack Cat": "nerf",
+        "Sombra": "nerf"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-10-13",
+      "version": "Hotfix - October 13, 2026",
+      "title": "Season 5 balance hotfix",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10",
+      "changes": {
+        "Doctrine": "nerf",
+        "Sombra": "nerf",
+        "Roadhog": "buff",
+        "Kiriko": "buff",
+        "D.Mon": "nerf"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-10-06",
+      "version": "Season 5: A Grim Doctrine",
+      "title": "Reign of Talon Season 5: A Grim Doctrine",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10",
+      "changes": {
+        "Doctrine": "new",
+        "Roadhog": "rework",
+        "Sombra": "rework",
+        "D.Va": "buff",
+        "Domina": "buff",
+        "Bastion": "nerf",
+        "Emre": "buff",
+        "Genji": "adjustment",
+        "Ana": "adjustment",
+        "Shion": "adjustment",
+        "Lúcio": "adjustment"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-09-17",
+      "version": "Hotfix - September 17, 2026",
+      "title": "D.Mon balance hotfix",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+      "changes": {
+        "D.Mon": "nerf"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-09-08",
+      "version": "Patch - September 8, 2026",
+      "title": "Season 4 mid-season balance update",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+      "changes": {
+        "D.Mon": "adjustment",
+        "D.Va": "buff",
+        "Domina": "buff",
+        "Mauga": "nerf",
+        "Winston": "adjustment",
+        "Wrecking Ball": "nerf",
+        "Zarya": "nerf",
+        "Anran": "buff",
+        "Freja": "nerf",
+        "Junkrat": "adjustment",
+        "Sierra": "adjustment",
+        "Symmetra": "nerf",
+        "Torbjörn": "adjustment",
+        "Vendetta": "adjustment",
+        "Baptiste": "buff",
+        "Brigitte": "adjustment",
+        "Jetpack Cat": "nerf",
+        "Kiriko": "nerf",
+        "Wuyang": "buff",
+        "Zenyatta": "nerf"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-08-14",
+      "version": "Hotfix - August 14, 2026",
+      "title": "D.Mon and Jetpack Cat hotfix",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
+      "changes": {
+        "D.Mon": "buff",
+        "Jetpack Cat": "nerf"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-08-12",
+      "version": "Hotfix - August 12, 2026",
+      "title": "D.Mon balance hotfix",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
+      "changes": {
+        "D.Mon": "buff"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-08-11",
+      "version": "Season 4: Heroes of Busan",
+      "title": "Reign of Talon Season 4: Heroes of Busan",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
+      "changes": {
+        "D.Mon": "new",
+        "Domina": "buff",
+        "Doomfist": "buff",
+        "Hazard": "adjustment",
+        "Mauga": "adjustment",
+        "Orisa": "adjustment",
+        "Winston": "buff",
+        "Cassidy": "adjustment",
+        "Echo": "buff",
+        "Emre": "buff",
+        "Genji": "buff",
+        "Pharah": "nerf",
+        "Shion": "nerf",
+        "Tracer": "buff",
+        "Vendetta": "buff",
+        "Venture": "buff",
+        "Jetpack Cat": "adjustment",
+        "Juno": "buff",
+        "Lifeweaver": "adjustment",
+        "Mizuki": "nerf",
+        "Wuyang": "buff",
+        "Zenyatta": "buff"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-07-30",
+      "version": "Patch - July 30, 2026",
+      "title": "Tank and sub-role balance update",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07",
+      "changes": {
+        "Domina": "adjustment",
+        "Doomfist": "buff",
+        "Hazard": "buff",
+        "Mauga": "buff",
+        "Ramattra": "adjustment"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-07-14",
+      "version": "Patch - July 14, 2026",
+      "title": "Summer Games 2026 balance update",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07",
+      "changes": {
+        "Doomfist": "nerf",
+        "Junker Queen": "buff",
+        "Mauga": "nerf",
+        "Ramattra": "buff",
+        "Sigma": "nerf",
+        "Cassidy": "nerf",
+        "Freja": "buff",
+        "Reaper": "buff",
+        "Shion": "adjustment",
+        "Sierra": "adjustment",
+        "Vendetta": "buff",
+        "Venture": "buff",
+        "Ana": "buff",
+        "Brigitte": "adjustment",
+        "Kiriko": "nerf",
+        "Lúcio": "buff"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-06-25",
+      "version": "Hotfix - June 25, 2026",
+      "title": "Shion balance hotfix",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+      "changes": {
+        "Shion": "nerf"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-06-16",
+      "version": "Season 3: Into the Tiger's Den",
+      "title": "Reign of Talon Season 3: Into the Tiger's Den",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+      "changes": {
+        "Shion": "new",
+        "D.Va": "nerf",
+        "Domina": "adjustment",
+        "Doomfist": "nerf",
+        "Hazard": "adjustment",
+        "Ramattra": "buff",
+        "Reinhardt": "buff",
+        "Zarya": "buff",
+        "Anran": "buff",
+        "Ashe": "adjustment",
+        "Bastion": "adjustment",
+        "Cassidy": "adjustment",
+        "Echo": "nerf",
+        "Emre": "nerf",
+        "Genji": "buff",
+        "Junkrat": "buff",
+        "Mei": "buff",
+        "Reaper": "nerf",
+        "Sierra": "adjustment",
+        "Sojourn": "buff",
+        "Tracer": "nerf",
+        "Vendetta": "buff",
+        "Ana": "nerf",
+        "Brigitte": "buff",
+        "Illari": "buff",
+        "Jetpack Cat": "adjustment",
+        "Juno": "buff",
+        "Lifeweaver": "nerf",
+        "Mercy": "adjustment",
+        "Mizuki": "buff",
+        "Moira": "buff",
+        "Wuyang": "buff"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-05-12",
+      "version": "Patch - May 12, 2026",
+      "title": "10th Anniversary balance update",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
+      "changes": {
+        "Winston": "adjustment",
+        "D.Va": "nerf",
+        "Hazard": "adjustment",
+        "Wrecking Ball": "adjustment",
+        "Doomfist": "adjustment",
+        "Junker Queen": "buff",
+        "Emre": "nerf",
+        "Freja": "buff",
+        "Pharah": "nerf",
+        "Baptiste": "buff",
+        "Illari": "adjustment",
+        "Kiriko": "nerf",
+        "Lúcio": "nerf",
+        "Mercy": "adjustment",
+        "Mizuki": "adjustment"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-04-23",
+      "version": "Hotfix - April 23, 2026",
+      "title": "Season 2 balance hotfix",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
+      "changes": {
+        "Roadhog": "buff",
+        "Sombra": "buff",
+        "Vendetta": "buff"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-04-17",
+      "version": "Hotfix - April 17, 2026",
+      "title": "Sierra balance hotfix",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
+      "changes": {
+        "Sierra": "buff"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-04-14",
+      "version": "Season 2: Summit",
+      "title": "Reign of Talon Season 2: Summit",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
+      "changes": {
+        "Sierra": "new",
+        "Sigma": "nerf",
+        "Ramattra": "rework",
+        "Roadhog": "nerf",
+        "Winston": "adjustment",
+        "Anran": "buff",
+        "Ashe": "nerf",
+        "Bastion": "adjustment",
+        "Echo": "rework",
+        "Emre": "buff",
+        "Junkrat": "adjustment",
+        "Pharah": "rework",
+        "Reaper": "rework",
+        "Soldier: 76": "rework",
+        "Sombra": "adjustment",
+        "Tracer": "buff",
+        "Vendetta": "nerf",
+        "Widowmaker": "buff",
+        "Ana": "buff",
+        "Brigitte": "buff",
+        "Jetpack Cat": "adjustment",
+        "Juno": "nerf",
+        "Kiriko": "adjustment",
+        "Lifeweaver": "buff",
+        "Lúcio": "rework",
+        "Mercy": "adjustment",
+        "Mizuki": "nerf",
+        "Wuyang": "nerf"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-03-10",
+      "version": "Patch - March 10, 2026",
+      "title": "Conquest event finale balance update",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/03",
+      "changes": {
+        "D.Va": "nerf",
+        "Hazard": "adjustment",
+        "Ramattra": "buff",
+        "Roadhog": "buff",
+        "Anran": "buff",
+        "Emre": "buff",
+        "Vendetta": "adjustment",
+        "Illari": "nerf",
+        "Jetpack Cat": "rework",
+        "Mizuki": "adjustment"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-02-24",
+      "version": "Patch - February 24, 2026",
+      "title": "Season 1 hero balance changes",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
+      "changes": {
+        "Domina": "nerf",
+        "Anran": "buff",
+        "Emre": "buff",
+        "Vendetta": "nerf",
+        "Jetpack Cat": "nerf",
+        "Mizuki": "buff"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-02-13",
+      "version": "Hotfix - February 13, 2026",
+      "title": "Season 1 hero balance hotfix",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
+      "changes": {
+        "Domina": "nerf",
+        "Anran": "buff",
+        "Emre": "buff",
+        "Jetpack Cat": "nerf",
+        "Mizuki": "adjustment",
+        "Vendetta": "nerf"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-02-10",
+      "version": "Season 1: Conquest",
+      "title": "Reign of Talon Season 1: Conquest (five new heroes)",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
+      "changes": {
+        "Domina": "new",
+        "Anran": "new",
+        "Emre": "new",
+        "Jetpack Cat": "new",
+        "Mizuki": "new",
+        "D.Va": "nerf",
+        "Mauga": "adjustment",
+        "Reinhardt": "adjustment",
+        "Roadhog": "buff",
+        "Sigma": "nerf",
+        "Winston": "rework",
+        "Wrecking Ball": "rework",
+        "Zarya": "rework",
+        "Ashe": "rework",
+        "Cassidy": "buff",
+        "Echo": "buff",
+        "Freja": "adjustment",
+        "Hanzo": "adjustment",
+        "Pharah": "rework",
+        "Reaper": "adjustment",
+        "Soldier: 76": "buff",
+        "Sombra": "rework",
+        "Torbjörn": "rework",
+        "Tracer": "adjustment",
+        "Vendetta": "adjustment",
+        "Widowmaker": "buff",
+        "Baptiste": "adjustment",
+        "Illari": "nerf",
+        "Kiriko": "adjustment",
+        "Lifeweaver": "rework",
+        "Mercy": "adjustment",
+        "Moira": "buff",
+        "Wuyang": "adjustment",
+        "Zenyatta": "rework"
+      },
+      "curated": true
+    },
+    {
+      "date": "2026-01-08",
+      "version": "Patch 2.20.1",
+      "title": "January 2026 balance update",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/01",
+      "changes": {
+        "Doomfist": "nerf",
+        "D.Va": "nerf",
+        "Roadhog": "buff",
+        "Ashe": "nerf",
+        "Bastion": "nerf",
+        "Freja": "buff",
+        "Genji": "buff",
+        "Symmetra": "adjustment",
+        "Vendetta": "nerf",
+        "Venture": "nerf",
+        "Illari": "buff",
+        "Lúcio": "nerf",
+        "Moira": "buff",
+        "Zenyatta": "buff"
+      },
+      "curated": true
+    },
+    {
+      "date": "2025-12-18",
+      "version": "Hotfix - December 18, 2025",
+      "title": "Vendetta and console aim assist hotfix",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+      "changes": {
+        "Vendetta": "nerf"
+      },
+      "curated": true
+    },
+    {
+      "date": "2025-12-12",
+      "version": "Hotfix - December 12, 2025",
+      "title": "Sigma hotfix",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+      "changes": {
+        "Sigma": "nerf"
+      },
+      "curated": true
+    },
+    {
+      "date": "2025-12-11",
+      "version": "Hotfix - December 11, 2025",
+      "title": "Vendetta hotfix",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+      "changes": {
+        "Vendetta": "buff"
+      },
+      "curated": true
+    },
+    {
+      "date": "2025-12-09",
+      "version": "Season 20",
+      "title": "Overwatch 2 Season 20",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+      "changes": {
+        "Junker Queen": "nerf",
+        "Hazard": "buff",
+        "Reinhardt": "nerf",
+        "Sigma": "buff",
+        "Bastion": "buff",
+        "Freja": "adjustment",
+        "Junkrat": "adjustment",
+        "Reaper": "nerf",
+        "Vendetta": "buff",
+        "Venture": "nerf",
+        "Baptiste": "buff",
+        "Illari": "adjustment",
+        "Juno": "buff",
+        "Kiriko": "nerf",
+        "Wuyang": "nerf"
+      },
+      "curated": true
+    },
+    {
+      "date": "2025-11-11",
+      "version": "Patch - November 11, 2025",
+      "title": "November 2025 balance update",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/11",
+      "changes": {
+        "D.Va": "adjustment",
+        "Hazard": "adjustment",
+        "Orisa": "adjustment",
+        "Ramattra": "buff",
+        "Wrecking Ball": "nerf",
+        "Zarya": "nerf",
+        "Ashe": "buff",
+        "Cassidy": "buff",
+        "Echo": "buff",
+        "Genji": "adjustment",
+        "Mei": "buff",
+        "Sojourn": "buff",
+        "Sombra": "buff",
+        "Tracer": "adjustment",
+        "Brigitte": "buff",
+        "Juno": "buff",
+        "Kiriko": "nerf",
+        "Lifeweaver": "buff"
+      },
+      "curated": true
+    }
+  ]
+}

@@ -136,7 +136,7 @@
     const first = vis[0], last = vis[vis.length - 1];
     const change = first && last && first !== last ? ((last.avg - first.avg) / first.avg) * 100 : null;
     tiles.append(
-      tile("Right now", latestRead ? fmt.int(latestRead.players) : "—", latestRead ? `Steam rank #${latestRead.steam_rank} · ${new Date(latestRead.time).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}` : ""),
+      tile("Right now", latestRead ? fmt.int(latestRead.players) : "—", latestRead ? `${latestRead.steam_rank ? `Steam rank #${latestRead.steam_rank} · ` : ""}${new Date(latestRead.time).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}` : ""),
       tile("Peak in range", peakRow ? fmt.int(peakRow.peak) : "—", peakRow ? fmt.date(peakRow.x) : ""),
       tile("Avg daily players", avgAll ? fmt.int(avgAll) : "—", `${vis.length} day${vis.length === 1 ? "" : "s"} of data`),
       tile("Change over range", change === null ? "—" : `${change >= 0 ? "▲" : "▼"} ${Math.abs(change).toFixed(1)}%`, "daily average, first vs last day",

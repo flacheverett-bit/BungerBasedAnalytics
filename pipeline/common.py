@@ -12,6 +12,8 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 RAW = DATA / "raw"
 USER_AGENT = "bunger-based-analytics/1.0 (student data project)"
+# Some sites serve a stripped page to non-browser agents; still identifies the project.
+BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) bunger-based-analytics/1.0"
 
 
 def get_json(url: str, retries: int = 3, timeout: int = 120):
@@ -22,6 +24,24 @@ def get_json(url: str, retries: int = 3, timeout: int = 120):
             req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return json.loads(resp.read())
+        except urllib.error.HTTPError as e:
+            last_err = e
+            if e.code < 500 and e.code != 429:
+                raise
+        except (urllib.error.URLError, TimeoutError) as e:
+            last_err = e
+        time.sleep(5 * (attempt + 1))
+    raise RuntimeError(f"Failed to fetch {url}: {last_err}")
+
+
+def get_text(url: str, retries: int = 3, timeout: int = 120) -> str:
+    """GET a web page as text (same retry rules as get_json)."""
+    last_err = None
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": BROWSER_UA})
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return resp.read().decode("utf-8", "replace")
         except urllib.error.HTTPError as e:
             last_err = e
             if e.code < 500 and e.code != 429:

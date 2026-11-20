@@ -7,6 +7,22 @@
     "tagline": "6v6 lane-pushing hero shooter",
     "steam_appid": 1422450,
     "character_label": "Heroes",
-    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1422450/header.jpg"
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1422450/header.jpg",
+    "tier_bands": [54, 52, 50, 48, 46],
+    "tier_note": "Deadlock win rates usually span about 44–57%, so tiers use 2-point bands.",
+    "sections": ["matchups", "builds"]
+  },
+  {
+    "id": "overwatch",
+    "name": "Overwatch",
+    "developer": "Blizzard",
+    "genre": "Hero shooter",
+    "tagline": "5v5 role-queue hero shooter",
+    "steam_appid": 2357570,
+    "character_label": "Heroes",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/2357570/header.jpg",
+    "tier_bands": [53, 51.5, 50, 48.5, 47],
+    "tier_note": "Overwatch Competitive win rates cluster tighter (about 44–55%), so tiers use 1.5-point bands.",
+    "sections": ["comps", "perks"]
   }
 ]

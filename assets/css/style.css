@@ -265,6 +265,22 @@ details summary { cursor: pointer; color: var(--text-secondary); font-size: 14px
 .build-cat { display: grid; grid-template-columns: 130px 1fr; gap: 10px; align-items: start; }
 .build-cat > span { font-size: 12px; color: var(--text-muted); padding-top: 6px; overflow-wrap: anywhere; }
 .build-cat .icons { display: flex; flex-wrap: wrap; gap: 4px; }
+/* team comps */
+.comp-hero { display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px 3px 3px; border-radius: 999px; border: 1px solid var(--border);
+  background: var(--surface-2); font-size: 13px; text-decoration: none; color: var(--text-secondary); }
+.comp-hero img { width: 24px; height: 24px; border-radius: 50%; object-fit: cover; background: var(--surface-1); }
+.comp-hero:hover { color: var(--text-primary); border-color: var(--accent); }
+.comp-hero.is-core { border: 2px solid var(--text-secondary); color: var(--text-primary); font-weight: 600; }
+.comp-hero.is-current { background: var(--accent-soft); border-color: var(--accent); color: var(--text-primary); }
+.comp-notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 10px; margin-top: 10px; }
+/* perks */
+.perk + .perk { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+.perk-head { display: grid; grid-template-columns: 30px 1fr auto; gap: 8px; align-items: center; }
+.perk-share { font-size: 18px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.share-bar { height: 6px; border-radius: 3px; background: var(--surface-1); margin: 6px 0 4px; overflow: hidden; }
+.share-bar span { display: block; height: 100%; border-radius: 3px; background: var(--series-1); }
+.perk p { margin: 2px 0 0; }
+
 @media (max-width: 640px) { .build-cat { grid-template-columns: 1fr; gap: 4px; } .tier-row { grid-template-columns: 64px 1fr; } }
 
 .notice { background: var(--accent-soft); border-radius: 10px; padding: 12px 14px; font-size: 14px; color: var(--text-secondary); }
