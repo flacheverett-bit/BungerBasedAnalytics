@@ -21,7 +21,7 @@
     "tagline": "5v5 role-queue hero shooter",
     "steam_appid": 2357570,
     "character_label": "Heroes",
-    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/2357570/header.jpg",
+    "image": "assets/img/overwatch-cover.png",
     "tier_bands": [53, 51.5, 50, 48.5, 47],
     "tier_note": "Overwatch Competitive win rates cluster tighter (about 44–55%), so tiers use 1.5-point bands.",
     "sections": ["comps", "perks"],

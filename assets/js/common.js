@@ -90,6 +90,9 @@ const HMT = (() => {
   }
 
   function renderTopbar({ game = null, page = "home" } = {}) {
+    // Per-game accent theme (see style.css); the home page keeps the neutral brass accent.
+    if (game) document.documentElement.setAttribute("data-game", game.id);
+    else document.documentElement.removeAttribute("data-game");
     const crumbs = el("nav", { class: "crumbs", "aria-label": "Breadcrumb" });
     if (game) {
       crumbs.append(el("span", { "aria-hidden": "true", text: "/" }), el("a", { href: `game.html?game=${game.id}`, text: game.name }));
