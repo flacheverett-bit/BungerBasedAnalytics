@@ -48,6 +48,11 @@ jobs:
         run: |
           pip install --quiet pandas numpy
           python pipeline/patch_impact.py
+      - name: Meta health score (all games)
+        continue-on-error: true
+        run: |
+          pip install --quiet pandas numpy
+          python pipeline/meta_health.py
       - name: SQL warehouse (DuckDB) + run the SQL analyses
         continue-on-error: true
         run: |

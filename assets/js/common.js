@@ -122,7 +122,9 @@ const HMT = (() => {
           el("a", { href: `hypotheses.html?game=${game.id}`, "aria-current": page === "hypotheses" ? "page" : null, text: "Hypotheses" }))
       : null;
     const themeBtn = el("button", { class: "icon-btn", type: "button", title: "Toggle light/dark", "aria-label": "Toggle light or dark theme", onclick: toggleTheme, text: "◐" });
-    const sqlLink = el("a", { class: "nav-link", href: "sql.html", "aria-current": page === "sql" ? "page" : null, text: "SQL" });
+    const sqlLink = el("span", { class: "site-links" },
+      el("a", { class: "nav-link", href: "meta.html", "aria-current": page === "meta" ? "page" : null, text: "Meta health" }),
+      el("a", { class: "nav-link", href: "sql.html", "aria-current": page === "sql" ? "page" : null, text: "SQL" }));
     const bar = el("header", { class: "topbar" },
       el("div", { class: "wrap" },
         el("a", { class: "brand", href: "index.html" }, el("span", { class: "brand-mark", "aria-hidden": "true", text: "B" }), SITE_NAME),

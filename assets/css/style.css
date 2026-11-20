@@ -15,6 +15,7 @@
   --accent-soft: rgba(196, 140, 30, 0.14);
   --series-1: #2a78d6;          /* win rate / daily peak */
   --series-2: #eb6834;          /* pick rate / daily average */
+  --series-3: #1baf7a;          /* third categorical slot (aqua) */
   --buff: #006300;
   --nerf: #d03b3b;
   --rework: #6250d6;
@@ -39,6 +40,7 @@
     --accent-soft: rgba(224, 178, 90, 0.14);
     --series-1: #3987e5;
     --series-2: #d95926;
+    --series-3: #199e70;
     --buff: #0ca30c;
     --nerf: #e66767;
     --rework: #9085e9;
@@ -60,6 +62,7 @@
   --accent-soft: rgba(224, 178, 90, 0.14);
   --series-1: #3987e5;
   --series-2: #d95926;
+  --series-3: #199e70;
   --buff: #0ca30c;
   --nerf: #e66767;
   --rework: #9085e9;
@@ -330,6 +333,19 @@ details summary { cursor: pointer; color: var(--text-secondary); font-size: 14px
 .empty-state { text-align: center; padding: 40px 20px; }
 .empty-state p { max-width: 60ch; margin: 8px auto 16px; }
 @media (max-width: 640px) { .head-actions { align-items: flex-start; } .hypo-head { flex-direction: column; } }
+
+/* meta health page */
+.site-links { display: inline-flex; gap: 6px; }
+.score-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 16px; }
+.scorecard { text-decoration: none; border-top: 4px solid var(--game-line); display: flex; flex-direction: column; gap: 8px; }
+.scorecard:hover { box-shadow: 0 6px 24px rgba(0,0,0,.12); }
+.scorecard-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.score-big span { font-size: 44px; font-weight: 800; letter-spacing: -.02em; line-height: 1; }
+.score-big small { font-size: 16px; color: var(--text-muted); margin-left: 2px; }
+.comp-bars { display: grid; gap: 6px; margin: 4px 0; }
+.comp-bar { display: grid; grid-template-columns: 96px 1fr 40px; gap: 8px; align-items: center; }
+.comp-bar .share-bar { margin: 0; }
+.comp-bar b { text-align: right; font-variant-numeric: tabular-nums; }
 
 /* SQL page */
 .nav-link { text-decoration: none; padding: 6px 10px; border-radius: 8px; color: var(--text-secondary); font-size: 14px; font-weight: 600;

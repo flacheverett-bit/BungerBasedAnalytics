@@ -20,6 +20,19 @@ A static website that tracks hero shooter statistics: latest patch analysis, con
 
 Tier bands are set per game in `data/games.json` (`tier_bands`).
 
+## Meta health
+
+**Live page:** [meta.html](https://flacheverett-bit.github.io/BungerBasedAnalytics/meta.html) (the "Meta health" link in the header) · **Code:** `pipeline/meta_health.py` (recomputed daily)
+
+This turns "is the game balanced?" into a number you can defend. The **Meta Health Score** (0–100) is the average of three components:
+- **Pick diversity:** effective number of heroes (1 / HHI of pick shares) ÷ roster size. Role-queue games like Overwatch are measured within each role, so different role pool sizes aren't mistaken for concentration.
+- **Viable roster:** % of heroes at or above the game's C-tier win-rate floor *and* at least half of an equal pick share.
+- **Fairness:** % of all picks on heroes within ±3 points of a 50% win rate. It's pick-weighted, so a broken hero matters more the more it's played.
+
+The page compares all three games, charts each component with big-patch markers, and tests whether big patches change the score: 14 days before vs after, compared with the normal drift between any two 2-week periods. First findings (Nov 2026):
+- Deadlock's big patches don't reliably improve meta health. The average change was −1.9 points, 7 of 17 improved it, and only 1 moved it beyond normal drift.
+- Its least healthy month was October 2026, when six new heroes launched.
+
 ## SQL analysis
 
 **Live page:** [sql.html](https://flacheverett-bit.github.io/BungerBasedAnalytics/sql.html) (the "SQL" link in the header) · **Queries:** [`analysis/sql/`](analysis/sql) · **Data:** [`data/exports/`](data/exports) (CSV)
