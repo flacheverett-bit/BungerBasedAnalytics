@@ -1,0 +1,8 @@
+# Analysis dependencies (the data-collection pipeline itself uses only the standard library).
+pandas>=2.2
+numpy>=2.0
+matplotlib>=3.9
+# Notebook tooling
+jupyter
+nbconvert
+ipykernel

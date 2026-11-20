@@ -20,7 +20,8 @@
       "matchups",
       "builds"
     ],
-    "big_patch_min_heroes": 10
+    "big_patch_min_heroes": 10,
+    "analysis": true
   },
   {
     "id": "overwatch",

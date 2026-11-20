@@ -116,7 +116,8 @@ const HMT = (() => {
       ? el("nav", { class: "tabs", "aria-label": "Game sections" },
           el("a", { href: `game.html?game=${game.id}`, "aria-current": page === "game" ? "page" : null, text: "Patch & players" }),
           el("a", { href: `heroes.html?game=${game.id}`, "aria-current": page === "heroes" ? "page" : null, text: game.character_label || "Characters" }),
-          el("a", { href: `tiers.html?game=${game.id}`, "aria-current": page === "tiers" ? "page" : null, text: "Tier list" }))
+          el("a", { href: `tiers.html?game=${game.id}`, "aria-current": page === "tiers" ? "page" : null, text: "Tier list" }),
+          game.analysis ? el("a", { href: `analysis.html?game=${game.id}`, "aria-current": page === "analysis" ? "page" : null, text: "Patch impact" }) : null)
       : null;
     const themeBtn = el("button", { class: "icon-btn", type: "button", title: "Toggle light/dark", "aria-label": "Toggle light or dark theme", onclick: toggleTheme, text: "◐" });
     const bar = el("header", { class: "topbar" },

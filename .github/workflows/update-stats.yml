@@ -43,6 +43,11 @@ jobs:
       - name: Rebuild patch markers
         continue-on-error: true
         run: python pipeline/patches.py deadlock overwatch marvel-rivals
+      - name: Deadlock - patch impact analysis (pandas)
+        continue-on-error: true
+        run: |
+          pip install --quiet pandas numpy
+          python pipeline/patch_impact.py
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"

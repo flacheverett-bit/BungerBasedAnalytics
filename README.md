@@ -16,7 +16,34 @@ A static website that tracks hero shooter statistics: latest patch analysis, con
 
 | `…?game=marvel-rivals` | Same as Overwatch, but with **team-up loadouts** in place of perks: for the selected hero, how often each of their two loadouts is picked, the hero's win rate with that partner, and what the loadout does. Tier bands are wider: S ≥ 55%, A 52.5–55, B 50–52.5, C 47.5–50, D 45–47.5, F < 45 |
 
+| `analysis.html?game=deadlock` | **Patch impact analysis**: do buffs and nerfs actually move win and pick rates beyond normal noise? |
+
 Tier bands are set per game in `data/games.json` (`tier_bands`).
+
+## Analysis: do balance patches actually work?
+
+**Notebook:** [`analysis/deadlock_patch_impact.ipynb`](analysis/deadlock_patch_impact.ipynb) · **Live page:** Deadlock → *Patch impact* · **Code:** `pipeline/patch_impact.py` (recomputed daily)
+
+For every Deadlock hero change, the analysis compares the hero's win rate and pick rate 7 days before vs 7 days after the patch. It then:
+- applies **difference-in-differences** against heroes that weren't touched
+- tests significance against a **placebo noise baseline**: the same calculation on each hero's no-patch days, since real week-to-week noise is about 3× larger than a binomial model assumes
+- corrects for **multiple testing** with Benjamini–Hochberg (FDR 10%)
+- includes a **regression-to-the-mean** robustness check
+
+Headline results (Nov 2026 run, 13 months of data, 435 hero changes):
+- Nerfs land harder than buffs: about −1.3 vs +0.8 win-rate points on average. Both 95% bootstrap CIs exclude zero.
+- About 84% of nerfs and 72% of buffs moved win rate in the intended direction.
+- Pick rate reacts strongly: about ±3.6–3.8 points.
+- Most single changes are within normal noise. Only about 27% of buffs and 36% of nerfs were significant after correction.
+
+Run it yourself:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe pipeline/patch_impact.py
+.\.venv\Scripts\python.exe -m jupyter lab analysis/
+```
 
 ## Data sources
 
