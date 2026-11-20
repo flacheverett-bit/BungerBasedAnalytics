@@ -1,4 +1,4 @@
-# Deadlock hypotheses
+Character pick rate for low win rate characters increased after the release of the last big update due to increase in new casual players picking who is "fun" rather than "good."# Deadlock hypotheses
 
 <!--
 HOW TO ADD A HYPOTHESIS
