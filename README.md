@@ -38,6 +38,7 @@ Every day, `pipeline/build_warehouse.py` loads all collected data into a **DuckD
 | 8 | Underused team-up loadouts | pivot with `MAX(CASE …)` |
 | 9 | Data quality: do matchup numbers agree with each other? | self-join validation |
 | 10 | This week's biggest movers, and was it a patch? | date-bounded CTEs, `LEFT JOIN` + `string_agg` |
+| 11 | Did Marvel Rivals take Overwatch's players, and did Deadlock take players from both? | event study ranked against the game's own history (`PERCENT_RANK` placebo), rolling averages, `CORR()` with a noise threshold |
 
 **New games are picked up automatically.** The loader reads the game list from `data/games.json`, and the `games` table records what data each game has. It stores `stats_format` (`matches` or `rates`) plus `has_ban_rates`, `has_matchups`, `has_teamups` and `has_perks`, so queries select games **by capability, not by name**. For example, `WHERE game IN (SELECT game FROM games WHERE stats_format = 'matches')`. I tested this by adding two fake games: every query covered them correctly with no SQL edits.
 

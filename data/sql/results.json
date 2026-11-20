@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T22:18:46Z",
+ "generated": "2026-11-20T22:24:52Z",
  "engine": "DuckDB 2.0.1",
  "tables": [
   {
@@ -235,7 +235,7 @@
      "2026-10-13"
     ]
    ],
-   "runtime_ms": 6.6,
+   "runtime_ms": 9.5,
    "takeaway": "Most-patched: deadlock: Shiv (18 changes, 10 nerfs / 5 buffs); marvel-rivals: Gambit (11 changes, 7 nerfs / 1 buffs); overwatch: Vendetta (15 changes, 6 nerfs / 6 buffs)."
   },
   {
@@ -361,7 +361,7 @@
      902561.0
     ]
    ],
-   "runtime_ms": 22.8,
+   "runtime_ms": 22.0,
    "takeaway": "Best 30-day win rate: deadlock: Graves (Mystic) at 57.4% over 2,940,370 games."
   },
   {
@@ -924,7 +924,7 @@
      16
     ]
    ],
-   "runtime_ms": 7.3,
+   "runtime_ms": 9.2,
    "takeaway": "91 reversals within 30 days (deadlock: 59, marvel-rivals: 21, overwatch: 11); 21 were reversed within a week."
   },
   {
@@ -1322,7 +1322,7 @@
      12
     ]
    ],
-   "runtime_ms": 8.6,
+   "runtime_ms": 9.3,
    "takeaway": "deadlock: busiest Sunday (+14%), quietest Monday (-7%); marvel-rivals: busiest Saturday (+11%), quietest Thursday (-10%); overwatch: busiest Sunday (+12%), quietest Thursday (-10%)."
   },
   {
@@ -1456,7 +1456,7 @@
      18.0
     ]
    ],
-   "runtime_ms": 16.9,
+   "runtime_ms": 16.2,
    "takeaway": "deadlock: effective heroes went from 28.2 (2025-10) to 38.8 (2026-11), while diversity relative to roster size moved from 88.1% to 88.3%, so the rise comes from new heroes being added, not from a more balanced meta."
   },
   {
@@ -1654,7 +1654,7 @@
      1.3
     ]
    ],
-   "runtime_ms": 13.9,
+   "runtime_ms": 13.4,
    "takeaway": "marvel-rivals: 12 heroes have an underused loadout that wins more often; biggest gap is Groot's Wild Wall (36% usage), which wins +10.3 pts more than Bubble Buddies."
   },
   {
@@ -1684,7 +1684,7 @@
      0
     ]
    ],
-   "runtime_ms": 5.7,
+   "runtime_ms": 7.2,
    "takeaway": "deadlock: PASS, 946 matchup pairs, average deviation 0.014 pts, max 0.04 pts, 0 outside a 0.5-pt tolerance."
   },
   {
@@ -1808,8 +1808,118 @@
      "no patch: moved on its own"
     ]
    ],
-   "runtime_ms": 12.2,
+   "runtime_ms": 16.6,
    "takeaway": "deadlock: top riser Lady Geist (+1.33 pts); 10 of 10 movers had no patch in the window. Moves of about ±1 point are within normal weekly noise (see the Patch impact analysis)."
+  },
+  {
+   "id": "11_player_cannibalization",
+   "file": "analysis/sql/11_player_cannibalization.sql",
+   "title": "Did Marvel Rivals take Overwatch's players, and did Deadlock take players from both?",
+   "question": "Using monthly average Steam players: was Overwatch's drop after Marvel Rivals launched (Dec 2024) unusual for Overwatch? Do the games' monthly changes move against each other? When Deadlock surged, did the other two lose players?",
+   "techniques": "monthly roll-up + pivot, rolling 3-month averages, event study ranked against the game's own history (PERCENT_RANK placebo), CORR() with a noise threshold, LAG-based % changes, UNION ALL of tests",
+   "why": "\"Game A took game B's players\" is a causal claim, and aggregate counts can't show individuals switching. The defensible test is whether one game's losses line up with another's gains more than that game's normal swings would explain. Caveats: Steam only (most Overwatch players are on Battle.net and consoles); before 2026 the source kept about one figure per month, which is noisy.",
+   "sql": "WITH monthly AS (                       -- one average per game per month, complete months only\n    SELECT game, date_trunc('month', date) AS month, AVG(avg_players) AS players\n    FROM players_daily\n    WHERE date < date_trunc('month', (SELECT MAX(date) FROM players_daily))\n    GROUP BY game, month\n),\nwide AS (\n    SELECT month,\n        MAX(players) FILTER (WHERE game = 'overwatch')     AS ow,\n        MAX(players) FILTER (WHERE game = 'marvel-rivals') AS mr,\n        MAX(players) FILTER (WHERE game = 'deadlock')      AS dl\n    FROM monthly\n    GROUP BY month\n),\nchanges AS (                            -- month-over-month % change per game\n    SELECT month,\n        100.0 * (ow / LAG(ow) OVER (ORDER BY month) - 1) AS ow_chg,\n        100.0 * (mr / LAG(mr) OVER (ORDER BY month) - 1) AS mr_chg,\n        100.0 * (dl / LAG(dl) OVER (ORDER BY month) - 1) AS dl_chg\n    FROM wide\n),\n\n-- Test 1: Overwatch around Marvel Rivals' launch, ranked against every other period in Overwatch's history.\now_roll AS (\n    SELECT month, AVG(ow) OVER (ORDER BY month ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS ow_3mo\n    FROM wide WHERE ow IS NOT NULL\n),\now_windows AS (\n    SELECT month,\n        100.0 * (ow_3mo / LAG(ow_3mo, 3) OVER (ORDER BY month) - 1) AS chg_next_3mo,   -- this 3 months vs the 3 before\n        100.0 * (ow_3mo / LAG(ow_3mo, 6) OVER (ORDER BY month) - 1) AS chg_months_4_6  -- months 4-6 vs the 3 before the gap\n    FROM ow_roll\n),\now_ranked AS (\n    SELECT month, chg_next_3mo, chg_months_4_6,\n        PERCENT_RANK() OVER (ORDER BY chg_next_3mo)   AS pctile_3mo,\n        PERCENT_RANK() OVER (ORDER BY chg_months_4_6) AS pctile_4_6,\n        COUNT(chg_next_3mo) OVER ()                   AS windows\n    FROM ow_windows\n    WHERE month >= '2024-02-01'                 -- skip Overwatch's own Steam-launch hype (Aug-Oct 2023)\n      AND chg_next_3mo IS NOT NULL\n),\nlaunch AS (\n    SELECT\n        MAX(chg_next_3mo) FILTER (WHERE month = '2025-02-01')   AS drop_3mo,      -- Dec-Feb vs Sep-Nov\n        MAX(pctile_3mo)   FILTER (WHERE month = '2025-02-01')   AS pct_3mo,\n        MAX(chg_months_4_6) FILTER (WHERE month = '2025-05-01') AS drop_4_6,      -- Mar-May vs Sep-Nov\n        MAX(pctile_4_6)   FILTER (WHERE month = '2025-05-01')   AS pct_4_6,\n        MAX(windows)                                            AS windows\n    FROM ow_ranked\n),\n\n-- Test 2: do monthly changes move together (shared drivers) or against each other (substitution)?\npairs AS (\n    SELECT 'Overwatch vs. Marvel Rivals' AS games, CORR(ow_chg, mr_chg) AS r, COUNT(ow_chg + mr_chg) AS n FROM changes\n    UNION ALL SELECT 'Overwatch vs. Deadlock',     CORR(ow_chg, dl_chg), COUNT(ow_chg + dl_chg) FROM changes\n    UNION ALL SELECT 'Marvel Rivals vs. Deadlock', CORR(mr_chg, dl_chg), COUNT(mr_chg + dl_chg) FROM changes\n),\n\n-- Test 3: Deadlock's three biggest surges since Marvel Rivals launched, and how the other two did in those months,\n-- ranked against their own monthly changes (0% = worst month, 100% = best month).\nranked_changes AS (\n    SELECT month, dl_chg, ow_chg, mr_chg,\n        PERCENT_RANK() OVER (ORDER BY ow_chg) AS ow_pctile,\n        PERCENT_RANK() OVER (ORDER BY mr_chg) AS mr_pctile,\n        COUNT(*) OVER ()                      AS months\n    FROM changes\n    WHERE ow_chg IS NOT NULL AND mr_chg IS NOT NULL AND dl_chg IS NOT NULL\n),\nsurges AS (\n    SELECT * FROM ranked_changes\n    QUALIFY ROW_NUMBER() OVER (ORDER BY dl_chg DESC) <= 3\n)\n\nSELECT '1. Marvel Rivals launch' AS test,\n       'Overwatch: Dec 2024-Feb 2025 vs. the 3 months before' AS measure,\n       ROUND(drop_3mo, 1) AS change_pct,\n       ROUND(100 * pct_3mo) AS pctile_in_own_history,          -- low = an unusually bad stretch for that game\n       windows AS compared_with,\n       CASE WHEN pct_3mo <= 0.05 THEN 'One of Overwatch''s worst stretches ever: strong sign Marvel Rivals pulled players'\n            WHEN pct_3mo <= 0.20 THEN 'Worse than most stretches but not exceptional: suggestive, not conclusive'\n            ELSE 'A normal swing for Overwatch' END AS reading\nFROM launch\nUNION ALL\nSELECT '1. Marvel Rivals launch', 'Overwatch: Mar-May 2025 vs. before launch (did it recover?)',\n       ROUND(drop_4_6, 1), ROUND(100 * pct_4_6), windows,\n       CASE WHEN drop_4_6 > -5 THEN 'Recovered to its pre-launch level'\n            WHEN pct_4_6 <= 0.20 THEN 'Still well below pre-launch: a lasting loss'\n            ELSE 'Somewhat below pre-launch, within normal variation' END\nFROM launch\nUNION ALL\nSELECT '2. Co-movement', games || ': correlation of monthly % changes',\n       ROUND(r, 2), NULL, n,\n       CASE WHEN ABS(r) < 2 / SQRT(n) THEN 'No reliable relationship (|r| under the ~2/sqrt(n) noise threshold)'\n            WHEN r < 0 THEN 'Move in opposite directions: consistent with players moving between them'\n            ELSE 'Move together: shared drivers (holidays, summer, genre interest), not substitution' END\nFROM pairs\nUNION ALL\nSELECT '3. Deadlock surges', 'Overwatch in ' || strftime(month, '%b %Y') || ' (Deadlock ' || printf('%+.0f', dl_chg) || '%)',\n       ROUND(ow_chg, 1), ROUND(100 * ow_pctile), months,\n       CASE WHEN ow_pctile <= 0.20 THEN 'One of Overwatch''s weaker months: consistent with losing players to Deadlock'\n            WHEN ow_pctile >= 0.80 THEN 'One of Overwatch''s better months: no sign of losing players'\n            ELSE 'An ordinary month for Overwatch' END\nFROM surges\nUNION ALL\nSELECT '3. Deadlock surges', 'Marvel Rivals in ' || strftime(month, '%b %Y') || ' (Deadlock ' || printf('%+.0f', dl_chg) || '%)',\n       ROUND(mr_chg, 1), ROUND(100 * mr_pctile), months,\n       CASE WHEN mr_pctile <= 0.20 THEN 'One of Marvel Rivals'' weaker months: consistent with losing players to Deadlock'\n            WHEN mr_pctile >= 0.80 THEN 'One of Marvel Rivals'' better months: no sign of losing players'\n            ELSE 'An ordinary month for Marvel Rivals' END\nFROM surges\nORDER BY test, measure;",
+   "columns": [
+    "test",
+    "measure",
+    "change_pct",
+    "pctile_in_own_history",
+    "compared_with",
+    "reading"
+   ],
+   "row_count": 11,
+   "rows": [
+    [
+     "1. Marvel Rivals launch",
+     "Overwatch: Dec 2024-Feb 2025 vs. the 3 months before",
+     -17.6,
+     13.0,
+     33,
+     "Worse than most stretches but not exceptional: suggestive, not conclusive"
+    ],
+    [
+     "1. Marvel Rivals launch",
+     "Overwatch: Mar-May 2025 vs. before launch (did it recover?)",
+     -19.7,
+     19.0,
+     33,
+     "Still well below pre-launch: a lasting loss"
+    ],
+    [
+     "2. Co-movement",
+     "Marvel Rivals vs. Deadlock: correlation of monthly % changes",
+     -0.35,
+     null,
+     22,
+     "No reliable relationship (|r| under the ~2/sqrt(n) noise threshold)"
+    ],
+    [
+     "2. Co-movement",
+     "Overwatch vs. Deadlock: correlation of monthly % changes",
+     0.09,
+     null,
+     29,
+     "No reliable relationship (|r| under the ~2/sqrt(n) noise threshold)"
+    ],
+    [
+     "2. Co-movement",
+     "Overwatch vs. Marvel Rivals: correlation of monthly % changes",
+     -0.19,
+     null,
+     22,
+     "No reliable relationship (|r| under the ~2/sqrt(n) noise threshold)"
+    ],
+    [
+     "3. Deadlock surges",
+     "Marvel Rivals in Aug 2025 (Deadlock +107%)",
+     -8.3,
+     38.0,
+     22,
+     "An ordinary month for Marvel Rivals"
+    ],
+    [
+     "3. Deadlock surges",
+     "Marvel Rivals in Feb 2026 (Deadlock +145%)",
+     -23.5,
+     24.0,
+     22,
+     "An ordinary month for Marvel Rivals"
+    ],
+    [
+     "3. Deadlock surges",
+     "Marvel Rivals in Oct 2026 (Deadlock +155%)",
+     -35.6,
+     10.0,
+     22,
+     "One of Marvel Rivals' weaker months: consistent with losing players to Deadlock"
+    ],
+    [
+     "3. Deadlock surges",
+     "Overwatch in Aug 2025 (Deadlock +107%)",
+     92.6,
+     95.0,
+     22,
+     "One of Overwatch's better months: no sign of losing players"
+    ],
+    [
+     "3. Deadlock surges",
+     "Overwatch in Feb 2026 (Deadlock +145%)",
+     285.5,
+     100.0,
+     22,
+     "One of Overwatch's better months: no sign of losing players"
+    ],
+    [
+     "3. Deadlock surges",
+     "Overwatch in Oct 2026 (Deadlock +155%)",
+     -9.2,
+     52.0,
+     22,
+     "An ordinary month for Overwatch"
+    ]
+   ],
+   "runtime_ms": 16.1,
+   "takeaway": "Marvel Rivals → Overwatch: Overwatch fell 17.6% in the 3 months after launch (worse than 87% of its other 3-month stretches) and was still 19.7% lower in months 4–6. Suggestive of a pull, not proof; during Deadlock's 3 biggest surges, Overwatch fell in 1 and had an unusually weak month in 0; during Deadlock's 3 biggest surges, Marvel Rivals fell in 3 and had an unusually weak month in 1; no pair of games' monthly changes correlates beyond noise."
   }
  ]
 }

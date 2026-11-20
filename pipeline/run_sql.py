@@ -114,7 +114,29 @@ def t10(df):
         parts.append(f"{g}: top riser {top.hero} ({top.change_pts:+.2f} pts); {unexplained} of {len(d)} movers had no patch in the window")
     return "; ".join(parts) + ". Moves of about ±1 point are within normal weekly noise (see the Patch impact analysis)."
 
-TAKEAWAYS = {"01": t01, "02": t02, "03": t03, "04": t04, "05": t05, "06": t06, "07": t07, "08": t08, "09": t09, "10": t10}
+def t11(df):
+    t1 = df[df["test"].str.startswith("1.")]
+    t2 = df[df["test"].str.startswith("2.")]
+    t3 = df[df["test"].str.startswith("3.")]
+    parts = []
+    if len(t1) == 2:
+        a, b = t1.iloc[0], t1.iloc[1]
+        parts.append(f"Marvel Rivals → Overwatch: Overwatch fell {abs(a.change_pct):.1f}% in the 3 months after launch "
+                     f"(worse than {100 - a.pctile_in_own_history:.0f}% of its other 3-month stretches) and was "
+                     f"{'still ' + format(abs(b.change_pct), '.1f') + '% lower' if b.change_pct < -5 else 'back to normal'} in months 4–6. "
+                     f"Suggestive of a pull, not proof")
+    for game, label in (("Overwatch", "Overwatch"), ("Marvel Rivals", "Marvel Rivals")):
+        rows = t3[t3["measure"].str.startswith(game)]
+        if len(rows):
+            down = (rows["change_pct"] < 0).sum()
+            weak = (rows["pctile_in_own_history"] <= 20).sum()
+            parts.append(f"during Deadlock's {len(rows)} biggest surges, {label} fell in {down} and had an unusually weak month in {weak}")
+    reliable = t2[~t2["reading"].str.startswith("No reliable")]
+    parts.append("no pair of games' monthly changes correlates beyond noise" if reliable.empty
+                 else f"{len(reliable)} pair(s) correlate beyond noise")
+    return "; ".join(parts) + "."
+
+TAKEAWAYS = {"11": t11, "01": t01, "02": t02, "03": t03, "04": t04, "05": t05, "06": t06, "07": t07, "08": t08, "09": t09, "10": t10}
 
 
 def jsonable(v):
