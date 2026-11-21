@@ -1,4 +1,4 @@
 game,name,stats_format,has_ban_rates,has_matchups,has_teamups,has_perks,days_of_history
 deadlock,Deadlock,matches,false,true,false,false,400
-overwatch,Overwatch,rates,true,false,false,true,1
-marvel-rivals,Marvel Rivals,rates,true,false,true,false,1
+overwatch,Overwatch,rates,true,false,false,true,2
+marvel-rivals,Marvel Rivals,rates,true,false,true,false,2
