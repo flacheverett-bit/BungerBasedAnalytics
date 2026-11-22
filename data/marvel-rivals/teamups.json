@@ -1,6 +1,6 @@
 {
   "game": "marvel-rivals",
-  "updated": "2026-11-21T07:44:49Z",
+  "updated": "2026-11-22T07:43:55Z",
   "usage_label": "Loadout pick share · Grandmaster+ ranked · Season 11",
   "sources": {
     "usage": "rivalsdata.com",
@@ -8,511 +8,511 @@
   },
   "heroes": {
     "Adam Warlock": {
-      "games_gm": 3704,
+      "games_gm": 4346,
       "loadouts": [
         {
           "loadout": "Flawless Design",
           "partner": "Ultron",
-          "share": 87.8,
-          "wr_delta_gm": -0.6,
-          "games_gm": 3253,
+          "share": 88.2,
+          "wr_delta_gm": -1.1,
+          "games_gm": 3831,
           "description": "Cosmic Cluster can now hit allies and heal them for 18 per orb, and the shared ammo rises from 15 to 25. With Ultron on the team each orb also bursts in 3 m for 5 damage and 7 healing; pick it when the team needs steadier healing.",
-          "wr_with_partner": 64.2,
-          "wr_delta_all": 11.5,
-          "matches_with_partner": 2938
+          "wr_with_partner": 64.3,
+          "wr_delta_all": 11.7,
+          "matches_with_partner": 3038
         },
         {
           "loadout": "Cosmic Cyclone",
           "partner": "Storm",
-          "share": 12.2,
-          "wr_delta_gm": 0.6,
-          "games_gm": 451,
+          "share": 11.8,
+          "wr_delta_gm": 1.1,
+          "games_gm": 515,
           "description": "Changes Soul Bond so linked allies get a 20% movement boost, and its link range grows from 15 to 20 m. With Storm on the team the boost rises to 30% and linked allies also deal 8% more damage, which makes it the loadout for a coordinated push.",
-          "wr_with_partner": 62.6,
-          "wr_delta_all": 9.9,
-          "matches_with_partner": 882
+          "wr_with_partner": 61.5,
+          "wr_delta_all": 8.9,
+          "matches_with_partner": 880
         }
       ]
     },
     "Angela": {
-      "games_gm": 9191,
+      "games_gm": 10735,
       "loadouts": [
         {
           "loadout": "Odin's Unacknowledged",
           "partner": "Loki",
-          "share": 79.4,
-          "wr_delta_gm": 0.5,
-          "games_gm": 7296,
+          "share": 79.0,
+          "wr_delta_gm": 1.1,
+          "games_gm": 8486,
           "description": "A new 20-second ability: Angela sends a 150-health illusion ahead that uses Assassin's Charge and briefly carries any enemy it meets head-on through the air. With Loki on the team it holds 2 charges, so she can drag two targets out of position in the same fight.",
-          "wr_with_partner": 59.4,
-          "wr_delta_all": 6.3,
-          "matches_with_partner": 2182
+          "wr_with_partner": 58.3,
+          "wr_delta_all": 5.2,
+          "matches_with_partner": 2267
         },
         {
           "loadout": "Asgardians of the Galaxy",
           "partner": "Star-Lord",
-          "share": 20.6,
-          "wr_delta_gm": -0.5,
-          "games_gm": 1895,
+          "share": 20.9,
+          "wr_delta_gm": -1.1,
+          "games_gm": 2249,
           "description": "A new 25-second ability: the first press reveals enemies within 50 m, and the second slams down for 65 damage in 10 m and Grounds them for 2 seconds. With Star-Lord each enemy hit gives Angela 75 bonus health, up to 200, a strong pick against flyers.",
-          "wr_with_partner": 57.7,
-          "wr_delta_all": 4.6,
-          "matches_with_partner": 3251
+          "wr_with_partner": 58.1,
+          "wr_delta_all": 5.0,
+          "matches_with_partner": 3341
         }
       ]
     },
     "Black Cat": {
-      "games_gm": 3456,
+      "games_gm": 3938,
       "loadouts": [
         {
           "loadout": "Binding Ties",
           "partner": "Spider-Man",
-          "share": 98.9,
-          "wr_delta_gm": -12.3,
-          "games_gm": 3418,
+          "share": 99.0,
+          "wr_delta_gm": -12.0,
+          "games_gm": 3900,
           "description": "Swaps Turn of Fortune for a Spider-Web Grapple with 2 charges that steals Fortune and tags enemies; hitting a tagged enemy with any other ability pops the tag for 45 bonus damage. With Spider-Man on the team, grappling an already tagged enemy also stops them in place for 0.5 seconds.",
-          "wr_with_partner": 48.3,
-          "wr_delta_all": 1.0,
-          "matches_with_partner": 3731
+          "wr_with_partner": 48.8,
+          "wr_delta_all": 1.3,
+          "matches_with_partner": 3807
         },
         {
           "loadout": "Feline Alliance",
           "partner": "Black Panther",
-          "share": 1.1,
-          "wr_delta_gm": 12.3,
+          "share": 1.0,
+          "wr_delta_gm": 12.0,
           "games_gm": 38,
           "description": "Taking 50 damage charges a new ability: an 8 m blast that deals 45 damage, knocks enemies back and gives her 50 bonus health, a speed boost and 100 Fortune per enemy hit, up to 200. With Black Panther on the team it is ready at any time, a solid escape from a failed dive.",
-          "wr_with_partner": 47.3,
-          "wr_delta_all": -0.0,
-          "matches_with_partner": 1017
+          "wr_with_partner": 49.0,
+          "wr_delta_all": 1.5,
+          "matches_with_partner": 1021
         }
       ]
     },
     "Black Panther": {
-      "games_gm": 4211,
+      "games_gm": 4906,
       "loadouts": [
         {
           "loadout": "Damisa-Yao",
           "partner": "Storm",
-          "share": 99.7,
-          "wr_delta_gm": -6.5,
-          "games_gm": 4198,
+          "share": 99.6,
+          "wr_delta_gm": -2.2,
+          "games_gm": 4888,
           "description": "Releases the energy in his suit in an 8 m burst that deals 30, slows enemies by 35% for 2 seconds and marks them all, on a 15-second cooldown. With Storm on the team it pulls enemies toward him and slows by 45%, setting up Spirit Rend resets.",
-          "wr_with_partner": 61.5,
-          "wr_delta_all": 13.4,
-          "matches_with_partner": 1191
+          "wr_with_partner": 61.9,
+          "wr_delta_all": 13.8,
+          "matches_with_partner": 1226
         },
         {
           "loadout": "Dimensional Shortcut",
           "partner": "Magik",
-          "share": 0.3,
-          "wr_delta_gm": 6.5,
-          "games_gm": 13,
+          "share": 0.4,
+          "wr_delta_gm": 2.2,
+          "games_gm": 18,
           "description": "Teleports him back to where he was a few seconds ago with 50 Bonus Health, then the disc explodes for 40 in 8 m and marks enemies, on a 35-second cooldown. With Magik on the team he can end the teleport early, a second escape for deep dives.",
-          "wr_with_partner": 54.7,
-          "wr_delta_all": 6.6,
-          "matches_with_partner": 2017
+          "wr_with_partner": 53.9,
+          "wr_delta_all": 5.8,
+          "matches_with_partner": 2042
         }
       ]
     },
     "Black Widow": {
-      "games_gm": 6488,
+      "games_gm": 7505,
       "loadouts": [
         {
           "loadout": "Burning Bullets",
           "partner": "Phoenix",
-          "share": 82.2,
-          "wr_delta_gm": 0.3,
-          "games_gm": 5330,
+          "share": 82.9,
+          "wr_delta_gm": 0.8,
+          "games_gm": 6225,
           "description": "Raises the Red Room Rifle's fire rate by 15% and makes Electro-Plasma Blast an instant hitscan laser that hits for 75 in 5 m and slows by 40% for 3 seconds. With Phoenix on the team it holds 2 charges; pick it for faster damage and an easier slow.",
-          "wr_with_partner": 47.4,
-          "wr_delta_all": 1.1,
-          "matches_with_partner": 2477
+          "wr_with_partner": 48.1,
+          "wr_delta_all": 1.9,
+          "matches_with_partner": 2539
         },
         {
           "loadout": "Allied Agents",
           "partner": "Hawkeye",
-          "share": 17.9,
-          "wr_delta_gm": -0.3,
-          "games_gm": 1158,
+          "share": 17.1,
+          "wr_delta_gm": -0.8,
+          "games_gm": 1280,
           "description": "A passive: each Red Room Rifle hit adds 1 Focus and each crit adds 2, and at 3 stacks her next round pierces and deals 55 instead of 45, and Focused shots return 50% of their damage as bonus health, up to 75. With Hawkeye on the team, a crit while Focused keeps all stacks, so take it if you can hit heads consistently.",
-          "wr_with_partner": 47.3,
-          "wr_delta_all": 1.1,
-          "matches_with_partner": 1081
+          "wr_with_partner": 46.3,
+          "wr_delta_all": 0.1,
+          "matches_with_partner": 1110
         }
       ]
     },
     "Blade": {
-      "games_gm": 2669,
+      "games_gm": 3112,
       "loadouts": [
         {
           "loadout": "Bleed for Battle",
           "partner": "Captain America",
-          "share": 61.2,
-          "wr_delta_gm": -1.3,
-          "games_gm": 1634,
+          "share": 61.0,
+          "wr_delta_gm": -1.5,
+          "games_gm": 1898,
           "description": "A passive: Blade gets one Bloodline Awakening stack for every 40 damage he takes, and his stack cap rises from 10 to 12. With Captain America on the team, falling below 65% health starts Bloodline Awakening at once with 5 bonus stacks and a cap of 14.",
-          "wr_with_partner": 58.6,
-          "wr_delta_all": 8.7,
-          "matches_with_partner": 3475
+          "wr_with_partner": 59.5,
+          "wr_delta_all": 9.6,
+          "matches_with_partner": 3404
         },
         {
           "loadout": "Blade of Khonshu",
           "partner": "Moon Knight",
-          "share": 38.8,
-          "wr_delta_gm": 1.3,
-          "games_gm": 1035,
+          "share": 39.0,
+          "wr_delta_gm": 1.5,
+          "games_gm": 1214,
           "description": "A new ability: Blade dashes in with a heavy sword cleave, then slashes four times, each slash throwing a 40-damage moon blade that bounces to nearby enemies at 35% less damage per jump. With Moon Knight every Whirlwind Slash adds another moon blade, so pick it against grouped teams.",
-          "wr_with_partner": 56.4,
-          "wr_delta_all": 6.5,
-          "matches_with_partner": 2663
+          "wr_with_partner": 56.2,
+          "wr_delta_all": 6.3,
+          "matches_with_partner": 2712
         }
       ]
     },
     "Captain America": {
-      "games_gm": 4070,
+      "games_gm": 4635,
       "loadouts": [
         {
           "loadout": "Stars Aligned",
           "partner": "Winter Soldier",
-          "share": 78.5,
-          "wr_delta_gm": 3.8,
-          "games_gm": 3197,
+          "share": 77.5,
+          "wr_delta_gm": 3.9,
+          "games_gm": 3592,
           "description": "Lets Captain America leap to a teammate every 12 seconds, giving both 150 bonus health while he absorbs part of the ally's damage for 2 seconds. With Winter Soldier the two can rally into each other, giving nearby allies bonus health and speed, a way to save a focused ally.",
-          "wr_with_partner": 54.2,
-          "wr_delta_all": 1.6,
-          "matches_with_partner": 4797
+          "wr_with_partner": 53.9,
+          "wr_delta_all": 1.3,
+          "matches_with_partner": 4788
         },
         {
           "loadout": "Voltaic Union",
           "partner": "Thor",
-          "share": 21.4,
-          "wr_delta_gm": -3.8,
-          "games_gm": 873,
+          "share": 22.5,
+          "wr_delta_gm": -3.9,
+          "games_gm": 1043,
           "description": "A C ability on a 15-second cooldown that turns Sentinel Strike into Lightning Shield throws for 10 seconds: after two hits he hurls 4 piercing shields for 45 each. With Thor every shield hit also bursts for 5 in 3 m, so pick it for more ranged pressure.",
-          "wr_with_partner": 57.7,
-          "wr_delta_all": 5.1,
-          "matches_with_partner": 2686
+          "wr_with_partner": 58.1,
+          "wr_delta_all": 5.6,
+          "matches_with_partner": 2654
         }
       ]
     },
     "Cloak & Dagger": {
-      "games_gm": 14200,
+      "games_gm": 16332,
       "loadouts": [
         {
           "loadout": "Frozen Haven",
           "partner": "Luna Snow",
-          "share": 70.7,
+          "share": 71.1,
           "wr_delta_gm": -4.3,
-          "games_gm": 10043,
+          "games_gm": 11615,
           "description": "A C ability on a 20-second cooldown that seals Cloak & Dagger in ice for 2 seconds, protected but rooted, while allies can heal her and she heals those within 8 m for 50 per second. With Luna Snow the aura heals 90 per second, a panic button against divers.",
-          "wr_with_partner": 42.4,
-          "wr_delta_all": -2.5,
-          "matches_with_partner": 9883
+          "wr_with_partner": 42.9,
+          "wr_delta_all": -2.0,
+          "matches_with_partner": 10357
         },
         {
           "loadout": "Oblivion Shroud",
           "partner": "The Hood",
-          "share": 29.3,
+          "share": 28.9,
           "wr_delta_gm": 4.3,
-          "games_gm": 4157,
+          "games_gm": 4717,
           "description": "Veil of Lightforce and Terror Cape keep their effects, shove the enemies they hit back along their path, then halt partway as 6 m veils for 4 seconds, cutting enemy damage (light) or enemy healing (dark) through them by 20%. With The Hood they widen to 8 m and give allies crossing them 15% damage, good for holding a choke.",
           "wr_with_partner": 49.1,
           "wr_delta_all": 4.1,
-          "matches_with_partner": 25581
+          "matches_with_partner": 25520
         }
       ]
     },
     "Cyclops": {
-      "games_gm": 7509,
+      "games_gm": 8792,
       "loadouts": [
         {
           "loadout": "Slim and Red",
           "partner": "Phoenix",
-          "share": 98.5,
+          "share": 98.6,
           "wr_delta_gm": -0.6,
-          "games_gm": 7399,
+          "games_gm": 8665,
           "description": "Ricochet Force (E) now ignites its targets for 7 damage every 0.5 seconds over 3 seconds, and an Optic Blast or Concussive Beam hit on a burning target deals half the remaining burn at once. Pick it with Phoenix, whose Spark detonations each cut 0.5 seconds off Ricochet Force's cooldown.",
-          "wr_with_partner": 49.7,
-          "wr_delta_all": 4.4,
-          "matches_with_partner": 12636
+          "wr_with_partner": 49.4,
+          "wr_delta_all": 4.1,
+          "matches_with_partner": 12639
         },
         {
           "loadout": "Kinetic Kin",
           "partner": "Gambit",
-          "share": 1.5,
+          "share": 1.4,
           "wr_delta_gm": 0.6,
-          "games_gm": 110,
+          "games_gm": 127,
           "description": "Adds a C ability on a 15-second cooldown that gives Cyclops 8 seconds of 40% extra movement speed and higher jumps, good for reaching high ground or a flank. With Gambit on the team, Optic Blast fires 25% faster and Concussive Beam ticks 15% faster while it lasts.",
           "wr_with_partner": 46.7,
           "wr_delta_all": 1.4,
-          "matches_with_partner": 15794
+          "matches_with_partner": 15571
         }
       ]
     },
     "Daredevil": {
-      "games_gm": 9283,
+      "games_gm": 10612,
       "loadouts": [
         {
           "loadout": "Devilish Affair",
           "partner": "Black Widow",
           "share": 99.5,
-          "wr_delta_gm": -8.8,
-          "games_gm": 9235,
+          "wr_delta_gm": -7.6,
+          "games_gm": 10555,
           "description": "Adds a 12-second chain swing (C) that hits a 120° cone up to 8.5 m for 55 damage, slows by 40% and opens Righteous Cross. With Black Widow on the team it widens to 180° and gives 30 Fury per hit, the better pick for an aggressive brawl.",
-          "wr_with_partner": 55.0,
-          "wr_delta_all": 2.6,
-          "matches_with_partner": 2061
+          "wr_with_partner": 54.6,
+          "wr_delta_all": 2.4,
+          "matches_with_partner": 2067
         },
         {
           "loadout": "Comprehensive Defense",
           "partner": "Iron Fist",
           "share": 0.5,
-          "wr_delta_gm": 8.8,
-          "games_gm": 48,
+          "wr_delta_gm": 7.6,
+          "games_gm": 57,
           "description": "Objection! now spins all the way around him: it deflects projectiles from every direction, damages enemies in range, makes him immune to damage and refunds Fury on each deflect. With Iron Fist on the team he also heals 60 per second while it lasts, a strong pick against projectile-heavy teams.",
-          "wr_with_partner": 53.0,
-          "wr_delta_all": 0.7,
-          "matches_with_partner": 2370
+          "wr_with_partner": 52.9,
+          "wr_delta_all": 0.6,
+          "matches_with_partner": 2426
         }
       ]
     },
     "Deadpool (Duelist)": {
-      "games_gm": 6767,
+      "games_gm": 7943,
       "loadouts": [
         {
           "loadout": "\"Hel-Yeah, Honey\"",
           "partner": "Hela",
-          "share": 54.5,
-          "wr_delta_gm": -0.4,
-          "games_gm": 3691,
+          "share": 55.1,
+          "wr_delta_gm": -0.3,
+          "games_gm": 4376,
           "description": "A passive that lets Deadpool upgrade either his Desert Eagles or his Katanas one extra time: the pistols pierce and fire homing bubbles, while every third katana hit detonates for 5 plus 1.5% of max health as true damage. With Hela, both weapons get the extra upgrade together.",
-          "wr_with_partner": 50.8,
-          "wr_delta_all": 4.1,
-          "matches_with_partner": 13078
+          "wr_with_partner": 51.1,
+          "wr_delta_all": 4.4,
+          "matches_with_partner": 13394
         },
         {
           "loadout": "Gumbo Chimichangas",
           "partner": "Gambit",
-          "share": 45.5,
-          "wr_delta_gm": 0.4,
-          "games_gm": 3076,
+          "share": 44.9,
+          "wr_delta_gm": 0.3,
+          "games_gm": 3567,
           "description": "Adds a 15-second leap (C) that lands in a 5 m ring of chimichangas for 60 damage; as a Strategist the ring heals allies too. With Gambit on the team it comes back every 10 seconds and stuns for 0.3 seconds on landing, a good dive opener.",
-          "wr_with_partner": 48.2,
-          "wr_delta_all": 1.5,
-          "matches_with_partner": 17774
+          "wr_with_partner": 49.0,
+          "wr_delta_all": 2.3,
+          "matches_with_partner": 17932
         }
       ]
     },
     "Deadpool (Strategist)": {
-      "games_gm": 6767,
+      "games_gm": 7943,
       "loadouts": [
         {
           "loadout": "\"Hel-Yeah, Honey\"",
           "partner": "Hela",
-          "share": 54.5,
-          "wr_delta_gm": -0.4,
-          "games_gm": 3691,
+          "share": 55.1,
+          "wr_delta_gm": -0.3,
+          "games_gm": 4376,
           "description": "A passive that lets Deadpool upgrade either his Desert Eagles or his Katanas one extra time: the pistols pierce and fire homing bubbles, while every third katana hit detonates for 5 plus 1.5% of max health as true damage. With Hela, both weapons get the extra upgrade together.",
-          "wr_with_partner": 50.8,
-          "wr_delta_all": 4.1,
-          "matches_with_partner": 13078
+          "wr_with_partner": 51.1,
+          "wr_delta_all": 4.4,
+          "matches_with_partner": 13394
         },
         {
           "loadout": "Gumbo Chimichangas",
           "partner": "Gambit",
-          "share": 45.5,
-          "wr_delta_gm": 0.4,
-          "games_gm": 3076,
+          "share": 44.9,
+          "wr_delta_gm": 0.3,
+          "games_gm": 3567,
           "description": "Adds a 15-second leap (C) that lands in a 5 m ring of chimichangas for 60 damage; as a Strategist the ring heals allies too. With Gambit on the team it comes back every 10 seconds and stuns for 0.3 seconds on landing, a good dive opener.",
-          "wr_with_partner": 48.2,
-          "wr_delta_all": 1.5,
-          "matches_with_partner": 17774
+          "wr_with_partner": 49.0,
+          "wr_delta_all": 2.3,
+          "matches_with_partner": 17932
         }
       ]
     },
     "Deadpool (Vanguard)": {
-      "games_gm": 6767,
+      "games_gm": 7943,
       "loadouts": [
         {
           "loadout": "\"Hel-Yeah, Honey\"",
           "partner": "Hela",
-          "share": 54.5,
-          "wr_delta_gm": -0.4,
-          "games_gm": 3691,
+          "share": 55.1,
+          "wr_delta_gm": -0.3,
+          "games_gm": 4376,
           "description": "A passive that lets Deadpool upgrade either his Desert Eagles or his Katanas one extra time: the pistols pierce and fire homing bubbles, while every third katana hit detonates for 5 plus 1.5% of max health as true damage. With Hela, both weapons get the extra upgrade together.",
-          "wr_with_partner": 50.8,
-          "wr_delta_all": 4.1,
-          "matches_with_partner": 13078
+          "wr_with_partner": 51.1,
+          "wr_delta_all": 4.4,
+          "matches_with_partner": 13394
         },
         {
           "loadout": "Gumbo Chimichangas",
           "partner": "Gambit",
-          "share": 45.5,
-          "wr_delta_gm": 0.4,
-          "games_gm": 3076,
+          "share": 44.9,
+          "wr_delta_gm": 0.3,
+          "games_gm": 3567,
           "description": "Adds a 15-second leap (C) that lands in a 5 m ring of chimichangas for 60 damage; as a Strategist the ring heals allies too. With Gambit on the team it comes back every 10 seconds and stuns for 0.3 seconds on landing, a good dive opener.",
-          "wr_with_partner": 48.2,
-          "wr_delta_all": 1.5,
-          "matches_with_partner": 17774
+          "wr_with_partner": 49.0,
+          "wr_delta_all": 2.3,
+          "matches_with_partner": 17932
         }
       ]
     },
     "Devil Dinosaur": {
-      "games_gm": 7272,
+      "games_gm": 8348,
       "loadouts": [
         {
           "loadout": "Primal Punishment",
           "partner": "The Punisher",
-          "share": 71.6,
-          "wr_delta_gm": -1.2,
-          "games_gm": 5208,
+          "share": 72.3,
+          "wr_delta_gm": -0.9,
+          "games_gm": 6035,
           "description": "A new 18-second ability: for 8 seconds Primal Bite becomes two magnetic cannons that fire every 0.25 seconds and burst in 3 m on impact, applying Bleed. With The Punisher he can ride on top, taking 25% less damage while the dinosaur absorbs half of what hits him.",
-          "wr_with_partner": 50.2,
-          "wr_delta_all": -1.5,
-          "matches_with_partner": 7176
+          "wr_with_partner": 50.6,
+          "wr_delta_all": -1.1,
+          "matches_with_partner": 7118
         },
         {
           "loadout": "Surf & Turf",
           "partner": "Jeff the Land Shark",
-          "share": 28.4,
-          "wr_delta_gm": 1.2,
-          "games_gm": 2064,
+          "share": 27.7,
+          "wr_delta_gm": 0.9,
+          "games_gm": 2313,
           "description": "Swaps Impact Beam for a 20 m water jet that runs up to 5 seconds, hurting enemies and healing teammates for 60 per second. If Jeff the Land Shark is on the team he can climb onto Devil Dinosaur's head, and both then take 12.5% less damage and heal 15 per second.",
-          "wr_with_partner": 52.5,
-          "wr_delta_all": 0.8,
-          "matches_with_partner": 9794
+          "wr_with_partner": 53.0,
+          "wr_delta_all": 1.3,
+          "matches_with_partner": 10202
         }
       ]
     },
     "Doctor Strange": {
-      "games_gm": 27276,
+      "games_gm": 31715,
       "loadouts": [
         {
           "loadout": "Psionic Vortex",
           "partner": "Invisible Woman",
-          "share": 50.5,
-          "wr_delta_gm": -2.1,
-          "games_gm": 13760,
+          "share": 50.9,
+          "wr_delta_gm": -1.5,
+          "games_gm": 16134,
           "description": "Turns Maelstrom of Madness into Psionic Vortex, which pulls enemies within 8 m toward him, and raises Shield of the Seraphim to 900 health. With Invisible Woman on the team, 70% of Vortex damage returns to him as bonus health, up to 150; pick it against divers.",
-          "wr_with_partner": 52.9,
-          "wr_delta_all": 1.9,
-          "matches_with_partner": 45831
+          "wr_with_partner": 53.0,
+          "wr_delta_all": 2.0,
+          "matches_with_partner": 47225
         },
         {
           "loadout": "Gamma Maelstrom",
           "partner": "Hulk",
-          "share": 49.5,
-          "wr_delta_gm": 2.1,
-          "games_gm": 13516,
+          "share": 49.1,
+          "wr_delta_gm": 1.5,
+          "games_gm": 15581,
           "description": "Replaces Maelstrom of Madness (E) with Gamma Maelstrom, which charges Dark Magic much faster, reaches 10 m instead of 8 and removes the Anti-Heal curse. With Hulk on the team he keeps up to 25 Dark Magic after each release and the meter stops decaying; pick it for frequent blasts.",
-          "wr_with_partner": 58.8,
-          "wr_delta_all": 7.8,
-          "matches_with_partner": 16764
+          "wr_with_partner": 58.5,
+          "wr_delta_all": 7.5,
+          "matches_with_partner": 17091
         }
       ]
     },
     "Elsa Bloodstone": {
-      "games_gm": 8392,
+      "games_gm": 9684,
       "loadouts": [
         {
           "loadout": "Prehistoric Trap",
           "partner": "Devil Dinosaur",
           "share": 96.1,
-          "wr_delta_gm": 6.8,
-          "games_gm": 8062,
+          "wr_delta_gm": 5.9,
+          "games_gm": 9304,
           "description": "Smoky Snare (F) gets a guard: when an enemy comes within 5 m, Diablo holds them for 1.2 seconds and leaves a 3 m gas cloud dealing 35 per second for 2 seconds. With Devil Dinosaur on the team its cooldown drops from 15 seconds to 12, so a triggered or broken trap is replaced sooner.",
-          "wr_with_partner": 53.3,
-          "wr_delta_all": 6.9,
-          "matches_with_partner": 5200
+          "wr_with_partner": 52.4,
+          "wr_delta_all": 6.0,
+          "matches_with_partner": 5249
         },
         {
           "loadout": "Loudmouth Mercs",
           "partner": "Deadpool",
           "share": 3.9,
-          "wr_delta_gm": -6.8,
-          "games_gm": 330,
+          "wr_delta_gm": -5.9,
+          "games_gm": 380,
           "description": "Living Bullet fires taunting rounds that slow enemies by 25% and damage them for 20 per second, then return and heal Elsa for 30% of the damage dealt; Inherited Instinct gains one extra level. With Deadpool on the team she fills Instinct much faster, a good pick for long fights.",
-          "wr_with_partner": 46.8,
-          "wr_delta_all": 0.4,
-          "matches_with_partner": 6215
+          "wr_with_partner": 46.3,
+          "wr_delta_all": -0.1,
+          "matches_with_partner": 6326
         }
       ]
     },
     "Emma Frost": {
-      "games_gm": 22208,
+      "games_gm": 25759,
       "loadouts": [
         {
           "loadout": "Spirit Breaker",
           "partner": "Mantis",
-          "share": 64.8,
-          "wr_delta_gm": 5.0,
-          "games_gm": 14389,
+          "share": 64.5,
+          "wr_delta_gm": 4.8,
+          "games_gm": 16620,
           "description": "Damage Emma deals to a Psychic Spear sentience comes back as bonus health at 150% of the amount, so spearing a target also shields her. With Mantis on the team, shattering a sentience adds 100 bonus health and takes 2 seconds off Psychic Spear, the sturdier pick for long brawls.",
-          "wr_with_partner": 58.6,
-          "wr_delta_all": 11.3,
-          "matches_with_partner": 12352
+          "wr_with_partner": 58.2,
+          "wr_delta_all": 11.0,
+          "matches_with_partner": 12285
         },
         {
           "loadout": "Iced Out Diamond",
           "partner": "Luna Snow",
-          "share": 35.2,
-          "wr_delta_gm": -5.0,
-          "games_gm": 7819,
+          "share": 35.5,
+          "wr_delta_gm": -4.8,
+          "games_gm": 9139,
           "description": "A 12-second ice blast (C) deals 50 damage and slows by 25%; in Diamond Form it becomes a 300-health wall that stops attacks and movement. With Luna Snow on the team every damaging ability in Diamond Form also slows by 20%, the pick for chasing mobile targets.",
-          "wr_with_partner": 48.0,
-          "wr_delta_all": 0.8,
-          "matches_with_partner": 22712
+          "wr_with_partner": 48.3,
+          "wr_delta_all": 1.2,
+          "matches_with_partner": 23857
         }
       ]
     },
     "Gambit": {
-      "games_gm": 20241,
+      "games_gm": 23458,
       "loadouts": [
         {
           "loadout": "Favorable Odds",
           "partner": "Magneto",
           "share": 98.0,
-          "wr_delta_gm": 7.8,
-          "games_gm": 19841,
+          "wr_delta_gm": 6.9,
+          "games_gm": 22992,
           "description": "Adds a 15-second C throw: two magnetic cards spin where they land for 5 seconds, healing allies 55 per second and hitting enemies for 50 per second, launching them on first contact. With Magneto they finish by slamming together for 40 damage and 60 healing, ideal at a choke.",
-          "wr_with_partner": 49.4,
-          "wr_delta_all": 1.8,
-          "matches_with_partner": 27575
+          "wr_with_partner": 49.6,
+          "wr_delta_all": 2.0,
+          "matches_with_partner": 27876
         },
         {
           "loadout": "Sparkling Staff",
           "partner": "Jubilee",
           "share": 2.0,
-          "wr_delta_gm": -7.8,
-          "games_gm": 400,
+          "wr_delta_gm": -6.9,
+          "games_gm": 466,
           "description": "Adds a staff spin on a 12-second cooldown that heals allies within 8 m for 70 per second, hits enemies within 5 m for 45 per second and blocks most projectiles. With Jubilee, his Bayou Bash swings add 10 healing per second for 3 seconds, which suits brawling.",
-          "wr_with_partner": 49.3,
-          "wr_delta_all": 1.7,
-          "matches_with_partner": 17818
+          "wr_with_partner": 49.7,
+          "wr_delta_all": 2.1,
+          "matches_with_partner": 18105
         }
       ]
     },
     "Gorr": {
-      "games_gm": 5143,
+      "games_gm": 5985,
       "loadouts": [
         {
           "loadout": "Ragnarok",
           "partner": "Hela",
-          "share": 88.1,
-          "wr_delta_gm": -4.2,
-          "games_gm": 4532
+          "share": 87.8,
+          "wr_delta_gm": -3.7,
+          "games_gm": 5255
         },
         {
           "loadout": "Hive Mind",
           "partner": "Venom",
-          "share": 11.9,
-          "wr_delta_gm": 4.2,
-          "games_gm": 611,
+          "share": 12.2,
+          "wr_delta_gm": 3.7,
+          "games_gm": 730,
           "description": "Adds a Symbiote Claw on a 15-second cooldown that pierces 25 m for 40 damage, then snaps back for 20 more and pulls caught enemies to Gorr. With Venom, Black Berserkers deal 33% more damage and slow their targets by 30%, the better pick against heroes who kite him.",
-          "wr_with_partner": 60.8,
-          "wr_delta_all": 4.3,
-          "matches_with_partner": 8315
+          "wr_with_partner": 61.0,
+          "wr_delta_all": 4.5,
+          "matches_with_partner": 8216
         },
         {
           "loadout": "Ragnarök",
@@ -521,869 +521,869 @@
           "wr_delta_gm": null,
           "games_gm": null,
           "description": "Adds a 20-second C ability: All-Black turns into a scythe that sweeps 5 m around Gorr for 45 damage, grounds enemies for 1 second and leaves 4 Shadow Scythe charges. With Hela the reach doubles to 10 m and each hit gives him and nearby allies 10 bonus health.",
-          "wr_with_partner": 62.8,
-          "wr_delta_all": 6.3,
-          "matches_with_partner": 7062
+          "wr_with_partner": 62.2,
+          "wr_delta_all": 5.7,
+          "matches_with_partner": 7142
         }
       ]
     },
     "Groot": {
-      "games_gm": 7667,
+      "games_gm": 8734,
       "loadouts": [
         {
           "loadout": "Bubble Buddies",
           "partner": "Jeff the Land Shark",
-          "share": 64.4,
+          "share": 64.2,
           "wr_delta_gm": -1.5,
-          "games_gm": 4935,
+          "games_gm": 5611,
           "description": "Groot hides in a 400-health bubble for 4 seconds, invincible and healing 40 per second, on a 20-second cooldown. With Jeff the Land Shark on the team the healing doubles to 80 per second and half the excess becomes Bonus Health, so take it against divers.",
-          "wr_with_partner": 53.5,
-          "wr_delta_all": 1.3,
-          "matches_with_partner": 4537
+          "wr_with_partner": 53.4,
+          "wr_delta_all": 1.2,
+          "matches_with_partner": 4776
         },
         {
           "loadout": "Wild Wall",
           "partner": "Mantis",
-          "share": 35.6,
+          "share": 35.8,
           "wr_delta_gm": 1.5,
-          "games_gm": 2732,
+          "games_gm": 3123,
           "description": "Adds a 200-health Wild Wall that heals allies within 15 m for 20 per second and gives 10 Bonus Health per second, on a 10-second cooldown. With Mantis on the team the wall evolves after healing 200, then heals 35 per second; pick it for long fights on a point.",
-          "wr_with_partner": 63.2,
-          "wr_delta_all": 11.0,
-          "matches_with_partner": 5296
+          "wr_with_partner": 63.0,
+          "wr_delta_all": 10.8,
+          "matches_with_partner": 5267
         }
       ]
     },
     "Hawkeye": {
-      "games_gm": 2361,
+      "games_gm": 2758,
       "loadouts": [
         {
           "loadout": "Senbonzakura Strike",
           "partner": "Psylocke",
-          "share": 69.5,
-          "wr_delta_gm": -0.5,
-          "games_gm": 1641,
+          "share": 69.9,
+          "wr_delta_gm": -1.4,
+          "games_gm": 1929,
           "description": "Replaces Blast Arrow with Psionic Arrow: holding the draw stores up to 5 arrows, one every 0.09 seconds, and releasing fires them in a fixed spread for 33 each. With Psylocke they stack every 0.07 seconds and explode in 2 m, which pays off against grouped enemies.",
-          "wr_with_partner": 52.0,
-          "wr_delta_all": 4.4,
-          "matches_with_partner": 2238
+          "wr_with_partner": 52.7,
+          "wr_delta_all": 5.1,
+          "matches_with_partner": 2323
         },
         {
           "loadout": "Moonlit Slash",
           "partner": "Cloak & Dagger",
-          "share": 30.5,
-          "wr_delta_gm": 0.5,
-          "games_gm": 720,
+          "share": 30.1,
+          "wr_delta_gm": 1.4,
+          "games_gm": 829,
           "description": "Swaps Crescent Slash for a shockwave that deals 65 to enemies with 15% Vulnerability and heals allies for 65 with a 15% healing boost, and Hawkeye heals himself by the same amount. With Cloak & Dagger it chains into three 35-point waves, a good pick when your team lacks sustain.",
-          "wr_with_partner": 48.7,
-          "wr_delta_all": 1.1,
-          "matches_with_partner": 4798
+          "wr_with_partner": 49.0,
+          "wr_delta_all": 1.4,
+          "matches_with_partner": 5002
         }
       ]
     },
     "Hela": {
-      "games_gm": 20183,
+      "games_gm": 23449,
       "loadouts": [
         {
           "loadout": "Hel Tendrils",
           "partner": "Venom",
-          "share": 92.8,
-          "wr_delta_gm": 9.6,
-          "games_gm": 18729,
+          "share": 92.5,
+          "wr_delta_gm": 8.3,
+          "games_gm": 21687,
           "description": "Swaps Soul Drainer for Hel Tendrils (10-second cooldown), a 3 m blast that stuns for 0.3 seconds and tethers enemies together, slowing anyone who pulls away by up to 40%. With Venom, Piercing Night fires 6 thorns that heal her 20 per direct hit, a strong pick against divers.",
-          "wr_with_partner": 57.4,
+          "wr_with_partner": 57.3,
           "wr_delta_all": 6.0,
-          "matches_with_partner": 9038
+          "matches_with_partner": 9201
         },
         {
           "loadout": "Deep Wrath",
           "partner": "Namor",
-          "share": 7.2,
-          "wr_delta_gm": -9.6,
-          "games_gm": 1454,
+          "share": 7.5,
+          "wr_delta_gm": -8.3,
+          "games_gm": 1762,
           "description": "A passive: each KO Hela takes part in leaves a 150-health Undead Monstro where the enemy fell, and Piercing Night makes it spit a thorn at the closest enemy. With Namor every attack in Goddess of Death raises another Monstro, a good pick when your team is winning fights.",
           "wr_with_partner": 50.4,
-          "wr_delta_all": -1.1,
-          "matches_with_partner": 8816
+          "wr_delta_all": -0.9,
+          "matches_with_partner": 9059
         }
       ]
     },
     "Hulk": {
-      "games_gm": 14044,
+      "games_gm": 16083,
       "loadouts": [
         {
           "loadout": "Savage Slam",
           "partner": "Captain America",
-          "share": 91.0,
-          "wr_delta_gm": 3.9,
-          "games_gm": 12778,
+          "share": 90.7,
+          "wr_delta_gm": 4.6,
+          "games_gm": 14584,
           "description": "Adds a 20-second-cooldown leap that slams for 40 in 8 m and cuts his other cooldowns more the healthier he is, up to 5 seconds off Indestructible Guard. With Captain America on the team the landing deals 50 and applies 20% Vulnerability for 3 seconds, a strong dive opener.",
-          "wr_with_partner": 61.5,
-          "wr_delta_all": 7.6,
-          "matches_with_partner": 3282
+          "wr_with_partner": 62.4,
+          "wr_delta_all": 8.4,
+          "matches_with_partner": 3373
         },
         {
           "loadout": "Gamma Fastball",
           "partner": "Wolverine",
-          "share": 9.0,
-          "wr_delta_gm": -3.9,
-          "games_gm": 1266,
+          "share": 9.3,
+          "wr_delta_gm": -4.6,
+          "games_gm": 1499,
           "description": "Puts Hulk in a Furious state for 6 seconds with 25% more movement and attack speed, on a 15-second cooldown, and adds Scars of Rage, which grants Unstoppable at 400 health. With Wolverine on the team he can also throw Wolverine forward and turn Furious right after.",
-          "wr_with_partner": 53.1,
-          "wr_delta_all": -0.8,
-          "matches_with_partner": 2962
+          "wr_with_partner": 52.8,
+          "wr_delta_all": -1.2,
+          "matches_with_partner": 2933
         }
       ]
     },
     "Human Torch": {
-      "games_gm": 3148,
+      "games_gm": 3552,
       "loadouts": [
         {
           "loadout": "Fiery Sparks",
           "partner": "Jubilee",
-          "share": 99.0,
-          "wr_delta_gm": 16.4,
-          "games_gm": 3115,
+          "share": 98.9,
+          "wr_delta_gm": 17.0,
+          "games_gm": 3513,
           "description": "For 5 seconds Human Torch fires tracking Firework Sparks at enemies within 10 m, one every 0.1 seconds for 9 damage each, on a 15-second cooldown. With Jubilee on the team each spark that lands gives him 4 Bonus Health, so pick it if you like to fight up close.",
-          "wr_with_partner": 57.0,
-          "wr_delta_all": 6.1,
-          "matches_with_partner": 7597
+          "wr_with_partner": 57.5,
+          "wr_delta_all": 6.4,
+          "matches_with_partner": 7648
         },
         {
           "loadout": "Storming Ignition",
           "partner": "Storm",
           "share": 1.1,
-          "wr_delta_gm": -16.4,
-          "games_gm": 33,
+          "wr_delta_gm": -17.0,
+          "games_gm": 39,
           "description": "A 20-second-cooldown fire blast that hits for 30 and leaves a 5 m Fire Vortex for 4 seconds, pulling enemies in and burning them for 5 every 0.2 seconds. With Storm, her Omega Hurricane ignites when it crosses a Flame Tornado, and hurricanes passing his Flame Fields spawn new tornadoes.",
-          "wr_with_partner": 56.7,
-          "wr_delta_all": 5.7,
-          "matches_with_partner": 812
+          "wr_with_partner": 57.0,
+          "wr_delta_all": 5.9,
+          "matches_with_partner": 834
         }
       ]
     },
     "Invisible Woman": {
-      "games_gm": 37898,
+      "games_gm": 44158,
       "loadouts": [
         {
           "loadout": "United Siblings",
           "partner": "Human Torch",
-          "share": 93.4,
-          "wr_delta_gm": 3.6,
-          "games_gm": 35407,
+          "share": 93.5,
+          "wr_delta_gm": 4.0,
+          "games_gm": 41268,
           "description": "Turns Guardian Shield into a 300-health Flame Shield on an ally that heals everyone near it over time, slows enemies who walk through it and gives allied projectiles fired through it 20% more damage. With Human Torch on the team the shield covers a wider area and holds 400.",
-          "wr_with_partner": 54.4,
-          "wr_delta_all": 5.3,
-          "matches_with_partner": 5073
+          "wr_with_partner": 54.5,
+          "wr_delta_all": 5.5,
+          "matches_with_partner": 5124
         },
         {
           "loadout": "First Family",
           "partner": "Mister Fantastic",
-          "share": 6.6,
-          "wr_delta_gm": -3.6,
-          "games_gm": 2491,
+          "share": 6.5,
+          "wr_delta_gm": -4.0,
+          "games_gm": 2890,
           "description": "A new ability that turns Invisible Woman and nearby allies invisible for 4 seconds with 25 healing per second and 1.2 m/s extra speed, until they take damage; it returns after a while out of combat. With Mister Fantastic it lasts 6 seconds with a 1.8 m/s boost.",
-          "wr_with_partner": 55.0,
-          "wr_delta_all": 6.0,
-          "matches_with_partner": 9501
+          "wr_with_partner": 54.5,
+          "wr_delta_all": 5.4,
+          "matches_with_partner": 9728
         }
       ]
     },
     "Iron Fist": {
-      "games_gm": 7548,
+      "games_gm": 8711,
       "loadouts": [
         {
           "loadout": "Iron & Stone",
           "partner": "The Thing",
-          "share": 70.6,
-          "wr_delta_gm": -2.6,
-          "games_gm": 5330,
+          "share": 70.1,
+          "wr_delta_gm": -2.3,
+          "games_gm": 6103,
           "description": "Adds a C ability on a 12-second cooldown: a 5 m uppercut for 45 that launches enemies, then a sweeping kick for another 45. With The Thing on the team the kick hits for 50, a good pick for knocking a target out of position before a flurry.",
           "wr_with_partner": 52.5,
-          "wr_delta_all": 2.2,
-          "matches_with_partner": 4274
+          "wr_delta_all": 2.1,
+          "matches_with_partner": 4263
         },
         {
           "loadout": "Kumiho Palm",
           "partner": "White Fox",
-          "share": 29.4,
-          "wr_delta_gm": 2.6,
-          "games_gm": 2218,
+          "share": 29.9,
+          "wr_delta_gm": 2.3,
+          "games_gm": 2608,
           "description": "A passive: every Yat Jee Chung Kuen hit heals allies within 6 m for 6, turning his counterattack flurry into group healing. With White Fox the heal rises to 7.5 per hit and the flurry locks on from 13 m, which suits a team that brawls together.",
           "wr_with_partner": 56.2,
           "wr_delta_all": 5.9,
-          "matches_with_partner": 9252
+          "matches_with_partner": 10261
         }
       ]
     },
     "Iron Man": {
-      "games_gm": 1960,
+      "games_gm": 2281,
       "loadouts": [
         {
           "loadout": "Thunder Overdrive",
           "partner": "Thor",
-          "share": 92.1,
-          "wr_delta_gm": 12.1,
-          "games_gm": 1805,
+          "share": 92.0,
+          "wr_delta_gm": 10.1,
+          "games_gm": 2099,
           "description": "Adds a lightning ring around Unibeam at all times: 80 damage per second in 0.75 m, or 90 in 1.2 m during Armor Overdrive. With Thor on the team, Armor Overdrive's cooldown drops from 20 to 15 seconds, a good pick for players who rely on the beam.",
-          "wr_with_partner": 58.6,
-          "wr_delta_all": 7.7,
-          "matches_with_partner": 4591
+          "wr_with_partner": 59.7,
+          "wr_delta_all": 8.7,
+          "matches_with_partner": 4578
         },
         {
           "loadout": "Gamma Charge",
           "partner": "Hulk",
-          "share": 7.9,
-          "wr_delta_gm": -12.1,
-          "games_gm": 155,
+          "share": 8.0,
+          "wr_delta_gm": -10.1,
+          "games_gm": 182,
           "description": "Turns Armor Overdrive (E) into Gamma Overdrive, adding a Gamma Shield, 50 plus 65 splash on Repulsor Blast and a 200-per-second Unibeam. With Hulk on the team, Invincible Pulse Cannon also grants a 75-point shield for 2 seconds and 45 bonus damage; pick it when Overdrive is your main damage.",
-          "wr_with_partner": 58.2,
-          "wr_delta_all": 7.2,
-          "matches_with_partner": 3129
+          "wr_with_partner": 57.6,
+          "wr_delta_all": 6.6,
+          "matches_with_partner": 3155
         }
       ]
     },
     "Jeff The Land Shark": {
-      "games_gm": 10623,
+      "games_gm": 12266,
       "loadouts": [
         {
           "loadout": "Mr. Pool's Interdimensional Toy Box",
           "partner": "Deadpool",
-          "share": 86.4,
-          "wr_delta_gm": 1.3,
-          "games_gm": 9179,
+          "share": 86.1,
+          "wr_delta_gm": 1.5,
+          "games_gm": 10561,
           "description": "Adds a Deadpool plushie that Jeff spits out: for 5 seconds it taunts nearby enemies and heals allies within 6 m for 30 per second. With Deadpool on the team the taunt gets stronger and the plushie deals 30 damage per second; pick it against divers rushing the backline.",
           "wr_with_partner": 48.4,
-          "wr_delta_all": 1.1,
-          "matches_with_partner": 11464
+          "wr_delta_all": 1.2,
+          "matches_with_partner": 12055
         },
         {
           "loadout": "Guardian of the Deep",
           "partner": "Venom",
-          "share": 13.6,
-          "wr_delta_gm": -1.3,
-          "games_gm": 1444,
+          "share": 13.9,
+          "wr_delta_gm": -1.5,
+          "games_gm": 1705,
           "description": "Adds healing tendrils on C, every 20 seconds, that link allies within 15 m for 5 seconds: 45 healing at once, then 45 per second, with half the excess turned into bonus health. With Venom on the team they also hit nearby enemies for 35 per second; pick it for close brawls.",
           "wr_with_partner": 53.1,
           "wr_delta_all": 5.8,
-          "matches_with_partner": 9560
+          "matches_with_partner": 9933
         }
       ]
     },
     "Jubilee": {
-      "games_gm": 13387,
+      "games_gm": 15671,
       "loadouts": [
         {
           "loadout": "Hellfire Sparks",
           "partner": "The Hood",
-          "share": 96.7,
-          "wr_delta_gm": -1.1,
-          "games_gm": 12941,
+          "share": 96.6,
+          "wr_delta_gm": -2.0,
+          "games_gm": 15141,
           "description": "A passive that turns Energy Plasmoids into hitscan shots while her attack speed is boosted: each round deals 5 damage or heals 6.5, can crit and heals her for 2. With The Hood on the team popping a Sparkle Mark no longer removes it, so she can stay in hitscan mode.",
-          "wr_with_partner": 53.5,
-          "wr_delta_all": 2.7,
-          "matches_with_partner": 46264
+          "wr_with_partner": 53.6,
+          "wr_delta_all": 2.8,
+          "matches_with_partner": 46178
         },
         {
           "loadout": "Vampiric Kin",
           "partner": "Blade",
-          "share": 3.3,
-          "wr_delta_gm": 1.1,
-          "games_gm": 446,
+          "share": 3.4,
+          "wr_delta_gm": 2.0,
+          "games_gm": 530,
           "description": "Adds a C field on a 15-second cooldown: for 6 seconds, allies within 12 m heal 15 per second and gain 40% lifesteal on their attacks. With Blade on the team the healing rises to 25 per second, a strong pick for a team that brawls up close.",
           "wr_with_partner": 53.7,
           "wr_delta_all": 2.9,
-          "matches_with_partner": 9145
+          "matches_with_partner": 9137
         }
       ]
     },
     "Loki": {
-      "games_gm": 5839,
+      "games_gm": 6760,
       "loadouts": [
         {
           "loadout": "Vibrant Vitality",
           "partner": "Mantis",
-          "share": 78.3,
-          "wr_delta_gm": 0.2,
-          "games_gm": 4572,
+          "share": 78.1,
+          "wr_delta_gm": 0.1,
+          "games_gm": 5277,
           "description": "Regeneration Domain (Shift) widens from 5 m to 6.5 m while keeping its 100 healing per second. With Mantis on the team, placing it releases a 45-damage shockwave that lightly launches enemies, so pick it when your team fights in a tight group.",
           "wr_with_partner": 62.1,
-          "wr_delta_all": 11.7,
-          "matches_with_partner": 1928
+          "wr_delta_all": 11.8,
+          "matches_with_partner": 1978
         },
         {
           "loadout": "Villain's Illusion",
           "partner": "Hela",
-          "share": 21.7,
-          "wr_delta_gm": -0.2,
-          "games_gm": 1267,
+          "share": 21.9,
+          "wr_delta_gm": -0.1,
+          "games_gm": 1483,
           "description": "A 30-second-cooldown ability that turns Loki into a fallen hero from either team for 6 seconds, minus their ultimate, and every destroyed clone takes 1 second off Doppelganger and Devious Exchange. With Hela on the team it lasts 8 seconds, and lethal damage while transformed, even in God of Mischief, reverts him to Loki with 150 health; pick it for risky transformations.",
-          "wr_with_partner": 57.1,
-          "wr_delta_all": 6.7,
-          "matches_with_partner": 3208
+          "wr_with_partner": 57.2,
+          "wr_delta_all": 6.9,
+          "matches_with_partner": 3425
         }
       ]
     },
     "Luna Snow": {
-      "games_gm": 22744,
+      "games_gm": 26626,
       "loadouts": [
         {
           "loadout": "Atlas Bond",
           "partner": "White Fox",
-          "share": 66.3,
-          "wr_delta_gm": 2.6,
-          "games_gm": 15072,
+          "share": 66.0,
+          "wr_delta_gm": 2.5,
+          "games_gm": 17563,
           "description": "Adds a 12-second C spirit fox that runs 40 m, healing allies it passes for 80 and hitting enemies for 45; casting it also cleanses Luna. With White Fox on the team the fox runs back and the cooldown drops to 10 seconds.",
-          "wr_with_partner": 48.9,
-          "wr_delta_all": 2.7,
-          "matches_with_partner": 10915
+          "wr_with_partner": 49.8,
+          "wr_delta_all": 3.5,
+          "matches_with_partner": 12735
         },
         {
           "loadout": "Duality Dance",
           "partner": "Adam Warlock",
-          "share": 33.7,
-          "wr_delta_gm": -2.6,
-          "games_gm": 7672,
+          "share": 34.0,
+          "wr_delta_gm": -2.5,
+          "games_gm": 9063,
           "description": "Soul Bond links everyone within 20 m for 6 seconds, and Luna heals 50% of her damage to linked enemies and 35% of her healing on linked allies. With Adam Warlock, Light & Dark Ice crits cut 1.5 seconds off Ice Arts and 0.5 off Absolute Zero.",
-          "wr_with_partner": 48.3,
-          "wr_delta_all": 2.1,
-          "matches_with_partner": 2249
+          "wr_with_partner": 48.5,
+          "wr_delta_all": 2.3,
+          "matches_with_partner": 2402
         }
       ]
     },
     "Magik": {
-      "games_gm": 6276,
+      "games_gm": 7349,
       "loadouts": [
         {
           "loadout": "Chain of Cyttorak",
           "partner": "Doctor Strange",
-          "share": 75.5,
-          "wr_delta_gm": -5.8,
-          "games_gm": 4741,
+          "share": 75.4,
+          "wr_delta_gm": -6.0,
+          "games_gm": 5544,
           "description": "A new 20-second ability: a chain binds two enemies for 4 seconds, dealing 10 damage per second and pulling them together, slowing them up to 40% the farther apart they are. With Doctor Strange one cast can bind a whole group, which lines them up for Eldritch Whirl.",
-          "wr_with_partner": 59.4,
-          "wr_delta_all": 3.2,
-          "matches_with_partner": 18533
+          "wr_with_partner": 59.5,
+          "wr_delta_all": 3.3,
+          "matches_with_partner": 18476
         },
         {
           "loadout": "Void Pentagram",
           "partner": "The Hood",
-          "share": 24.5,
-          "wr_delta_gm": 5.8,
-          "games_gm": 1535,
+          "share": 24.6,
+          "wr_delta_gm": 6.0,
+          "games_gm": 1805,
           "description": "A new 20-second ability: an 8 m void circle lasts 5 seconds, and each Stepping Discs cast inside it recharges 3 seconds faster and summons a Limbo demon. With The Hood the demons get 125 health and a 9 m reach, so take it to hold one area.",
-          "wr_with_partner": 59.9,
-          "wr_delta_all": 3.6,
-          "matches_with_partner": 15159
+          "wr_with_partner": 60.0,
+          "wr_delta_all": 3.8,
+          "matches_with_partner": 14822
         }
       ]
     },
     "Magneto": {
-      "games_gm": 29347,
+      "games_gm": 34089,
       "loadouts": [
         {
           "loadout": "Metallic Chaos",
           "partner": "Scarlet Witch",
-          "share": 88.5,
+          "share": 88.4,
           "wr_delta_gm": -2.3,
-          "games_gm": 25968,
+          "games_gm": 30149,
           "description": "Adds a Chaos Greatsword on C for 8 seconds, every 18 seconds, whose swings fire 45-damage projectiles plus 35 in a small area. With Scarlet Witch on the team, Mag-Cannon becomes a charged attack that spends his energy bar on a greatsword per tick; pick it for mid-range damage.",
-          "wr_with_partner": 51.6,
-          "wr_delta_all": 4.2,
-          "matches_with_partner": 23633
+          "wr_with_partner": 51.8,
+          "wr_delta_all": 4.3,
+          "matches_with_partner": 23751
         },
         {
           "loadout": "Magnetic Resonance",
           "partner": "Emma Frost",
-          "share": 11.5,
+          "share": 11.6,
           "wr_delta_gm": 2.3,
-          "games_gm": 3379,
+          "games_gm": 3940,
           "description": "Adds a magnetic copy on C, on a 15-second cooldown: it has 300 health, lasts 6 seconds and repeats his movement and abilities for 50% of his damage, so enemies see two Magnetos. With Emma Frost on the team it gets 450 health and stays until destroyed or recalled.",
-          "wr_with_partner": 47.2,
-          "wr_delta_all": -0.2,
-          "matches_with_partner": 16989
+          "wr_with_partner": 47.0,
+          "wr_delta_all": -0.5,
+          "matches_with_partner": 17368
         }
       ]
     },
     "Mantis": {
-      "games_gm": 9759,
+      "games_gm": 11103,
       "loadouts": [
         {
           "loadout": "Star Blossom",
           "partner": "Star-Lord",
-          "share": 83.1,
-          "wr_delta_gm": -3.3,
-          "games_gm": 8112,
+          "share": 82.9,
+          "wr_delta_gm": -2.5,
+          "games_gm": 9201,
           "description": "Changes Healing Flower: casting it again on an ally who already has it raises their heal to 10 per second plus 3.5% of max health and spreads healing to anyone within 8 m. With Star-Lord on the team every first cast gets that boost at once, which saves orbs.",
-          "wr_with_partner": 62.5,
-          "wr_delta_all": 5.3,
-          "matches_with_partner": 6065
+          "wr_with_partner": 62.1,
+          "wr_delta_all": 5.0,
+          "matches_with_partner": 5885
         },
         {
           "loadout": "Vitality Pact",
           "partner": "Adam Warlock",
-          "share": 16.9,
-          "wr_delta_gm": 3.3,
-          "games_gm": 1647,
+          "share": 17.1,
+          "wr_delta_gm": 2.5,
+          "games_gm": 1902,
           "description": "When Mantis is defeated she roams as a soul, healing allies within 8 m for 5 per second, and picks where to come back, once every 90 seconds. With Adam Warlock the soul can also Soul Bond nearby allies to heal them and share damage, useful in long fights.",
-          "wr_with_partner": 61.4,
-          "wr_delta_all": 4.2,
-          "matches_with_partner": 1728
+          "wr_with_partner": 62.1,
+          "wr_delta_all": 5.0,
+          "matches_with_partner": 1747
         }
       ]
     },
     "Mister Fantastic": {
-      "games_gm": 4148,
+      "games_gm": 4834,
       "loadouts": [
         {
           "loadout": "Clobberin' Research Dept.",
           "partner": "The Thing",
-          "share": 70.4,
-          "wr_delta_gm": 1.6,
-          "games_gm": 2920,
+          "share": 70.0,
+          "wr_delta_gm": 1.0,
+          "games_gm": 3384,
           "description": "A toggle (C) for a brawler stance: Stretch Punch becomes a charged Brawling Punch for 65 to 100 damage that turns 75% of it into bonus health, up to 75. With The Thing on the team, Distended Grip becomes a charged hammer that launches enemies; pick it for close brawls.",
-          "wr_with_partner": 54.2,
-          "wr_delta_all": 1.1,
-          "matches_with_partner": 4551
+          "wr_with_partner": 54.8,
+          "wr_delta_all": 1.7,
+          "matches_with_partner": 4476
         },
         {
           "loadout": "Fantastic Amplifier",
           "partner": "Rocket Raccoon",
-          "share": 29.6,
-          "wr_delta_gm": -1.6,
-          "games_gm": 1228,
+          "share": 30.0,
+          "wr_delta_gm": -1.0,
+          "games_gm": 1450,
           "description": "An F ability on an 8-second cooldown that raises max Elasticity to 200 and lets him Inflate on demand, though Elasticity drains at 12.5 per second while Inflated. With Rocket Raccoon on the team, each Brainiac Bounce slam launches enemies, so pick it for control and staying power.",
-          "wr_with_partner": 60.4,
+          "wr_with_partner": 60.3,
           "wr_delta_all": 7.2,
-          "matches_with_partner": 4955
+          "matches_with_partner": 5061
         }
       ]
     },
     "Moon Knight": {
-      "games_gm": 2683,
+      "games_gm": 3179,
       "loadouts": [
         {
           "loadout": "Luminous Moon",
           "partner": "Cloak & Dagger",
-          "share": 84.8,
-          "wr_delta_gm": 1.2,
-          "games_gm": 2275,
+          "share": 83.8,
+          "wr_delta_gm": -1.4,
+          "games_gm": 2664,
           "description": "A C ability every 12 seconds: Moon Knight phases through a 15 m dash, then heals himself and allies within 5 m for 55. With Cloak & Dagger it heals 65 in 8 m, and he regains 20 health per second for 3 seconds, useful when healing is short.",
           "wr_with_partner": 48.7,
           "wr_delta_all": 2.3,
-          "matches_with_partner": 10542
+          "matches_with_partner": 10499
         },
         {
           "loadout": "Blood Moon",
           "partner": "Elsa Bloodstone",
-          "share": 15.2,
-          "wr_delta_gm": -1.2,
-          "games_gm": 408,
+          "share": 16.2,
+          "wr_delta_gm": 1.4,
+          "games_gm": 515,
           "description": "Adds a hidden Ankh Trap (C) on a 15-second cooldown: the enemy who sets it off is launched toward it by a 70-damage talon, and a normal Ankh appears there. With Elsa Bloodstone on the team 3 talons of 40 damage fall instead, so pick it to guard a flank.",
-          "wr_with_partner": 44.9,
-          "wr_delta_all": -1.6,
-          "matches_with_partner": 1732
+          "wr_with_partner": 45.5,
+          "wr_delta_all": -1.0,
+          "matches_with_partner": 1700
         }
       ]
     },
     "Namor": {
-      "games_gm": 9320,
+      "games_gm": 10904,
       "loadouts": [
         {
           "loadout": "Gamma Monstro",
           "partner": "Hulk",
-          "share": 55.6,
-          "wr_delta_gm": 0.5,
-          "games_gm": 5182,
+          "share": 55.3,
+          "wr_delta_gm": 0.4,
+          "games_gm": 6032,
           "description": "Summons an extra 150-health Gamma Monstro (25-second cooldown) that hits the nearest enemy for 55 per second and fires a beam when Wrath of the Seven Seas lands. With Hulk, standing in Blessing of the Deep's barrier speeds its recharge by 200% and adds 25% damage, good for steady pressure.",
-          "wr_with_partner": 54.0,
+          "wr_with_partner": 53.9,
           "wr_delta_all": 7.7,
-          "matches_with_partner": 10198
+          "matches_with_partner": 10376
         },
         {
           "loadout": "Chilling Charisma",
           "partner": "Luna Snow",
-          "share": 44.4,
-          "wr_delta_gm": -0.5,
-          "games_gm": 4138,
+          "share": 44.7,
+          "wr_delta_gm": -0.4,
+          "games_gm": 4872,
           "description": "Adds a C ability (15-second cooldown): a 6 m Frost Tide that deals 75 damage, pushes enemies back and slows them by 25%, and his Monstro Spawn slow by 15%. With Luna Snow it gets 2 charges and crashes at the end for 50 more, good for peeling divers.",
-          "wr_with_partner": 46.7,
-          "wr_delta_all": 0.5,
-          "matches_with_partner": 13559
+          "wr_with_partner": 47.1,
+          "wr_delta_all": 0.8,
+          "matches_with_partner": 14083
         }
       ]
     },
     "Nightcrawler": {
-      "games_gm": 33403,
+      "games_gm": 37528,
       "loadouts": [
         {
           "loadout": "Demon Disciple",
           "partner": "Magik",
-          "share": 84.5,
-          "wr_delta_gm": 1.2,
-          "games_gm": 28226,
+          "share": 85.1,
+          "wr_delta_gm": 1.5,
+          "games_gm": 31922,
           "description": "A passive: every warp from Swift Intervention, Tandem Teleport or Smoke Shift leaves an 8 m field that heals allies for 40 and deals 10 damage. With Magik on the team each warp also gives him 25 bonus health, which suits players who teleport into fights often.",
-          "wr_with_partner": 58.3,
-          "wr_delta_all": 10.7,
-          "matches_with_partner": 38190
+          "wr_with_partner": 58.4,
+          "wr_delta_all": 10.6,
+          "matches_with_partner": 35577
         },
         {
           "loadout": "Protective Siblings",
           "partner": "Rogue",
-          "share": 15.5,
-          "wr_delta_gm": -1.2,
-          "games_gm": 5177,
+          "share": 14.9,
+          "wr_delta_gm": -1.5,
+          "games_gm": 5606,
           "description": "Adds a 15-second cooldown move: Nightcrawler vanishes, a 5 m pulse heals allies for 50, and he lands with a 40-damage sword slam that slows. With Rogue the pulse returns over 8 m for 30 healing and 30 damage and launches enemies toward him; pick it for grouped fights.",
-          "wr_with_partner": 54.1,
-          "wr_delta_all": 6.5,
-          "matches_with_partner": 45084
+          "wr_with_partner": 54.2,
+          "wr_delta_all": 6.4,
+          "matches_with_partner": 41495
         }
       ]
     },
     "Peni Parker": {
-      "games_gm": 3906,
+      "games_gm": 4485,
       "loadouts": [
         {
           "loadout": "Rocket Network",
           "partner": "Rocket Raccoon",
-          "share": 55.5,
-          "wr_delta_gm": -0.9,
-          "games_gm": 2167,
+          "share": 55.4,
+          "wr_delta_gm": -0.5,
+          "games_gm": 2486,
           "description": "A C ability (25-second cooldown) that places a second, armored 250-health Spider-Nest, which sends out Spider-Drones and drops a 50 bonus health pack every 3 seconds. With Rocket Raccoon the nest heals 25 per second and his B.R.B. spawns webs, drones and mines, ideal for holding a point.",
-          "wr_with_partner": 68.5,
-          "wr_delta_all": 9.2,
-          "matches_with_partner": 6649
+          "wr_with_partner": 68.4,
+          "wr_delta_all": 9.0,
+          "matches_with_partner": 6794
         },
         {
           "loadout": "Vibranium Mech",
           "partner": "Black Panther",
-          "share": 44.5,
-          "wr_delta_gm": 0.9,
-          "games_gm": 1739,
+          "share": 44.6,
+          "wr_delta_gm": 0.5,
+          "games_gm": 1999,
           "description": "A C ability on a 15-second cooldown: Peni raises a 300-health vibranium barrier in front of her for 5 seconds while Cyber-Web Cluster fires every 0.18 seconds. With Black Panther on the team the barrier holds 400 health, a good pick when your team has no other shield.",
-          "wr_with_partner": 61.8,
-          "wr_delta_all": 2.5,
-          "matches_with_partner": 1896
+          "wr_with_partner": 61.2,
+          "wr_delta_all": 1.9,
+          "matches_with_partner": 1923
         }
       ]
     },
     "Phoenix": {
-      "games_gm": 11054,
+      "games_gm": 12768,
       "loadouts": [
         {
           "loadout": "Circle of Life",
           "partner": "Hela",
-          "share": 99.1,
-          "wr_delta_gm": -4.3,
-          "games_gm": 10950,
+          "share": 99.0,
+          "wr_delta_gm": -4.6,
+          "games_gm": 12643,
           "description": "Swaps Psionic Detonation for Phoenix Netherfire: a small blast that stuns for 0.3 seconds, then two 20-damage blasts that cut enemy healing by 40% for 3 seconds, each adding a Spark. With Hela on the team every blast adds 2 Sparks, so pick it against teams with strong healing.",
-          "wr_with_partner": 52.9,
-          "wr_delta_all": 7.3,
-          "matches_with_partner": 6630
+          "wr_with_partner": 52.7,
+          "wr_delta_all": 7.1,
+          "matches_with_partner": 6820
         },
         {
           "loadout": "Telekinetic Beatdown",
           "partner": "Rogue",
-          "share": 0.9,
-          "wr_delta_gm": 4.3,
-          "games_gm": 104,
+          "share": 1.0,
+          "wr_delta_gm": 4.6,
+          "games_gm": 125,
           "description": "A C ability: a forward shockwave that, on a hit, punches for 55 and chains to up to 3 enemies within 8 m, each hit adding a Spark and healing Phoenix 50. With Rogue it reaches 4 targets, heals 65 per hit and adds another Spark, best against grouped enemies.",
-          "wr_with_partner": 52.2,
-          "wr_delta_all": 6.6,
-          "matches_with_partner": 7290
+          "wr_with_partner": 52.0,
+          "wr_delta_all": 6.4,
+          "matches_with_partner": 7223
         }
       ]
     },
     "Psylocke": {
-      "games_gm": 12323,
+      "games_gm": 14167,
       "loadouts": [
         {
           "loadout": "Mental Projection",
           "partner": "Emma Frost",
-          "share": 70.5,
+          "share": 69.8,
           "wr_delta_gm": 1.5,
-          "games_gm": 8692,
+          "games_gm": 9891,
           "description": "A new 20-second ability: Psylocke goes invisible while an illusion dashes ahead with Psi-Blade Dash and mirrors her attacks at 15% damage for 3 seconds. With Emma Frost she can press it once more to swap places with it, so it works as both bait and an escape.",
           "wr_with_partner": 52.3,
           "wr_delta_all": 1.9,
-          "matches_with_partner": 11628
+          "matches_with_partner": 11812
         },
         {
           "loadout": "Light & Dark Darts",
           "partner": "Cloak & Dagger",
-          "share": 29.5,
+          "share": 30.2,
           "wr_delta_gm": -1.5,
-          "games_gm": 3631,
+          "games_gm": 4276,
           "description": "A new 20-second ability: a ring of darts deals 30 damage and heals Psylocke 20 per hit, then a 6 m shadow zone returns her to stealth if she stays in it. With Cloak & Dagger the zone widens to 8 m and each new stealth fires the ring again.",
-          "wr_with_partner": 49.0,
-          "wr_delta_all": -1.4,
-          "matches_with_partner": 9336
+          "wr_with_partner": 49.2,
+          "wr_delta_all": -1.3,
+          "matches_with_partner": 9467
         }
       ]
     },
     "Rocket Raccoon": {
-      "games_gm": 13381,
+      "games_gm": 15797,
       "loadouts": [
         {
           "loadout": "Mammalian Bond",
           "partner": "Squirrel Girl",
-          "share": 63.4,
-          "wr_delta_gm": 0.7,
-          "games_gm": 8488,
+          "share": 63.6,
+          "wr_delta_gm": 0.9,
+          "games_gm": 10045,
           "description": "Throws 5 Vitality Acorns that heal teammates for 30 and cut their cooldowns by 0.5 seconds, whether they are hit directly or pick one up; it has 2 charges at 20 seconds each. With Squirrel Girl on the team it holds 3 charges for more burst healing.",
-          "wr_with_partner": 50.0,
-          "wr_delta_all": -5.0,
-          "matches_with_partner": 4554
+          "wr_with_partner": 50.4,
+          "wr_delta_all": -4.5,
+          "matches_with_partner": 4448
         },
         {
           "loadout": "Planet X Pals",
           "partner": "Groot",
-          "share": 36.6,
-          "wr_delta_gm": -0.7,
-          "games_gm": 4893,
+          "share": 36.4,
+          "wr_delta_gm": -0.9,
+          "games_gm": 5752,
           "description": "For 8 seconds Bombard Mode fires Thorny Spores that burst in 5 m, damaging enemies for 18 per round and giving allies 20 healing plus 20 Bonus Health, on a 12-second cooldown. With Groot on the team it lasts 12 seconds and Rocket can ride on Groot's shoulders.",
-          "wr_with_partner": 59.0,
+          "wr_with_partner": 58.9,
           "wr_delta_all": 4.0,
-          "matches_with_partner": 5438
+          "matches_with_partner": 5609
         }
       ]
     },
     "Rogue": {
-      "games_gm": 13463,
+      "games_gm": 15553,
       "loadouts": [
         {
           "loadout": "Mr. & Mrs. X",
           "partner": "Gambit",
-          "share": 70.5,
-          "wr_delta_gm": 2.7,
-          "games_gm": 9497,
+          "share": 70.3,
+          "wr_delta_gm": 2.4,
+          "games_gm": 10931,
           "description": "A new 15-second ability: for 8 seconds every attack Rogue lands releases a shockwave that deals 3 plus 1% max health to enemies within 8 m and heals allies there for 10. With Gambit on the team the shockwaves never switch off, which turns her into a healing brawler.",
-          "wr_with_partner": 55.9,
-          "wr_delta_all": 3.9,
-          "matches_with_partner": 33605
+          "wr_with_partner": 55.5,
+          "wr_delta_all": 3.6,
+          "matches_with_partner": 33404
         },
         {
           "loadout": "Explosive Entanglement",
           "partner": "Magneto",
-          "share": 29.5,
-          "wr_delta_gm": -2.7,
-          "games_gm": 3966,
+          "share": 29.7,
+          "wr_delta_gm": -2.4,
+          "games_gm": 4622,
           "description": "A passive that upgrades Defensive Stance: blocking from the front cuts damage by 75% instead of 60%, and what the field soaks goes straight into Southern Brawl. With Magneto on the team Southern Brawl also knocks enemies back and adds 60 damage when they hit a wall.",
-          "wr_with_partner": 54.3,
-          "wr_delta_all": 2.3,
-          "matches_with_partner": 12838
+          "wr_with_partner": 54.0,
+          "wr_delta_all": 2.2,
+          "matches_with_partner": 12780
         }
       ]
     },
     "Scarlet Witch": {
-      "games_gm": 6085,
+      "games_gm": 7224,
       "loadouts": [
         {
           "loadout": "Hex Fireworks",
           "partner": "Jubilee",
-          "share": 73.0,
-          "wr_delta_gm": 2.5,
-          "games_gm": 4441,
+          "share": 73.1,
+          "wr_delta_gm": 2.8,
+          "games_gm": 5280,
           "description": "Dark Seal becomes a Plasmoid Seal: press E again while the field is up to detonate it for 52 damage in 6 m and 15% Vulnerability for 2 seconds. With Jubilee on the team Mystic Projection heals her 30 per second, so pick it for a safer, harder-hitting seal.",
-          "wr_with_partner": 55.1,
-          "wr_delta_all": 3.5,
-          "matches_with_partner": 36652
+          "wr_with_partner": 55.3,
+          "wr_delta_all": 3.7,
+          "matches_with_partner": 36823
         },
         {
           "loadout": "Sorcerers Supreme",
           "partner": "Doctor Strange",
-          "share": 27.0,
-          "wr_delta_gm": -2.5,
-          "games_gm": 1644,
+          "share": 26.9,
+          "wr_delta_gm": -2.8,
+          "games_gm": 1944,
           "description": "Replaces Chthonian Burst with Mystic Burst for 8 seconds on an 8-second cooldown: hold the button to fire a missile every 0.12 seconds, even while Chaos Control runs. With Doctor Strange on the team it becomes a toggle between the two bursts, so pick it for steadier damage.",
-          "wr_with_partner": 54.1,
+          "wr_with_partner": 54.2,
           "wr_delta_all": 2.5,
-          "matches_with_partner": 30929
+          "matches_with_partner": 30988
         }
       ]
     },
     "Spider-Man": {
-      "games_gm": 16984,
+      "games_gm": 19479,
       "loadouts": [
         {
           "loadout": "Parker Power-Up",
           "partner": "Peni Parker",
-          "share": 57.2,
-          "wr_delta_gm": 6.5,
-          "games_gm": 9710,
+          "share": 58.2,
+          "wr_delta_gm": 6.3,
+          "games_gm": 11339,
           "description": "Adds a Sticky Spider-Bomb (C) every 10 seconds with 50 bonus health; throw it within 2 seconds for 50 damage and tracers on nearby enemies, or it blows up on him and refills Web Cluster. With Peni Parker on the team, popping Web Cluster tracers gives 40 bonus health.",
-          "wr_with_partner": 64.0,
-          "wr_delta_all": 15.1,
-          "matches_with_partner": 6769
+          "wr_with_partner": 64.9,
+          "wr_delta_all": 15.9,
+          "matches_with_partner": 6844
         },
         {
           "loadout": "Symbiote Bond",
           "partner": "Venom",
-          "share": 42.8,
-          "wr_delta_gm": -6.5,
-          "games_gm": 7274,
+          "share": 41.8,
+          "wr_delta_gm": -6.3,
+          "games_gm": 8140,
           "description": "Adds a C ability on a 15-second cooldown: symbiote spikes hit enemies within 5 m for 30 and keep pushing them back while Spider-Man takes 90% less damage. With Venom on the team, tendrils tether those hit for 10 damage per second and a 50% slow, good for peeling divers.",
-          "wr_with_partner": 54.8,
-          "wr_delta_all": 5.9,
-          "matches_with_partner": 13237
+          "wr_with_partner": 54.7,
+          "wr_delta_all": 5.7,
+          "matches_with_partner": 13289
         }
       ]
     },
     "Squirrel Girl": {
-      "games_gm": 1854,
+      "games_gm": 2098,
       "loadouts": [
         {
           "loadout": "Squirrel Missile",
           "partner": "Iron Man",
-          "share": 57.8,
-          "wr_delta_gm": -7.3,
-          "games_gm": 1071,
+          "share": 56.8,
+          "wr_delta_gm": -6.3,
+          "games_gm": 1192,
           "description": "A new 15-second ability: a homing squirrel flies at 40 m/s and explodes for 70 damage in an 8 m radius, a reliable way to hit flyers. With Iron Man on the team every Squirrel Blockade throw also fires a missile, so a trapped target is hit at once.",
-          "wr_with_partner": 54.6,
-          "wr_delta_all": 11.0,
-          "matches_with_partner": 3997
+          "wr_with_partner": 53.6,
+          "wr_delta_all": 10.1,
+          "matches_with_partner": 3775
         },
         {
           "loadout": "ESU Alumnus",
           "partner": "Spider-Man",
-          "share": 42.2,
-          "wr_delta_gm": 7.3,
-          "games_gm": 783,
+          "share": 43.2,
+          "wr_delta_gm": 6.3,
+          "games_gm": 906,
           "description": "A new ability: a web bomb bursts on contact for 65 damage in 4 m and slows enemies by 35% for 3 seconds. With Spider-Man it also leaves a 4 m web for 3 seconds that deals 25 damage per second and stuns anyone still inside after 2 seconds.",
-          "wr_with_partner": 48.1,
-          "wr_delta_all": 4.5,
-          "matches_with_partner": 4631
+          "wr_with_partner": 47.4,
+          "wr_delta_all": 3.9,
+          "matches_with_partner": 4384
         }
       ]
     },
     "Star-Lord": {
-      "games_gm": 5419,
+      "games_gm": 6207,
       "loadouts": [
         {
           "loadout": "Flora Munitions",
           "partner": "Groot",
-          "share": 84.2,
-          "wr_delta_gm": -7.0,
-          "games_gm": 4564,
+          "share": 84.4,
+          "wr_delta_gm": -7.5,
+          "games_gm": 5236,
           "description": "Adds a seed throw (C) on a 15-second cooldown that sprouts 5 snares; each deals 30 damage and roots the enemy who steps on it for 0.8 seconds. With Groot on the team it spawns 8 snares at 45 damage, good for closing a choke or stopping a diver.",
-          "wr_with_partner": 57.4,
-          "wr_delta_all": 7.7,
-          "matches_with_partner": 4018
+          "wr_with_partner": 57.6,
+          "wr_delta_all": 8.0,
+          "matches_with_partner": 3962
         },
         {
           "loadout": "Star-Soul",
           "partner": "Adam Warlock",
-          "share": 15.8,
-          "wr_delta_gm": 7.0,
-          "games_gm": 855,
+          "share": 15.6,
+          "wr_delta_gm": 7.5,
+          "games_gm": 971,
           "description": "Adds a Telekinetic Beacon (C) he can teleport back to from anywhere every 25 seconds, and on death he respawns at it, once per 105 seconds. With Adam Warlock on the team each KO he joins cuts 10 seconds off, a pick for aggressive dives.",
-          "wr_with_partner": 56.8,
-          "wr_delta_all": 7.1,
-          "matches_with_partner": 1284
+          "wr_with_partner": 57.1,
+          "wr_delta_all": 7.5,
+          "matches_with_partner": 1276
         }
       ]
     },
     "Storm": {
-      "games_gm": 2148,
+      "games_gm": 2459,
       "loadouts": [
         {
           "loadout": "Jaws of Fate",
           "partner": "Jeff the Land Shark",
-          "share": 76.9,
-          "wr_delta_gm": 8.6,
-          "games_gm": 1651,
+          "share": 77.2,
+          "wr_delta_gm": 7.0,
+          "games_gm": 1897,
           "description": "Adds a rain shower on C, every 15 seconds, that heals Storm 35 and allies within 15 m 25 per second for 8 seconds. With Jeff the Land Shark on the team, he can swim into Omega Hurricane to form a Jeff-Nado that swallows enemies; take it for sustain.",
-          "wr_with_partner": 59.5,
-          "wr_delta_all": 4.1,
-          "matches_with_partner": 4618
+          "wr_with_partner": 59.7,
+          "wr_delta_all": 4.3,
+          "matches_with_partner": 4868
         },
         {
           "loadout": "Gods of Thunder",
           "partner": "Thor",
-          "share": 23.1,
-          "wr_delta_gm": -8.6,
-          "games_gm": 497,
+          "share": 22.9,
+          "wr_delta_gm": -7.0,
+          "games_gm": 562,
           "description": "Turns Wind Blade into a hitscan beam that can crit, hitting for 45 plus 15 in 3 m around the enemy it strikes. With Thor on the team, Bolt Rush becomes Chain Lightning on a 6-second cooldown, jumping between enemies within 8 m for 50 each; pick it if you aim well.",
-          "wr_with_partner": 59.5,
-          "wr_delta_all": 4.1,
-          "matches_with_partner": 2920
+          "wr_with_partner": 58.9,
+          "wr_delta_all": 3.5,
+          "matches_with_partner": 2966
         }
       ]
     },
     "The Hood": {
-      "games_gm": 14567,
+      "games_gm": 17050,
       "loadouts": [
         {
           "loadout": "New Moon's Shadow",
           "partner": "Moon Knight",
-          "share": 76.1,
-          "wr_delta_gm": 3.1,
-          "games_gm": 11085,
+          "share": 76.3,
+          "wr_delta_gm": 3.3,
+          "games_gm": 13001,
           "description": "Turns Abyssal Veil into a 200-health barrier that stops projectiles and, once broken, explodes for 30 damage within 8 m and cuts enemy damage and healing by 35%. With Moon Knight the barrier holds 300 and shots The Hood fires through it bounce to up to 3 more enemies.",
           "wr_with_partner": 50.2,
           "wr_delta_all": 1.2,
-          "matches_with_partner": 10445
+          "matches_with_partner": 10372
         },
         {
           "loadout": "Chaos Collision",
           "partner": "Scarlet Witch",
-          "share": 23.9,
-          "wr_delta_gm": -3.1,
-          "games_gm": 3482,
+          "share": 23.8,
+          "wr_delta_gm": -3.3,
+          "games_gm": 4049,
           "description": "A new 16-second ability: a 5 m zone placed up to 20 m away deals 20 damage every 0.5 seconds and stacks up to 40% damage and healing loss; pressing again teleports The Hood inside. With Scarlet Witch the landing deals 60 damage and pulls nearby enemies to him.",
-          "wr_with_partner": 53.7,
-          "wr_delta_all": 4.6,
-          "matches_with_partner": 22303
+          "wr_with_partner": 53.6,
+          "wr_delta_all": 4.5,
+          "matches_with_partner": 21879
         }
       ]
     },
     "The Punisher": {
-      "games_gm": 7598,
+      "games_gm": 8944,
       "loadouts": [
         {
           "loadout": "Bestial Hunt",
           "partner": "Daredevil",
           "share": 62.7,
-          "wr_delta_gm": -0.5,
-          "games_gm": 4766,
+          "wr_delta_gm": -1.2,
+          "games_gm": 5607,
           "description": "A passive loadout with no button to press: Adjudication and Deliverance shots pierce through enemies and deal a little more, 20 per round and 10 per pellet. With Daredevil on the team they also do 40% more damage to barriers, the better choice against shields and summoned walls.",
-          "wr_with_partner": 51.8,
-          "wr_delta_all": 8.2,
-          "matches_with_partner": 2329
+          "wr_with_partner": 52.5,
+          "wr_delta_all": 8.8,
+          "matches_with_partner": 2335
         },
         {
           "loadout": "Ammo Overload",
           "partner": "Rocket Raccoon",
           "share": 37.3,
-          "wr_delta_gm": 0.5,
-          "games_gm": 2832,
+          "wr_delta_gm": 1.2,
+          "games_gm": 3337,
           "description": "Adds a throwable device (C) on a 25-second cooldown: within 5 m of it Adjudication fires 35% faster and Deliverance 40% faster. With Rocket Raccoon on the team both guns also get unlimited ammo while he stays in range, so pick it when he plans to hold one angle.",
-          "wr_with_partner": 55.5,
-          "wr_delta_all": 11.9,
-          "matches_with_partner": 8448
+          "wr_with_partner": 55.8,
+          "wr_delta_all": 12.0,
+          "matches_with_partner": 8777
         }
       ]
     },
     "The Thing": {
-      "games_gm": 6256,
+      "games_gm": 7270,
       "loadouts": [
         {
           "loadout": "Two-in-One",
           "partner": "Human Torch",
-          "share": 63.9,
-          "wr_delta_gm": -3.4,
-          "games_gm": 3997
+          "share": 63.3,
+          "wr_delta_gm": -4.6,
+          "games_gm": 4602
         },
         {
           "loadout": "Unbreakable Forces",
           "partner": "Invisible Woman",
-          "share": 36.1,
-          "wr_delta_gm": 3.4,
-          "games_gm": 2259,
+          "share": 36.7,
+          "wr_delta_gm": 4.6,
+          "games_gm": 2668,
           "description": "Adds 5 seconds of Psionic Armor (C) every 15 seconds, turning missing health into 15 bonus health every 0.2 seconds, twice as often below half health. With Invisible Woman on the team each tick gives 20, and every 125 damage he takes heals allies within 8 m for 80.",
-          "wr_with_partner": 49.7,
-          "wr_delta_all": 2.8,
-          "matches_with_partner": 12551
+          "wr_with_partner": 49.3,
+          "wr_delta_all": 2.4,
+          "matches_with_partner": 12733
         },
         {
           "loadout": "Two-In-One",
@@ -1392,59 +1392,59 @@
           "wr_delta_gm": null,
           "games_gm": null,
           "description": "Adds 8 seconds of flaming fists (C) every 18 seconds: Rocky Jab reaches 6 m, Stone Haymaker 9.5 m, and each hit sends a shockwave into nearby enemies. With Human Torch on the team, Torch also drops him from the air for 45 damage and a 1-second stun in 8 m.",
-          "wr_with_partner": 53.2,
-          "wr_delta_all": 6.4,
-          "matches_with_partner": 2637
+          "wr_with_partner": 54.0,
+          "wr_delta_all": 7.1,
+          "matches_with_partner": 2551
         }
       ]
     },
     "Thor": {
-      "games_gm": 10481,
+      "games_gm": 12201,
       "loadouts": [
         {
           "loadout": "Ragnarok Rebirth",
           "partner": "Hela",
           "share": 72.5,
-          "wr_delta_gm": 4.4,
-          "games_gm": 7598,
+          "wr_delta_gm": 4.6,
+          "games_gm": 8844,
           "description": "A passive loadout: a killing blow leaves Thor alive with 600 decaying bonus health, 40% damage reduction and no healing; joining a KO revives him with at least 300 health. With Hela on the team her KOs count too, and he heals 50 per second for 3 seconds after reviving.",
-          "wr_with_partner": 58.3,
-          "wr_delta_all": 5.9,
-          "matches_with_partner": 7837
+          "wr_with_partner": 58.0,
+          "wr_delta_all": 5.5,
+          "matches_with_partner": 7986
         },
         {
           "loadout": "Divine Armory",
           "partner": "Angela",
           "share": 27.5,
-          "wr_delta_gm": -4.4,
-          "games_gm": 2883,
+          "wr_delta_gm": -4.6,
+          "games_gm": 3357,
           "description": "Adds a Thunder Spear (C) on a 15-second cooldown that hits for 30 in 5 m and refunds 1 Thorforce; Thor can then leap to it for another 45 damage. With Angela on the team the leap also gives 100 bonus health, a strong pick for diving.",
-          "wr_with_partner": 59.1,
-          "wr_delta_all": 6.7,
-          "matches_with_partner": 3515
+          "wr_with_partner": 59.6,
+          "wr_delta_all": 7.1,
+          "matches_with_partner": 3620
         }
       ]
     },
     "Ultron": {
-      "games_gm": 3128,
+      "games_gm": 3665,
       "loadouts": [
         {
           "loadout": "SP//DR Sync",
           "partner": "Peni Parker",
-          "share": 90.1,
-          "wr_delta_gm": 0.6,
-          "games_gm": 2819
+          "share": 90.3,
+          "wr_delta_gm": 1.8,
+          "games_gm": 3310
         },
         {
           "loadout": "Stark Protocol",
           "partner": "Iron Man",
-          "share": 9.9,
-          "wr_delta_gm": -0.6,
-          "games_gm": 309,
+          "share": 9.7,
+          "wr_delta_gm": -1.8,
+          "games_gm": 355,
           "description": "A C ability on a 20-second cooldown that turns Encephalo-Ray into Nano-Ray for 8 seconds, an unlimited stream dealing 70 damage and 70 healing per second. With Iron Man, Imperative: Firewall also launches 4 homing missiles at nearby enemies, so pick it for an aggressive lineup.",
-          "wr_with_partner": 61.3,
-          "wr_delta_all": 4.2,
-          "matches_with_partner": 2823
+          "wr_with_partner": 62.2,
+          "wr_delta_all": 5.1,
+          "matches_with_partner": 2764
         },
         {
           "loadout": "SP//dr Sync",
@@ -1453,32 +1453,32 @@
           "wr_delta_gm": null,
           "games_gm": null,
           "description": "Puts an Imperative: Patch drone on every ally for 3 seconds, healing each one 40 per second and those around them 15 per second. With Peni Parker, Imperative: Firewall works through all of those drones at once, so pick it to rescue a team spread across the map.",
-          "wr_with_partner": 70.1,
-          "wr_delta_all": 12.9,
-          "matches_with_partner": 3096
+          "wr_with_partner": 69.8,
+          "wr_delta_all": 12.7,
+          "matches_with_partner": 3065
         }
       ]
     },
     "Venom": {
-      "games_gm": 12713,
+      "games_gm": 14463,
       "loadouts": [
         {
           "loadout": "Abyssal Flames",
           "partner": "Phoenix",
-          "share": 59.2,
-          "wr_delta_gm": -2.9,
-          "games_gm": 7527
+          "share": 59.4,
+          "wr_delta_gm": -2.5,
+          "games_gm": 8586
         },
         {
           "loadout": "Blood Leech",
           "partner": "Blade",
-          "share": 40.8,
-          "wr_delta_gm": 2.9,
-          "games_gm": 5186,
+          "share": 40.6,
+          "wr_delta_gm": 2.5,
+          "games_gm": 5877,
           "description": "Changes Cellular Corrosion: tethered enemies take 20 damage per second and all of it comes back to Venom as health, plus half the damage of the final tendril pop. With Blade he also heals 40 at once when he uses certain abilities, a good pick for long dives.",
-          "wr_with_partner": 55.1,
-          "wr_delta_all": 3.4,
-          "matches_with_partner": 4686
+          "wr_with_partner": 55.3,
+          "wr_delta_all": 3.6,
+          "matches_with_partner": 4619
         },
         {
           "loadout": "Abyssal Flame",
@@ -1487,90 +1487,90 @@
           "wr_delta_gm": null,
           "games_gm": null,
           "description": "A C ability on a 12-second cooldown that swaps Dark Predation for Avian Claw for 8 seconds, a 10 m frontal slash for 55 every 0.8 seconds. With Phoenix each claw adds a Spark and three Sparks explode for 20 in 3 m, which pays off against grouped enemies.",
-          "wr_with_partner": 53.2,
-          "wr_delta_all": 1.4,
-          "matches_with_partner": 10269
+          "wr_with_partner": 52.8,
+          "wr_delta_all": 1.1,
+          "matches_with_partner": 10315
         }
       ]
     },
     "White Fox": {
-      "games_gm": 12421,
+      "games_gm": 14420,
       "loadouts": [
         {
           "loadout": "Lucky Loan",
           "partner": "Black Cat",
-          "share": 73.7,
-          "wr_delta_gm": 0.8,
-          "games_gm": 9159,
+          "share": 73.6,
+          "wr_delta_gm": 0.3,
+          "games_gm": 10615,
           "description": "A new 25-second ability: White Fox regains a Spirit Tail and for 5 seconds fires homing tails that heal and speed up allies while damaging and slowing enemies by 20%. With Black Cat on the team Spectral Surge and Fox Form Awakening then cost nothing for 6 seconds.",
-          "wr_with_partner": 51.7,
-          "wr_delta_all": 4.1,
-          "matches_with_partner": 4377
+          "wr_with_partner": 51.5,
+          "wr_delta_all": 3.8,
+          "matches_with_partner": 4863
         },
         {
           "loadout": "Psionic Fox",
           "partner": "Psylocke",
-          "share": 26.3,
-          "wr_delta_gm": -0.8,
-          "games_gm": 3262,
+          "share": 26.4,
+          "wr_delta_gm": -0.3,
+          "games_gm": 3805,
           "description": "A passive: Fox Form Awakening no longer spends Spirit Tail energy and always lasts 10 seconds. With Psylocke on the team its cooldown drops to 12 seconds, so pick it when you want to spend most of the fight healing in fox form.",
-          "wr_with_partner": 51.7,
-          "wr_delta_all": 4.1,
-          "matches_with_partner": 7616
+          "wr_with_partner": 52.0,
+          "wr_delta_all": 4.3,
+          "matches_with_partner": 8423
         }
       ]
     },
     "Winter Soldier": {
-      "games_gm": 26779,
+      "games_gm": 30988,
       "loadouts": [
         {
           "loadout": "Expert Instinct",
           "partner": "Elsa Bloodstone",
-          "share": 90.1,
-          "wr_delta_gm": 1.5,
-          "games_gm": 24120,
+          "share": 90.0,
+          "wr_delta_gm": 1.2,
+          "games_gm": 27899,
           "description": "A passive that grants a Culling Instinct stack per 500 damage or takedown, up to 2, each cutting 1.5 seconds from his other cooldowns; dying costs one. With Elsa Bloodstone on the team, Ceaseless Charge gives 55 bonus health on every ability, so pick it for long fights.",
-          "wr_with_partner": 48.7,
-          "wr_delta_all": 1.8,
-          "matches_with_partner": 5847
+          "wr_with_partner": 47.8,
+          "wr_delta_all": 0.9,
+          "matches_with_partner": 6006
         },
         {
           "loadout": "Timeless Veterans",
           "partner": "The Punisher",
-          "share": 9.9,
-          "wr_delta_gm": -1.5,
-          "games_gm": 2659,
+          "share": 10.0,
+          "wr_delta_gm": -1.2,
+          "games_gm": 3089,
           "description": "Adds Burst Spike on C: a bionic arm blast that hits for 85 up to 15.25 m ahead and knocks enemies back, every 12 seconds. With The Punisher on the team the push goes farther and briefly grounds enemies, cutting off movement abilities; pick it to peel divers.",
-          "wr_with_partner": 45.5,
-          "wr_delta_all": -1.4,
-          "matches_with_partner": 5779
+          "wr_with_partner": 45.0,
+          "wr_delta_all": -1.8,
+          "matches_with_partner": 5839
         }
       ]
     },
     "Wolverine": {
-      "games_gm": 4944,
+      "games_gm": 5749,
       "loadouts": [
         {
           "loadout": "Pair of Threes",
           "partner": "Gambit",
-          "share": 97.0,
-          "wr_delta_gm": 2.0,
-          "games_gm": 4794,
+          "share": 96.8,
+          "wr_delta_gm": 4.6,
+          "games_gm": 5565,
           "description": "A C ability on a 20-second cooldown: for 5 seconds he moves faster, jumps 3.5 m higher and tags enemies with kinetic particles that burst for 15% of his damage. With Gambit on the team he heals 25 per second for those 5 seconds, so pick it for deep dives.",
-          "wr_with_partner": 49.8,
-          "wr_delta_all": 4.1,
-          "matches_with_partner": 5176
+          "wr_with_partner": 49.4,
+          "wr_delta_all": 3.7,
+          "matches_with_partner": 5101
         },
         {
           "loadout": "Blast Slash",
           "partner": "Cyclops",
-          "share": 3.0,
-          "wr_delta_gm": -2.0,
-          "games_gm": 150,
+          "share": 3.2,
+          "wr_delta_gm": -4.6,
+          "games_gm": 184,
           "description": "For 8 seconds, on a 20-second cooldown, his claws reach 1 m further and Vicious Rampage becomes Kinetic Claws, a short lunge into a 1-second spinning flurry on a 3-second cooldown. With Cyclops on the team Blast Slash stays on permanently, which makes it the pick for steady brawling.",
-          "wr_with_partner": 45.3,
-          "wr_delta_all": -0.3,
-          "matches_with_partner": 2226
+          "wr_with_partner": 45.0,
+          "wr_delta_all": -0.6,
+          "matches_with_partner": 2135
         }
       ]
     }

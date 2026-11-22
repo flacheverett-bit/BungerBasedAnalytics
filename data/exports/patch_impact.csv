@@ -1,320 +1,320 @@
 game,patch_date,hero,change_type,did_wr,did_pr,noise_sd_wr,q_wr,significant
-deadlock,2026-10-30,Abrams,buff,0.316,4.198,0.539,0.612,false
-deadlock,2026-10-30,Billy,buff,0.519,3.256,0.694,0.445,false
-deadlock,2026-10-30,Calico,buff,0.498,0.836,0.739,0.434,false
-deadlock,2026-10-30,Drifter,buff,0.384,6.216,0.469,0.542,false
-deadlock,2026-10-30,Graves,nerf,-0.785,-3.881,0.45,0.306,false
-deadlock,2026-10-30,Grey Talon,buff,0.77,2.57,0.482,0.263,false
-deadlock,2026-10-30,Infernus,buff,-0.218,1.1,0.562,0.804,false
-deadlock,2026-10-30,Kelvin,buff,1.327,0.751,0.463,0.045,true
-deadlock,2026-10-30,Lady Geist,buff,1.272,1.352,0.701,0.19,false
-deadlock,2026-10-30,Lash,buff,0.549,-0.27,0.478,0.299,false
-deadlock,2026-10-30,McGinnis,buff,2.269,1.403,0.74,0.045,true
-deadlock,2026-10-30,Mirage,rework,-1.29,2.035,0.527,0.116,false
-deadlock,2026-10-30,Paige,adjustment,1.046,0.257,1.003,0.307,false
-deadlock,2026-10-30,Paradox,buff,0.807,1.956,0.648,0.299,false
-deadlock,2026-10-30,Seven,buff,0.753,-1.347,0.589,0.291,false
-deadlock,2026-10-30,Shiv,adjustment,-0.721,0.629,0.64,0.304,false
-deadlock,2026-10-30,Silver,buff,0.084,1.357,0.543,0.843,false
-deadlock,2026-10-30,Solomon,adjustment,1.265,-3.352,,,false
-deadlock,2026-10-30,The Doorman,buff,0.179,0.679,0.782,0.853,false
-deadlock,2026-10-30,Venator,adjustment,-1.092,1.168,0.391,0.121,false
-deadlock,2026-10-30,Victor,buff,-0.722,-1.33,0.847,0.341,false
-deadlock,2026-10-30,Violet,nerf,-5.898,-18.211,,,false
-deadlock,2026-10-30,Viscous,buff,0.866,0.884,0.787,0.357,false
-deadlock,2026-10-30,Warden,buff,2.836,4.587,0.698,0.045,true
-deadlock,2026-10-30,Wraith,nerf,-1.246,-2.498,0.918,0.26,false
-deadlock,2026-10-30,Yamato,nerf,-0.339,-1.325,0.649,0.712,false
-deadlock,2026-10-14,Baba,nerf,0.153,-39.317,,,false
-deadlock,2026-10-05,Sinclair,nerf,-2.616,-2.713,0.574,0.045,true
-deadlock,2026-09-16,Abrams,adjustment,1.39,1.552,0.539,0.103,false
-deadlock,2026-09-16,Celeste,nerf,-2.218,-7.764,,,false
-deadlock,2026-09-16,Graves,buff,0.23,2.041,0.45,0.607,false
-deadlock,2026-09-16,Haze,buff,1.543,10.683,0.867,0.255,false
-deadlock,2026-09-16,Holliday,buff,0.068,4.455,0.753,0.964,false
-deadlock,2026-09-16,Ivy,nerf,-1.031,-0.498,0.443,0.106,false
-deadlock,2026-09-16,Kelvin,buff,0.581,1.376,0.463,0.323,false
-deadlock,2026-09-16,Lady Geist,buff,2.298,9.067,0.701,0.091,true
-deadlock,2026-09-16,Lash,adjustment,-0.674,5.204,0.478,0.253,false
-deadlock,2026-09-16,Paige,buff,1.205,5.215,1.003,0.294,false
-deadlock,2026-09-16,Paradox,nerf,-0.884,-4.081,0.648,0.263,false
-deadlock,2026-09-16,Shiv,buff,-1.13,9.762,0.64,0.226,false
-deadlock,2026-09-16,Silver,buff,2.425,13.269,0.543,0.08,true
-deadlock,2026-09-16,Venator,buff,0.876,11.128,0.391,0.121,false
-deadlock,2026-09-16,Viscous,nerf,-2.801,-3.295,0.787,0.045,true
-deadlock,2026-09-16,Vyper,nerf,-1.863,-1.534,0.666,0.103,false
-deadlock,2026-09-16,Warden,nerf,-5.531,-20.316,0.698,0.045,true
-deadlock,2026-09-16,Wraith,nerf,-1.652,-4.405,0.918,0.177,false
-deadlock,2026-09-16,Yamato,buff,1.603,5.42,0.649,0.088,true
-deadlock,2026-08-22,Celeste,nerf,-0.535,-5.825,,,false
-deadlock,2026-08-12,Apollo,buff,0.146,5.971,0.391,0.862,false
-deadlock,2026-08-12,Billy,nerf,-1.625,-4.421,0.694,0.145,false
-deadlock,2026-08-12,Drifter,nerf,-1.462,-4.42,0.469,0.045,true
-deadlock,2026-08-12,Holliday,adjustment,-2.046,-0.653,0.753,0.092,true
-deadlock,2026-08-12,Ivy,nerf,-0.741,-0.941,0.443,0.212,false
-deadlock,2026-08-12,Lash,nerf,-0.39,-0.476,0.478,0.421,false
-deadlock,2026-08-12,McGinnis,nerf,-4.698,-6.674,0.74,0.045,true
-deadlock,2026-08-12,Paige,buff,-0.08,1.166,1.003,0.964,false
-deadlock,2026-08-12,Seven,buff,-0.252,1.084,0.589,0.722,false
-deadlock,2026-08-12,The Doorman,nerf,-0.226,-1.204,0.782,0.826,false
-deadlock,2026-08-12,Vindicta,nerf,-0.655,1.448,0.536,0.315,false
-deadlock,2026-08-12,Vyper,buff,0.945,4.443,0.666,0.233,false
-deadlock,2026-08-12,Wraith,nerf,0.017,-0.182,0.918,0.986,false
-deadlock,2026-07-28,Apollo,buff,0.507,1.596,0.391,0.324,false
-deadlock,2026-07-28,Billy,nerf,-1.635,-0.798,0.694,0.125,false
-deadlock,2026-07-28,Calico,nerf,0.099,-0.574,0.739,0.894,false
-deadlock,2026-07-28,Celeste,buff,1.302,3.981,,,false
-deadlock,2026-07-28,Drifter,nerf,0.183,-1.825,0.469,0.766,false
-deadlock,2026-07-28,Dynamo,buff,-1.289,-2.031,0.599,0.162,false
-deadlock,2026-07-28,Haze,nerf,-4.03,-14.995,0.867,0.045,true
-deadlock,2026-07-28,Ivy,nerf,-0.952,-2.999,0.443,0.127,false
-deadlock,2026-07-28,Kelvin,buff,-0.457,0.182,0.463,0.452,false
-deadlock,2026-07-28,Lady Geist,adjustment,-2.344,-2.201,0.701,0.091,true
-deadlock,2026-07-28,Mina,buff,-0.0,2.372,0.691,1.0,false
-deadlock,2026-07-28,Mirage,nerf,-4.409,-7.641,0.527,0.045,true
-deadlock,2026-07-28,Mo & Krill,buff,-0.122,7.399,1.101,0.859,false
-deadlock,2026-07-28,Paige,buff,0.129,-0.198,1.003,0.939,false
-deadlock,2026-07-28,Pocket,nerf,-1.199,1.21,0.497,0.093,true
-deadlock,2026-07-28,Shiv,nerf,0.01,-3.962,0.64,0.991,false
-deadlock,2026-07-28,Silver,nerf,-1.945,-2.133,0.543,0.08,true
-deadlock,2026-07-28,The Doorman,nerf,-4.036,-5.26,0.782,0.045,true
-deadlock,2026-07-28,Venator,adjustment,-0.856,-2.538,0.391,0.121,false
-deadlock,2026-07-28,Viscous,adjustment,0.174,-3.212,0.787,0.826,false
-deadlock,2026-07-28,Yamato,nerf,-2.226,-3.166,0.649,0.088,true
-deadlock,2026-07-09,Billy,nerf,0.035,0.405,0.694,0.988,false
-deadlock,2026-07-09,Drifter,nerf,-3.38,-8.266,0.469,0.045,true
-deadlock,2026-07-09,Graves,buff,2.294,6.92,0.45,0.054,true
-deadlock,2026-07-09,Haze,adjustment,1.842,13.808,0.867,0.153,false
-deadlock,2026-07-09,Holliday,nerf,-0.903,-3.824,0.753,0.281,false
-deadlock,2026-07-09,Mirage,adjustment,-0.368,-0.128,0.527,0.601,false
-deadlock,2026-07-09,Pocket,nerf,-0.703,1.183,0.497,0.287,false
-deadlock,2026-07-09,Shiv,nerf,-2.183,-13.482,0.64,0.054,true
-deadlock,2026-07-09,Silver,buff,1.448,4.682,0.543,0.195,false
-deadlock,2026-07-09,The Doorman,nerf,-1.403,-0.306,0.782,0.251,false
-deadlock,2026-07-09,Victor,buff,3.298,2.795,0.847,0.054,true
-deadlock,2026-07-09,Viscous,nerf,-0.617,0.609,0.787,0.453,false
-deadlock,2026-07-09,Yamato,nerf,-0.09,1.158,0.649,0.926,false
-deadlock,2026-06-30,Abrams,nerf,-0.538,-3.385,0.539,0.342,false
-deadlock,2026-06-30,Apollo,buff,0.334,4.249,0.391,0.516,false
-deadlock,2026-06-30,Billy,nerf,-0.571,-9.124,0.694,0.432,false
-deadlock,2026-06-30,Celeste,buff,2.268,8.177,,,false
-deadlock,2026-06-30,Drifter,buff,5.051,17.228,0.469,0.045,true
-deadlock,2026-06-30,Dynamo,buff,-0.172,0.693,0.599,0.77,false
-deadlock,2026-06-30,Grey Talon,nerf,-2.022,-5.056,0.482,0.045,true
-deadlock,2026-06-30,Haze,buff,-0.602,-2.383,0.867,0.432,false
-deadlock,2026-06-30,Holliday,nerf,-2.611,-6.146,0.753,0.047,true
-deadlock,2026-06-30,Ivy,buff,1.714,6.929,0.443,0.045,true
-deadlock,2026-06-30,Lash,buff,2.491,5.862,0.478,0.045,true
-deadlock,2026-06-30,Mina,buff,-0.387,7.361,0.691,0.552,false
-deadlock,2026-06-30,Mo & Krill,buff,1.756,3.822,1.101,0.251,false
-deadlock,2026-06-30,Paige,buff,1.22,5.356,1.003,0.294,false
-deadlock,2026-06-30,Paradox,buff,0.668,2.385,0.648,0.382,false
-deadlock,2026-06-30,Pocket,nerf,-0.045,-0.759,0.497,0.95,false
-deadlock,2026-06-30,Rem,nerf,-1.917,-1.529,0.562,0.062,true
-deadlock,2026-06-30,Seven,buff,-0.949,-2.191,0.589,0.229,false
-deadlock,2026-06-30,The Doorman,nerf,0.673,1.073,0.782,0.413,false
-deadlock,2026-06-30,Vindicta,buff,0.907,4.894,0.536,0.212,false
-deadlock,2026-06-30,Viscous,buff,-0.095,1.601,0.787,0.932,false
-deadlock,2026-06-30,Vyper,buff,0.556,1.304,0.666,0.427,false
-deadlock,2026-06-30,Warden,buff,0.348,-1.785,0.698,0.749,false
-deadlock,2026-06-11,Apollo,buff,-0.644,10.737,0.391,0.251,false
-deadlock,2026-06-11,Bebop,buff,0.587,3.802,0.626,0.382,false
-deadlock,2026-06-11,Calico,buff,-0.314,13.376,0.739,0.67,false
-deadlock,2026-06-11,Graves,nerf,-3.006,-7.116,0.45,0.054,true
-deadlock,2026-06-11,Grey Talon,nerf,-2.335,-5.544,0.482,0.045,true
-deadlock,2026-06-11,Holliday,adjustment,3.672,23.283,0.753,0.047,true
-deadlock,2026-06-11,Infernus,buff,0.189,2.402,0.562,0.818,false
-deadlock,2026-06-11,Ivy,nerf,-0.301,0.293,0.443,0.612,false
-deadlock,2026-06-11,McGinnis,nerf,-0.779,-3.103,0.74,0.432,false
-deadlock,2026-06-11,Paige,buff,0.304,2.42,1.003,0.848,false
-deadlock,2026-06-11,Pocket,nerf,-1.05,-2.454,0.497,0.103,false
-deadlock,2026-06-11,Seven,nerf,-1.865,-6.306,0.589,0.078,true
-deadlock,2026-06-11,Silver,nerf,-3.474,-13.833,0.543,0.08,true
-deadlock,2026-06-11,The Doorman,nerf,-1.448,-1.467,0.782,0.233,false
-deadlock,2026-06-11,Victor,adjustment,-1.946,-4.253,0.847,0.127,false
-deadlock,2026-06-11,Vindicta,buff,0.54,3.045,0.536,0.432,false
-deadlock,2026-06-11,Viscous,buff,-0.085,2.75,0.787,0.95,false
-deadlock,2026-06-11,Warden,adjustment,0.519,1.331,0.698,0.589,false
-deadlock,2026-05-31,Apollo,buff,2.093,5.967,0.391,0.064,true
-deadlock,2026-05-31,Graves,nerf,-4.015,-13.497,0.45,0.054,true
-deadlock,2026-05-31,McGinnis,nerf,-2.497,-4.771,0.74,0.045,true
-deadlock,2026-05-31,Pocket,nerf,-0.132,-0.079,0.497,0.848,false
-deadlock,2026-05-31,Silver,nerf,-0.392,2.237,0.543,0.542,false
-deadlock,2026-05-31,Victor,nerf,-0.679,2.859,0.847,0.382,false
-deadlock,2026-05-31,Yamato,nerf,-1.02,-13.187,0.649,0.162,false
-deadlock,2026-05-22,Abrams,buff,1.493,9.943,0.539,0.103,false
-deadlock,2026-05-22,Apollo,nerf,-3.988,-15.607,0.391,0.064,true
-deadlock,2026-05-22,Bebop,nerf,0.209,-3.481,0.626,0.749,false
-deadlock,2026-05-22,Billy,adjustment,2.974,11.99,0.694,0.054,true
-deadlock,2026-05-22,Calico,adjustment,-0.167,1.643,0.739,0.836,false
-deadlock,2026-05-22,Celeste,buff,-0.683,0.397,,,false
-deadlock,2026-05-22,Drifter,buff,-0.646,-1.466,0.469,0.356,false
-deadlock,2026-05-22,Dynamo,nerf,-2.714,-3.671,0.599,0.045,true
-deadlock,2026-05-22,Graves,buff,7.542,21.841,0.45,0.054,true
-deadlock,2026-05-22,Grey Talon,buff,1.243,4.312,0.482,0.074,true
-deadlock,2026-05-22,Haze,buff,-0.631,0.927,0.867,0.421,false
-deadlock,2026-05-22,Holliday,buff,-2.149,1.164,0.753,0.092,true
-deadlock,2026-05-22,Infernus,buff,2.252,4.579,0.562,0.045,true
-deadlock,2026-05-22,Kelvin,nerf,-1.78,-2.756,0.463,0.045,true
-deadlock,2026-05-22,Lash,buff,-0.531,-1.354,0.478,0.312,false
-deadlock,2026-05-22,McGinnis,buff,1.614,4.588,0.74,0.118,false
-deadlock,2026-05-22,Mina,adjustment,-4.467,-11.482,0.691,0.045,true
-deadlock,2026-05-22,Mo & Krill,buff,-1.318,-0.623,1.101,0.306,false
-deadlock,2026-05-22,Paige,buff,0.955,1.351,1.003,0.338,false
-deadlock,2026-05-22,Paradox,buff,-0.226,5.397,0.648,0.775,false
-deadlock,2026-05-22,Pocket,nerf,-0.695,-0.715,0.497,0.291,false
-deadlock,2026-05-22,Rem,buff,2.418,12.134,0.562,0.045,true
-deadlock,2026-05-22,Seven,adjustment,1.042,4.466,0.589,0.196,false
-deadlock,2026-05-22,Shiv,adjustment,0.21,-4.28,0.64,0.867,false
-deadlock,2026-05-22,Silver,adjustment,0.048,-0.976,0.543,0.932,false
-deadlock,2026-05-22,The Doorman,nerf,-2.828,-6.912,0.782,0.045,true
-deadlock,2026-05-22,Venator,buff,3.348,5.816,0.391,0.054,true
-deadlock,2026-05-22,Victor,nerf,1.026,-8.809,0.847,0.266,false
-deadlock,2026-05-22,Viscous,buff,0.3,1.328,0.787,0.689,false
-deadlock,2026-05-22,Vyper,buff,-1.97,0.247,0.666,0.093,true
-deadlock,2026-05-22,Warden,nerf,-1.81,-9.403,0.698,0.093,true
-deadlock,2026-05-22,Yamato,buff,0.215,17.628,0.649,0.826,false
-deadlock,2026-04-30,Abrams,nerf,-1.132,-2.471,0.539,0.125,false
-deadlock,2026-04-30,Apollo,nerf,-1.007,-2.145,0.391,0.064,true
-deadlock,2026-04-30,Billy,buff,0.179,0.397,0.694,0.832,false
-deadlock,2026-04-30,Celeste,buff,1.698,5.802,,,false
-deadlock,2026-04-30,Drifter,buff,-0.749,3.863,0.469,0.296,false
-deadlock,2026-04-30,Dynamo,nerf,-0.701,-5.999,0.599,0.266,false
-deadlock,2026-04-30,Haze,buff,0.664,3.643,0.867,0.415,false
-deadlock,2026-04-30,Holliday,buff,-0.929,0.997,0.753,0.281,false
-deadlock,2026-04-30,Infernus,nerf,-6.373,-12.044,0.562,0.045,true
-deadlock,2026-04-30,Lady Geist,nerf,0.857,-1.905,0.701,0.266,false
-deadlock,2026-04-30,McGinnis,buff,2.675,1.444,0.74,0.045,true
-deadlock,2026-04-30,Mina,nerf,-0.684,2.579,0.691,0.371,false
-deadlock,2026-04-30,Mirage,nerf,-1.797,-2.503,0.527,0.045,true
-deadlock,2026-04-30,Mo & Krill,buff,0.331,0.869,1.101,0.712,false
-deadlock,2026-04-30,Paige,buff,0.021,0.32,1.003,0.988,false
-deadlock,2026-04-30,Paradox,buff,0.16,3.761,0.648,0.851,false
-deadlock,2026-04-30,Pocket,buff,0.154,2.205,0.497,0.832,false
-deadlock,2026-04-30,Rem,buff,-1.449,-6.2,0.562,0.121,false
-deadlock,2026-04-30,Shiv,nerf,-1.646,-2.648,0.64,0.126,false
-deadlock,2026-04-30,Silver,nerf,-0.343,1.115,0.543,0.589,false
-deadlock,2026-04-30,Venator,nerf,-1.961,-2.575,0.391,0.054,true
-deadlock,2026-04-30,Victor,buff,2.872,5.714,0.847,0.066,true
-deadlock,2026-04-30,Vyper,nerf,-2.356,-5.885,0.666,0.045,true
-deadlock,2026-04-10,Bebop,nerf,0.209,5.589,0.626,0.749,false
-deadlock,2026-04-10,Billy,adjustment,-0.89,-0.325,0.694,0.307,false
-deadlock,2026-04-10,Celeste,nerf,-0.097,-4.601,,,false
-deadlock,2026-04-10,Dynamo,nerf,-1.531,0.571,0.599,0.139,false
-deadlock,2026-04-10,Grey Talon,buff,0.769,4.729,0.482,0.263,false
-deadlock,2026-04-10,Haze,buff,-5.692,-8.827,0.867,0.045,true
-deadlock,2026-04-10,Holliday,buff,1.308,6.759,0.753,0.251,false
-deadlock,2026-04-10,Kelvin,nerf,-1.361,-0.636,0.463,0.045,true
-deadlock,2026-04-10,Lady Geist,nerf,0.017,0.28,0.701,0.97,false
-deadlock,2026-04-10,McGinnis,buff,-0.034,1.252,0.74,0.97,false
-deadlock,2026-04-10,Mirage,nerf,-1.967,-3.727,0.527,0.045,true
-deadlock,2026-04-10,Paradox,buff,0.644,1.702,0.648,0.401,false
-deadlock,2026-04-10,Rem,buff,0.701,-1.428,0.562,0.299,false
-deadlock,2026-04-10,The Doorman,nerf,0.386,-3.068,0.782,0.655,false
-deadlock,2026-04-10,Venator,adjustment,-0.069,-0.371,0.391,0.973,false
-deadlock,2026-04-10,Victor,buff,4.062,10.352,0.847,0.045,true
-deadlock,2026-04-10,Vyper,buff,2.269,5.214,0.666,0.067,true
-deadlock,2026-03-25,Bebop,buff,0.125,2.115,0.626,0.857,false
-deadlock,2026-03-25,Holliday,buff,0.182,1.884,0.753,0.862,false
-deadlock,2026-03-25,Lady Geist,nerf,-0.914,0.207,0.701,0.251,false
-deadlock,2026-03-25,Rem,buff,-0.425,-1.669,0.562,0.45,false
-deadlock,2026-03-25,Venator,nerf,-0.659,-1.835,0.391,0.14,false
-deadlock,2026-03-21,Abrams,buff,2.271,5.5,0.539,0.058,true
-deadlock,2026-03-21,Apollo,buff,-0.117,1.776,0.391,0.886,false
-deadlock,2026-03-21,Billy,adjustment,1.109,1.154,0.694,0.263,false
-deadlock,2026-03-21,Dynamo,buff,2.993,7.485,0.599,0.045,true
-deadlock,2026-03-21,Ivy,nerf,-1.801,-5.28,0.443,0.045,true
-deadlock,2026-03-21,Mina,buff,1.907,4.536,0.691,0.111,false
-deadlock,2026-03-21,Mo & Krill,nerf,-0.002,-5.94,1.101,0.988,false
-deadlock,2026-03-21,Shiv,nerf,1.158,5.671,0.64,0.208,false
-deadlock,2026-03-21,Viscous,nerf,-2.868,-7.058,0.787,0.045,true
-deadlock,2026-03-21,Wraith,nerf,-1.819,-7.479,0.918,0.161,false
-deadlock,2026-03-06,Abrams,adjustment,-3.518,-6.872,0.539,0.045,true
-deadlock,2026-03-06,Bebop,buff,-2.316,-2.34,0.626,0.045,true
-deadlock,2026-03-06,Billy,nerf,-0.321,1.567,0.694,0.633,false
-deadlock,2026-03-06,Drifter,nerf,-2.401,2.916,0.469,0.045,true
-deadlock,2026-03-06,Dynamo,adjustment,2.824,4.932,0.599,0.045,true
-deadlock,2026-03-06,Graves,adjustment,-1.493,-8.62,0.45,0.107,false
-deadlock,2026-03-06,Haze,adjustment,1.965,-0.092,0.867,0.111,false
-deadlock,2026-03-06,Infernus,adjustment,3.658,12.632,0.562,0.045,true
-deadlock,2026-03-06,Kelvin,adjustment,6.03,12.887,0.463,0.045,true
-deadlock,2026-03-06,Lady Geist,buff,5.467,7.257,0.701,0.045,true
-deadlock,2026-03-06,Mina,nerf,0.313,0.335,0.691,0.611,false
-deadlock,2026-03-06,Paige,adjustment,2.207,0.304,1.003,0.153,false
-deadlock,2026-03-06,Rem,adjustment,-2.946,-7.344,0.562,0.045,true
-deadlock,2026-03-06,Vindicta,adjustment,3.383,13.459,0.536,0.045,true
-deadlock,2026-03-06,Yamato,adjustment,1.395,7.365,0.649,0.1,false
-deadlock,2026-02-12,Graves,adjustment,0.385,-17.115,0.45,0.542,false
-deadlock,2026-02-12,Rem,buff,1.475,-0.905,0.562,0.107,false
-deadlock,2026-02-12,Silver,buff,3.978,-21.288,0.543,0.08,true
-deadlock,2026-01-30,Abrams,buff,-0.085,0.062,0.539,0.848,false
-deadlock,2026-01-30,Billy,adjustment,0.156,2.89,0.694,0.862,false
-deadlock,2026-01-30,Calico,buff,-0.722,-5.355,0.739,0.309,false
-deadlock,2026-01-30,Drifter,adjustment,0.495,4.763,0.469,0.454,false
-deadlock,2026-01-30,Dynamo,nerf,1.104,0.785,0.599,0.188,false
-deadlock,2026-01-30,Grey Talon,buff,0.722,5.946,0.482,0.285,false
-deadlock,2026-01-30,Holliday,buff,-1.436,2.121,0.753,0.187,false
-deadlock,2026-01-30,Ivy,nerf,-0.791,0.134,0.443,0.212,false
-deadlock,2026-01-30,Kelvin,buff,1.28,4.75,0.463,0.045,true
-deadlock,2026-01-30,Lash,nerf,-0.304,-6.307,0.478,0.546,false
-deadlock,2026-01-30,McGinnis,nerf,0.29,-1.841,0.74,0.826,false
-deadlock,2026-01-30,Mina,nerf,-2.313,-12.955,0.691,0.066,true
-deadlock,2026-01-30,Mirage,buff,0.612,3.078,0.527,0.306,false
-deadlock,2026-01-30,Paige,nerf,-0.4,-4.912,1.003,0.784,false
-deadlock,2026-01-30,Seven,nerf,0.744,-0.797,0.589,0.291,false
-deadlock,2026-01-30,Victor,nerf,-1.706,-3.354,0.847,0.169,false
-deadlock,2026-01-30,Vindicta,adjustment,1.221,2.269,0.536,0.105,false
-deadlock,2026-01-30,Viscous,nerf,-3.563,-4.566,0.787,0.045,true
-deadlock,2026-01-30,Vyper,adjustment,-1.692,0.759,0.666,0.103,false
-deadlock,2026-01-30,Warden,nerf,0.35,1.148,0.698,0.749,false
-deadlock,2025-12-30,Billy,nerf,-0.997,-2.94,0.694,0.291,false
-deadlock,2025-12-30,Lady Geist,nerf,-0.245,-2.829,0.701,0.62,false
-deadlock,2025-12-30,McGinnis,adjustment,-4.77,-2.522,0.74,0.045,true
-deadlock,2025-12-29,Grey Talon,buff,2.227,1.571,0.482,0.045,true
-deadlock,2025-12-29,Holliday,buff,1.201,-0.335,0.753,0.251,false
-deadlock,2025-12-29,Ivy,buff,0.979,2.105,0.443,0.127,false
-deadlock,2025-12-29,Kelvin,buff,-0.481,-2.167,0.463,0.417,false
-deadlock,2025-12-29,Mo & Krill,buff,1.277,1.18,1.101,0.309,false
-deadlock,2025-12-29,Paradox,buff,0.295,-0.811,0.648,0.722,false
-deadlock,2025-12-29,Seven,buff,0.476,6.453,0.589,0.421,false
-deadlock,2025-12-29,Sinclair,buff,0.539,0.084,0.574,0.401,false
-deadlock,2025-12-29,Yamato,buff,0.909,2.163,0.649,0.204,false
-deadlock,2025-12-16,Billy,nerf,-0.914,-6.952,0.694,0.307,false
-deadlock,2025-12-16,Dynamo,nerf,-1.596,-16.201,0.599,0.126,false
-deadlock,2025-12-16,Lady Geist,nerf,-1.633,-2.222,0.701,0.146,false
-deadlock,2025-12-16,Mirage,nerf,-1.583,-8.862,0.527,0.078,true
-deadlock,2025-12-16,Shiv,nerf,-0.19,-4.589,0.64,0.898,false
-deadlock,2025-12-16,Vindicta,nerf,0.277,-3.293,0.536,0.747,false
-deadlock,2025-12-16,Wraith,nerf,-3.599,-11.507,0.918,0.045,true
-deadlock,2025-12-03,Billy,nerf,-1.321,-1.64,0.694,0.222,false
-deadlock,2025-12-03,Drifter,nerf,-3.042,-5.302,0.469,0.045,true
-deadlock,2025-12-03,Dynamo,nerf,-1.248,0.401,0.599,0.176,false
-deadlock,2025-12-03,Infernus,nerf,-1.731,-9.32,0.562,0.062,true
-deadlock,2025-12-03,Shiv,nerf,0.153,0.898,0.64,0.928,false
-deadlock,2025-12-03,Wraith,nerf,-0.881,-0.064,0.918,0.364,false
-deadlock,2025-11-21,Abrams,buff,0.719,5.077,0.539,0.256,false
-deadlock,2025-11-21,Bebop,adjustment,-3.755,-0.851,0.626,0.045,true
-deadlock,2025-11-21,Billy,buff,2.073,11.255,0.694,0.054,true
-deadlock,2025-11-21,Calico,adjustment,-0.982,-5.017,0.739,0.263,false
-deadlock,2025-11-21,Dynamo,buff,3.518,16.107,0.599,0.045,true
-deadlock,2025-11-21,Holliday,nerf,-2.762,-9.856,0.753,0.047,true
-deadlock,2025-11-21,Infernus,nerf,-1.085,-3.482,0.562,0.188,false
-deadlock,2025-11-21,Ivy,buff,-0.888,3.788,0.443,0.155,false
-deadlock,2025-11-21,Kelvin,nerf,-1.712,-7.685,0.463,0.045,true
-deadlock,2025-11-21,Lady Geist,buff,-1.263,1.174,0.701,0.19,false
-deadlock,2025-11-21,Lash,buff,2.907,15.119,0.478,0.045,true
-deadlock,2025-11-21,McGinnis,buff,0.341,4.41,0.74,0.794,false
-deadlock,2025-11-21,Mina,nerf,-0.643,-7.436,0.691,0.382,false
-deadlock,2025-11-21,Mirage,buff,2.357,12.515,0.527,0.045,true
-deadlock,2025-11-21,Mo & Krill,nerf,-0.346,-1.105,1.101,0.69,false
-deadlock,2025-11-21,Paige,nerf,-0.696,-6.586,1.003,0.466,false
-deadlock,2025-11-21,Paradox,nerf,-3.26,-8.257,0.648,0.045,true
-deadlock,2025-11-21,Pocket,nerf,-2.318,-5.197,0.497,0.045,true
-deadlock,2025-11-21,Seven,buff,3.118,10.974,0.589,0.045,true
-deadlock,2025-11-21,Shiv,nerf,-1.398,-3.429,0.64,0.126,false
-deadlock,2025-11-21,Sinclair,adjustment,-0.084,4.64,0.574,0.899,false
-deadlock,2025-11-21,The Doorman,nerf,0.079,-2.079,0.782,0.939,false
-deadlock,2025-11-21,Viscous,adjustment,-0.388,0.468,0.787,0.59,false
-deadlock,2025-11-21,Vyper,buff,2.082,5.027,0.666,0.093,true
-deadlock,2025-11-21,Wraith,buff,2.407,10.275,0.918,0.103,false
-deadlock,2025-11-21,Yamato,nerf,-3.622,-7.057,0.649,0.045,true
+deadlock,2026-10-30,Abrams,buff,0.325,4.198,0.525,0.574,false
+deadlock,2026-10-30,Billy,buff,0.52,3.251,0.695,0.443,false
+deadlock,2026-10-30,Calico,buff,0.494,0.83,0.735,0.434,false
+deadlock,2026-10-30,Drifter,buff,0.383,6.208,0.459,0.541,false
+deadlock,2026-10-30,Graves,nerf,-0.788,-3.873,0.447,0.301,false
+deadlock,2026-10-30,Grey Talon,buff,0.776,2.569,0.486,0.261,false
+deadlock,2026-10-30,Infernus,buff,-0.219,1.099,0.541,0.795,false
+deadlock,2026-10-30,Kelvin,buff,1.336,0.751,0.412,0.045,true
+deadlock,2026-10-30,Lady Geist,buff,1.274,1.356,0.702,0.19,false
+deadlock,2026-10-30,Lash,buff,0.544,-0.271,0.478,0.304,false
+deadlock,2026-10-30,McGinnis,buff,2.266,1.403,0.739,0.045,true
+deadlock,2026-10-30,Mirage,rework,-1.28,2.033,0.51,0.101,false
+deadlock,2026-10-30,Paige,adjustment,1.043,0.257,1.006,0.304,false
+deadlock,2026-10-30,Paradox,buff,0.81,1.954,0.642,0.296,false
+deadlock,2026-10-30,Seven,buff,0.748,-1.347,0.587,0.288,false
+deadlock,2026-10-30,Shiv,adjustment,-0.723,0.631,0.635,0.288,false
+deadlock,2026-10-30,Silver,buff,0.088,1.36,0.541,0.848,false
+deadlock,2026-10-30,Solomon,adjustment,1.26,-3.35,,,false
+deadlock,2026-10-30,The Doorman,buff,0.175,0.688,0.761,0.848,false
+deadlock,2026-10-30,Venator,adjustment,-1.089,1.17,0.395,0.118,false
+deadlock,2026-10-30,Victor,buff,-0.729,-1.326,0.856,0.338,false
+deadlock,2026-10-30,Violet,nerf,-5.898,-18.198,,,false
+deadlock,2026-10-30,Viscous,buff,0.865,0.885,0.789,0.353,false
+deadlock,2026-10-30,Warden,buff,2.84,4.581,0.675,0.045,true
+deadlock,2026-10-30,Wraith,nerf,-1.245,-2.49,0.917,0.256,false
+deadlock,2026-10-30,Yamato,nerf,-0.347,-1.321,0.652,0.684,false
+deadlock,2026-10-14,Baba,nerf,0.142,-39.3,,,false
+deadlock,2026-10-05,Sinclair,nerf,-2.62,-2.708,0.566,0.045,true
+deadlock,2026-09-16,Abrams,adjustment,1.379,1.559,0.525,0.101,false
+deadlock,2026-09-16,Celeste,nerf,-2.225,-7.769,,,false
+deadlock,2026-09-16,Graves,buff,0.235,2.029,0.447,0.609,false
+deadlock,2026-09-16,Haze,buff,1.539,10.689,0.868,0.252,false
+deadlock,2026-09-16,Holliday,buff,0.063,4.458,0.764,0.956,false
+deadlock,2026-09-16,Ivy,nerf,-1.021,-0.493,0.411,0.093,true
+deadlock,2026-09-16,Kelvin,buff,0.579,1.375,0.412,0.288,false
+deadlock,2026-09-16,Lady Geist,buff,2.299,9.069,0.702,0.091,true
+deadlock,2026-09-16,Lash,adjustment,-0.675,5.208,0.478,0.238,false
+deadlock,2026-09-16,Paige,buff,1.208,5.209,1.006,0.288,false
+deadlock,2026-09-16,Paradox,nerf,-0.889,-4.078,0.642,0.248,false
+deadlock,2026-09-16,Shiv,buff,-1.132,9.768,0.635,0.224,false
+deadlock,2026-09-16,Silver,buff,2.419,13.264,0.541,0.079,true
+deadlock,2026-09-16,Venator,buff,0.875,11.124,0.395,0.118,false
+deadlock,2026-09-16,Viscous,nerf,-2.815,-3.292,0.789,0.045,true
+deadlock,2026-09-16,Vyper,nerf,-1.86,-1.529,0.666,0.101,false
+deadlock,2026-09-16,Warden,nerf,-5.547,-20.312,0.675,0.045,true
+deadlock,2026-09-16,Wraith,nerf,-1.652,-4.405,0.917,0.175,false
+deadlock,2026-09-16,Yamato,buff,1.59,5.423,0.652,0.088,true
+deadlock,2026-08-22,Celeste,nerf,-0.528,-5.817,,,false
+deadlock,2026-08-12,Apollo,buff,0.156,5.97,0.387,0.848,false
+deadlock,2026-08-12,Billy,nerf,-1.624,-4.421,0.695,0.147,false
+deadlock,2026-08-12,Drifter,nerf,-1.454,-4.416,0.459,0.045,true
+deadlock,2026-08-12,Holliday,adjustment,-2.045,-0.651,0.764,0.092,true
+deadlock,2026-08-12,Ivy,nerf,-0.745,-0.943,0.411,0.165,false
+deadlock,2026-08-12,Lash,nerf,-0.381,-0.479,0.478,0.434,false
+deadlock,2026-08-12,McGinnis,nerf,-4.701,-6.67,0.739,0.045,true
+deadlock,2026-08-12,Paige,buff,-0.079,1.165,1.006,0.964,false
+deadlock,2026-08-12,Seven,buff,-0.245,1.093,0.587,0.722,false
+deadlock,2026-08-12,The Doorman,nerf,-0.22,-1.2,0.761,0.838,false
+deadlock,2026-08-12,Vindicta,nerf,-0.647,1.444,0.533,0.317,false
+deadlock,2026-08-12,Vyper,buff,0.951,4.441,0.666,0.241,false
+deadlock,2026-08-12,Wraith,nerf,0.019,-0.176,0.917,0.985,false
+deadlock,2026-07-28,Apollo,buff,0.497,1.591,0.387,0.34,false
+deadlock,2026-07-28,Billy,nerf,-1.639,-0.796,0.695,0.123,false
+deadlock,2026-07-28,Calico,nerf,0.093,-0.571,0.735,0.894,false
+deadlock,2026-07-28,Celeste,buff,1.295,3.992,,,false
+deadlock,2026-07-28,Drifter,nerf,0.181,-1.819,0.459,0.756,false
+deadlock,2026-07-28,Dynamo,buff,-1.294,-2.033,0.597,0.161,false
+deadlock,2026-07-28,Haze,nerf,-4.029,-14.998,0.868,0.045,true
+deadlock,2026-07-28,Ivy,nerf,-0.955,-3.001,0.411,0.104,false
+deadlock,2026-07-28,Kelvin,buff,-0.464,0.177,0.412,0.435,false
+deadlock,2026-07-28,Lady Geist,adjustment,-2.344,-2.199,0.702,0.091,true
+deadlock,2026-07-28,Mina,buff,0.004,2.366,0.681,0.992,false
+deadlock,2026-07-28,Mirage,nerf,-4.408,-7.637,0.51,0.045,true
+deadlock,2026-07-28,Mo & Krill,buff,-0.12,7.395,1.105,0.853,false
+deadlock,2026-07-28,Paige,buff,0.124,-0.194,1.006,0.942,false
+deadlock,2026-07-28,Pocket,nerf,-1.21,1.209,0.496,0.093,true
+deadlock,2026-07-28,Shiv,nerf,0.003,-3.963,0.635,1.0,false
+deadlock,2026-07-28,Silver,nerf,-1.942,-2.138,0.541,0.079,true
+deadlock,2026-07-28,The Doorman,nerf,-4.032,-5.264,0.761,0.045,true
+deadlock,2026-07-28,Venator,adjustment,-0.864,-2.534,0.395,0.118,false
+deadlock,2026-07-28,Viscous,adjustment,0.179,-3.211,0.789,0.838,false
+deadlock,2026-07-28,Yamato,nerf,-2.221,-3.173,0.652,0.088,true
+deadlock,2026-07-09,Billy,nerf,0.046,0.396,0.695,0.985,false
+deadlock,2026-07-09,Drifter,nerf,-3.38,-8.257,0.459,0.045,true
+deadlock,2026-07-09,Graves,buff,2.307,6.92,0.447,0.052,true
+deadlock,2026-07-09,Haze,adjustment,1.839,13.807,0.868,0.155,false
+deadlock,2026-07-09,Holliday,nerf,-0.901,-3.821,0.764,0.277,false
+deadlock,2026-07-09,Mirage,adjustment,-0.36,-0.124,0.51,0.609,false
+deadlock,2026-07-09,Pocket,nerf,-0.714,1.18,0.496,0.271,false
+deadlock,2026-07-09,Shiv,nerf,-2.192,-13.48,0.635,0.052,true
+deadlock,2026-07-09,Silver,buff,1.467,4.675,0.541,0.191,false
+deadlock,2026-07-09,The Doorman,nerf,-1.402,-0.309,0.761,0.241,false
+deadlock,2026-07-09,Victor,buff,3.288,2.796,0.856,0.052,true
+deadlock,2026-07-09,Viscous,nerf,-0.602,0.602,0.789,0.449,false
+deadlock,2026-07-09,Yamato,nerf,-0.073,1.158,0.652,0.929,false
+deadlock,2026-06-30,Abrams,nerf,-0.532,-3.385,0.525,0.306,false
+deadlock,2026-06-30,Apollo,buff,0.349,4.254,0.387,0.516,false
+deadlock,2026-06-30,Billy,nerf,-0.57,-9.113,0.695,0.434,false
+deadlock,2026-06-30,Celeste,buff,2.261,8.179,,,false
+deadlock,2026-06-30,Drifter,buff,5.061,17.225,0.459,0.045,true
+deadlock,2026-06-30,Dynamo,buff,-0.171,0.687,0.597,0.767,false
+deadlock,2026-06-30,Grey Talon,nerf,-2.032,-5.056,0.486,0.045,true
+deadlock,2026-06-30,Haze,buff,-0.597,-2.384,0.868,0.434,false
+deadlock,2026-06-30,Holliday,nerf,-2.609,-6.141,0.764,0.047,true
+deadlock,2026-06-30,Ivy,buff,1.716,6.933,0.411,0.045,true
+deadlock,2026-06-30,Lash,buff,2.491,5.864,0.478,0.045,true
+deadlock,2026-06-30,Mina,buff,-0.365,7.367,0.681,0.56,false
+deadlock,2026-06-30,Mo & Krill,buff,1.763,3.818,1.105,0.248,false
+deadlock,2026-06-30,Paige,buff,1.224,5.359,1.006,0.288,false
+deadlock,2026-06-30,Paradox,buff,0.667,2.386,0.642,0.373,false
+deadlock,2026-06-30,Pocket,nerf,-0.036,-0.758,0.496,0.959,false
+deadlock,2026-06-30,Rem,nerf,-1.915,-1.529,0.562,0.061,true
+deadlock,2026-06-30,Seven,buff,-0.948,-2.19,0.587,0.216,false
+deadlock,2026-06-30,The Doorman,nerf,0.681,1.068,0.761,0.418,false
+deadlock,2026-06-30,Vindicta,buff,0.916,4.893,0.533,0.191,false
+deadlock,2026-06-30,Viscous,buff,-0.094,1.606,0.789,0.934,false
+deadlock,2026-06-30,Vyper,buff,0.547,1.304,0.666,0.434,false
+deadlock,2026-06-30,Warden,buff,0.355,-1.787,0.675,0.723,false
+deadlock,2026-06-11,Apollo,buff,-0.643,10.737,0.387,0.227,false
+deadlock,2026-06-11,Bebop,buff,0.587,3.796,0.609,0.368,false
+deadlock,2026-06-11,Calico,buff,-0.321,13.373,0.735,0.637,false
+deadlock,2026-06-11,Graves,nerf,-3.011,-7.113,0.447,0.052,true
+deadlock,2026-06-11,Grey Talon,nerf,-2.322,-5.54,0.486,0.045,true
+deadlock,2026-06-11,Holliday,adjustment,3.674,23.28,0.764,0.047,true
+deadlock,2026-06-11,Infernus,buff,0.187,2.402,0.541,0.83,false
+deadlock,2026-06-11,Ivy,nerf,-0.296,0.3,0.411,0.582,false
+deadlock,2026-06-11,McGinnis,nerf,-0.769,-3.106,0.739,0.436,false
+deadlock,2026-06-11,Paige,buff,0.305,2.415,1.006,0.848,false
+deadlock,2026-06-11,Pocket,nerf,-1.053,-2.455,0.496,0.101,false
+deadlock,2026-06-11,Seven,nerf,-1.863,-6.304,0.587,0.079,true
+deadlock,2026-06-11,Silver,nerf,-3.475,-13.834,0.541,0.079,true
+deadlock,2026-06-11,The Doorman,nerf,-1.443,-1.464,0.761,0.213,false
+deadlock,2026-06-11,Victor,adjustment,-1.935,-4.255,0.856,0.127,false
+deadlock,2026-06-11,Vindicta,buff,0.542,3.045,0.533,0.434,false
+deadlock,2026-06-11,Viscous,buff,-0.089,2.75,0.789,0.939,false
+deadlock,2026-06-11,Warden,adjustment,0.53,1.334,0.675,0.55,false
+deadlock,2026-05-31,Apollo,buff,2.081,5.963,0.387,0.063,true
+deadlock,2026-05-31,Graves,nerf,-4.016,-13.495,0.447,0.052,true
+deadlock,2026-05-31,McGinnis,nerf,-2.488,-4.767,0.739,0.045,true
+deadlock,2026-05-31,Pocket,nerf,-0.131,-0.073,0.496,0.848,false
+deadlock,2026-05-31,Silver,nerf,-0.402,2.235,0.541,0.53,false
+deadlock,2026-05-31,Victor,nerf,-0.686,2.854,0.856,0.351,false
+deadlock,2026-05-31,Yamato,nerf,-1.019,-13.18,0.652,0.171,false
+deadlock,2026-05-22,Abrams,buff,1.504,9.94,0.525,0.101,false
+deadlock,2026-05-22,Apollo,nerf,-3.985,-15.605,0.387,0.063,true
+deadlock,2026-05-22,Bebop,nerf,0.208,-3.485,0.609,0.756,false
+deadlock,2026-05-22,Billy,adjustment,2.975,11.98,0.695,0.052,true
+deadlock,2026-05-22,Calico,adjustment,-0.168,1.641,0.735,0.838,false
+deadlock,2026-05-22,Celeste,buff,-0.677,0.398,,,false
+deadlock,2026-05-22,Drifter,buff,-0.65,-1.465,0.459,0.307,false
+deadlock,2026-05-22,Dynamo,nerf,-2.707,-3.663,0.597,0.045,true
+deadlock,2026-05-22,Graves,buff,7.535,21.829,0.447,0.052,true
+deadlock,2026-05-22,Grey Talon,buff,1.245,4.31,0.486,0.108,false
+deadlock,2026-05-22,Haze,buff,-0.637,0.928,0.868,0.425,false
+deadlock,2026-05-22,Holliday,buff,-2.148,1.166,0.764,0.092,true
+deadlock,2026-05-22,Infernus,buff,2.251,4.579,0.541,0.045,true
+deadlock,2026-05-22,Kelvin,nerf,-1.788,-2.76,0.412,0.045,true
+deadlock,2026-05-22,Lash,buff,-0.534,-1.353,0.478,0.304,false
+deadlock,2026-05-22,McGinnis,buff,1.618,4.575,0.739,0.101,false
+deadlock,2026-05-22,Mina,adjustment,-4.457,-11.482,0.681,0.045,true
+deadlock,2026-05-22,Mo & Krill,buff,-1.314,-0.62,1.105,0.306,false
+deadlock,2026-05-22,Paige,buff,0.955,1.346,1.006,0.335,false
+deadlock,2026-05-22,Paradox,buff,-0.231,5.392,0.642,0.756,false
+deadlock,2026-05-22,Pocket,nerf,-0.692,-0.721,0.496,0.288,false
+deadlock,2026-05-22,Rem,buff,2.429,12.133,0.562,0.045,true
+deadlock,2026-05-22,Seven,adjustment,1.044,4.465,0.587,0.195,false
+deadlock,2026-05-22,Shiv,adjustment,0.216,-4.283,0.635,0.848,false
+deadlock,2026-05-22,Silver,adjustment,0.055,-0.977,0.541,0.92,false
+deadlock,2026-05-22,The Doorman,nerf,-2.826,-6.91,0.761,0.045,true
+deadlock,2026-05-22,Venator,buff,3.345,5.811,0.395,0.052,true
+deadlock,2026-05-22,Victor,nerf,1.024,-8.804,0.856,0.288,false
+deadlock,2026-05-22,Viscous,buff,0.301,1.329,0.789,0.677,false
+deadlock,2026-05-22,Vyper,buff,-1.973,0.247,0.666,0.093,true
+deadlock,2026-05-22,Warden,nerf,-1.812,-9.404,0.675,0.083,true
+deadlock,2026-05-22,Yamato,buff,0.207,17.621,0.652,0.828,false
+deadlock,2026-04-30,Abrams,nerf,-1.125,-2.466,0.525,0.123,false
+deadlock,2026-04-30,Apollo,nerf,-1.004,-2.143,0.387,0.063,true
+deadlock,2026-04-30,Billy,buff,0.172,0.4,0.695,0.882,false
+deadlock,2026-04-30,Celeste,buff,1.691,5.802,,,false
+deadlock,2026-04-30,Drifter,buff,-0.742,3.865,0.459,0.288,false
+deadlock,2026-04-30,Dynamo,nerf,-0.7,-5.994,0.597,0.277,false
+deadlock,2026-04-30,Haze,buff,0.666,3.64,0.868,0.408,false
+deadlock,2026-04-30,Holliday,buff,-0.932,0.997,0.764,0.277,false
+deadlock,2026-04-30,Infernus,nerf,-6.367,-12.037,0.541,0.045,true
+deadlock,2026-04-30,Lady Geist,nerf,0.86,-1.903,0.702,0.277,false
+deadlock,2026-04-30,McGinnis,buff,2.676,1.448,0.739,0.045,true
+deadlock,2026-04-30,Mina,nerf,-0.685,2.583,0.681,0.335,false
+deadlock,2026-04-30,Mirage,nerf,-1.789,-2.504,0.51,0.045,true
+deadlock,2026-04-30,Mo & Krill,buff,0.323,0.864,1.105,0.723,false
+deadlock,2026-04-30,Paige,buff,0.023,0.325,1.006,0.979,false
+deadlock,2026-04-30,Paradox,buff,0.158,3.758,0.642,0.848,false
+deadlock,2026-04-30,Pocket,buff,0.151,2.207,0.496,0.835,false
+deadlock,2026-04-30,Rem,buff,-1.449,-6.199,0.562,0.118,false
+deadlock,2026-04-30,Shiv,nerf,-1.65,-2.647,0.635,0.124,false
+deadlock,2026-04-30,Silver,nerf,-0.344,1.114,0.541,0.614,false
+deadlock,2026-04-30,Venator,nerf,-1.959,-2.576,0.395,0.052,true
+deadlock,2026-04-30,Victor,buff,2.884,5.715,0.856,0.065,true
+deadlock,2026-04-30,Vyper,nerf,-2.361,-5.887,0.666,0.045,true
+deadlock,2026-04-10,Bebop,nerf,0.212,5.588,0.609,0.756,false
+deadlock,2026-04-10,Billy,adjustment,-0.884,-0.321,0.695,0.304,false
+deadlock,2026-04-10,Celeste,nerf,-0.091,-4.593,,,false
+deadlock,2026-04-10,Dynamo,nerf,-1.533,0.576,0.597,0.139,false
+deadlock,2026-04-10,Grey Talon,buff,0.766,4.729,0.486,0.261,false
+deadlock,2026-04-10,Haze,buff,-5.695,-8.825,0.868,0.045,true
+deadlock,2026-04-10,Holliday,buff,1.314,6.757,0.764,0.248,false
+deadlock,2026-04-10,Kelvin,nerf,-1.371,-0.633,0.412,0.045,true
+deadlock,2026-04-10,Lady Geist,nerf,0.017,0.279,0.702,0.978,false
+deadlock,2026-04-10,McGinnis,buff,-0.033,1.253,0.739,0.97,false
+deadlock,2026-04-10,Mirage,nerf,-1.97,-3.73,0.51,0.045,true
+deadlock,2026-04-10,Paradox,buff,0.653,1.696,0.642,0.382,false
+deadlock,2026-04-10,Rem,buff,0.699,-1.427,0.562,0.302,false
+deadlock,2026-04-10,The Doorman,nerf,0.382,-3.073,0.761,0.669,false
+deadlock,2026-04-10,Venator,adjustment,-0.067,-0.371,0.395,0.968,false
+deadlock,2026-04-10,Victor,buff,4.07,10.35,0.856,0.045,true
+deadlock,2026-04-10,Vyper,buff,2.268,5.208,0.666,0.052,true
+deadlock,2026-03-25,Bebop,buff,0.125,2.115,0.609,0.848,false
+deadlock,2026-03-25,Holliday,buff,0.183,1.883,0.764,0.848,false
+deadlock,2026-03-25,Lady Geist,nerf,-0.919,0.205,0.702,0.252,false
+deadlock,2026-03-25,Rem,buff,-0.424,-1.667,0.562,0.445,false
+deadlock,2026-03-25,Venator,nerf,-0.656,-1.833,0.395,0.158,false
+deadlock,2026-03-21,Abrams,buff,2.272,5.5,0.525,0.056,true
+deadlock,2026-03-21,Apollo,buff,-0.115,1.781,0.387,0.894,false
+deadlock,2026-03-21,Billy,adjustment,1.113,1.149,0.695,0.263,false
+deadlock,2026-03-21,Dynamo,buff,2.994,7.488,0.597,0.045,true
+deadlock,2026-03-21,Ivy,nerf,-1.804,-5.279,0.411,0.045,true
+deadlock,2026-03-21,Mina,buff,1.901,4.536,0.681,0.108,false
+deadlock,2026-03-21,Mo & Krill,nerf,-0.01,-5.934,1.105,0.986,false
+deadlock,2026-03-21,Shiv,nerf,1.157,5.673,0.635,0.205,false
+deadlock,2026-03-21,Viscous,nerf,-2.87,-7.056,0.789,0.045,true
+deadlock,2026-03-21,Wraith,nerf,-1.823,-7.475,0.917,0.16,false
+deadlock,2026-03-06,Abrams,adjustment,-3.521,-6.87,0.525,0.045,true
+deadlock,2026-03-06,Bebop,buff,-2.309,-2.336,0.609,0.045,true
+deadlock,2026-03-06,Billy,nerf,-0.321,1.565,0.695,0.609,false
+deadlock,2026-03-06,Drifter,nerf,-2.399,2.915,0.459,0.045,true
+deadlock,2026-03-06,Dynamo,adjustment,2.828,4.927,0.597,0.045,true
+deadlock,2026-03-06,Graves,adjustment,-1.49,-8.614,0.447,0.104,false
+deadlock,2026-03-06,Haze,adjustment,1.965,-0.094,0.868,0.118,false
+deadlock,2026-03-06,Infernus,adjustment,3.657,12.631,0.541,0.045,true
+deadlock,2026-03-06,Kelvin,adjustment,6.037,12.888,0.412,0.045,true
+deadlock,2026-03-06,Lady Geist,buff,5.466,7.254,0.702,0.045,true
+deadlock,2026-03-06,Mina,nerf,0.307,0.333,0.681,0.629,false
+deadlock,2026-03-06,Paige,adjustment,2.206,0.305,1.006,0.155,false
+deadlock,2026-03-06,Rem,adjustment,-2.948,-7.339,0.562,0.045,true
+deadlock,2026-03-06,Vindicta,adjustment,3.387,13.456,0.533,0.045,true
+deadlock,2026-03-06,Yamato,adjustment,1.39,7.364,0.652,0.1,false
+deadlock,2026-02-12,Graves,adjustment,0.381,-17.114,0.447,0.538,false
+deadlock,2026-02-12,Rem,buff,1.474,-0.898,0.562,0.104,false
+deadlock,2026-02-12,Silver,buff,3.979,-21.288,0.541,0.079,true
+deadlock,2026-01-30,Abrams,buff,-0.083,0.063,0.525,0.848,false
+deadlock,2026-01-30,Billy,adjustment,0.162,2.893,0.695,0.892,false
+deadlock,2026-01-30,Calico,buff,-0.726,-5.357,0.735,0.304,false
+deadlock,2026-01-30,Drifter,adjustment,0.497,4.768,0.459,0.435,false
+deadlock,2026-01-30,Dynamo,nerf,1.107,0.786,0.597,0.187,false
+deadlock,2026-01-30,Grey Talon,buff,0.734,5.944,0.486,0.274,false
+deadlock,2026-01-30,Holliday,buff,-1.433,2.123,0.764,0.196,false
+deadlock,2026-01-30,Ivy,nerf,-0.788,0.133,0.411,0.156,false
+deadlock,2026-01-30,Kelvin,buff,1.281,4.747,0.412,0.045,true
+deadlock,2026-01-30,Lash,nerf,-0.301,-6.307,0.478,0.58,false
+deadlock,2026-01-30,McGinnis,nerf,0.302,-1.838,0.739,0.828,false
+deadlock,2026-01-30,Mina,nerf,-2.308,-12.951,0.681,0.065,true
+deadlock,2026-01-30,Mirage,buff,0.605,3.08,0.51,0.288,false
+deadlock,2026-01-30,Paige,nerf,-0.39,-4.906,1.006,0.795,false
+deadlock,2026-01-30,Seven,nerf,0.744,-0.795,0.587,0.288,false
+deadlock,2026-01-30,Victor,nerf,-1.705,-3.347,0.856,0.203,false
+deadlock,2026-01-30,Vindicta,adjustment,1.228,2.273,0.533,0.103,false
+deadlock,2026-01-30,Viscous,nerf,-3.563,-4.564,0.789,0.045,true
+deadlock,2026-01-30,Vyper,adjustment,-1.683,0.76,0.666,0.111,false
+deadlock,2026-01-30,Warden,nerf,0.352,1.148,0.675,0.723,false
+deadlock,2025-12-30,Billy,nerf,-0.986,-2.943,0.695,0.296,false
+deadlock,2025-12-30,Lady Geist,nerf,-0.271,-2.846,0.702,0.58,false
+deadlock,2025-12-30,McGinnis,adjustment,-4.784,-2.51,0.739,0.045,true
+deadlock,2025-12-29,Grey Talon,buff,2.225,1.549,0.486,0.045,true
+deadlock,2025-12-29,Holliday,buff,1.212,-0.35,0.764,0.248,false
+deadlock,2025-12-29,Ivy,buff,0.961,2.097,0.411,0.093,true
+deadlock,2025-12-29,Kelvin,buff,-0.449,-2.18,0.412,0.449,false
+deadlock,2025-12-29,Mo & Krill,buff,1.274,1.166,1.105,0.306,false
+deadlock,2025-12-29,Paradox,buff,0.272,-0.836,0.642,0.708,false
+deadlock,2025-12-29,Seven,buff,0.508,6.448,0.587,0.408,false
+deadlock,2025-12-29,Sinclair,buff,0.571,0.098,0.566,0.357,false
+deadlock,2025-12-29,Yamato,buff,0.921,2.159,0.652,0.211,false
+deadlock,2025-12-16,Billy,nerf,-1.016,-6.974,0.695,0.277,false
+deadlock,2025-12-16,Dynamo,nerf,-1.595,-16.233,0.597,0.124,false
+deadlock,2025-12-16,Lady Geist,nerf,-1.496,-2.219,0.702,0.158,false
+deadlock,2025-12-16,Mirage,nerf,-1.587,-8.771,0.51,0.079,true
+deadlock,2025-12-16,Shiv,nerf,-0.097,-4.577,0.635,0.959,false
+deadlock,2025-12-16,Vindicta,nerf,0.304,-3.309,0.533,0.715,false
+deadlock,2025-12-16,Wraith,nerf,-3.634,-11.466,0.917,0.045,true
+deadlock,2025-12-03,Billy,nerf,-1.171,-1.444,0.695,0.25,false
+deadlock,2025-12-03,Drifter,nerf,-3.024,-5.174,0.459,0.045,true
+deadlock,2025-12-03,Dynamo,nerf,-1.283,0.35,0.597,0.161,false
+deadlock,2025-12-03,Infernus,nerf,-1.705,-9.323,0.541,0.05,true
+deadlock,2025-12-03,Shiv,nerf,0.116,0.912,0.635,0.959,false
+deadlock,2025-12-03,Wraith,nerf,-0.811,0.014,0.917,0.382,false
+deadlock,2025-11-21,Abrams,buff,0.667,5.267,0.525,0.241,false
+deadlock,2025-11-21,Bebop,adjustment,-3.638,-0.878,0.609,0.045,true
+deadlock,2025-11-21,Billy,buff,1.986,11.573,0.695,0.052,true
+deadlock,2025-11-21,Calico,adjustment,-1.019,-4.691,0.735,0.246,false
+deadlock,2025-11-21,Dynamo,buff,3.539,16.042,0.597,0.045,true
+deadlock,2025-11-21,Holliday,nerf,-2.727,-9.379,0.764,0.047,true
+deadlock,2025-11-21,Infernus,nerf,-1.138,-3.495,0.541,0.156,false
+deadlock,2025-11-21,Ivy,buff,-0.735,4.277,0.411,0.165,false
+deadlock,2025-11-21,Kelvin,nerf,-1.746,-7.431,0.412,0.045,true
+deadlock,2025-11-21,Lady Geist,buff,-1.313,1.115,0.702,0.19,false
+deadlock,2025-11-21,Lash,buff,3.031,15.229,0.478,0.045,true
+deadlock,2025-11-21,McGinnis,buff,0.228,4.815,0.739,0.846,false
+deadlock,2025-11-21,Mina,nerf,-0.605,-6.863,0.681,0.385,false
+deadlock,2025-11-21,Mirage,buff,2.454,12.675,0.51,0.045,true
+deadlock,2025-11-21,Mo & Krill,nerf,-0.22,-0.992,1.105,0.806,false
+deadlock,2025-11-21,Paige,nerf,-0.583,-6.431,1.006,0.58,false
+deadlock,2025-11-21,Paradox,nerf,-3.383,-7.699,0.642,0.045,true
+deadlock,2025-11-21,Pocket,nerf,-2.391,-4.625,0.496,0.045,true
+deadlock,2025-11-21,Seven,buff,3.368,11.019,0.587,0.045,true
+deadlock,2025-11-21,Shiv,nerf,-1.267,-3.437,0.635,0.124,false
+deadlock,2025-11-21,Sinclair,adjustment,-0.28,4.793,0.566,0.677,false
+deadlock,2025-11-21,The Doorman,nerf,0.174,-1.631,0.761,0.848,false
+deadlock,2025-11-21,Viscous,adjustment,-0.612,0.896,0.789,0.449,false
+deadlock,2025-11-21,Vyper,buff,1.836,5.288,0.666,0.101,false
+deadlock,2025-11-21,Wraith,buff,2.417,10.499,0.917,0.101,false
+deadlock,2025-11-21,Yamato,nerf,-3.327,-6.76,0.652,0.045,true
