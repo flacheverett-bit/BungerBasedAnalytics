@@ -1,6 +1,6 @@
 {
   "game": "overwatch",
-  "updated": "2026-11-22T07:42:30Z",
+  "updated": "2026-11-23T08:02:38Z",
   "share_label": "Pick shares among pro players in OWCS matches",
   "sources": {
     "perks": "OverFast API (Blizzard hero data)",
