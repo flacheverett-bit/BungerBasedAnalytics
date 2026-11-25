@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-24T07:54:53Z",
+ "generated": "2026-11-25T07:56:42Z",
  "summary": {
-  "PASS": 134,
+  "PASS": 142,
   "WARN": 0,
   "FAIL": 0,
   "INFO": 0
@@ -124,14 +124,14 @@
    "area": "heroes",
    "check": "latest day not a partial/empty bucket",
    "status": "PASS",
-   "detail": "latest 125,753 vs 7-day avg 195,238"
+   "detail": "latest 125,208 vs 7-day avg 194,199"
   },
   {
    "game": "deadlock",
    "area": "players",
    "check": "dates unique and sorted",
    "status": "PASS",
-   "detail": "914 days"
+   "detail": "915 days"
   },
   {
    "game": "deadlock",
@@ -208,7 +208,7 @@
    "area": "matchups",
    "check": "A vs B and B vs A win rates sum to 100%",
    "status": "PASS",
-   "detail": "1892 directed pairs, max deviation 0.030"
+   "detail": "1892 directed pairs, max deviation 0.040"
   },
   {
    "game": "deadlock",
@@ -278,7 +278,7 @@
    "area": "heroes",
    "check": "dates sorted and unique",
    "status": "PASS",
-   "detail": "5 dates"
+   "detail": "6 dates"
   },
   {
    "game": "overwatch",
@@ -457,10 +457,38 @@
   },
   {
    "game": "overwatch",
+   "area": "heroes",
+   "check": "2026-11-25: win rates plausible (25-75%)",
+   "status": "PASS",
+   "detail": "54 heroes"
+  },
+  {
+   "game": "overwatch",
+   "area": "heroes",
+   "check": "2026-11-25: rates within 0-100%",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "game": "overwatch",
+   "area": "heroes",
+   "check": "2026-11-25: pick-weighted win rate ~50%",
+   "status": "PASS",
+   "detail": "49.54%"
+  },
+  {
+   "game": "overwatch",
+   "area": "heroes",
+   "check": "2026-11-25: pick rates sum to players per match",
+   "status": "PASS",
+   "detail": "sum 500% vs expected 500%"
+  },
+  {
+   "game": "overwatch",
    "area": "players",
    "check": "dates unique and sorted",
    "status": "PASS",
-   "detail": "131 days"
+   "detail": "132 days"
   },
   {
    "game": "overwatch",
@@ -614,7 +642,7 @@
    "area": "heroes",
    "check": "dates sorted and unique",
    "status": "PASS",
-   "detail": "5 dates"
+   "detail": "6 dates"
   },
   {
    "game": "marvel-rivals",
@@ -793,10 +821,38 @@
   },
   {
    "game": "marvel-rivals",
+   "area": "heroes",
+   "check": "2026-11-25: win rates plausible (25-75%)",
+   "status": "PASS",
+   "detail": "57 heroes"
+  },
+  {
+   "game": "marvel-rivals",
+   "area": "heroes",
+   "check": "2026-11-25: rates within 0-100%",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "game": "marvel-rivals",
+   "area": "heroes",
+   "check": "2026-11-25: pick-weighted win rate ~50%",
+   "status": "PASS",
+   "detail": "49.42%"
+  },
+  {
+   "game": "marvel-rivals",
+   "area": "heroes",
+   "check": "2026-11-25: pick rates sum to players per match",
+   "status": "PASS",
+   "detail": "sum 600% vs expected 600%"
+  },
+  {
+   "game": "marvel-rivals",
    "area": "players",
    "check": "dates unique and sorted",
    "status": "PASS",
-   "detail": "115 days"
+   "detail": "116 days"
   },
   {
    "game": "marvel-rivals",
@@ -922,14 +978,14 @@
    "area": "meta_health",
    "check": "scores within 0-100",
    "status": "PASS",
-   "detail": "5 days"
+   "detail": "6 days"
   },
   {
    "game": "marvel-rivals",
    "area": "meta_health",
    "check": "scores within 0-100",
    "status": "PASS",
-   "detail": "5 days"
+   "detail": "6 days"
   },
   {
    "game": "site",
