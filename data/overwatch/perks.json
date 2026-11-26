@@ -1,6 +1,6 @@
 {
   "game": "overwatch",
-  "updated": "2026-11-25T07:54:56Z",
+  "updated": "2026-11-26T07:53:20Z",
   "share_label": "Pick shares among pro players in OWCS matches",
   "sources": {
     "perks": "OverFast API (Blizzard hero data)",
@@ -43,13 +43,13 @@
           "name": "Smoulder",
           "description": "Ignited enemies burn 1.5 seconds longer.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5d927315af0a5729ab1be838556dc1e2d9206bbe0fd69bf3c084b64a761c9b12.png",
-          "share": 57.0
+          "share": 53.0
         },
         {
           "name": "Heat Shield",
           "description": "Gain 50 overhealth when you use your Ultimate and for each enemy ignited by it.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/52a35ec19286d15384a73910c2763d02774674069f3cfd0ee5681afd545f3c82.png",
-          "share": 43.0
+          "share": 47.0
         }
       ],
       "major": [
@@ -57,13 +57,13 @@
           "name": "Short Fuse",
           "description": "Impacting an enemy with Inferno Rush reduces its cooldown by 1.5 seconds.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6aedcee19eff304025cefdba8f089cf356293389088f53c8c6f4de11a008ba63.png",
-          "share": 64.0
+          "share": 69.0
         },
         {
           "name": "Hungering Blaze",
           "description": "Increase the healing of Dancing Blaze's subsequent strikes by 25.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/110e0b00345b359281b3ae871725d149051bed40fce266435806b4c390729722.png",
-          "share": 36.0
+          "share": 31.0
         }
       ]
     },
@@ -73,13 +73,13 @@
           "name": "Remote Detonator",
           "description": "After using Dynamite, pressing E again causes it to detonate after a 0.5 second delay.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/aa6a6fe0ff9bc45cd066c0938191f02c59b81c97c4b1d74d6de14550894fbf7c.png",
-          "share": 90.0
+          "share": 95.0
         },
         {
           "name": "Double-Barreled",
           "description": "Knocking an enemy back with Coach Gun allows you use it one extra time within 2 seconds.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cb7352dd49a08b2b95183a0ae7ef831f711754167e84968316c72052ec0affe8.png",
-          "share": 10.0
+          "share": 5.0
         }
       ],
       "major": [
@@ -87,13 +87,13 @@
           "name": "Viper's Sting",
           "description": "Hitting 2 consecutive scoped shots on a target deals 25 extra damage.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24f39937222b86f1b15717b96ab8b344104a9b69aaca142965d6c8ebc841a5ca.png",
-          "share": 92.0
+          "share": 96.0
         },
         {
           "name": "Airburst",
           "description": "Dynamite has a 40% increased detonation radius while airborne and refunds 6 ammo when thrown.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5c01e6810c9aac8d790e97f6b1e090aef6e89970c16eb9601812332e1cdb8f8f.png",
-          "share": 8.0
+          "share": 4.0
         }
       ]
     },
@@ -147,13 +147,13 @@
           "name": "Lindholm Explosives",
           "description": "Configuration: Assault's weapon slowly fires explosive shells instead of a rotary cannon.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/18e73dc037267e2b8e315bbbc76c826360633cc67f16dedeed21a86cd4f7f97e.png",
-          "share": 18.0
+          "share": 19.0
         },
         {
           "name": "Self-Repair",
           "description": "Press E to rapidly heal yourself.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0322e5394e3b67a011c27be4d8c84c0a4f74771d557339ac680dae7edbc3aaf7.png",
-          "share": 82.0
+          "share": 81.0
         }
       ]
     },
@@ -163,13 +163,13 @@
           "name": "Combat Medic",
           "description": "Melee attacks against enemies reduce the cooldown of Repair Pack by 0.75 seconds.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/653e76687c41ac4c2f6aa02bcb0277228c13a7d0ac62b8b4dc6259191bad98ff.png",
-          "share": 92.0
+          "share": 96.0
         },
         {
           "name": "Morale Boost",
           "description": "Inspire lasts 3 seconds longer when activated by Whip Shot.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce74272f296ac761d22db50718ce39fe4622c0304cc2570ab9a7e2bb82ca135f.png",
-          "share": 8.0
+          "share": 4.0
         }
       ],
       "major": [
@@ -193,13 +193,13 @@
           "name": "Bang Bang",
           "description": "Cassidy throws a second Flashbang that travels farther, but both Flashbangs deal 40% reduced damage.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4cf99ebedab5eb72e47c1388000cb29ad521fb2faf7e7b31f526bbbe3f212632.png",
-          "share": 51.0
+          "share": 52.0
         },
         {
           "name": "Giddy Up",
           "description": "After using Combat Roll, Cassidy gains a 60% movement speed boost that decays over 1.5 seconds.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b0d48ad9c8bdf1ce4ec5aeb9fe01b8fe8c1db55e4a5c411eedb74a7c41967526.png",
-          "share": 49.0
+          "share": 48.0
         }
       ],
       "major": [
@@ -297,13 +297,13 @@
           "name": "Transfusion",
           "description": "Reduce Infuse's cooldown from damage and healing dealt.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4231c031993e68b5cd6359ca35be5f1bac7571f0619ada25cd30f48e9091e5a.png",
-          "share": 97.0
+          "share": 98.0
         },
         {
           "name": "Cost of Life",
           "description": "Sacrifice 25 maximum health. Eternal Scepter healing is increased by 20%.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1f60c2577f3709fe41fbf494432e7539b4a942374b301b06a97ed7c0bb11017f.png",
-          "share": 3.0
+          "share": 2.0
         }
       ]
     },
@@ -373,13 +373,13 @@
           "name": "Aerial Munitions",
           "description": "Echo has infinite ammo during Flight.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/63cadc2da0d3063b10f9add1480a6ebff8c87963de15a9fdfdb22e9356429c07.png",
-          "share": null
+          "share": 0.0
         },
         {
           "name": "Partial Scan",
           "description": "Duplicate starts with 30% of its ultimate charge.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/150c696d8ec1329c43c139c68729ea408ae03216d41b5e759d5b7648d8584605.png",
-          "share": null
+          "share": 100.0
         }
       ],
       "major": [
@@ -387,13 +387,13 @@
           "name": "Full Salvo",
           "description": "Sticky Bombs fires 2 additional projectiles.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/47a96fff39ffc551e830cd5cb3f3baf424563e9fd263a2779e01eb1bd5a7d8a4.png",
-          "share": null
+          "share": 83.0
         },
         {
           "name": "Focused Rush",
           "description": "Focusing Beam's range is increased by 8 meters and movement speed is increased by 25% when active.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13a06093b579b9a0588d37534cf8fd8f31e3c129f67b3585b58dca171fcdca68.png",
-          "share": null
+          "share": 17.0
         }
       ]
     },
@@ -403,13 +403,13 @@
           "name": "Suppressive Security",
           "description": "Override Protocol’s light rounds slow enemies by 30% for 1.5 seconds.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/241ca51517666e1a6d64dda896c55d67151beab7e7ba1a54936beddb00186261.png",
-          "share": 43.0
+          "share": 38.0
         },
         {
           "name": "Enhanced Agility",
           "description": "Siphon Blaster’s movement speed bonus is increased by 20% while not firing.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0a82995c66a16506c6637fa41deefa87b913bb398126e68091ff308f544d9219.png",
-          "share": 57.0
+          "share": 62.0
         }
       ],
       "major": [
@@ -417,13 +417,13 @@
           "name": "Heat Sink",
           "description": "Direct hits with Siphon Blaster refunds 60% heat and increase its duration by 0.1 seconds.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/be7d093a726667fb18c02a46983edf58dda1e07c1e6b411e202461414d28ccba.png",
-          "share": 92.0
+          "share": 93.0
         },
         {
           "name": "Cyber Adhesion",
           "description": "Cyber Frag now sticks on contact, dealing 40 extra damage to stuck enemies.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c1e486e48f92254734e19a47d63672f81c187bfbcb524f9634fe295ea89d36ee.png",
-          "share": 8.0
+          "share": 7.0
         }
       ]
     },
@@ -463,13 +463,13 @@
           "name": "Swift Cuts",
           "description": "Quick Melee reduces the cooldown of Swift Strike by 3 seconds.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72c205ea67dbe8dad29066f1b63b9377fe269eb134a2d58c203c16ed9e641f0c.png",
-          "share": 9.0
+          "share": 20.0
         },
         {
           "name": "Dragon's Thirst",
           "description": "Dragonblade swings gain 30% lifesteal.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8eaca93d060776d4d3204338656e0aaad85afeeae516d21e47ccfc91aae4efde.png",
-          "share": 91.0
+          "share": 80.0
         }
       ],
       "major": [
@@ -477,13 +477,13 @@
           "name": "Blade Twisting",
           "description": "Swift Strike deals 25 additional damage over time if the enemy is below half health.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/abcef6f42d1803faa1442b14f351ba1165f93c993e8530145d165e43419dda1d.png",
-          "share": 81.0
+          "share": 85.0
         },
         {
           "name": "Meditation",
           "description": "Regenerate 50 health per second while Deflect is active.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f6046ca3bc6b1dde0cece4f255b2e30eba0ef50aecff6ecfbe3858b0ee7cc4c2.png",
-          "share": 19.0
+          "share": 15.0
         }
       ]
     },
@@ -523,13 +523,13 @@
           "name": "Reconstitution",
           "description": "Jagged Wall hits overfill Spike Guard with 25% additional energy.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/62bfe61a4ea9e9152030ab3b52d52d16eeb5db74fdb1109d1e9545e79011d62c.png",
-          "share": 14.0
+          "share": 13.0
         },
         {
           "name": "Anarchic Zeal",
           "description": "Spike Guard's spikes gain 40% Lifesteal.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5769d726c1fd432aee499cc0adfc4812a82bd3a928af713302de5157e03986cd.png",
-          "share": 86.0
+          "share": 87.0
         }
       ],
       "major": [
@@ -597,13 +597,13 @@
           "name": "Purrfect Form",
           "description": "Each pulse of Purr contains 3 waves.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7b90c625a71b1ab6709796db494907b934637e3f793895d4729f0387fadbc35f.png",
-          "share": 82.0
+          "share": 83.0
         },
         {
           "name": "Claws Out",
           "description": "Quick melee becomes empowered every 6 seconds, wounding enemies for 40 damage and slowing them by 30% for 1 second.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/989caae5faf782438c32b4ed7451ac93ebff03d884c065c768c1cee265b8aae9.png",
-          "share": 18.0
+          "share": 17.0
         }
       ]
     },
@@ -613,13 +613,13 @@
           "name": "Rampant Charge",
           "description": "Gain Unstoppable and reduce all cooldowns by 6 seconds when using Rampage.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/69acb5b21896563bbddc2d166f1d53b31ab96257adec55ca0fb20a9d38f1e726.png",
-          "share": 82.0
+          "share": 94.0
         },
         {
           "name": "Battle Shout",
           "description": "Commanding Shout fully reloads Scatter Gun and increases allied reload speed by 50%.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c0c7a9fabfe1e722d591074d61212cd951ca241daf4f857e16277520f66a7bf2.png",
-          "share": 18.0
+          "share": 6.0
         }
       ],
       "major": [
@@ -627,13 +627,13 @@
           "name": "Willy-Willy",
           "description": "When recalling Jagged Blade, its radius is increased by 100% and it deals 30 additional impact damage.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/79f03361567257341b863613a591508eca0077c5b934a590f6ed34822616f005.png",
-          "share": 9.0
+          "share": 4.0
         },
         {
           "name": "Savage Satiation",
           "description": "Carnage's impact damage gains 100% lifesteal.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6f359a8501d72e8e4b4fcceff1dc353b68a4303bfb5e0f853d894b2478d0bce4.png",
-          "share": 91.0
+          "share": 96.0
         }
       ]
     },
@@ -673,13 +673,13 @@
           "name": "Familiar Vitals",
           "description": "Pulsar Torpedoes lock onto allies 35% faster.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c797b7a1b9be4f7df0cf86824570d408ed7a0e4112ad51545b3eaf78c4dbf44a.png",
-          "share": 100.0
+          "share": 48.0
         },
         {
           "name": "Locked On",
           "description": "Reduce the cooldown of Pulsar Torpedoes by 1 second for each enemy hit.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/477a3abe9f68e2a2324e3f2a8faeb14bb6102b2e0c272d93463d6d27726629ae.png",
-          "share": 0.0
+          "share": 52.0
         }
       ],
       "major": [
@@ -687,13 +687,13 @@
           "name": "Lift Off",
           "description": "Martian Overboots can now triple jump.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/efe7a92601ea7fc95274ee11d1628fb31238c707331b87545a7c754fcd48ca68.png",
-          "share": 50.0
+          "share": 83.0
         },
         {
           "name": "Faster Blaster",
           "description": "While Glide Boost is active, Mediblaster fires continuously.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7b122bd8091f5005bfee07aa787f98126ddbe80aacdd11e7a2d076b9d03e35b2.png",
-          "share": 50.0
+          "share": 17.0
         }
       ]
     },
@@ -703,13 +703,13 @@
           "name": "Urgent Care",
           "description": "Healing Ofuda projectile speed is increased by 50% when seeking allies below half health.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d057fa16941cc466d1d934ad3270ba3e6dc6fdd30b8ae78af0d8c684a4afbd21.png",
-          "share": 6.0
+          "share": 5.0
         },
         {
           "name": "Fortune Teller",
           "description": "Kunai hits launch 2 Healing Ofuda to an ally in front of you.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/50a9304063fc8ea8c23b6533940563cf666fb0a1f80e6240b30344aa014d40b6.png",
-          "share": 94.0
+          "share": 95.0
         }
       ],
       "major": [
@@ -763,13 +763,13 @@
           "name": "Soundwave Rider",
           "description": "Wall Riding empowers your next Soundwave, increasing its knockback by 25% and damage by 50%.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ab9044637d85c3c53022189dbab7913eec2faedc95176069a754441588ac630.png",
-          "share": 3.0
+          "share": 4.0
         },
         {
           "name": "Beat Drop",
           "description": "Amp It Up is active for 4 seconds after casting Sound Barrier.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4639fbbde04ac4e8ca26a56ebd4ddc3f34ccf5c20add8796fe2282a2b2b739fa.png",
-          "share": 97.0
+          "share": 96.0
         }
       ],
       "major": [
@@ -807,13 +807,13 @@
           "name": "Firewalker",
           "description": "Overrun ignites enemies hit.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/83b13a8976492b76d22ef89abd6815e90fcc7f3133853d86a9e898bc07db8c5a.png",
-          "share": 84.0
+          "share": 83.0
         },
         {
           "name": "Combat Fuel",
           "description": "Critical hits grant Mauga 4 temporary overhealth on Cardiac Overdrive's next use, up to 150 overhealth.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/69aae6d3636721510e30bc9d1578944c8e9705ab403d9e421798aceebf0f1a9b.png",
-          "share": 16.0
+          "share": 17.0
         }
       ]
     },
@@ -823,13 +823,13 @@
           "name": "Skating Rink",
           "description": "Allies within Blizzard gain 25% increased movement speed and heal for 50 health per second.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/10f6bf7a34140e74cf639ae596ccaaf4a84d2850f7b4058662a922ce45c58515.png",
-          "share": 87.0
+          "share": 88.0
         },
         {
           "name": "Glacial Propulsion",
           "description": "Double jumping creates a small ice pillar that launches Mei into the air.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/55f25d042e203d5c4fb858df4caadd51875b51d7344e0c7e49427eaf64c61229.png",
-          "share": 13.0
+          "share": 12.0
         }
       ],
       "major": [
@@ -1033,13 +1033,13 @@
           "name": "Soul Reaving",
           "description": "Collect Soul Globes from dead enemies to restore 50 health.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/703054950487245c1a60a25bf65e8301d6050559e5216c17f4970c1adc46fd0b.png",
-          "share": 3.0
+          "share": 8.0
         },
         {
           "name": "Lingering Wraith",
           "description": "Leaving Wraith Form grants 30% movement speed for 2 seconds.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6fe85e04ebeacfca484fbd776da1bf7935102577c30a5d9e9b12ad7e859cc415.png",
-          "share": 97.0
+          "share": 92.0
         }
       ],
       "major": [
@@ -1213,13 +1213,13 @@
           "name": "Overcharged",
           "description": "Railgun's maximum energy is increased by 50 while Overclock is active.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5e3658d0e7ce5ab2941fad17e8201fc2f658db8554d7f83c114bafcbc54740b8.png",
-          "share": 96.0
+          "share": 97.0
         },
         {
           "name": "Deceleration Field",
           "description": "Enemies hit by Disruptor Shot are slowed by 25%.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f9a050171b880b1cba0411bfd11eb0739f3d06bf579dd5f3e9cfc9ed767d05e5.png",
-          "share": 4.0
+          "share": 3.0
         }
       ],
       "major": [
@@ -1303,13 +1303,13 @@
           "name": "Sentry Capacity",
           "description": "Sentry Turret gains an additional charge.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4e1fb364d87d9e78b9103b2bac3b553f743fd44a1bb5170aaae128fe4d79eac5.png",
-          "share": 9.0
+          "share": 8.0
         },
         {
           "name": "Perfect Alignment",
           "description": "Increase the range of Photon Projector's primary fire by 20%.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b36193e986b8e815b07ebf01a85bc2c29a1cd34c2ee50c458f7d07d933b4a0d8.png",
-          "share": 91.0
+          "share": 92.0
         }
       ],
       "major": [
@@ -1393,13 +1393,13 @@
           "name": "Extra Edge",
           "description": "Projected Edge costs 25% less energy.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e970c9fa76693e93f3f490fdfd46efd56ba6a603d9b9169daa32b4b9a9cae1e8.png",
-          "share": 49.0
+          "share": 51.0
         },
         {
           "name": "Raging Storm",
           "description": "Whirlwind Dash continues to spin, hitting 3 more times for 30 damage in a wide area.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/954fc7de0d9e63b963e255eb433ceba0a8fe7af235e93023bbc2788decec218e.png",
-          "share": 51.0
+          "share": 49.0
         }
       ],
       "major": [
@@ -1453,13 +1453,13 @@
           "name": "Scoped Efficiency",
           "description": "Scoped shots cost 3 ammo instead of 5.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7b4791cbfcc18876850b21a4c555d150081fa4689e9b489d6291bee40e0d8e9e.png",
-          "share": 62.0
+          "share": 61.0
         },
         {
           "name": "Sniper's Instinct",
           "description": "Scoped shots charge 100% faster for 2 seconds after using Grappling Hook.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c7788454504da63392a16b1cee6c2edc3675eb4520c0c6e08fb2543c289648b2.png",
-          "share": 38.0
+          "share": 39.0
         }
       ],
       "major": [
@@ -1497,13 +1497,13 @@
           "name": "Chain Lightning",
           "description": "Fully charged Secondary Fire hits bounce to up to 2 additional targets.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/07057b7cb8a72dfe55a0880562ab4afbe9a056e226e19c3c1ae6e2fa88d59c14.png",
-          "share": 32.0
+          "share": 31.0
         },
         {
           "name": "Revitalizing Barrier",
           "description": "Barrier Projector heals allies within it for 35 health per second.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/92c7620c5f92eb1eabb51b9ffeeab93e6be9e0966e7981b3cf515f3fe6ae27ae.png",
-          "share": 68.0
+          "share": 69.0
         }
       ]
     },
@@ -1543,13 +1543,13 @@
           "name": "Overflow",
           "description": "Gain 10 ammo and 50% healing resource when Rushing Torrent is activated.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4159af4f1e6cb3fa0879727deec0d07d151a8b96e883b4b2e13ab570d840d514.png",
-          "share": 70.0
+          "share": 72.0
         },
         {
           "name": "Balance",
           "description": "When you deal damage with water orbs, increase Restorative Stream's passive healing by 30% for 2 seconds.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0ef4ae1adde715d22a18b57810ede98b0ed61b649d71364b0077ffe3dbb965fc.png",
-          "share": 30.0
+          "share": 28.0
         }
       ],
       "major": [
@@ -1557,13 +1557,13 @@
           "name": "Ebb and Flow",
           "description": "Guardian Wave rewinds to its starting location.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce177940cb80eb007a9b845861407335caf18048affe226b1e2c39b4a01c6b22.png",
-          "share": 16.0
+          "share": 20.0
         },
         {
           "name": "Falling Rain",
           "description": "Simultaneously control 3 water orbs that deal 60% decreased damage and have 25% decreased empowered explosion radius.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b4b736a801ab836d8c66825bb8dfc7051333b54f42406ef79520c11d43159a7a.png",
-          "share": 84.0
+          "share": 80.0
         }
       ]
     },
@@ -1573,13 +1573,13 @@
           "name": "Jump-Ups",
           "description": "Secondary Fire's self-knockback is increased by 75%.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a1c471e92b4c70a11e2ad276fcc7589f653ae06cdfb0e38967a4593653866de6.png",
-          "share": 72.0
+          "share": 74.0
         },
         {
           "name": "Spotter",
           "description": "Projected Barrier activates ally health regeneration and increases their movement speed by 20%.",
           "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/198c67146cb8a79d7584fab1a0762bc9bba2f37e24852bf716dc9587acffecbc.png",
-          "share": 28.0
+          "share": 26.0
         }
       ],
       "major": [
