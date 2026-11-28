@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T07:53:54Z",
+ "generated": "2026-11-28T07:46:50Z",
  "engine": "DuckDB 2.0.1",
  "tables": [
   {
@@ -12,7 +12,7 @@
   },
   {
    "name": "hero_daily",
-   "rows": 15749
+   "rows": 15872
   },
   {
    "name": "heroes",
@@ -40,7 +40,7 @@
   },
   {
    "name": "players_daily",
-   "rows": 1169
+   "rows": 1172
   },
   {
    "name": "teamups",
@@ -235,7 +235,7 @@
      "2026-10-13"
     ]
    ],
-   "runtime_ms": 5.0,
+   "runtime_ms": 2.8,
    "takeaway": "Most-patched: deadlock: Shiv (18 changes, 10 nerfs / 5 buffs); marvel-rivals: Gambit (11 changes, 7 nerfs / 1 buffs); overwatch: Vendetta (15 changes, 6 nerfs / 6 buffs)."
   },
   {
@@ -259,110 +259,110 @@
      "deadlock",
      "Assassin",
      "Haze",
-     53.81,
-     2993594.0
+     53.86,
+     3012762.0
     ],
     [
      "deadlock",
      "Assassin",
      "Lash",
-     51.2,
-     2200038.0
+     51.25,
+     2223370.0
     ],
     [
      "deadlock",
      "Assassin",
      "Drifter",
-     50.31,
-     2884619.0
+     50.33,
+     2915877.0
     ],
     [
      "deadlock",
      "Brawler",
      "Rat King",
-     54.58,
-     2890682.0
+     54.54,
+     2864526.0
     ],
     [
      "deadlock",
      "Brawler",
      "Victor",
-     53.69,
-     2170184.0
+     53.67,
+     2176106.0
     ],
     [
      "deadlock",
      "Brawler",
      "Abrams",
-     51.97,
-     2318659.0
+     51.95,
+     2337115.0
     ],
     [
      "deadlock",
      "Healer",
      "Paige",
-     56.29,
-     1991537.0
+     56.33,
+     2009665.0
     ],
     [
      "deadlock",
      "Healer",
      "Kelvin",
-     55.64,
-     1123588.0
+     55.67,
+     1140800.0
     ],
     [
      "deadlock",
      "Healer",
      "Ivy",
-     52.27,
-     1496403.0
+     52.24,
+     1512370.0
     ],
     [
      "deadlock",
      "Marksman",
      "Deadman Danny",
-     53.63,
-     1807778.0
+     53.66,
+     1770781.0
     ],
     [
      "deadlock",
      "Marksman",
      "Wraith",
-     49.94,
-     2384241.0
+     49.82,
+     2380778.0
     ],
     [
      "deadlock",
      "Marksman",
      "Vindicta",
-     49.31,
-     2023759.0
+     49.34,
+     2034097.0
     ],
     [
      "deadlock",
      "Mystic",
      "Graves",
-     57.32,
-     2930033.0
-    ],
-    [
-     "deadlock",
-     "Mystic",
-     "Baba",
-     55.38,
-     891792.0
+     57.3,
+     2943419.0
     ],
     [
      "deadlock",
      "Mystic",
      "Seven",
-     55.32,
-     2345383.0
+     55.37,
+     2369109.0
+    ],
+    [
+     "deadlock",
+     "Mystic",
+     "Baba",
+     55.33,
+     884060.0
     ]
    ],
-   "runtime_ms": 15.2,
-   "takeaway": "Best 30-day win rate: deadlock: Graves (Mystic) at 57.3% over 2,930,033 games."
+   "runtime_ms": 8.0,
+   "takeaway": "Best 30-day win rate: deadlock: Graves (Mystic) at 57.3% over 2,943,419 games."
   },
   {
    "id": "03_patch_whiplash",
@@ -924,7 +924,7 @@
      16
     ]
    ],
-   "runtime_ms": 4.0,
+   "runtime_ms": 2.2,
    "takeaway": "91 reversals within 30 days (deadlock: 59, marvel-rivals: 21, overwatch: 11); 21 were reversed within a week."
   },
   {
@@ -1154,7 +1154,7 @@
      9.5
     ]
    ],
-   "runtime_ms": 4.6,
+   "runtime_ms": 2.6,
    "takeaway": "Players rose in the week after 61% of big patches (median change +2.1%). Biggest jump: marvel-rivals, Season 11: Doomsday balance update (+36.4%)."
   },
   {
@@ -1322,7 +1322,7 @@
      13
     ]
    ],
-   "runtime_ms": 4.3,
+   "runtime_ms": 2.3,
    "takeaway": "deadlock: busiest Sunday (+13%), quietest Thursday (-7%); marvel-rivals: busiest Saturday (+11%), quietest Thursday (-10%); overwatch: busiest Sunday (+12%), quietest Thursday (-10%)."
   },
   {
@@ -1348,7 +1348,7 @@
      "2025-10",
      28.2,
      32,
-     88.1,
+     88.2,
      26.7
     ],
     [
@@ -1450,14 +1450,14 @@
     [
      "deadlock",
      "2026-11",
-     38.8,
+     38.9,
      44,
      88.3,
      17.9
     ]
    ],
-   "runtime_ms": 9.6,
-   "takeaway": "deadlock: effective heroes went from 28.2 (2025-10) to 38.8 (2026-11), while diversity relative to roster size moved from 88.1% to 88.3%, so the rise comes from new heroes being added, not from a more balanced meta."
+   "runtime_ms": 4.7,
+   "takeaway": "deadlock: effective heroes went from 28.2 (2025-10) to 38.9 (2026-11), while diversity relative to roster size moved from 88.2% to 88.3%, so the rise comes from new heroes being added, not from a more balanced meta."
   },
   {
    "id": "07_ban_vs_winrate",
@@ -1484,7 +1484,7 @@
      0.08,
      0.11,
      "Devil Dinosaur",
-     37.5,
+     37.8,
      "Phoenix, Spider-Man, Gambit, Emma Frost, Elsa Bloodstone, Winter Soldier, Namor"
     ],
     [
@@ -1497,7 +1497,7 @@
      "Zarya, Jetpack Cat, Roadhog, Orisa, Mauga, Ana"
     ]
    ],
-   "runtime_ms": 9.8,
+   "runtime_ms": 5.4,
    "takeaway": "marvel-rivals: ban vs. win-rate correlation +0.08, most banned Devil Dinosaur (38%). overwatch: ban vs. win-rate correlation -0.02, most banned Zarya (39%). Bans track perception more than results."
   },
   {
@@ -1523,89 +1523,100 @@
    "rows": [
     [
      "marvel-rivals",
+     "Groot",
+     "Bubble Buddies",
+     66.1,
+     52.9,
+     "Wild Wall",
+     33.9,
+     63.6,
+     10.7
+    ],
+    [
+     "marvel-rivals",
      "Rocket Raccoon",
      "Mammalian Bond",
      62.6,
-     50.2,
+     50.4,
      "Planet X Pals",
      37.4,
-     60.3,
-     10.1
-    ],
-    [
-     "marvel-rivals",
-     "Groot",
-     "Bubble Buddies",
-     65.7,
-     53.4,
-     "Wild Wall",
-     34.3,
-     63.3,
-     9.9
-    ],
-    [
-     "marvel-rivals",
-     "Captain America",
-     "Stars Aligned",
-     75.5,
-     53.5,
-     "Voltaic Union",
-     24.5,
-     60.0,
-     6.5
-    ],
-    [
-     "marvel-rivals",
-     "Cloak & Dagger",
-     "Frozen Haven",
-     72.5,
-     44.2,
-     "Oblivion Shroud",
-     27.6,
-     49.3,
-     5.1
+     60.1,
+     9.7
     ],
     [
      "marvel-rivals",
      "Doctor Strange",
      "Psionic Vortex",
-     50.8,
-     53.2,
+     50.7,
+     53.1,
      "Gamma Maelstrom",
      49.3,
-     57.9,
+     58.2,
+     5.1
+    ],
+    [
+     "marvel-rivals",
+     "Captain America",
+     "Stars Aligned",
+     75.2,
+     53.5,
+     "Voltaic Union",
+     24.8,
+     58.5,
+     5.0
+    ],
+    [
+     "marvel-rivals",
+     "Cloak & Dagger",
+     "Frozen Haven",
+     72.6,
+     44.4,
+     "Oblivion Shroud",
+     27.4,
+     49.3,
+     4.9
+    ],
+    [
+     "marvel-rivals",
+     "Mister Fantastic",
+     "Clobberin' Research Dept.",
+     70.7,
+     56.1,
+     "Fantastic Amplifier",
+     29.3,
+     60.8,
      4.7
     ],
     [
      "marvel-rivals",
      "Jeff The Land Shark",
      "Mr. Pool's Interdimensional Toy Box",
-     85.8,
-     49.0,
+     85.9,
+     49.3,
      "Guardian of the Deep",
-     14.2,
-     53.4,
-     4.4
+     14.1,
+     53.6,
+     4.3
     ],
     [
      "marvel-rivals",
-     "Mister Fantastic",
-     "Clobberin' Research Dept.",
-     70.4,
-     56.9,
-     "Fantastic Amplifier",
-     29.6,
-     61.1,
-     4.2
+     "Devil Dinosaur",
+     "Primal Punishment",
+     72.8,
+     50.2,
+     "Surf & Turf",
+     27.3,
+     53.8,
+     3.6
     ],
     [
      "marvel-rivals",
      "Iron Fist",
      "Iron & Stone",
-     70.2,
+     70.4,
      52.6,
      "Kumiho Palm",
-     29.8,
+     29.6,
      56.1,
      3.5
     ],
@@ -1617,45 +1628,34 @@
      50.4,
      "Chaos Collision",
      23.7,
-     53.6,
-     3.2
-    ],
-    [
-     "marvel-rivals",
-     "Devil Dinosaur",
-     "Primal Punishment",
-     72.9,
-     50.5,
-     "Surf & Turf",
-     27.1,
-     53.6,
-     3.1
+     53.7,
+     3.3
     ],
     [
      "marvel-rivals",
      "The Punisher",
      "Bestial Hunt",
-     61.8,
-     54.2,
+     61.4,
+     54.0,
      "Ammo Overload",
-     38.2,
-     55.5,
-     1.3
+     38.6,
+     55.7,
+     1.7
     ],
     [
      "marvel-rivals",
-     "Angela",
-     "Odin's Unacknowledged",
-     78.6,
-     57.3,
-     "Asgardians of the Galaxy",
-     21.4,
-     58.5,
-     1.2
+     "Thor",
+     "Ragnarok Rebirth",
+     72.1,
+     58.0,
+     "Divine Armory",
+     27.9,
+     58.7,
+     0.7
     ]
    ],
-   "runtime_ms": 5.6,
-   "takeaway": "marvel-rivals: 12 heroes have an underused loadout that wins more often; biggest gap is Rocket Raccoon's Planet X Pals (37% usage), which wins +10.1 pts more than Mammalian Bond."
+   "runtime_ms": 3.0,
+   "takeaway": "marvel-rivals: 12 heroes have an underused loadout that wins more often; biggest gap is Groot's Wild Wall (34% usage), which wins +10.7 pts more than Bubble Buddies."
   },
   {
    "id": "09_matchup_consistency",
@@ -1678,14 +1678,14 @@
     [
      "deadlock",
      946,
-     0.013,
+     0.012,
      0.04,
      946,
      0
     ]
    ],
-   "runtime_ms": 3.5,
-   "takeaway": "deadlock: PASS, 946 matchup pairs, average deviation 0.013 pts, max 0.04 pts, 0 outside a 0.5-pt tolerance."
+   "runtime_ms": 2.0,
+   "takeaway": "deadlock: PASS, 946 matchup pairs, average deviation 0.012 pts, max 0.04 pts, 0 outside a 0.5-pt tolerance."
   },
   {
    "id": "10_week_over_week_movers",
@@ -1711,105 +1711,105 @@
      "deadlock",
      "riser",
      "Holliday",
-     48.48,
-     49.56,
-     1.08,
-     342316.0,
+     48.64,
+     49.4,
+     0.76,
+     344984.0,
      "no patch: moved on its own"
     ],
     [
      "deadlock",
      "riser",
-     "Violet",
-     46.88,
-     47.49,
-     0.61,
-     234292.0,
-     "no patch: moved on its own"
-    ],
-    [
-     "deadlock",
-     "riser",
-     "Mo & Krill",
-     47.84,
-     48.35,
-     0.51,
-     205912.0,
+     "Shiv",
+     44.94,
+     45.69,
+     0.75,
+     458112.0,
      "no patch: moved on its own"
     ],
     [
      "deadlock",
      "riser",
      "Vyper",
-     45.91,
-     46.42,
-     0.51,
-     190382.0,
+     45.93,
+     46.59,
+     0.66,
+     198090.0,
+     "no patch: moved on its own"
+    ],
+    [
+     "deadlock",
+     "riser",
+     "Violet",
+     46.99,
+     47.62,
+     0.63,
+     240772.0,
      "no patch: moved on its own"
     ],
     [
      "deadlock",
      "riser",
      "Sinclair",
-     44.82,
-     45.33,
-     0.5,
-     161042.0,
-     "no patch: moved on its own"
-    ],
-    [
-     "deadlock",
-     "faller",
-     "Warden",
-     50.69,
-     50.39,
-     -0.31,
-     211680.0,
-     "no patch: moved on its own"
-    ],
-    [
-     "deadlock",
-     "faller",
-     "Venator",
-     45.69,
-     45.35,
-     -0.34,
-     530793.0,
+     44.89,
+     45.51,
+     0.62,
+     169024.0,
      "no patch: moved on its own"
     ],
     [
      "deadlock",
      "faller",
      "Ivy",
-     52.14,
-     51.76,
-     -0.37,
-     300076.0,
+     52.04,
+     51.65,
+     -0.39,
+     302741.0,
      "no patch: moved on its own"
     ],
     [
      "deadlock",
      "faller",
-     "Calico",
-     47.91,
-     47.37,
-     -0.54,
-     205856.0,
+     "Apollo",
+     50.02,
+     49.59,
+     -0.42,
+     418034.0,
+     "no patch: moved on its own"
+    ],
+    [
+     "deadlock",
+     "faller",
+     "Baba",
+     56.18,
+     55.71,
+     -0.47,
+     160897.0,
      "no patch: moved on its own"
     ],
     [
      "deadlock",
      "faller",
      "McGinnis",
-     50.61,
-     49.99,
-     -0.62,
-     200961.0,
+     50.58,
+     50.08,
+     -0.5,
+     206970.0,
+     "no patch: moved on its own"
+    ],
+    [
+     "deadlock",
+     "faller",
+     "Wraith",
+     49.84,
+     49.32,
+     -0.53,
+     437910.0,
      "no patch: moved on its own"
     ]
    ],
-   "runtime_ms": 7.8,
-   "takeaway": "deadlock: top riser Holliday (+1.08 pts); 10 of 10 movers had no patch in the window. Moves of about ±1 point are within normal weekly noise (see the Patch impact analysis)."
+   "runtime_ms": 4.2,
+   "takeaway": "deadlock: top riser Holliday (+0.76 pts); 10 of 10 movers had no patch in the window. Moves of about ±1 point are within normal weekly noise (see the Patch impact analysis)."
   },
   {
    "id": "11_player_cannibalization",
@@ -1918,7 +1918,7 @@
      "An ordinary month for Overwatch"
     ]
    ],
-   "runtime_ms": 9.5,
+   "runtime_ms": 5.3,
    "takeaway": "Marvel Rivals → Overwatch: Overwatch fell 17.6% in the 3 months after launch (worse than 87% of its other 3-month stretches) and was still 19.7% lower in months 4–6. Suggestive of a pull, not proof; during Deadlock's 3 biggest surges, Overwatch fell in 1 and had an unusually weak month in 0; during Deadlock's 3 biggest surges, Marvel Rivals fell in 3 and had an unusually weak month in 1; no pair of games' monthly changes correlates beyond noise."
   }
  ]
